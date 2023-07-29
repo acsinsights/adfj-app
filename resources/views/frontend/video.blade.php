@@ -142,22 +142,25 @@
                             <div class="masonary-menu filter-button-group tp-el-mas-btn">
 
                                 <button data-filter="*" class="active tp-el-mas-btn">
-                                    All Project
+                                    All Videos
                                 </button>
                                 <button data-filter=".music-artwork">
-                                 Music Artwork
+                               Music Videos
                                 </button>
 
                                 <button data-filter=".movie-poster">
-                                    Movie Poster
+                                    Animation Videos
                                 </button>
 
                                 <button data-filter=".u-tube-thumbnail">
-                                    Youtube Thumbnail
+                                   Ad Films
                                 </button>
 
                                 <button data-filter=".illustration">
-                                    Illustration
+                                    Films
+                                </button>
+                                <button data-filter=".illustration">
+                                    Vlogs
                                 </button>
                             </div>
                         </div>

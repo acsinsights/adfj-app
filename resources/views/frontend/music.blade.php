@@ -439,7 +439,7 @@
                                 </div>
                                 <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
                                     <img width="455" height="500"
-                                        src="{{ asset('user-assets/img/graphic-portfolio/tum-yaad-aaye.jpg') }}"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/vajle-bara-2.jpg') }}"
                                         class="attachment-full size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
