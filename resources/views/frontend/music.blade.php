@@ -333,28 +333,22 @@
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Music Artwork " data-title="Ude">
                                 <div class="portfolio__grid-music portfolio__grid-video"><a
-                                        href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
-                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                        </svg>
-                                        <div class="play-div my-play">
-                                           <span class="playBtn">
-                                            <svg  width="18" height="22" viewBox="0 0 18 22"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                        </svg>
-                                           </span>
-
-                                           <span class="iframe-play">
-                                            <iframe   width="100%"
-                                                height="166" scrolling="no" frameborder="no" allow="autoplay"
-                                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1557216982&color=%23eb1971&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                                           </span>
-                                        </div>
+                                        href="" tabindex="0">
                                     </a>
+                                    <div class="play-div my-play ">
+                                        <span class="playBtn">
+                                         <svg  width="18" height="22" viewBox="0 0 18 22"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                     </svg>
+                                        </span>
+
+                                        <span class="iframe-play">
+                                         <iframe   width="100%"
+                                             height="166" scrolling="no" frameborder="no" allow="autoplay"
+                                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1557216982&color=%23eb1971&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                                        </span>
+                                     </div>
                                 </div>
                                 <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
                                     <img width="455" height="500"

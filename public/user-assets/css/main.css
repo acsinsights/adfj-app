@@ -34227,21 +34227,24 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     align-items: center;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 .playBtn{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: black;
+    background: white;
     display: grid;
     place-items: center;
     border-radius: 50%;
     pointer-events: none;
+    z-index: 5;
 }
 .iframe-play{
     position: absolute;
     top: -10px;
     left: -10px;
+    z-index: 2;
 }
 
 .portfolio__grid-video {
