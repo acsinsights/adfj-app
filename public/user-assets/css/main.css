@@ -63960,7 +63960,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 @media only screen and (min-width: 2020px) and (max-width: 4000px) {
  .galley-space{
-    margin: 0 20%;
+    margin: 0 25%;
  }
 
   }
