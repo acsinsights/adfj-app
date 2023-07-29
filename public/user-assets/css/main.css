@@ -34115,6 +34115,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .portfolio__grid-thumb .tp-img-reveal-wrapper {
   width: auto;
+  display: none;
 }
 
 .portfolio__grid-title {
@@ -63982,3 +63983,29 @@ only screen and (min-width: 576px) and (max-width: 767px),
     }
   }
 
+
+
+
+ .mySection{
+  position: relative;
+  overflow: hidden;
+ }
+
+ .myaudio-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+ }
+ .myBox{
+  transition: 0.5s;
+  overflow: hidden;
+ }
+ .mySection-box{
+  transition: 0.5s;
+  transform: translatey(500px);
+ }
+ .myBox:hover .mySection-box{
+  transform: translatey(100px);
+ }

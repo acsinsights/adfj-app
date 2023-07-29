@@ -233,12 +233,13 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
-                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
-                                <div class=" portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
+                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg" style="overflow: hidden;">
+
+                                <div class=" portfolio__grid-video "><a href="https://www.instagram.com/p/Ccos67BIgoK/"
                                         tabindex="0">
 
-                                        <div class="audio-container">
+                                        <div class="audio-container mySection-box">
                                             <iframe width="100%" height="166" scrolling="no" frameborder="no"
                                                 allow="autoplay"
                                                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1557216982&color=%23eb1971&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
