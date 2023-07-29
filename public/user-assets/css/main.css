@@ -63959,9 +63959,27 @@ only screen and (min-width: 576px) and (max-width: 767px),
     margin-left: 6px;
 }
 }
-@media only screen and (min-width: 2020px) and (max-width: 4000px) {
+@media only screen and (min-width: 900px) and (max-width: 1399px) {
  .galley-space{
-    margin: 0 25%;
+    margin: 0 15%;
+ }
+
+  }
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+ .galley-space{
+    margin: 0 10%;
+ }
+
+  }
+@media only screen and (min-width: 2020px) and (max-width: 2500px) {
+ .galley-space{
+    margin: 0 20%;
+ }
+
+  }
+@media only screen and (min-width: 2501px) and (max-width: 4000px) {
+ .galley-space{
+    margin: 0 24%;
  }
 
   }
