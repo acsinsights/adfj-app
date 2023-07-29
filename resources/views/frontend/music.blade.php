@@ -238,7 +238,7 @@
                                 <div class=" portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
                                         tabindex="0">
 
-                                        <div class="audio-container">
+                                        <div style="transform: translateY(50px)"  class="audio-container mt-200">
                                             <iframe width="100%" height="166" scrolling="no" frameborder="no"
                                                 allow="autoplay"
                                                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1557216982&color=%23eb1971&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
@@ -250,7 +250,7 @@
                                                     href="https://soundcloud.com/the-dream-chimney/dc-promo-tracks-1198-give-me-your-love"
                                                     title="DC Promo Tracks: Luke Delite &amp; Michelle Weeks &quot;Give Me Your Love&quot;"
                                                     target="_blank" style="color: #cccccc; text-decoration: none;">DC
-                                                    Promo Tracks: Luke Delite &amp;
+
                                                     Michelle Weeks &quot;Give Me Your Love&quot;</a>
                                             </div>
 
