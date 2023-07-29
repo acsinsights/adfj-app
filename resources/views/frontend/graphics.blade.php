@@ -69,9 +69,9 @@
                                     Youtube Thumbnail
                                 </button>
 
-                                <button data-filter=".illustration">
+                                {{-- <button data-filter=".illustration">
                                     Illustration
-                                </button>
+                                </button> --}}
                             </div>
                         </div>
                     </div>

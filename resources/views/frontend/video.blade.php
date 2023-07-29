@@ -144,22 +144,22 @@
                                 <button data-filter="*" class="active tp-el-mas-btn">
                                     All Videos
                                 </button>
-                                <button data-filter=".music-artwork">
+                                <button data-filter=".music-video">
                                Music Videos
                                 </button>
 
-                                <button data-filter=".movie-poster">
+                                <button data-filter=".animation-video">
                                     Animation Videos
                                 </button>
 
-                                <button data-filter=".u-tube-thumbnail">
+                                <button data-filter=".ad-films">
                                    Ad Films
                                 </button>
 
-                                <button data-filter=".illustration">
+                                <button data-filter=".films">
                                     Films
                                 </button>
-                                <button data-filter=".illustration">
+                                <button data-filter=".vlogs">
                                     Vlogs
                                 </button>
                             </div>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <div class="row tp-gx-20 grid" style="position: relative; height: 1799.76px;">
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
                     style="position: absolute; left: 0%; top: 537px;">
                     <div class="portfolio__grid-item mb-20 tp-el-box">
                         <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -195,46 +195,12 @@
                         </div>
                     </div>
                 </div>
-                 <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item movie-poster"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Short Film Poster  " data-title="Cappuccino">
-                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/cappuccino.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
-
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Cappuccino</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Short Film Poster</a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
 
 
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item music-artwork"
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-video"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -273,7 +239,7 @@
 
 
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item music-artwork"
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-video"
                     style="position: absolute; left: 0%; top: 537px;">
                     <div class="portfolio__grid-item mb-20 tp-el-box">
                         <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -299,79 +265,6 @@
                                             <div class="portfolio__hover-category tp-el-box-tag">
                                                 <span>
                                                     <a href="#">Movie Poster</a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item music-artwork"
-                        style="position: absolute; left: 33.3198%; top: 1261px;">
-                        <div class="portfolio__grid-item mb-20 tp-el-box">
-                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                                data-fx="24" data-meta-tag="Music Art Work" data-title="Tum Yaad Aaye" style="">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                    <img width="455" height="500"
-                                    src="{{ asset('user-assets/img/graphic-portfolio/tum-yaad-aaye.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
-                                        loading="lazy"> </a>
-
-                                <div class="tp-img-reveal-wrapper" style="top: 395.4px; left: 780px; opacity: 0;">
-                                    <div class="tp-img-reveal-wrapper__inner"
-                                        style="overflow: hidden; transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);">
-                                        <div class="tp-img-reveal-wrapper__img"
-                                            style="background-image: url(&quot;&quot;); transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0);">
-                                            <div class="portfolio__hover-wrapper tp-el-box">
-                                                <h4 class="portfolio__hover-title tp-el-box-title"> Music Art Work</h4>
-                                                <div class="portfolio__hover-category tp-el-box-tag">
-                                                    <span>
-                                                        <a href="#">Tum Yaad Aaye</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item movie-poster"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Movie Poster" data-title="Vimukti">
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/vimukti.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
-
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Movie Poster</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Vimukti</a>
                                                 </span>
                                             </div>
                                         </div>
