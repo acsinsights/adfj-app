@@ -9,7 +9,7 @@
       ></div>
       <div class="footer__top-6">
         <div class="container">
-          <div class="row">
+          <div style="justify-content: center" class="row">
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-1">
                 <div class="footer__logo">
@@ -36,7 +36,7 @@
                       href="javascript: void(0);"
                       class="tp-link-btn-2 tp-link-btn-white"
                     >
-                      We are Hiring
+                      Subscribe
                       <span>
                         <i class="fa-regular fa-arrow-right"></i>
                       </span>
@@ -51,13 +51,16 @@
 
                 <div class="footer__widget-content">
                   <ul>
+                    <li><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('about')}}">About Us</a></li>
-                    <li><a href="javascript:void(0)">Portfolio</a></li>
-                    <li><a href="{{url('policy')}}">Privacy Policy</a></li>
+                    <li><a href="{{url('service')}}">Services</a></li>
+                    <li><a href="{{url('pricing-plan')}}">Pricing Plans</a></li>
                     <li>
-                      <a href="javascript:void(0)">Terms & Conditions</a>
+                      <a href="{{url('subscription')}}">Subscription</a>
                     </li>
-                    <li><a href="javascript:void(0)">Join Team</a></li>
+                    <li>
+                      <a href="javascript:void(0);">Blogs</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -191,7 +194,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div
                 class="footer__widget footer__widget-7 mb-50 footer-col-7-4"
               >
@@ -217,7 +220,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> --}}
           </div>
         </div>
       </div>
@@ -236,7 +239,7 @@
               <div class="col-sm-6">
                 <div class="footer__link-6 text-sm-end">
                   <a href="{{url('policy')}}">Privacy Policy</a>
-                  <a href="javascript:void(0)">Terms & Conditions</a>
+                  <a href="{{url('terms')}}">Terms & Conditions</a>
                   <!-- <a href="javascript:void(0)">Carrier</a> -->
                 </div>
               </div>

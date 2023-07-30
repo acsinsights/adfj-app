@@ -11,8 +11,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
                         <div class="about__heading-content text-center p-relative z-index-1">
-                            <span class="about__heading-subtitle">Portfolio</span>
-                            <h3 class="about__heading-title">Music Production </h3>
+                            {{-- <span class="about__heading-subtitle">Music Production Portfolio</span> --}}
+                            <h3 class="about__heading-title">Music Production Portfolio</h3>
                         </div>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
-                            <span class="portfolio__section-title-pre tp-el-subtitle"> CHECK OUT OUR LATEST WORK </span>
+                            {{-- <span class="portfolio__section-title-pre tp-el-subtitle"> CHECK OUT OUR LATEST WORK </span> --}}
 
 
-                            <h2 class="portfolio__section-title tp-el-title">Portfolio Masonary</h2>
+                            <h2 class="portfolio__section-title tp-el-title"> Melody Showcase</h2>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,3 @@
-
-
     <!-- back to top start -->
     <div class="back-to-top-wrapper">
         <button id="back_to_top" type="button" class="back-to-top-btn">
@@ -30,7 +28,7 @@
               <div class="mega-menu-wrapper p-relative">
                 <div class="row align-items-center">
                   <div
-                    class="col-xxl-3 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-8"
+                    class="col-xxl-2 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-8"
                   >
                     <div class="logo">
                       <a href="{{url('/')}}">
@@ -43,7 +41,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-xxl-7 col-xl-7 col-lg-8 d-none d-lg-block">
+                  <div class="col-xxl-8 col-xl-7 col-lg-8 d-none d-lg-block">
                     <div class="main-menu main-menu-9 main-menu-ff-space">
                       <nav id="mobile-menu">
                         <ul>
@@ -72,6 +70,18 @@
 
                             </ul>
                           </li>
+
+
+
+                          <li class="">
+                            <a href="{{url('pricing-plan')}}">Pricing Plans</a>
+
+                          <li class="">
+                            <a href="{{url('subscription')}}">Subscription</a>
+
+                          </li>
+
+
                           <li class="">
                             <a href="{{url('about')}}">About Us</a>
 
@@ -110,14 +120,13 @@
                       </div>
                     </div>
                   </div>
-
-                                  <div class="menu-btn col-xxl-2 col-xl-2 col-lg-2 col-md-8 col-sm-7 col-4">
-                                      <div class="header__bottom-right-8 d-flex justify-content-end align-items-center">
-                                           <div class="header__hamburger ml-50">
-                                                  <button type="button" class="hamburger-btn-8 hamburger-btn-8-black offcanvas-open-btn">Menu</button>
-                                           </div>
-                                      </div>
-                               </div>
+            <div class="menu-btn col-xxl-2 col-xl-2 col-lg-2 col-md-8 col-sm-7 col-4">
+                                            <div class="header__bottom-right-8 d-flex justify-content-end align-items-center">
+                                                <div class="header__hamburger ml-50">
+                                                        <button type="button" class="hamburger-btn-8 hamburger-btn-8-black offcanvas-open-btn">Menu</button>
+                                                </div>
+                                            </div>
+                                    </div>
 
                 </div>
               </div>
@@ -182,8 +191,7 @@
 
                   <div class="offcanvas__inner-btn mb-80">
                     <a href="{{url('get-started')}}"class="tp-btn-offcanvas-white w-100"
-                      >Get Started</a
-                    >
+                      >Get Started</a>
                   </div>
 
                   <div class="offcanvas__contact mb-40">

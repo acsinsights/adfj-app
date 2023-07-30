@@ -63154,6 +63154,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding-left: 100px;
 }
 
+
+.plan-spacing{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
 [dir=rtl] .footer-col-7-2 {
   padding-left: 0;
   padding-right: 100px;

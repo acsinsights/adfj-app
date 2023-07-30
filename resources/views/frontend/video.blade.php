@@ -24,15 +24,15 @@
                                     </svg>
                                 </a>
                             </div>
-                            <div class="breadcrumb__list">
+                            {{-- <div class="breadcrumb__list">
                                 <span><a href="#">Home</a></span>
                                 <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
                                 <span><a href="#">Business</a></span>
                                 <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
                                 <span>Investment Trend Monitor: Top Trends in 2022 </span>
-                            </div>
-                            <h3 class="breadcrumb__title">
-                                Keep it Minimal, yet Expressive
+                            </div> --}}
+                            <h3 style="font-size: 5rem" class="breadcrumb__title">
+                                Video Production Portfolio
                             </h3>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
 
 
 
-
+{{--
         <div class="mt-60  text-center section__title-wrapper-9 mb-55">
 
             <h3 class="section__title-6">
@@ -58,53 +58,10 @@
 
             </h3>
 
-        </div>
+        </div> --}}
 
 
-        <div class="video-container">
-            <div style="margin: 50px; display: flex; gap: 30px; justify-content: center;" class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SX_T7gK8mpE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-            </div>
-            <div style="margin: 50px; display: flex; gap: 30px; justify-content: center;" class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SX_T7gK8mpE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-            </div>
-            <div style="margin: 50px; display: flex; gap: 30px; justify-content: center;" class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SX_T7gK8mpE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_BtGT-maCV0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-            </div>
-        </div>
+
 
 
 
@@ -127,10 +84,10 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
-                            <span class="portfolio__section-title-pre tp-el-subtitle"> CHECK OUT OUR LATEST WORK </span>
+                            {{-- <span class="portfolio__section-title-pre tp-el-subtitle"> Video Production Portfolio</span> --}}
 
 
-                            <h2 class="portfolio__section-title tp-el-title">Portfolio Masonary</h2>
+                            <h2 class="portfolio__section-title tp-el-title">Visual Brilliance</h2>
                         </div>
                     </div>
                 </div>
@@ -172,6 +129,13 @@
                     <div class="portfolio__grid-item mb-20 tp-el-box">
                         <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                             data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
+                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
+                            </a><a href="https://www.youtube.com/watch?v=GpjvrCpYYlk" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
                             <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
                                 <img width="455" height="500"
                                 src="{{ asset('user-assets/img/graphic-portfolio/gul-marg.jpg') }}"

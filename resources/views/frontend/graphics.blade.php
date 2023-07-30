@@ -40,10 +40,10 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
-                            <span class="portfolio__section-title-pre tp-el-subtitle"> CHECK OUT OUR LATEST WORK </span>
+                            <span class="portfolio__section-title-pre tp-el-subtitle"> Graphics Portfolio</span>
 
 
-                            <h2 class="portfolio__section-title tp-el-title">Portfolio Masonary</h2>
+                            <h2 class="portfolio__section-title tp-el-title">Artistic Mastery</h2>
                         </div>
                     </div>
                 </div>
@@ -267,9 +267,12 @@
                         </div>
                     </div>
                 </div>
-                </div>
-
-
             </div>
-        </section>
+        </div>
+    </section>
+
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1NZJq1SCz6pJIP37rjTTmqYw"
+publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
+</stripe-pricing-table>
     @endsection

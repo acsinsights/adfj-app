@@ -15,6 +15,9 @@ use App\Http\Controllers\Frontend\VideoController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\GetstartedController;
 use App\Http\Controllers\Frontend\PolicyController;
+use App\Http\Controllers\Frontend\PricingController;
+use App\Http\Controllers\Frontend\SubscriptionController;
+use App\Http\Controllers\Frontend\TermsController;
 
 
 /*
@@ -39,6 +42,9 @@ Route::get('/audio', [AudioController::class, 'index']);
 Route::get('/music', [MusicController::class, 'index']);
 Route::get('/get-started', [GetstartedController::class, 'index']);
 Route::get('/policy', [PolicyController::class, 'index']);
+Route::get('/pricing-plan', [PricingController::class, 'index']);
+Route::get('/subscription', [SubscriptionController::class, 'index']);
+Route::get('/terms', [TermsController::class, 'index']);
 
 
 
