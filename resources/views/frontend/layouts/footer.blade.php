@@ -33,7 +33,7 @@
                     </p>
 
                     <a
-                      href="javascript: void(0);"
+                      href="{{url('newsletter')}}"
                       class="tp-link-btn-2 tp-link-btn-white"
                     >
                       Subscribe

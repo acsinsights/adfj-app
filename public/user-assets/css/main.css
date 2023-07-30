@@ -63160,6 +63160,22 @@ only screen and (min-width: 576px) and (max-width: 767px),
     margin-bottom: 100px;
 }
 
+.newsletter-spacing{
+display: flex;
+justify-content: center;
+align-items:center;
+margin: 80px 0;
+}
+
+
+.cover-hubspot1 {
+    position: absolute;
+    bottom: 0;
+    width: 383px;
+    bottom: -70px;
+    height: 85px;
+    background-color: #ffff;
+}
 
 
 [dir=rtl] .footer-col-7-2 {
@@ -64001,10 +64017,22 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 /* brand area in home pg*/
 
+@media only screen and (min-width: 1601px) and (max-width: 4000px) {
+    .cover-hubspot1 {
+        position: absolute;
+        bottom: 0;
+        width: 383px;
+        bottom: 54px;
+        height: 85px;
+        background-color: #ffff;
+    }
+
+  }
 @media only screen and (min-width: 1201px) and (max-width: 4000px) {
     .mobile-brandarea{
         display: none;
     }
+
   }
 @media only screen and (min-width: 200px) and (max-width: 1000px) {
     .desktop-brandarea{

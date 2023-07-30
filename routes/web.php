@@ -17,6 +17,7 @@ use App\Http\Controllers\frontend\PolicyController;
 use App\Http\Controllers\frontend\PricingController;
 use App\Http\Controllers\frontend\SubscriptionController;
 use App\Http\Controllers\frontend\TermsController;
+use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\DashboardController;
 
@@ -46,6 +47,7 @@ Route::get('/policy', [PolicyController::class, 'index']);
 Route::get('/pricing-plan', [PricingController::class, 'index']);
 Route::get('/subscription', [SubscriptionController::class, 'index']);
 Route::get('/terms', [TermsController::class, 'index']);
+Route::get('/newsletter', [NewsletterController::class, 'index']);
 
 
 
