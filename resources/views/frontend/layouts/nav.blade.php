@@ -28,7 +28,7 @@
               <div class="mega-menu-wrapper p-relative">
                 <div class="row align-items-center">
                   <div
-                    class="col-xxl-2 col-xl-3 col-lg-2 col-md-4 col-sm-5 col-8"
+                    class="col-xxl-1 col-xl-2 col-lg-2 col-md-4 col-sm-5 col-8"
                   >
                     <div class="logo">
                       <a href="{{url('/')}}">
@@ -41,7 +41,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-xxl-8 col-xl-7 col-lg-8 d-none d-lg-block">
+                  <div style="padding-left: 60px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
                     <div class="main-menu main-menu-9 main-menu-ff-space">
                       <nav id="mobile-menu">
                         <ul>
