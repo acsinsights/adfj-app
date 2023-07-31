@@ -71,9 +71,9 @@
 
                   <div class="footer__widget-content">
                     <ul>
-                      <li><a href="{{url('/')}}">Carrier</a></li>
-                      <li><a href="{{url('about')}}">Privacy Policy</a></li>
-                      <li><a href="{{url('service')}}">Terms & Conditions</a></li>
+                      <li><a href="javascript:void(0)">Carrier</a></li>
+                      <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
+                      <li><a href="{{url('terms')}}">Terms & Conditions</a></li>
 
                     </ul>
                   </div>
@@ -255,7 +255,7 @@
           <div class="col-sm-6">
                 <div class="footer__link-6 text-sm-end">
                   <a href="javascript:void(0)">SiteMap</a>
-    
+
                 </div>
               </div>
             </div>
