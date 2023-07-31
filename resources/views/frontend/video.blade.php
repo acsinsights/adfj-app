@@ -65,7 +65,7 @@
 
 
 
-        <section class="portfolio__area pb-75 pt-110 p-relative fix tp-el-section">
+        <section class="portfolio__area pb-75 p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/circle-1.png"
@@ -87,7 +87,7 @@
                             {{-- <span class="portfolio__section-title-pre tp-el-subtitle"> Video Production Portfolio</span> --}}
 
 
-                            <h2 class="portfolio__section-title tp-el-title">Visual Brilliance</h2>
+                            <h2 class="mt-100 portfolio__section-title tp-el-title">Visual Brilliance</h2>
                         </div>
                     </div>
                 </div>

@@ -305,7 +305,7 @@ img,
   --tp-common-khaki-2: #FFE4D4;
   --tp-common-khaki-3: #FCD2B9;
   --tp-common-khaki-4: #FF904F;
-  --tp-common-purple: #6364DB;
+  --tp-common-purple: #000000;
   --tp-common-purple-2: #5557F3;
   --tp-common-purple-3: #7B62FF;
   --tp-common-purple-4: #7C6ADD;
@@ -7372,7 +7372,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .offcanvas__area-4 .mean-container .mean-nav ul li.dropdown-opened>a {
-  color: var(--tp-common-black);
+  /* color: var(--tp-common-black); */
+  color: #eb1971;
 }
 
 .offcanvas__area-5 .mean-container .mean-nav ul li.dropdown-opened>a,
@@ -63972,6 +63973,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .menu-btn {
     display: none;
   }
+  .mobile-canvasmenu{
+    display: none;
+}
+.mobile-brandarea{
+    display: none;
+}
 }
 
 @media only screen and (min-width: 200px) and (max-width: 978px) {
@@ -63982,6 +63989,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
     font-size: 16px;
     margin-left: 6px;
 }
+.desktop-brandarea{
+    display: none;
+}
+
 }
 @media only screen and (min-width: 900px) and (max-width: 1399px) {
  .galley-space{
@@ -64007,11 +64018,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
  }
 
   }
-
-
-
-/*# sourceMappingURL=main.css.map */
-
 
 
 

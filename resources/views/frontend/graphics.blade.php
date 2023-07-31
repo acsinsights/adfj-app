@@ -21,7 +21,7 @@
         </section>
         <!-- about top area end -->
 
-        <section class="portfolio__area pb-75 pt-110 p-relative fix tp-el-section">
+        <section class="portfolio__area pb-75 p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/circle-1.png"
@@ -36,7 +36,7 @@
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-yellow.png"
                     alt="Harry">
             </div>
-            <div class="container-fluid tp-gx-20">
+            <div class=" mt-100  container-fluid tp-gx-20">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
@@ -271,5 +271,5 @@
         </div>
     </section>
 
-    
+
     @endsection

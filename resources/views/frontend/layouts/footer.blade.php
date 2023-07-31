@@ -71,7 +71,9 @@
 
                   <div class="footer__widget-content">
                     <ul>
-                      <li><a href="javascript:void(0)">Carrier</a></li>
+                      <li><a href="javascript:void(0)">Career
+
+                    </a></li>
                       <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
                       <li><a href="{{url('terms')}}">Terms & Conditions</a></li>
 

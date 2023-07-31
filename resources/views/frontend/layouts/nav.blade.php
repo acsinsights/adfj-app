@@ -137,7 +137,7 @@
       <!-- header area end -->
 
           <!-- offcanvas area start -->
-          <div class="offcanvas__area offcanvas__area-4">
+          <div class="mobile-canvasmenu offcanvas__area offcanvas__area-4">
               <div class="offcanvas__wrapper">
                 <div class="offcanvas__close">
                   <button
@@ -182,7 +182,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="offcanvas__inner d-none d-lg-block">
+                  <div class="offcanvas__inner d-none ">
                     <h4>We help to create visual strategies.</h4>
                     <p>We want to hear from you. Let us know how we can help.</p>
                     <img src="assets/img/shape/offcanvas-img-1.png" alt="" />

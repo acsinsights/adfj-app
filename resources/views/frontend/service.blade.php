@@ -63,7 +63,7 @@
 
                             <div class="services__btn-15">
                                 <a class="tp-el-box-btn" target="" rel=""
-                                    href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">
+                                    href="{{url('music')}}">
                                     View Portfolio
                                     <span>
                                         <svg width="32" height="10" viewBox="0 0 32 10" fill="none"
@@ -110,7 +110,7 @@
 
                             <div class="services__btn-15">
                                 <a class="tp-el-box-btn" target="" rel=""
-                                    href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">
+                                    href="{{url('video')}}">
                                     View Portfolio
                                     <span>
                                         <svg width="32" height="10" viewBox="0 0 32 10" fill="none"
@@ -157,7 +157,7 @@
 
                             <div class="services__btn-15">
                                 <a class="tp-el-box-btn" target="" rel=""
-                                    href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">
+                                    href="{{url('music')}}">
                                     View Portfolio
                                     <span>
                                         <svg width="32" height="10" viewBox="0 0 32 10" fill="none"
@@ -205,7 +205,7 @@
 
                             <div class="services__btn-15">
                                 <a class="tp-el-box-btn" target="" rel=""
-                                    href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">
+                                    href="{{url('graphics')}}">
                                     View Portfolio
                                     <span>
                                         <svg width="32" height="10" viewBox="0 0 32 10" fill="none"
@@ -726,7 +726,7 @@
                                                                                 </button>
                                                                             </h2>
                                                                             <div id="collapseOne-0"
-                                                                                class="accordion-collapse collapse show"
+                                                                                class="accordion-collapse collapse"
                                                                                 aria-labelledby="headingOne-0"
                                                                                 data-bs-parent="#general_accordion-a8b120e">
                                                                                 <div class="accordion-body">
