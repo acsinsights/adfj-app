@@ -209,7 +209,7 @@
                         <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                             data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
                             <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                            </a><a href="https://www.youtube.com/watch?v=_BtGT-maCV0" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
                                 <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
                                 </svg>

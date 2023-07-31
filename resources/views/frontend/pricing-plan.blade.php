@@ -16,12 +16,23 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
 </div>
 </section>
 
-<div style="margin-top: 50px" class="container">
+{{-- <div style="margin-top: 50px" class="container">
     <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-8">
             <div class="tp-section-wrapper-2 text-center">
                 <h3 style="font-size: 3rem" class="tp-section-title-2 font-30">Design Magic Unleashed: Pricing Options</h3>
             </div>
+        </div>
+    </div>
+</div> --}}
+
+<div class="row mt-100">
+    <div class="col-xl-12">
+        <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
+            <span class="portfolio__section-title-pre tp-el-subtitle"> Design Magic Unleashed</span>
+
+
+            <h2 class="portfolio__section-title tp-el-title">Design Pricing Options</h2>
         </div>
     </div>
 </div>
@@ -32,17 +43,17 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
 </stripe-pricing-table>
 
 
+<div class="row mt-100">
+    <div class="col-xl-12">
+        <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
+            <span class="portfolio__section-title-pre tp-el-subtitle">Tune Your Dreams</span>
 
 
-<div style="margin-top: 50px; margin-bottom: 50px; " class="container">
-    <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-8">
-            <div class="tp-section-wrapper-2 text-center">
-                <h3 style="font-size: 3rem " class="tp-section-title-2 font-70">Tune Your Dreams: Music Production Pricing</h3>
-            </div>
+            <h2 class="portfolio__section-title tp-el-title">Music Production Pricing</h2>
         </div>
     </div>
 </div>
+
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1NZJUASCz6pJIP37CIdUFegK"
 publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">

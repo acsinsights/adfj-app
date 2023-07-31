@@ -12,7 +12,7 @@
                     <div class="row align-items-end">
                         <div class="col-xl-7 col-lg-6 col-md-7">
                             <div class="slider__content-9">
-                                <h3 class="slider__title-9">
+                                <h3 style="margin-bottom: 44px;" class="slider__title-9">
                                     Experience
                                     <span class="section__title-6-highlight about_title2">
                                         Excellence
@@ -228,7 +228,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xxl-6 col-xl-7 col-lg-7">
                         <div class="section__title-wrapper-6 mb-30 text-center">
-                            <h3 class="section__title-6">
+                            <h3 style=" margin-bottom: 50px;" class="section__title-6">
                                 Shine a Light on Our Featured
                                 <span class="section__title-6-highlight about_title2">
                                     Services.
@@ -261,33 +261,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                    <a href="services-details.html">
-                                      <svg
-                                        width="45"
-                                        height="44"
-                                        viewBox="0 0 45 44"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M43.999 22.1553H1.57262"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                        <path
-                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                      </svg>
-                                    </a>
-                                  </div> -->
+                                        <a href="services-details.html">
+                                          <svg
+                                            width="45"
+                                            height="44"
+                                            viewBox="0 0 45 44"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M43.999 22.1553H1.57262"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                          </svg>
+                                        </a>
+                                      </div> -->
                             </div>
                         </div>
                     </div>
@@ -311,33 +311,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                    <a href="services-details.html">
-                                      <svg
-                                        width="45"
-                                        height="44"
-                                        viewBox="0 0 45 44"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M43.999 22.1553H1.57262"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                        <path
-                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                      </svg>
-                                    </a>
-                                  </div> -->
+                                        <a href="services-details.html">
+                                          <svg
+                                            width="45"
+                                            height="44"
+                                            viewBox="0 0 45 44"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M43.999 22.1553H1.57262"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                          </svg>
+                                        </a>
+                                      </div> -->
                             </div>
                         </div>
                     </div>
@@ -361,33 +361,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                    <a href="services-details.html">
-                                      <svg
-                                        width="45"
-                                        height="44"
-                                        viewBox="0 0 45 44"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M43.999 22.1553H1.57262"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                        <path
-                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                      </svg>
-                                    </a>
-                                  </div> -->
+                                        <a href="services-details.html">
+                                          <svg
+                                            width="45"
+                                            height="44"
+                                            viewBox="0 0 45 44"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M43.999 22.1553H1.57262"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                          </svg>
+                                        </a>
+                                      </div> -->
                             </div>
                         </div>
                     </div>
@@ -411,33 +411,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                    <a href="services-details.html">
-                                      <svg
-                                        width="45"
-                                        height="44"
-                                        viewBox="0 0 45 44"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M43.999 22.1553H1.57262"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                        <path
-                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                          stroke="currentColor"
-                                          stroke-width="1.5"
-                                          stroke-miterlimit="10"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                        />
-                                      </svg>
-                                    </a>
-                                  </div> -->
+                                        <a href="services-details.html">
+                                          <svg
+                                            width="45"
+                                            height="44"
+                                            viewBox="0 0 45 44"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <path
+                                              d="M43.999 22.1553H1.57262"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                            <path
+                                              d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                              stroke="currentColor"
+                                              stroke-width="1.5"
+                                              stroke-miterlimit="10"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                            />
+                                          </svg>
+                                        </a>
+                                      </div> -->
                             </div>
                         </div>
                     </div>
@@ -707,7 +707,7 @@
                                         </div>
 
                                         <div class="portfolio__grid-video">
-                                            <a href="https://www.youtube.com/watch?v=_BtGT-maCV0    "
+                                            <a href="https://www.youtube.com/watch?v=_BtGT-maCV0"
                                                 class="portfolio-play-btn popup-video tp-el-video-btn">
                                                 <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -955,13 +955,19 @@
                 <div class="row">
                     <div class="col-xxl-12 col-xl-12 col-lg-12">
                         <div class="skill__wrapper-9">
-                            <div class="text-center section__title-wrapper-9 mb-55">
-                                <span class="section__title-pre-9">Expertise</span>
-                                <h3 class="section__title-9">Skills</h3>
+
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="tp-section-wrapper-3 mb-60 text-center">
+                                        <span class="tp-section-subtitle-3">Expertise</span>
+                                        <h3 class="tp-section-title-3">Skills</h3>
+                                    </div>
+                                </div>
                             </div>
                             <div class="skill__item-wrapper-9">
                                 <div class="row flex-row text-center align-items-center justify-content-center">
-                                    <div class="col-xxl-3 col-md-6 col-sm-6 col-6">
+
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
                                         <div class=" skill1">
                                             <div class="skill__icon-9">
                                                 <span>
@@ -977,7 +983,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xxl-3 col-md-6 col-sm-6 col-6">
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
                                         <div class="">
                                             <div class="skill__icon-9">
                                                 <span>
@@ -989,19 +995,51 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                              >(<span
-                                                data-purecounter-duration="1"
-                                                data-purecounter-end="66"
-                                                class="purecounter"
-                                                >0</span
-                                              >%)</span
-                                            > -->
+                                                  >(<span
+                                                    data-purecounter-duration="1"
+                                                    data-purecounter-end="66"
+                                                    class="purecounter"
+                                                    >0</span
+                                                  >%)</span
+                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xxl-3 col-md-6 col-sm-6 col-6">
-                                        <div class="skill__item-9 skill1">
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
+                                        <div class=" skill1">
+                                            <div class="skill__icon-9">
+                                                <span>
+                                                    <img src="{{ asset('user-assets/img/logo/adobe-photoshop.png') }}"
+                                                        alt="" height="55px" />
+                                                </span>
+                                            </div>
+                                            <div class="skill__content-9">
+                                                <h4>
+                                                    Adobe Photoshop
+
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
+                                        <div class="">
+                                            <div class="skill__icon-9">
+                                                <span>
+                                                    <img src="{{ asset('user-assets/img/logo/adobe-illustrator.png') }}"
+                                                        alt="" height="60px" />
+                                                </span>
+                                            </div>
+                                            <div class="skill__content-9">
+                                                <h4>
+                                                    Adobe Illustrator
+
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
+                                        <div class=" skill1">
                                             <div class="skill__icon-9">
                                                 <span>
                                                     <img src="{{ asset('user-assets/img/logo/premiere-pro.png') }}"
@@ -1012,18 +1050,18 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                              >(<span
-                                                data-purecounter-duration="1"
-                                                data-purecounter-end="80"
-                                                class="purecounter"
-                                                >0</span
-                                              >%)</span
-                                            > -->
+                                                  >(<span
+                                                    data-purecounter-duration="1"
+                                                    data-purecounter-end="80"
+                                                    class="purecounter"
+                                                    >0</span
+                                                  >%)</span
+                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xxl-3 col-md-6 col-sm-6 col-6">
+                                    <div class="col-xxl-2 col-md-6 col-sm-6 col-6">
                                         <div class="">
                                             <div class="skill__icon-9">
                                                 <span>
@@ -1039,6 +1077,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1199,12 +1238,12 @@
                                         </h3>
                                         <div class="blog__meta">
                                             <span>
-                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="15" height="15" viewBox="0 0 15 15"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
+                                                        stroke="currentColor" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor"
                                                         stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -1558,7 +1597,7 @@
 
 
         <!--Desktop View brand area start -->
-        <section class="desktop-brandarea brand__area grey-bg-7">
+        <section class="desktop-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
@@ -1577,7 +1616,121 @@
                         </div>
                     </div>
                 </div>
-                <div class="brand__item-wrapper-6  d-flex flex-wrap justify-content-between">
+
+                <div class="mb-50 row d-flex ">
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/yfj-films.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/abhinay-musical.png') }}" alt="" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency2.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/petals-india.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/valtara-production.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/client14.png') }}" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mb-50 row d-flex">
+
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/client10.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/blueberry-events.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency8.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency3.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency6.png') }}" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency10.png') }}" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mb-50 row d-flex">
+
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/client11.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/client12.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/akshay-odesseys.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/aawara-films.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/agency5.png') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="">
+                            <img src="{{ asset('user-assets/img/client/rang-marathi.png') }}" alt="" />
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                {{-- <div class="brand__item-wrapper-6  d-flex flex-wrap justify-content-between">
                     <div class="brand__item-6 ">
                         <img src="{{ asset('user-assets/img/client/abhinay-musical.png') }}" alt="" />
                     </div>
@@ -1667,13 +1820,13 @@
                         <img src="{{ asset('user-assets/img/client/client5.png') }}" alt="" />
                     </div>
 
-                </div>
+                </div> --}}
             </div>
         </section>
         <!-- brand area end -->
 
         <!--Mobile View brand area start -->
-        <section class="mobile-brandarea brand__area grey-bg-7">
+        {{-- <section class="mobile-brandarea brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
@@ -1765,7 +1918,7 @@
                     </div>
                 </div>
                 <div class="brand__item-wrapper-6 align-centre d-flex flex-wrap justify-content-between">
-                    <div  style="margin-top: -16px;" class="brand__item-6">
+                    <div style="margin-top: -16px;" class="brand__item-6">
                         <img src="{{ asset('user-assets/img/client/client13.png') }}" alt="" />
                     </div>
                     <div style="margin-top: 10px;" class="brand__item-6">
@@ -1804,120 +1957,540 @@
             </div>
             </div>
         </section>
-            </div>
         </div>
+        </div> --}}
         <!-- brand area end -->
 
         <!-- faq area start -->
-        <section class="faq__area pb-40">
+        <section class="faq__area faq__style-3 p-relative z-index-1 pt-80 pb-40 tp-el-section">
             <div class="container">
-                <div class="faq__inner p-relative">
-                    <div class="faq__text d-none d-lg-block">
-                        <h3 data-text="faq">faq</h3>
+                <div class="row">
+                    <div class="col-xxl-5 col-xl-5 col-lg-6">
+                        <div class="faq__wrapper">
+                            <div class="section__title-wrapper-7 mb-60 tp-el-content">
+                                <span class="section__title-pre-7 tp-el-subtitle">Common Questions
+                                </span>
+
+                                <h2 class="section__title-7 tp-el-title">
+                                    Frequently <br>
+                                    asked
+                                    <span class="section__title-7-highlight">
+                                        questions
+                                        <svg width="240" height="22" viewBox="0 0 240 22" fill="none">
+                                            <path
+                                                d="M0.440833 21.1152C78.9497 6.16225 158.05 4.53412 235.949 13.8239C237.497 14.0088 239.796 12.4065 239.988 9.93474C240.181 7.4176 238.026 5.44088 236.474 5.2332C157.99 -5.31675 79.1936 0.359501 0.316568 19.7785C-0.184784 19.9023 -0.0511379 21.2092 0.440833 21.1152Z"
+                                                fill="#2CAE76"></path>
+                                        </svg>
+                                    </span>
+                                </h2>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="row justify-content-end">
-                        <div class="col-xxl-9 col-xl-9 col-lg-9">
-                            <div class="faq__wrapper tp-accordion pt-65">
-                                <div class="accordion" id="faqaccordion">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                How does AdFJ Studios cater to the unique needs of
-                                                the media production industry?
-                                                <span class="accordion-btn"></span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#faqaccordion">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    AdFJ Studios understands the specific requirements
-                                                    of the media production industry and offers
-                                                    tailor-made solutions to meet those needs. We have
-                                                    in-depth knowledge of industry standards and
-                                                    trends and ensure our services fit the
-                                                    ever-changing landscape. Our team of skilled
-                                                    professionals combine their expertise with
-                                                    state-of-the-art technology to deliver exceptional
-                                                    media productions. Whether music, audio or video,
-                                                    AdFJ Studios is committed to providing top quality
-                                                    services tailored to the unique demands of the
-                                                    media production industry. (Original) AdFJ Studios
-                                                    understands the specific requirements of the media
-                                                    production industry and offers customized
-                                                    solutions to meet those needs. We have a deep
-                                                    understanding of the industry' s standards and
-                                                    trends, ensuring that our services align with the
-                                                    ever-changing landscape. Our team of skilled
-                                                    professionals combines their expertise with
-                                                    state-of-the-art technology to deliver exceptional
-                                                    media productions. Whether it's music, audio, or
-                                                    video, AdFJ Studios is dedicated to providing
-                                                    top-quality services tailored to the unique
-                                                    demands of the media production industry.
-                                                </p>
+                    <div class="col-xxl-7 col-xl-7 col-lg-6">
+                        <div class="faq__tab-content tp-accordion">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-general-0" role="tabpanel"
+                                    aria-labelledby="nav-general-tab-0">
+                                    <style></style>
+                                    <div data-elementor-type="landing-page" data-elementor-id="1793"
+                                        class="elementor elementor-1793">
+                                        <section
+                                            class="elementor-section elementor-top-section elementor-element elementor-element-de6fcf0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                            data-id="de6fcf0" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-804665f"
+                                                    data-id="804665f" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-a8b120e elementor-widget elementor-widget-tp-faq"
+                                                            data-id="a8b120e" data-element_type="widget"
+                                                            data-widget_type="tp-faq.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="tp-accordion-style tp-el-section">
+                                                                    <div class="faq__tab-content tp-accordion">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-a8b120e">
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="headingOne-0">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#collapseOne-0"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="collapseOne-0">
+                                                                                        How does AdFJ Studios cater to the
+                                                                                        unique needs of the media production
+                                                                                        industry?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="collapseOne-0"
+                                                                                    class="accordion-collapse collapse "
+                                                                                    aria-labelledby="headingOne-0"
+                                                                                    data-bs-parent="#general_accordion-a8b120e">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            AdFJ Studios understands the
+                                                                                            specific requirements of the
+                                                                                            media
+                                                                                            production industry and offers
+                                                                                            tailor-made solutions to meet
+                                                                                            those
+                                                                                            needs. We have in-depth
+                                                                                            knowledge of
+                                                                                            industry standards and trends
+                                                                                            and
+                                                                                            ensure our services fit the
+                                                                                            ever-changing landscape. Our
+                                                                                            team of
+                                                                                            skilled professionals combine
+                                                                                            their
+                                                                                            expertise with state-of-the-art
+                                                                                            technology to deliver
+                                                                                            exceptional
+                                                                                            media productions. Whether
+                                                                                            music,
+                                                                                            audio or video, AdFJ Studios is
+                                                                                            committed to providing top
+                                                                                            quality
+                                                                                            services tailored to the unique
+                                                                                            demands of the media production
+                                                                                            industry. (Original) AdFJ
+                                                                                            Studios
+                                                                                            understands the specific
+                                                                                            requirements of the media
+                                                                                            production
+                                                                                            industry and offers customized
+                                                                                            solutions to meet those needs.
+                                                                                            We
+                                                                                            have a deep understanding of the
+                                                                                            industry' s standards and
+                                                                                            trends,
+                                                                                            ensuring that our services align
+                                                                                            with the ever-changing
+                                                                                            landscape.
+                                                                                            Our team of skilled
+                                                                                            professionals
+                                                                                            combines their expertise with
+                                                                                            state-of-the-art technology to
+                                                                                            deliver exceptional media
+                                                                                            productions. Whether it's music,
+                                                                                            audio, or video, AdFJ Studios is
+                                                                                            dedicated to providing
+                                                                                            top-quality
+                                                                                            services tailored to the unique
+                                                                                            demands of the media production
+                                                                                            industry.
+
+
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="headingOne-1">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#collapseOne-1"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="collapseOne-1">
+                                                                                        Can AdFJ Studios handle video
+                                                                                        production
+                                                                                        for the entertainment industry?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="collapseOne-1"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="headingOne-1"
+                                                                                    data-bs-parent="#general_accordion-a8b120e">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            Absolutely! AdFJ Studios
+                                                                                            specializes
+                                                                                            in video visuals production for
+                                                                                            the
+                                                                                            entertainment industry. We
+                                                                                            provide
+                                                                                            end-to-end video production
+                                                                                            services, including concept
+                                                                                            development, scriptwriting,
+                                                                                            filming,
+                                                                                            editing, visual effects, and
+                                                                                            post-production. Whether it's a
+                                                                                            music video, promotional
+                                                                                            content, or
+                                                                                            a short film, our team of
+                                                                                            experts
+                                                                                            will bring your vision to life.
+
+
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="headingOne-2">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#collapseOne-2"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="collapseOne-2">
+                                                                                        What types of music and audio
+                                                                                        production
+                                                                                        services does AdFJ Studios offer?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="collapseOne-2"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="headingOne-2"
+                                                                                    data-bs-parent="#general_accordion-a8b120e">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            AdFJ Studios offers a wide range
+                                                                                            of
+                                                                                            music and audio production
+                                                                                            services,
+                                                                                            including recording, mixing,
+                                                                                            mastering, sound design,
+                                                                                            voice-over
+                                                                                            production, and music
+                                                                                            composition.
+                                                                                            Whether you need a professional
+                                                                                            studio for your band's album or
+                                                                                            require high-quality audio
+                                                                                            production for your podcast or
+                                                                                            commercial, we've got you
+                                                                                            covered.
+
+
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-
-                                                Can AdFJ Studios handle video production for the
-                                                entertainment industry?
-                                                <span class="accordion-btn"></span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo" data-bs-parent="#faqaccordion">
-                                            <div class="accordion-body">
-                                                <p>
-
-                                                    Absolutely! AdFJ Studios specializes in video
-                                                    visuals production for the entertainment industry.
-                                                    We provide end-to-end video production services,
-                                                    including concept development, scriptwriting,
-                                                    filming, editing, visual effects, and
-                                                    post-production. Whether it's a music video,
-                                                    promotional content, or a short film, our team of
-                                                    experts will bring your vision to life.
-                                                </p>
+                                </div>
+                                <div class="tab-pane fade" id="nav-general-1" role="tabpanel"
+                                    aria-labelledby="nav-general-tab-1">
+                                    <style></style>
+                                    <div data-elementor-type="landing-page" data-elementor-id="1805"
+                                        class="elementor elementor-1805">
+                                        <section
+                                            class="elementor-section elementor-top-section elementor-element elementor-element-0233931 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                            data-id="0233931" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b0d7ee1"
+                                                    data-id="b0d7ee1" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-d4c66cf elementor-widget elementor-widget-tp-faq"
+                                                            data-id="d4c66cf" data-element_type="widget"
+                                                            data-widget_type="tp-faq.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="tp-accordion-style tp-el-section">
+                                                                    <div class="faq__tab-content tp-accordion">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-d4c66cf">
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-2-0">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-2-0"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="ac-id-2-0">
+                                                                                        What kind of marketing efforts do
+                                                                                        you specialize in?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-2-0"
+                                                                                    class="accordion-collapse collapse show"
+                                                                                    aria-labelledby="ac-id-head-2-0"
+                                                                                    data-bs-parent="#general_accordion-d4c66cf">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-2-1">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-2-1"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-2-1">
+                                                                                        What is video marketing and why do
+                                                                                        I need it?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-2-1"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-2-1"
+                                                                                    data-bs-parent="#general_accordion-d4c66cf">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-2-2">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-2-2"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-2-2">
+                                                                                        Does my business really need
+                                                                                        digital marketing?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-2-2"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-2-2"
+                                                                                    data-bs-parent="#general_accordion-d4c66cf">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-2-3">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-2-3"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-2-3">
+                                                                                        Do you offer startup packages?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-2-3"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-2-3"
+                                                                                    data-bs-parent="#general_accordion-d4c66cf">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-
-
-                                                What types of music and audio production services
-                                                does AdFJ Studios offer?
-                                                <span class="accordion-btn"></span>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree" data-bs-parent="#faqaccordion">
-                                            <div class="accordion-body">
-                                                <p>
-
-                                                    AdFJ Studios offers a wide range of music and
-                                                    audio production services, including recording,
-                                                    mixing, mastering, sound design, voice-over
-                                                    production, and music composition. Whether you
-                                                    need a professional studio for your band's album
-                                                    or require high-quality audio production for your
-                                                    podcast or commercial, we've got you covered.
-                                                </p>
+                                </div>
+                                <div class="tab-pane fade" id="nav-general-2" role="tabpanel"
+                                    aria-labelledby="nav-general-tab-2">
+                                    <style></style>
+                                    <div data-elementor-type="landing-page" data-elementor-id="1814"
+                                        class="elementor elementor-1814">
+                                        <section
+                                            class="elementor-section elementor-top-section elementor-element elementor-element-fb5b2cc elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                            data-id="fb5b2cc" data-element_type="section">
+                                            <div class="elementor-container elementor-column-gap-no">
+                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-624bcd2"
+                                                    data-id="624bcd2" data-element_type="column">
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-9c31428 elementor-widget elementor-widget-tp-faq"
+                                                            data-id="9c31428" data-element_type="widget"
+                                                            data-widget_type="tp-faq.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="tp-accordion-style tp-el-section">
+                                                                    <div class="faq__tab-content tp-accordion">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-9c31428">
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-3-0">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-3-0"
+                                                                                        aria-expanded="true"
+                                                                                        aria-controls="ac-id-3-0">
+                                                                                        Who is the typical Curious client?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-3-0"
+                                                                                    class="accordion-collapse collapse show"
+                                                                                    aria-labelledby="ac-id-head-3-0"
+                                                                                    data-bs-parent="#general_accordion-9c31428">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-3-1">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-3-1"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-3-1">
+                                                                                        What are your typical timelines?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-3-1"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-3-1"
+                                                                                    data-bs-parent="#general_accordion-9c31428">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-3-2">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-3-2"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-3-2">
+                                                                                        Do you offer flexible payment
+                                                                                        terms?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-3-2"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-3-2"
+                                                                                    data-bs-parent="#general_accordion-9c31428">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="accordion-item tp-el-box">
+                                                                                <h2 class="accordion-header"
+                                                                                    id="ac-id-head-3-3">
+                                                                                    <button
+                                                                                        class="accordion-button tp-el-box-title collapsed"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="collapse"
+                                                                                        data-bs-target="#ac-id-3-3"
+                                                                                        aria-expanded="false"
+                                                                                        aria-controls="ac-id-3-3">
+                                                                                        Do you trade services for equity?
+                                                                                    </button>
+                                                                                </h2>
+                                                                                <div id="ac-id-3-3"
+                                                                                    class="accordion-collapse collapse"
+                                                                                    aria-labelledby="ac-id-head-3-3"
+                                                                                    data-bs-parent="#general_accordion-9c31428">
+                                                                                    <div class="accordion-body">
+                                                                                        <p class="tp-el-box-desc">
+                                                                                            A startup or start-up is started
+                                                                                            by individual founders or
+                                                                                            entrepreneurs to search for a
+                                                                                            repeatable and scalable business
+                                                                                            model. A startup or start-up is
+                                                                                            started by individual
+                                                                                            founders...
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </section>
                                     </div>
-
                                 </div>
                             </div>
                         </div>

@@ -19,7 +19,7 @@
       <!-- Start of HubSpot Embed Code -->
       <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/40057864.js"></script>
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40057864.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZRS76TNG">
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEZRS76TNG"> --}}
     </script>
     <script>
       window.dataLayer = window.dataLayer || [];

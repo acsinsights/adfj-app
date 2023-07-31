@@ -14881,7 +14881,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .main-menu ul li .submenu {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 0;
   min-width: 200px;
   background: var(--tp-common-white);
@@ -64027,17 +64027,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
         background-color: #ffff;
     }
 
-  }
-@media only screen and (min-width: 1201px) and (max-width: 4000px) {
-    .mobile-brandarea{
-        display: none;
-    }
-
-  }
-@media only screen and (min-width: 200px) and (max-width: 1000px) {
-    .desktop-brandarea{
-        display: none;
-    }
   }
 
 

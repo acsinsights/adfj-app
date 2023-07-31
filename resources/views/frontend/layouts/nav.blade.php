@@ -41,7 +41,7 @@
                       </a>
                     </div>
                   </div>
-                  <div style="padding-left: 60px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
+                  <div style="padding-left: 74px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
                     <div class="main-menu main-menu-9 main-menu-ff-space">
                       <nav id="mobile-menu">
                         <ul>
@@ -57,12 +57,12 @@
                           <li  class="has-dropdown">
                             <a href="javascript:void(0)">Protfolio</a>
 
-                            <ul class="submenu">
-                              <li><a href="{{url('music')}}">Music Production</a></li>
-                              <li>
+                            <ul  class="submenu">
+                              <li style="margin-left:10px;margin-top:10px"><a href="{{url('music')}}">Music Production</a></li>
+                              <li  style="margin-left:10px;margin-top:10px">
                                 <a href="{{url('video')}}">Video Production</a>
                               </li>
-                              <li>
+                              <li  style="margin-left:10px;margin-top:10px">
                                 <a href="{{url('graphic')}}"
                                   >Graphics Production</a
                                 >

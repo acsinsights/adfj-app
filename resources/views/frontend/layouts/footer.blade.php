@@ -9,7 +9,7 @@
       ></div>
       <div class="footer__top-6">
         <div class="container">
-          <div style="justify-content: center" class="row">
+          <div class="row">
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-1">
                 <div class="footer__logo">
@@ -47,7 +47,7 @@
             </div>
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-2">
-                <h3 class="footer__widget-title-6">Quick Link</h3>
+                <h3 class="footer__widget-title-6">Quick Links</h3>
 
                 <div class="footer__widget-content">
                   <ul>
@@ -65,6 +65,20 @@
                 </div>
               </div>
             </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer__widget-6 mb-50 footer-col-6-2">
+                  <h3 class="footer__widget-title-6">Useful Links</h3>
+
+                  <div class="footer__widget-content">
+                    <ul>
+                      <li><a href="{{url('/')}}">Carrier</a></li>
+                      <li><a href="{{url('about')}}">Privacy Policy</a></li>
+                      <li><a href="{{url('service')}}">Terms & Conditions</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-4">
                 <h3 class="footer__widget-title-6">Contact Us</h3>
@@ -194,6 +208,8 @@
                 </div>
               </div>
             </div>
+
+
             {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div
                 class="footer__widget footer__widget-7 mb-50 footer-col-7-4"
@@ -236,11 +252,10 @@
                   </p>
                 </div>
               </div>
-              <div class="col-sm-6">
+          <div class="col-sm-6">
                 <div class="footer__link-6 text-sm-end">
-                  <a href="{{url('policy')}}">Privacy Policy</a>
-                  <a href="{{url('terms')}}">Terms & Conditions</a>
-                  <!-- <a href="javascript:void(0)">Carrier</a> -->
+                  <a href="javascript:void(0)">SiteMap</a>
+    
                 </div>
               </div>
             </div>
