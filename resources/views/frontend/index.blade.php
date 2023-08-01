@@ -1404,7 +1404,7 @@
                 <div class="row align-items-end">
                     <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
                         <div class="section__title-wrapper-6 mb-60">
-                            <h3 class="section__title-6">
+                            <h3 class="section__title-6 txt-align">
                                 Valuable Feedback for Outstanding
                                 <span class="section__title-6-highlight">
                                     Service.
@@ -1724,7 +1724,7 @@
         <section class="mobile-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
+                    <div class="col-xxl-6 txt-align col-xl-9 col-lg-9 col-md-9">
                         <div class="section__title-wrapper-6 mb-60">
                             <h3 class="section__title-6">
                                 Our
@@ -1743,13 +1743,13 @@
 
                 <div style="margin: 0 7px 10px -9px;" class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
-                        <div style="gap: 50px" class="d-flex">
+                        <div style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/yfj-films.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/abhinay-musical.png') }}" alt="" />
                         </div>
                     </div>
                     <div style="margin: 0 7px 10px -2px;"  class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency2.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/petals-india.png') }}" alt="" />
                         </div>
@@ -1759,13 +1759,13 @@
 
                     <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/valtara-production.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client14.png') }}" alt="" />
                         </div>
                     </div>
                     <div  class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client10.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/blueberry-events.png') }}" alt="" />
                         </div>
@@ -1773,13 +1773,13 @@
                     </div>
                     <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency8.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency3.png') }}" alt="" />
                         </div>
                     </div>
                     <djiv class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency6.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency10.png') }}" alt="" />
                         </div>
@@ -1787,13 +1787,13 @@
                     </div>
                     <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client11.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client12.png') }}" alt="" />
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/akshay-odesseys.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/aawara-films.png') }}" alt="" />
                         </div>
@@ -1801,7 +1801,7 @@
                     </div>
                     <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
-                        <div  style="gap: 50px" class="d-flex">
+                        <div  style="gap: 50px;justify-content: center" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency5.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/rang-marathi.png') }}" alt="" />
                         </div>
@@ -2071,7 +2071,7 @@
         <section class="faq__area faq__style-3 p-relative z-index-1 pt-80 pb-40 tp-el-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-5 col-xl-5 col-lg-6">
+                    <div class="txt-align col-xxl-5 col-xl-5 col-lg-6">
                         <div class="faq__wrapper">
                             <div class="section__title-wrapper-7 mb-60 tp-el-content">
                                 <span class="section__title-pre-7 tp-el-subtitle">Common Questions
@@ -2082,11 +2082,7 @@
                                     asked
                                     <span class="section__title-7-highlight">
                                         questions
-                                        <svg width="240" height="22" viewBox="0 0 240 22" fill="none">
-                                            <path
-                                                d="M0.440833 21.1152C78.9497 6.16225 158.05 4.53412 235.949 13.8239C237.497 14.0088 239.796 12.4065 239.988 9.93474C240.181 7.4176 238.026 5.44088 236.474 5.2332C157.99 -5.31675 79.1936 0.359501 0.316568 19.7785C-0.184784 19.9023 -0.0511379 21.2092 0.440833 21.1152Z"
-                                                fill="#2CAE76"></path>
-                                        </svg>
+
                                     </span>
                                 </h2>
                             </div>
@@ -2675,7 +2671,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
+                    <div  class="form-spacing col-xxl-7 col-xl-7 col-lg-7 col-md-6">
                         <div class="r-padding contact__form-9 pt-20 pl-70">
                             <h4 class="contact__form-9-title">Get In Touch Today</h4>
                             <div class="contact__form-9-inner">

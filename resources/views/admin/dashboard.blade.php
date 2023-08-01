@@ -3,12 +3,12 @@
 @section('content')
     <div class="mb-sm-4 d-flex flex-wrap align-items-center text-head">
         <h2 class="mb-3 me-auto">Dashboard</h2>
-        <div>
+        {{-- <div>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
                 <li class="breadcrumb-item active"><a href="javascript:void(0)">Dashboard</a></li>
             </ol>
-        </div>
+        </div> --}}
     </div>
     <div class="row">
         <div class="col-xl-3 col-sm-6">

@@ -63984,6 +63984,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .image-size{
         height: 450px;
     }
+    .txt-align{
+        text-align: center;
+    }
+    .form-spacing{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
     .image-size{

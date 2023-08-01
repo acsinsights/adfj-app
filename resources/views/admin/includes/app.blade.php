@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" href="{{url('frontend/img/logo/favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{asset('user-assets/img/logo/favicon.ico')}}">
 
     <link href="{{ asset('admin-assets/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet') }}">
     <link rel="stylesheet" href="{{ asset('admin-assets/vendor/dotted-map/css/contrib/jquery.smallipop-0.3.0.min.css') }}"
