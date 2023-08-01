@@ -74,7 +74,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-xl-3 col-lg-3 col-md-3">
                                         <div class="award__topic">
-                                            <p>Art direction 2021</p>
+                                            <p>MCAI Awards 2018</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7">
@@ -82,9 +82,9 @@
                                             <h3 class="award__title-9">
                                                 <a href="javascript:void(0)" class="tp-img-reveal tp-img-reveal-item"
                                                     data-img="{{ asset('user-assets/img/award/9/award-1.jpg') }}"
-                                                    data-fx="1">Modern painting award jump</a>
+                                                    data-fx="1">Award for Best Music Composer & TV Shows Background Score</a>
                                             </h3>
-                                            <p>Runner Up - “ Decor of the week “</p>
+                                            <p>Associated with AdFJ Studios</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-2 col-lg-2 col-md-2">
@@ -106,7 +106,8 @@
                                 <div class="row align-items-center">
                                     <div class="col-xl-3 col-lg-3 col-md-3">
                                         <div class="award__topic">
-                                            <p>Main Developer 2020</p>
+                                            <p>
+                                                CIFA FilmFare 2017 Awards</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-7 col-lg-7 col-md-7">
@@ -114,9 +115,9 @@
                                             <h3 class="award__title-9">
                                                 <a href="javascript:void(0)" class="tp-img-reveal tp-img-reveal-item"
                                                     data-img="{{ asset('user-assets/img/award/9/award-2.jpg') }}"
-                                                    data-fx="1">People's choice: best design</a>
+                                                    data-fx="1">Achieved Filmfare Award For My Own Composed Song.</a>
                                             </h3>
-                                            <p>Runner Up - “ Decor of the week “</p>
+                                            <p>Associated with AdFJ Studios</p>
                                         </div>
                                     </div>
                                     <div class="col-xl-2 col-lg-2 col-md-2">

@@ -149,7 +149,7 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/majha-pillu-artwork.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
+                                        class="attachment-full size-full image-size image-size" alt="" decoding="async"
                                         loading="lazy">
                                 </a>
                                 <div class="tp-img-reveal-wrapper">
@@ -199,7 +199,7 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/nayi-udaan-artwork.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
+                                        class="attachment-full image-size size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
                                 <div class="tp-img-reveal-wrapper">
@@ -251,7 +251,7 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/playzone-artwork.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
+                                        class="attachment-full image-size size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
                                 <div class="tp-img-reveal-wrapper">
@@ -343,7 +343,7 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/aaraha-hun-main-artwork.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
+                                        class="attachment-full image-size size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
                                 <div class="tp-img-reveal-wrapper">
@@ -388,7 +388,7 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/vajle-bara-2.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
+                                        class="attachment-full image-size size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
                                 <div class="tp-img-reveal-wrapper" style="top: 395.4px; left: 780px; opacity: 0;">

@@ -63980,7 +63980,16 @@ only screen and (min-width: 576px) and (max-width: 767px),
     display: none;
 }
 }
-
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .image-size{
+        height: 450px;
+    }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    .image-size{
+        height: 700px;
+    }
+}
 @media only screen and (min-width: 200px) and (max-width: 978px) {
   .getstarted-btn {
     display: none;
