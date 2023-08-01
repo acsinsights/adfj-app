@@ -55,8 +55,7 @@
 
 
                           <li  class="has-dropdown">
-                            <a href="javascript:void(0)">Protfolio</a>
-
+                            <a class="mean-clicked" href="{{url('#')}}">Portfolio</a>
                             <ul  class="submenu">
                               <li style="margin-left:10px;margin-top:10px"><a href="{{url('music')}}">Music Production</a></li>
                               <li  style="margin-left:10px;margin-top:10px">

@@ -7348,7 +7348,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .offcanvas__area-4 .mean-container .mean-nav ul li a:hover {
-  color: var(--tp-common-black);
+  color: #eb1971;
+  /* color: var(--tp-common-black); */
 }
 
 .offcanvas__area-4 .mean-container .mean-nav ul li a.mean-expand {

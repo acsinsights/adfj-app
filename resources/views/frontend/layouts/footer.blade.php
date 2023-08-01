@@ -255,7 +255,7 @@
                 </div>
               </div>
           <div class="col-sm-6">
-                <div class="footer__link-6 text-sm-end">
+                <div class="txt-align footer__link-6 text-sm-end">
                   <a href="javascript:void(0)">SiteMap</a>
 
                 </div>
