@@ -68,8 +68,8 @@
         <!-- about area start -->
         <section class="about__area pt-30 pb-120 p-relative" id="about_page">
             <div class="about__shape">
-                <img class="about__shape-3" src="{{ asset('user-assets/img/about/6/shape/about-shape-1.png') }}"
-                    alt="" />
+                {{-- <img class="about__shape-3" src="{{ asset('user-assets/img/about/6/shape/about-shape-1.png') }}"
+                    alt="" /> --}}
                 <img class="about__shape-4" src="{{ asset('user-assets/img/about/6/shape/about-shape-2.png') }}"
                     alt="" />
                 <img class="about__shape-5" src="{{ asset('user-assets/img/about/6/shape/about-shape-3.png') }}"
@@ -1741,14 +1741,14 @@
                     </div>
                 </div>
 
-                <div style="margin: 0 7px 0px -9px;" class=" row d-flex ">
+                <div style="margin: 0 7px 10px -9px;" class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/yfj-films.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/abhinay-musical.png') }}" alt="" />
                         </div>
                     </div>
-                    <div style="margin: 0 7px 0px -9px;"  class="col-lg-2 col-md-6">
+                    <div style="margin: 0 7px 10px -2px;"  class="col-lg-2 col-md-6">
                         <div  style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency2.png') }}" alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/petals-india.png') }}" alt="" />
@@ -1757,7 +1757,7 @@
                     </div>
 
 
-                    <div style="margin: 0 7px 0px -9px;"  class=" row d-flex ">
+                    <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div  style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/valtara-production.png') }}" alt="" />
@@ -1771,7 +1771,7 @@
                         </div>
                     </div>
                     </div>
-                    <div style="margin: 0 7px 0px -9px;"  class=" row d-flex ">
+                    <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div  style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency8.png') }}" alt="" />
@@ -1785,7 +1785,7 @@
                         </div>
                     </djiv>
                     </div>
-                    <div style="margin: 0 7px 0px -9px;"  class=" row d-flex ">
+                    <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div  style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client11.png') }}" alt="" />
@@ -1799,7 +1799,7 @@
                         </div>
                     </div>
                     </div>
-                    <div style="margin: 0 7px 0px -9px;"  class=" row d-flex ">
+                    <div style="margin: 0 7px 10px -9px;"  class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div  style="gap: 50px" class="d-flex">
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/agency5.png') }}" alt="" />
