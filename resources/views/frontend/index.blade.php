@@ -43,21 +43,17 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-5 col-lg-6 col-md-5 order-first order-md-last">
-                            <div class="slider__thumb-9 p-relative scene">
+                        <div class="img-h col-xl-5 col-lg-6 col-md-5 order-first order-md-last">
+
+                            <img class="slider__thumb-9-main" src="{{ asset('user-assets/img/slider/9/home-hero-image.png') }}"
+                            alt="" />
+                            {{-- <div class="slider__thumb-9 p-relative scene">
                                 <div class="slider__shape">
-                                    <div class="slider__shape-20">
-                                        <img class="layer" data-depth=".2" src="assets/img/slider/9/slider-shape-1.png"
-                                            alt="" />
-                                    </div>
-                                    <div class="slider__shape-21">
-                                        <img class="layer" data-depth=".3" src="assets/img/slider/9/slider-shape-2.png"
-                                            alt="" />
-                                    </div>
+
+
                                 </div>
-                                <img class="slider__thumb-9-main" src="{{ asset('user-assets/img/slider/9/slider-1.png') }}"
-                                    alt="" />
-                            </div>
+
+                            </div> --}}
                         </div>
                     </div>
                 </div>
