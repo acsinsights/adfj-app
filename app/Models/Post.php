@@ -20,4 +20,3 @@ use App\Models\Image;
             return $this->hasMany(Image::class);
         }
     }
-s
