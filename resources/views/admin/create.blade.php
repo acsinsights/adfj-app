@@ -18,6 +18,10 @@
                             <input type="date" name="date" class="form-control m-2">
                             <label class="m-2">Cover Image</label>
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+
+                            <input type="checkbox" name="video" id="video" value="" class="">
+
+                            <input type="text" name="videolink" id="video" class="form-control m-2">
                             {{-- <label class="m-2">Images</label>
                         <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="images[]" multiple> --}}
 
