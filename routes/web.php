@@ -73,14 +73,11 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 
 
      Route::post('/post', [DashboardController::class, 'store']);
-     Route::delete('/delete/{id}',[DashboardController::class,'destroy']);
-  Route::get('/edit/{id}', [DashboardController::class,'edit']);
-
-
-     Route::delete('/deleteimage/{id}',[DashboardController::class,'deleteimage']);
-     Route::delete('/deletecover/{id}',[DashboardController::class,'deletecover']);
-
-     Route::put('/update/{id}', [DashboardController::class,'update']);
+     Route::delete('/delete/{id}',[CreateController::class,'destroy']);
+     Route::get('/edit/{id}', [CreateController::class,'edit']);
+     Route::delete('/deleteimage/{id}',[CreateController::class,'deleteimage']);
+     Route::delete('/deletecover/{id}',[CreateController::class,'deletecover']);
+     Route::put('/update/{id}', [CreateController::class,'update']);
 
 
 

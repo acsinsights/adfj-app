@@ -4,6 +4,10 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Post;
+use App\Models\Image;
+use Illuminate\Support\Facades\File;
 
 class CreateController extends Controller
 {
@@ -84,7 +88,7 @@ class CreateController extends Controller
 
     public function destroy($id)
     {
-         $posts=Post::findOrFail($id);
+         $posts = Post::findOrFail($id);
 
          if (File::exists("cover/".$posts->cover)) {
              File::delete("cover/".$posts->cover);
