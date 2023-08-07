@@ -72,7 +72,7 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 //     });
 
 
-     Route::post('/post', [DashboardController::class, 'store']);
+     Route::post('/post', [CreateController::class, 'store']);
      Route::delete('/delete/{id}',[CreateController::class,'destroy']);
      Route::get('/edit/{id}', [CreateController::class,'edit']);
      Route::delete('/deleteimage/{id}',[CreateController::class,'deleteimage']);

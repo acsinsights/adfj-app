@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("author");
             $table->string("title");
-            $table->text("body");
+            // $table->text("body");
             $table->text("cover");
             $table->timestamps();
         });
