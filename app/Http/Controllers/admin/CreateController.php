@@ -69,6 +69,7 @@ class CreateController extends Controller
             "title"=>$request->title,
             "author"=>$request->author,
             "location"=>$request->location,
+            "date" =>$request->date,
             "cover"=>$post->cover,
         ]);
 

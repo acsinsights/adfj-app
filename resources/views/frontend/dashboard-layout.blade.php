@@ -17,7 +17,7 @@
                           <th>ID</th>
                           <th>Title</th>
                           <th>Author</th>
-                          <th>Description</th>
+                          <th>Location</th>
                           <th>Cover</th>
                           <th>Update</th>
                           <th>Delete</th>
