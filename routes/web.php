@@ -20,6 +20,7 @@ use App\Http\Controllers\frontend\TermsController;
 use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\admin\CreateController;
 
 
 
@@ -99,10 +100,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.auth'], function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
 
-        Route::get('/create' , function(){
-            return view( 'admin.create' );
-            });
+        // Route::get('/create' , function(){
+        //     return view( 'admin.create' );
+        //     });
 
 
 

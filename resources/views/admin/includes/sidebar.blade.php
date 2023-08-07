@@ -2,15 +2,15 @@
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
             <li>
-                <a class="" href="javascript:void()" aria-expanded="false">
+                <a class="" href="{{ route('admin.dashboard') }}" aria-expanded="false">
                     <i class="flaticon-025-dashboard"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>
             </li>
             <li>
-                <a class="" href="javascript:void()" aria-expanded="false">
+                <a class="" href="{{ route('admin.create') }}" aria-expanded="false">
                     <i class="flaticon-050-info"></i>
-                    <span class="nav-text">Profile</span>
+                    <span class="nav-text"></span>
                 </a>
             </li>
             <li>
