@@ -80,37 +80,39 @@
                         <div class="table-responsive">
                         <h2>Blog Post List</h2>
                         <table class="table">
-                        <thead>
-                            <tr>
-                              <th>ID</th>
-                              <th>Title</th>
-                              <th>Author</th>
-                              <th>Description</th>
-                              <th>Cover</th>
-                              <th>Update</th>
-                              <th>Delete</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($posts as $post)
-                              <tr>
-                                  <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th>
-                                  <td>{{ $post->title }}</td>
-                                  <td>{{ $post->author }}</td>
-                                  <td>{{ $post->body }}</td>
-                                  <td><img src="/cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-                                  <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Edit</a></td>
-                                  <td>
-                                      <form action="/delete/{{ $post->id }}" method="post">
-                                        <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
-                                        @csrf
-                                        @method('delete')
-                                      </form>
-                                  </td>
-                              </tr>
-                            @endforeach
-                          </tbody>
-                      </table>
+                            <thead>
+                                <tr>
+                                  <th>ID</th>
+                                  <th>Title</th>
+                                  <th>Author</th>
+                                  <th>Location</th>
+                                  <th>Date</th>
+                                  <th>Cover</th>
+                                  <th>Update</th>
+                                  <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                @foreach ($posts as $post)
+                                  <tr>
+                                      <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th>
+                                      <td>{{ $post->title }}</td>
+                                      <td>{{ $post->author }}</td>
+                                      <td>{{ $post->location }}</td>
+                                      <td>{{ $post->date }}</td>
+                                      <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
+                                      <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Edit</a></td>
+                                      <td>
+                                          <form action="/delete/{{ $post->id }}" method="post">
+                                            <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
+                                            @csrf
+                                            @method('delete')
+                                          </form>
+                                      </td>
+                                  </tr>
+                                @endforeach
+                              </tbody>
+                          </table>
                         </div>
                     </div>
                 </div>
