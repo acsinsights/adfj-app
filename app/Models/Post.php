@@ -16,7 +16,8 @@ use App\Models\Image;
             protected $fillable=[
             'title',
             'author' ,
-            'body' ,
+            'location' ,
+            'date' ,
             'cover' ,
         ];
         public function images(){
