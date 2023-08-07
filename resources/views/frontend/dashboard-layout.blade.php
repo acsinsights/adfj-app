@@ -29,7 +29,7 @@
                               <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th>
                               <td>{{ $post->title }}</td>
                               <td>{{ $post->author }}</td>
-                              <td>{{ $post->body }}</td>
+                              <td>{{ $post->location }}</td>
                               <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
                               <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Edit</a></td>
                               <td>

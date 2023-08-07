@@ -31,7 +31,7 @@ class DashboardController extends Controller
             $post =new Post([
                 "title" =>$request->title,
                 "author" =>$request->author,
-                "body" =>$request->body,
+                "location" =>$request->location,
                 "cover" =>$imageName,
             ]);
             $post->save();
@@ -73,7 +73,7 @@ class DashboardController extends Controller
         $post->update([
             "title"=>$request->title,
             "author"=>$request->author,
-            "body"=>$request->body,
+            "location"=>$request->location,
             "cover"=>$post->cover,
         ]);
 

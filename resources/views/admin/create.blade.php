@@ -14,7 +14,8 @@
                         @csrf
                         <input type="text" name="title" class="form-control m-2" placeholder="title">
                         <input type="text" name="author" class="form-control m-2" placeholder="author">
-                        <Textarea name="body" cols="20" rows="4" class="form-control m-2" placeholder="body"></Textarea>
+                        <input type="text" name="location" class="form-control m-2" placeholder="location">
+                        <input type="date" name="datetime" class="form-control m-2" placeholder="date-time">
                         <label class="m-2">Cover Image</label>
                         <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
 
