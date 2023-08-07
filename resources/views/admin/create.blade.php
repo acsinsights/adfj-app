@@ -42,5 +42,4 @@
     </div>
 @endsection
 
-@section('customJs')
-@endsection
+
