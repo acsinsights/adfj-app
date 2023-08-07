@@ -13,13 +13,13 @@
                     <span class="nav-text">Add Post</span>
                 </a>
             </li>
-
             <li>
                 <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                     <i class="flaticon-045-heart"></i>
                     <span class="nav-text">Categories</span>
                 </a>
                 <ul aria-expanded="false">
+                    <li><a href="{{ route('admin.createcategory') }}">Add Category</a></li>
                     <li><a href="email-compose.html">Music Production</a></li>
                     <li><a href="email-inbox.html">Video Production</a></li>
                     <li><a href="email-inbox.html">Graphics Production</a></li>

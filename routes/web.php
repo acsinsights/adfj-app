@@ -21,6 +21,7 @@ use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
+use App\Http\Controllers\admin\CreateCategoryController;
 
 
 
@@ -98,6 +99,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
+        Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
 
         // Route::get('/create' , function(){
         //     return view( 'admin.create' );
