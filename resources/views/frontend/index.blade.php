@@ -473,10 +473,10 @@
 
                                             <div class="portfolio__content-3 transition-3">
                                                 <div class="portfolio__tag-3">
-                                                    <a href="#">Graphics</a>
+                                                    <a href="#">{{ $post->title }}</a>
                                                 </div>
                                                 <h3 class="portfolio__title-3">
-                                                    <a href="portfolio-details.html">Petals India</a>
+                                                    <a href="portfolio-details.html">{{ $post->title }}</a>
                                                 </h3>
                                                 <div class="portfolio__meta-3 transition-3">
 
