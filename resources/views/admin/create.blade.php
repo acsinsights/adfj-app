@@ -19,16 +19,28 @@
                             <label class="m-2">Cover Image</label>
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
 
-                            <input type="checkbox" name="video" id="video" value="" class="">
+                            <div class="video-card">
+                                <label for="video" class="m-2">Video Production</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="checkme m-2">
+                                    </label>
+                                </div>
+                                <div class="video-box">
+                                    <input type="text" name="videolink" id="videolink"
+                                        class="form-control m-2 videolink">
+                                </div>
+                            </div>
 
-                            <input type="text" name="videolink" id="video" class="form-control m-2">
-                            {{-- <label class="m-2">Images</label>
-                        <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="images[]" multiple> --}}
-
-                            <button type="submit" class="btn btn-success mt-3 ">Submit</button>
+                            <button type="submit" class="btn btn-success mt-3">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection
+
+@section('customJs')
+    
+@endsection
