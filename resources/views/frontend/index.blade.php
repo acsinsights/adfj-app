@@ -466,6 +466,7 @@
                                 @foreach ($posts as $post)
                                     <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
                                         data-wow-duration="1s">
+                                        
                                         <a href="https://petals-india.com/">
                                             <div class="portfolio__thumb-3 w-img"
                                                 data-background="{{ $post->cover ? asset('cover/' . $post->cover) : '' }}">
