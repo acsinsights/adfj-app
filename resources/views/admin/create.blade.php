@@ -12,8 +12,8 @@
                     <div class="card-body">
                         <form action="/post" method="post" enctype="multipart/form-data">
                             @csrf
-                            <input type="text" name="title" class="form-control m-2" placeholder="title">
-                            <input type="text" name="author" class="form-control m-2" placeholder="author">
+                            <input type="text" name="title" class="form-control m-2" placeholder="Service Category">
+                            <input type="text" name="author" class="form-control m-2" placeholder="Title of post">
                             <input type="text" name="location" class="form-control m-2" placeholder="location">
                             <input type="date" name="datetime" class="form-control m-2" placeholder="date-time">
                             <label class="m-2">Cover Image</label>
