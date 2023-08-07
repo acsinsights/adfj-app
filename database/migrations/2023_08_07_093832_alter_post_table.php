@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('location', 100)->nullable()->default('text');
-            $table->string('date', 100)->nullable()->default('date');
+            $table->string('location', 100)->nullable()->default('text')->after('title');
+            $table->string('date', 100)->nullable()->default('date')->after('location');
         });
     }
 
