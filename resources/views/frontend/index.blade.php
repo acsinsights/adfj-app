@@ -476,7 +476,7 @@
                                                     <a href="#">{{ $post->title }}</a>
                                                 </div>
                                                 <h3 class="portfolio__title-3">
-                                                    <a href="portfolio-details.html">{{ $post->title }}</a>
+                                                    <a href="portfolio-details.html">{{ $post->author }}</a>
                                                 </h3>
                                                 <div class="portfolio__meta-3 transition-3">
 
@@ -492,7 +492,7 @@
                                                                 stroke="white" stroke-width="1.5" stroke-linecap="round"
                                                                 stroke-linejoin="round" />
                                                         </svg>
-                                                        Mumbai
+                                                        {{ $post->location }}
                                                     </span>
                                                     <span>
                                                         <svg width="13" height="15" viewBox="0 0 13 15"
@@ -529,7 +529,7 @@
                                                                 stroke-width="1.5" stroke-linecap="round"
                                                                 stroke-linejoin="round" />
                                                         </svg>
-                                                        Dec 25, 2022
+                                                        {{ $post->date }}
                                                     </span>
                                                 </div>
                                             </div>
