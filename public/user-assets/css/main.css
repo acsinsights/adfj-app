@@ -412,9 +412,9 @@ img,
   --tp-theme-5: #4353FF;
   --tp-theme-6: #3661FC;
   --tp-theme-7: #2CAE76;
-  --tp-theme-8: #FF5A1B;
+  --tp-theme-8: #eb1971;
   --tp-theme-9: #03041C;
-  --tp-theme-10: #ED212C;
+  --tp-theme-10: #eb1971;
   --tp-rgb-theme-1: 245, 9, 99;
   --tp-rgb-theme-1-dark: 195, 0, 75;
   --tp-rgb-theme-2: 0, 128, 128;
@@ -5524,7 +5524,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .animate-border::after {
   content: "";
   position: absolute;
-  background-color: var(--tp-theme-8);
+  background-color: #eb1971;
   width: 0;
   height: 1px;
   transition: width 0.0375s;
@@ -5605,7 +5605,21 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .animate-border-2::after {
   content: "";
   position: absolute;
-  background-color: var(--tp-theme-8);
+  background-color: #eb1971;
+  width: 0;
+  height: 1px;
+  transition: width 0.0375s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.animate-border3::before,
+.animate-border3::after {
+  content: "";
+  position: absolute;
+  background-color: #2ebbc4;
   width: 0;
   height: 1px;
   transition: width 0.0375s;
@@ -5616,7 +5630,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
   transition: all 0.4s ease-out 0s;
 }
 
+
+
 .animate-border-2::before {
+  top: 0;
+  left: 0;
+}
+.animate-border3::before {
   top: 0;
   left: 0;
 }
@@ -5631,7 +5651,24 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .animate-border-2 .services-border-2::after {
   content: "";
   position: absolute;
-  background-color: var(--tp-theme-8);
+  background-color: #eb1971;
+  height: 0;
+  width: 1px;
+  transition: height 0.0375s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+
+
+.animate-border3 .services-border-2::before,
+.animate-border3 .services-border-2::after {
+  content: "";
+  position: absolute;
+  background-color: #2ebbc4;
   height: 0;
   width: 1px;
   transition: height 0.0375s;
@@ -10817,7 +10854,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 .section__title-pre-4 {
   font-size: 14px;
   font-weight: 700;
-  color: var(--tp-theme-4);
+  color: #eb1971;
   text-transform: uppercase;
   font-family: var(--tp-ff-space);
   display: inline-block;
@@ -12865,6 +12902,209 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 .book-btn:hover {
   background-color: #1b1a1a;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide{
+  display: block;
+  position: absolute;
+  height: 200px !important;
+  width: 200px !important;
+  background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page services cards css start */
+
+
+
+
+
+
+
+
+
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-content {
+    padding: 20px;
+    background: #ffffff;
+    /* -webkit-box-shadow: 5px 5px 10px #e06296, -5px -5px 10px #ee5d99;
+            box-shadow: 5px 5px 10px #e35a93, -5px -5px 10px #f26ca4; */
+
+            /* box-shadow: 0px 9px 30px rgb(235 25 113); */
+
+
+
+
+
+
+
+
+
+
+
+            -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+
+            /* box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25); */
+
+
+
+
+            /* box-shadow:
+            inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+            0 0 0 2px rgb(255, 255, 255),
+            0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+
+  .timeline-component {
+  width: 373px;
+  }
+
+
+  .img-brand{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+  }
+
+
+  [data-dsn-animate="up"] {
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: opacity, transform;
+    transition-property: opacity, transform;
+    transition-property: opacity, transform, -webkit-transform;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  .dsn-active[data-dsn-animate="up"] {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      place-content: center;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, #261a50, #261a50, #261a50);
+      width: 3px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      /* background-image: linear-gradient(45deg, #00ef5d, #4bff90, #09b14a);; */
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+              border: 2px solid #eb1971;
+              background-color: white;
+    }
+  }
+
+
+
+
+
+
+
+  /* about page services cards css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .book-btn2:hover {
   background-color: #c0c0c0;
@@ -27412,6 +27652,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .services__item-8:hover .services__project-no span {
   color: var(--tp-theme-8);
 }
+.services__item9:hover .services__project-no span {
+  color: #2ebbc4;
+}
 
 .services__item-8:hover .services__shape-11 {
   opacity: 0.04;
@@ -41928,7 +42171,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .cta__style-3 .cta__btn-wrapper-7 .tp-cta-btn {
-  background-color: #6364DB;
+  background-color: #261a50;
   border-radius: 0;
   padding: 25px 55px 23px 35px;
 }
@@ -64024,8 +64267,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
     height: 575px;
     /* margin-left: 35px; */
 }
-
+.timeline{
+    width: 100%;
+    margin: 0 0;
 }
+.timeline-component {
+    width: 335px;
+}
+}
+
+
+
+
 @media only screen and (min-width: 900px) and (max-width: 1399px) {
  .galley-space{
     margin: 0 15%;

@@ -43,9 +43,9 @@
                             </div>
                         </div>
 
-                        <div class="img-h col-xl-5 col-lg-6 col-md-5 order-first order-md-last">
+                        <div id="container" class="img-h col-xl-5 col-lg-6 col-md-5 order-first order-md-last">
 
-                            <img class="slider__thumb-9-main" src="{{ asset('user-assets/img/slider/9/home-hero-image.png') }}"
+                            <img class="home-img slider__thumb-9-main" src="{{ asset('user-assets/img/slider/9/home-hero-image.png') }}"
                             alt="" />
                             {{-- <div class="slider__thumb-9 p-relative scene">
                                 <div class="slider__shape">
@@ -60,6 +60,10 @@
             </div>
         </section>
         <!-- slider area end -->
+        {{-- <div id="container">
+            <img src="https://unsplash.it/1000/1000?random=" />
+            <div class="slide one"></div>
+          </div> --}}
 
         <!-- about area start -->
         <section class="about__area pt-30 pb-120 p-relative" id="about_page">
@@ -443,8 +447,225 @@
         <!-- features area end -->
 
 
-
         <!-- portfolio area start -->
+        <section class="portfolio__area p-relative portfolio__overlay pt-50 pb-90 fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="tp-section-wrapper-3 mb-60 text-center">
+                            <span class="tp-section-subtitle-3">Have A Look </span>
+                            <h3 class="tp-section-title-3">Curated Media Showcase.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="portfolio__slider">
+                            <div class="portfolio__slider-active">
+
+
+
+
+
+                                @foreach ($posts as $post)
+
+                                <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
+                                    data-wow-duration="1s">
+                                    <a href="https://petals-india.com/">
+                                        <div class="portfolio__thumb-3 w-img"
+                                            data-background="{{$post->cover ? asset('cover/' . $post->cover) : asset('user-assets/img/portfolio/3/portfolio-5.jpg')  }}">
+                                        </div>
+
+                                        <div class="portfolio__content-3 transition-3">
+                                            <div class="portfolio__tag-3">
+                                                <a href="#">Graphics</a>
+                                            </div>
+                                            <h3 class="portfolio__title-3">
+                                                <a href="portfolio-details.html">Petals India</a>
+                                            </h3>
+                                            <div class="portfolio__meta-3 transition-3">
+
+                                                <span>
+                                                    <svg width="12" height="15" viewBox="0 0 12 15"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.4286 6.40909C10.4286 10.2273 5.71429 13.5 5.71429 13.5C5.71429 13.5 1 10.2273 1 6.40909C1 5.10712 1.49668 3.85847 2.38078 2.93784C3.26488 2.01721 4.46398 1.5 5.71429 1.5C6.96459 1.5 8.16369 2.01721 9.04779 2.93784C9.93189 3.85847 10.4286 5.10712 10.4286 6.40909Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M5.71401 8.04568C6.58188 8.04568 7.28544 7.31305 7.28544 6.40931C7.28544 5.50557 6.58188 4.77295 5.71401 4.77295C4.84613 4.77295 4.14258 5.50557 4.14258 6.40931C4.14258 7.31305 4.84613 8.04568 5.71401 8.04568Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Mumbai
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="15" viewBox="0 0 13 15"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.80029 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1.30029 5.75415H11.5003" stroke="white"
+                                                            stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M11.8 5.40015V10.5001C11.8 12.3001 10.9 13.5001 8.8 13.5001H4C1.9 13.5001 1 12.3001 1 10.5001V5.40015C1 3.60015 1.9 2.40015 4 2.40015H8.8C10.9 2.40015 11.8 3.60015 11.8 5.40015Z"
+                                                            stroke="white" stroke-width="1.2" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.61702 8.51997H8.62241" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.61653 10.32H8.62192" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.39729 8.51997H6.40268" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.39729 10.32H6.40268" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.17659 8.51997H4.18198" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.17659 10.32H4.18198" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Dec 25, 2022
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    @endforeach
+                                </div>
+
+
+
+
+
+
+
+
+
+
+                                {{--
+                                <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
+                                    data-wow-duration="1s">
+                                    <a href="https://www.instagram.com/p/Ccos67BIgoK/">
+                                        <div class="portfolio__thumb-3 w-img"
+                                            data-background="{{ asset('user-assets/img/portfolio/3/portfolio-7.jpg') }}">
+
+
+
+
+
+
+                                        </div>
+
+
+                                        <div class="portfolio__grid-video">
+                                            <a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                                class="portfolio-play-btn popup-video tp-el-video-btn">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="portfolio__content-3 transition-3">
+                                            <div class="portfolio__tag-3">
+                                                <a href="#">Video Production</a>
+                                            </div>
+                                            <h3 class="portfolio__title-3">
+                                                <a href="portfolio-details.html">Ludo Kamai Commercial Ad</a>
+                                            </h3>
+                                            <div class="portfolio__meta-3 transition-3">
+
+                                                <span>
+                                                    <svg width="12" height="15" viewBox="0 0 12 15"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.4286 6.40909C10.4286 10.2273 5.71429 13.5 5.71429 13.5C5.71429 13.5 1 10.2273 1 6.40909C1 5.10712 1.49668 3.85847 2.38078 2.93784C3.26488 2.01721 4.46398 1.5 5.71429 1.5C6.96459 1.5 8.16369 2.01721 9.04779 2.93784C9.93189 3.85847 10.4286 5.10712 10.4286 6.40909Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M5.71401 8.04568C6.58188 8.04568 7.28544 7.31305 7.28544 6.40931C7.28544 5.50557 6.58188 4.77295 5.71401 4.77295C4.84613 4.77295 4.14258 5.50557 4.14258 6.40931C4.14258 7.31305 4.84613 8.04568 5.71401 8.04568Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Mumbai
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="15" viewBox="0 0 13 15"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.80029 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1.30029 5.75415H11.5003" stroke="white"
+                                                            stroke-width="1.5" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M11.8 5.40015V10.5001C11.8 12.3001 10.9 13.5001 8.8 13.5001H4C1.9 13.5001 1 12.3001 1 10.5001V5.40015C1 3.60015 1.9 2.40015 4 2.40015H8.8C10.9 2.40015 11.8 3.60015 11.8 5.40015Z"
+                                                            stroke="white" stroke-width="1.2" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.61702 8.51997H8.62241" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.61653 10.32H8.62192" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.39729 8.51997H6.40268" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.39729 10.32H6.40268" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.17659 8.51997H4.18198" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.17659 10.32H4.18198" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    May 5, 2022
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> --}}
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="portfolio__area p-relative portfolio__overlay pt-50 pb-90 fix">
             <div class="container">
                 <div class="row">
@@ -465,6 +686,10 @@
                                     <a href="https://www.youtube.com/watch?v=HGN8mufDavg">
                                         <div class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-2.jpg') }}">
+
+
+
+
                                         </div>
 
 
@@ -547,6 +772,19 @@
                                     <a href="https://petals-india.com/">
                                         <div class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-5.jpg') }}">
+
+                                            <tbody style="display: flex;">
+                                                @foreach ($posts as $post)
+                                                  <tr>
+                                                      <th style="vertical-align: middle;" scope="row">{{ $post->id}}</th>
+
+                                                      <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:600px; max-width:570px" alt="" srcset=""></td>
+
+                                                  </tr>
+                                                @endforeach
+                                              </tbody>
+
+
                                         </div>
 
                                         <div class="portfolio__content-3 transition-3">
@@ -619,6 +857,18 @@
                                     <a href="https://www.instagram.com/p/Ccos67BIgoK/">
                                         <div class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-7.jpg') }}">
+
+                                            <tbody style="display: flex;">
+                                                @foreach ($posts as $post)
+                                                  <tr>
+                                                      <th style="vertical-align: middle;" scope="row">{{ $post->id}}</th>
+                                                      <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:600px; max-width:570px" alt="" srcset=""></td>
+
+                                                  </tr>
+                                                @endforeach
+                                              </tbody>
+
+
                                         </div>
 
 
@@ -698,8 +948,18 @@
                                 <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
                                     data-wow-duration="1s">
                                     <a href="https://www.youtube.com/watch?v=_BtGT-maCV0">
-                                        <div class="portfolio__thumb-3 w-img"
+                                 <div class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-3.jpg') }}">
+
+
+
+                              {{-- <td>{{ $post->title }}</td>
+                              <td>{{ $post->author }}</td>
+                              <td>{{ $post->body }}</td> --}}
+
+
+
+
                                         </div>
 
                                         <div class="portfolio__grid-video">
@@ -777,11 +1037,27 @@
                                     </a>
                                 </div>
 
+
+
                                 <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
                                     data-wow-duration="1s">
                                     <a href="https://www.youtube.com/watch?v=SX_T7gK8mpE">
-                                        <div class="portfolio__thumb-3 w-img"
+
+                                        <div  class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-4.jpg') }}">
+
+                                                {{-- <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th> --}}
+                                                {{-- <td>{{ $post->title }}</td>
+                                                <td>{{ $post->author }}</td>
+                                                <td>{{ $post->body }}</td> --}}
+
+
+
+                                            {{-- @foreach ($posts as $post)
+                                            <th scope="row">{{ $post->id}}
+                                              <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="height:600px;width:570px" alt="" ></td>
+                                            </th>
+                                          @endforeach --}}
                                         </div>
 
                                         <div class="portfolio__grid-video">
@@ -862,6 +1138,7 @@
                                     <a href="https://www.youtube.com/watch?v=IFEvDlO1CKg">
                                         <div class="portfolio__thumb-3 w-img"
                                             data-background="{{ asset('user-assets/img/portfolio/3/portfolio-6.jpg') }}">
+
                                         </div>
 
                                         <div class="portfolio__grid-video">

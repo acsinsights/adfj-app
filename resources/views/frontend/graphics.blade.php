@@ -5,7 +5,36 @@
 
     <main>
         <!-- about top area start -->
-        <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
+
+
+        <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
+        data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+        style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-7 col-lg-9">
+                    <div class="breadcrumb__content p-relative z-index-1">
+                        {{-- <div class="breadcrumb__video mb-30">
+                            <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
+                                class="breadcrumb__video-btn popup-video">
+                                <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div> --}}
+
+                        <h3 style="font-size: 4.5rem" class="breadcrumb__title">
+                            Artistic Mastery
+                        </h3>
+                        {{-- <span style="color: black" class="about__heading-subtitle">Artistic Mastery</span> --}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}"
             style="background-image: url(http://127.0.0.1:8000/user-assets/img/about/about-breadcrumb.jpg);">
             <div class="container">
@@ -18,7 +47,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- about top area end -->
 
         <section class="portfolio__area pb-75 p-relative fix tp-el-section">
@@ -36,17 +65,8 @@
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-yellow.png"
                     alt="Harry">
             </div>
-            <div class=" mt-100  container-fluid tp-gx-20">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
-                            <span class="portfolio__section-title-pre tp-el-subtitle"> Graphics Portfolio</span>
+            <div class=" mt-50  container-fluid tp-gx-20">
 
-
-                            <h2 class="portfolio__section-title tp-el-title">Artistic Mastery</h2>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- filter button -->
                 <div class="row">
@@ -76,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tp-gx-20 grid" style="position: relative; height: 1799.76px;">
+                <div class="row galley-space tp-gx-20 grid" style="position: relative; height: 1799.76px;">
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                     style="position: absolute; left: 0%; top: 537px;">
                     <div class="portfolio__grid-item mb-20 tp-el-box">

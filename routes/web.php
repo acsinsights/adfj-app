@@ -22,6 +22,10 @@ use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\DashboardController;
 
 
+
+use App\Http\Controllers\frontend\PostController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -55,6 +59,35 @@ Route::get('/newsletter', [NewsletterController::class, 'index']);
 
 
 
+
+
+
+
+// image  module
+
+Route::get('/dashboard-layout', [DashboardController::class, 'index']);
+// Route::get('/create' , function(){
+//     return view( 'admin.create' ) ;
+//     });
+
+
+     Route::post('/post', [DashboardController::class, 'store']);
+     Route::delete('/delete/{id}',[DashboardController::class,'destroy']);
+  Route::get('/edit/{id}', [DashboardController::class,'edit']);
+
+
+     Route::delete('/deleteimage/{id}',[DashboardController::class,'deleteimage']);
+     Route::delete('/deletecover/{id}',[DashboardController::class,'deletecover']);
+
+     Route::put('/update/{id}', [DashboardController::class,'update']);
+
+
+
+
+
+
+
+
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
 
@@ -66,6 +99,48 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.auth'], function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+        Route::get('/create' , function(){
+            return view( 'admin.create' );
+            });
+
+
+
+
+
+
+            // Route::get('admin/edit/{id}', [DashboardController::class,'edit']);
+
+            // Route::get('/edit',function(){
+            //     return view('admin.edit');
+            //     });
+
+            // Route::get('/admin/edit/{id}', [DashboardController::class,'edit']);
+
+
+            // Route::get('/admin.edit/{id}', [DashboardController::class,'edit']);
+//  Route::post('/admin.dashboard', [DashboardController::class, 'store']);
+            // Route::delete('/delete/{id}',[DashboardController::class,'destroy']);
+            // Route::get('/admin.edit/{id}', [DashboardController::class,'edit']);
+
+            // Route::delete('/deleteimage/{id}',[DashboardController::class,'deleteimage']);
+            // Route::delete('/deletecover/{id}',[DashboardController::class,'deletecover']);
+
+            // Route::put('/update/{id}', [DashboardController::class,'update']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Route::delete('/delete/{id}',[PostController::class,'destroy']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
 
     });

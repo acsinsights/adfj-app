@@ -15,7 +15,7 @@
                 <div class="row justify-content-end">
                     <div class="col-xl-7 col-lg-9">
                         <div class="breadcrumb__content p-relative z-index-1">
-                            <div class="breadcrumb__video mb-30">
+                            {{-- <div class="breadcrumb__video mb-30">
                                 <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
                                     class="breadcrumb__video-btn popup-video">
                                     <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
@@ -23,17 +23,12 @@
                                         <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
                                     </svg>
                                 </a>
-                            </div>
-                            {{-- <div class="breadcrumb__list">
-                                <span><a href="#">Home</a></span>
-                                <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
-                                <span><a href="#">Business</a></span>
-                                <span class="dvdr"><i class="fa-solid fa-circle-small"></i></span>
-                                <span>Investment Trend Monitor: Top Trends in 2022 </span>
                             </div> --}}
                             <h3 style="font-size: 5rem" class="breadcrumb__title">
-                                Video Production Portfolio
+                                Visual Brilliance
                             </h3>
+                            {{-- <span style="color: black" class="about__heading-subtitle">Visual Brilliance</span> --}}
+
                         </div>
                     </div>
                 </div>
@@ -87,7 +82,7 @@
                             {{-- <span class="portfolio__section-title-pre tp-el-subtitle"> Video Production Portfolio</span> --}}
 
 
-                            <h2 class="mt-100 portfolio__section-title tp-el-title">Visual Brilliance</h2>
+                            {{-- <h2 class="mt-50 portfolio__section-title tp-el-title">Visual Brilliance</h2> --}}
                         </div>
                     </div>
                 </div>
@@ -123,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row tp-gx-20 grid" style="position: relative; height: 1799.76px;">
+                <div class="row galley-space tp-gx-20 grid" style="position: relative; height: 1799.76px;">
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
                     style="position: absolute; left: 0%; top: 537px;">
                     <div class="portfolio__grid-item mb-20 tp-el-box">

@@ -677,7 +677,7 @@
                                 asked
                                 <span class="section__title-7-highlight">
                                     questions
-                                 
+
                                 </span>
                             </h2>
                         </div>
@@ -1177,9 +1177,9 @@
                 <div class="col-xxl-6 col-lg-6">
                     <div class="cta__wrapper-7">
                         <div class="section__title-wrapper-7 mb-60">
-                            <span class="section__title-pre-7">Start Your Free Trial</span>
+                            <span class="section__title-pre-7">Start Project Today</span>
                             <h3 class="section__title-7">
-                                Take your business to the next level.
+                                Take your vision to the next level.
                             </h3>
                         </div>
                     </div>

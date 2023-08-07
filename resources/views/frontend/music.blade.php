@@ -5,19 +5,46 @@
 
     <main>
         <!-- about top area start -->
-        <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
+        <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
+        data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+        style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-7 col-lg-9">
+                    <div class="breadcrumb__content p-relative z-index-1">
+                        {{-- <div class="breadcrumb__video mb-30">
+                            <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
+                                class="breadcrumb__video-btn popup-video">
+                                <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div> --}}
+
+                        <h3 style="font-size: 5rem" class="breadcrumb__title">
+                            Melody Showcase
+                        </h3>
+
+                        {{-- <span style="color: black" class="about__heading-subtitle">Melody Showcase</span> --}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
                         <div class="about__heading-content text-center p-relative z-index-1">
-                            {{-- <span class="about__heading-subtitle">Music Production Portfolio</span> --}}
                             <h3 class="about__heading-title">Music Production Portfolio</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- about top area end -->
 
 
@@ -76,7 +103,7 @@
 
 
 
-        <section class="portfolio__area pb-75 pt-40 p-relative fix tp-el-section">
+        <section class="portfolio__area pb-75  p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/circle-1.png"
@@ -91,17 +118,16 @@
                     src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-yellow.png"
                     alt="Harry">
             </div>
-            <div class="container-fluid tp-gx-20">
-                <div class="row">
+            <div class="mt-50 container-fluid tp-gx-20">
+                {{-- <div class="row">
                     <div class="col-xl-12">
                         <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
-                            {{-- <span class="portfolio__section-title-pre tp-el-subtitle"> CHECK OUT OUR LATEST WORK </span> --}}
 
 
                             <h2 class="portfolio__section-title tp-el-title"> Melody Showcase</h2>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- filter button -->
                 <div class="row">

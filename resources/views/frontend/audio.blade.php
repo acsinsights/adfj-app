@@ -6,7 +6,32 @@
 
     <main>
         <!-- about top area start -->
-        <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
+        <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
+        data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+        style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-7 col-lg-9">
+                    <div class="breadcrumb__content p-relative z-index-1">
+                        <div class="breadcrumb__video mb-30">
+                            <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
+                                class="breadcrumb__video-btn popup-video">
+                                <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <h3 style="font-size: 5rem" class="breadcrumb__title">
+                            Audio Production Portfolio
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
             <div class="container">
                 <div class="row justify-content-center">
@@ -18,7 +43,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- about top area end -->
         <div class="mt-40 ml-70 text-left section__title-wrapper-9 mb-55">
             <span class="section__title-pre-9">Expertise</span>
