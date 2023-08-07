@@ -10,7 +10,7 @@
             <li>
                 <a class="" href="{{ route('admin.create') }}" aria-expanded="false">
                     <i class="flaticon-050-info"></i>
-                    <span class="nav-text"></span>
+                    <span class="nav-text">Add Post</span>
                 </a>
             </li>
             <li>
