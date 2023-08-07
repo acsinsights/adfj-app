@@ -555,24 +555,7 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- skill area start -->
+ <!-- skill area start -->
         <section class="skill__area pt-55 grey-bg-12 pb-55">
             <div class="container">
                 <div class="row">
