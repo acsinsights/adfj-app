@@ -51,7 +51,6 @@ class CreateController extends Controller
         $posts=Post::findOrFail($id);
         return view('admin.edit')->with('posts',$posts);
     }
-
     public function update(Request $request,$id)
     {
      $post=Post::findOrFail($id);
