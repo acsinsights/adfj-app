@@ -30,14 +30,39 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                  <th>ID</th>
-
-                                  <th>Cover</th>
-                                  <th>Update</th>
-                                  <th>Delete</th>
+                                    <th>ID</th>
+                                    <th>link</th>
+                                    <th>Type</th>
+                                    <th>Cover</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
+                            <tbody>
+                                @foreach ($videocats as $ms)
+                                    <tr>
+                                        <th style="vertical-align: middle;" scope="row">{{ $ms->id }}</th>
 
+                                        <td>{{ $ms->link }}</td>
+                                        <td>{{ $ms->type }}</td>
+
+                                        <td><img src="/categories-img/video/{{ $ms->musiccover }}"
+                                                class="img-responsive" style="max-height:100px; max-width:100px"
+                                                alt="" srcset=""></td>
+                                        <td><a href="/editcat/{{ $ms->id }}"
+                                                class="btn btn-outline-primary">Edit</a></td>
+                                        <td>
+                                            <form action="/deletecover/{{ $ms->id }}" method="post">
+                                                <button class="btn btn-outline-danger"
+                                                    onclick="return confirm('Are you sure?');"
+                                                    type="submit">Delete</button>
+                                                @csrf
+                                                @method('delete')
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
                           </table>
                         </div>
                     </div>

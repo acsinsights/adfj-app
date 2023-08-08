@@ -12,7 +12,7 @@ class Graphicscat extends Model
         protected $fillable=[
             'id',
             'link',
-        'graphics-cover',
+            'graphics-cover',
 
 
     ];

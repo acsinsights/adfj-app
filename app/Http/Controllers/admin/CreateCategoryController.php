@@ -26,11 +26,16 @@ class CreateCategoryController extends Controller
 
     public function video_cat()
     {
-        return view('admin.video-cat');
+
+
+        $videocats=Videocat::all();
+        return view('admin.video-cat')->with('videocats', $videocats);
     }
 
     public function graphics_cat()
     {
-        return view('admin.graphics-cat');
+
+        $graphicscats=Graphicscat::all();
+        return view('admin.graphics-cat')->with('graphicscats', $graphicscats);
     }
 }
