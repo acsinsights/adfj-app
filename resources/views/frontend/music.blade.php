@@ -6,13 +6,13 @@
     <main>
         <!-- about top area start -->
         <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
-        data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
-        style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-7 col-lg-9">
-                    <div class="breadcrumb__content p-relative z-index-1">
-                        {{-- <div class="breadcrumb__video mb-30">
+            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+            style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            {{-- <div class="breadcrumb__video mb-30">
                             <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
                                 class="breadcrumb__video-btn popup-video">
                                 <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
@@ -22,17 +22,17 @@
                             </a>
                         </div> --}}
 
-                        <h3 style="font-size: 5rem" class="breadcrumb__title">
-                            Melody Showcase
-                        </h3>
+                            <h3 style="font-size: 5rem" class="breadcrumb__title">
+                                Melody Showcase
+                            </h3>
 
-                        {{-- <span style="color: black" class="about__heading-subtitle">Melody Showcase</span> --}}
+                            {{-- <span style="color: black" class="about__heading-subtitle">Melody Showcase</span> --}}
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
         {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
             <div class="container">
@@ -139,35 +139,81 @@
                                     All Project
                                 </button>
                                 <button data-filter=".cover-song">
-                                 Cover Song
+                                    Cover Song
                                 </button>
                                 <button data-filter=".original-song">
-                                  Original Song
+                                    Original Song
                                 </button>
                                 <button data-filter=".rap-song">
                                     Rap Song
-                                    </button>
+                                </button>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row galley-space tp-gx-20 grid " style="position: relative; height: 1799.76px;">
-                    <div class="col-xl-4 cover-song col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
+                    @foreach ($musiccats as $ms)
+                        <div class="col-xl-4 {{ $ms->type }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
+                            style="position: absolute; left: 0%; top: 537px;">
+                            <div class="portfolio__grid-item mb-20 tp-el-box">
+                                <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
+                                    data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg"
+                                    style="overflow: hidden;">
+                                    <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
+                                            tabindex="0">
+                                        </a><a href="https://www.youtube.com/watch?v=HGN8mufDavg"
+                                            class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class=" portfolio__grid-video "><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                            tabindex="0">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)">
+                                        <img width="455" height="500"
+                                            src="{{ asset('user-assets/img/graphic-portfolio/majha-pillu-artwork.jpg') }}"
+                                            class="attachment-full size-full image-size image-size" alt=""
+                                            decoding="async" loading="lazy">
+                                    </a>
+                                    <div class="tp-img-reveal-wrapper">
+                                        <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                            <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                                <div class="portfolio__hover-wrapper tp-el-box">
+                                                    <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
+                                                    <div class="portfolio__hover-category tp-el-box-tag">
+                                                        <span>
+                                                            <a href="#">Gul Marg Vlog Video</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    <div class="col-xl-4 {{ $ms->type }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
-                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg" style="overflow: hidden;">
-                                <div class="portfolio__grid-music portfolio__grid-video"><a
-                                    href="javascript:void(0)" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=HGN8mufDavg"
-                                    class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
+                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg"
+                                style="overflow: hidden;">
+                                <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=HGN8mufDavg"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <div class=" portfolio__grid-video "><a href="https://www.instagram.com/p/Ccos67BIgoK/"
                                         tabindex="0">
                                     </a>
@@ -175,8 +221,8 @@
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/majha-pillu-artwork.jpg') }}"
-                                        class="attachment-full size-full image-size image-size" alt="" decoding="async"
-                                        loading="lazy">
+                                        class="attachment-full size-full image-size image-size" alt=""
+                                        decoding="async" loading="lazy">
                                 </a>
                                 <div class="tp-img-reveal-wrapper">
                                     <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
@@ -202,8 +248,8 @@
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Short Film Poster  " data-title="Cappuccino">
-                                <div class="portfolio__grid-music portfolio__grid-video"><a
-                                        href="javascript:void(0)" tabindex="0">
+                                <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
+                                        tabindex="0">
                                     </a><a href="https://on.soundcloud.com/Gijc9"
                                         class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
                                         <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
@@ -213,15 +259,15 @@
                                     </a>
                                 </div>
                                 <div class="portfolio__grid-music portfolio__grid-video"><a
-                                    href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=nEAXl0ZucLg"
-                                    class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
+                                        href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=nEAXl0ZucLg"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/nayi-udaan-artwork.jpg') }}"
@@ -264,16 +310,16 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="portfolio__grid-music portfolio__grid-video"><a
-                                    href="javascript:void(0)" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=jNsn44ddgMg"
-                                    class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
+                                <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=jNsn44ddgMg"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <a href="javascript:void(0)">
                                     <img width="455" height="500"
                                         src="{{ asset('user-assets/img/graphic-portfolio/playzone-artwork.jpg') }}"
@@ -356,8 +402,8 @@
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
-                                <div class="portfolio__grid-music portfolio__grid-video"><a
-                                        href="javascript:void(0)" tabindex="0">
+                                <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
+                                        tabindex="0">
                                     </a><a href="https://www.youtube.com/watch?v=o5tCx3WDJrw"
                                         class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
                                         <svg width="18" height="22" viewBox="0 0 18 22" fill="none"

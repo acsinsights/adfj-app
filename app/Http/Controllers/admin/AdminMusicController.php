@@ -22,10 +22,12 @@ class AdminMusicController extends Controller
             $file->move(\public_path("categories-img/music/"), $imageName);
 
             $post = new Musiccat([
-                "music-cover" => $imageName,
+                "musiccover" => $imageName,
                 "link" => $request->link,
+                "type" => $request->type,
             ]);
             $post->save();
         }
+        return redirect('/admin/music-cat');
     }
 }
