@@ -19,10 +19,10 @@ use App\Http\Controllers\frontend\SubscriptionController;
 use App\Http\Controllers\frontend\TermsController;
 use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\admin\AdminMusicController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
-use App\Http\Controllers\admin\AdminMusicController;
 
 
 
@@ -58,15 +58,6 @@ Route::get('/terms', [TermsController::class, 'index']);
 Route::get('/newsletter', [NewsletterController::class, 'index']);
 
 
-
-
-
-
-
-
-
-
-
 // image  module
 
 Route::get('/dashboard-layout', [DashboardController::class, 'index']);
@@ -84,18 +75,6 @@ Route::put('/update/{id}', [CreateController::class, 'update']);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
 
@@ -108,14 +87,13 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
-        Route::get('/add-music-cat', [AdminMusicController::class, 'index'])->name('admin.add-musiccat');
 
         Route::get('/music-cat', [CreateCategoryController::class, 'music_cat'])->name('admin.music-cat');
         Route::get('/video-cat', [CreateCategoryController::class, 'video_cat'])->name('admin.video-cat');
         Route::get('/graphics-cat', [CreateCategoryController::class, 'graphics_cat'])->name('admin.graphics-cat');
+        Route::get('/add-music-cat', [AdminMusicController::class, 'index'])->name('admin.add-musiccat');
 
 
-        // Route::delete('/delete/{id}',[PostController::class,'destroy']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
     });
 });

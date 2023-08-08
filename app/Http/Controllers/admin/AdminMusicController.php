@@ -3,14 +3,12 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Image;
 use App\Models\Musiccat;
 use Illuminate\Http\Request;
-use App\Models\Image;
-use Illuminate\Support\Facades\File;
 
-class MusicController extends Controller
+class AdminMusicController extends Controller
 {
-
     public function index()
     {
         return view('admin.add-musiccat');
