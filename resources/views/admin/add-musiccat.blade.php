@@ -10,7 +10,7 @@
                         <h2>Add New music category</h2>
                     </div>
                     <div class="card-body">
-                        <form action="/add-music-cat" method="post" enctype="multipart/form-data">
+                        <form action="/add-music" method="post" enctype="multipart/form-data">
                             @csrf
                             <input type="url" name="link" class="form-control m-2" placeholder="link">
                             <label class="m-2">Cover Image</label>

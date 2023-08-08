@@ -72,7 +72,7 @@ Route::get('/edit/{id}', [CreateController::class, 'edit']);
 Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
 Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
-Route::get('/Add-music', [AdminMusicController::class, 'store']);
+Route::get('/add-music', [AdminMusicController::class, 'store']);
 
 
 

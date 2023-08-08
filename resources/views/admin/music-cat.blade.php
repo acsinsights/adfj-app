@@ -22,7 +22,7 @@
                 <div class="card">
 
                     <div class="card-body">
-                        <a href="{{ route('admin.add-musiccat') }}" class="btn btn-success btn-sm" title="Add New Post">Add New Category</a>
+                        <a href="{{ route('') }}" class="btn btn-success btn-sm" title="Add New Post">Add New Category</a>
                         <br/><br/>
                         <div class="table-responsive">
                         <h2>Music Category</h2>
