@@ -22,6 +22,7 @@ use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\AdminMusicController;
 use App\Http\Controllers\admin\AdminVideoController;
+use App\Http\Controllers\admin\AdminGraphicsController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
@@ -117,6 +118,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/graphics-cat', [CreateCategoryController::class, 'graphics_cat'])->name('admin.graphics-cat');
         Route::get('/add-music-cat', [AdminMusicController::class, 'index'])->name('admin.music');
         Route::get('/add-video-cat', [AdminVideoController::class, 'index'])->name('admin.video');
+        Route::get('/add-graphics-cat', [AdminGraphicsController::class, 'index'])->name('admin.graphics');
 
 
 
