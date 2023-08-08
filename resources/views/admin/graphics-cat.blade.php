@@ -23,7 +23,7 @@
                 <div class="card">
 
                     <div class="card-body">
-                        <a href="{{ url('/admin/create') }}" class="btn btn-success btn-sm" title="Add New Post">Add New Category</a>
+                        <a href="{{ route('admin.graphics') }}" class="btn btn-success btn-sm" title="Add New Post">Add New Category</a>
                         <br/><br/>
                         <div class="table-responsive">
                         <h2>Graphics Category</h2>

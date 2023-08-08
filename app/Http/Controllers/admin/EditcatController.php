@@ -24,11 +24,6 @@ class EditcatController extends Controller
 
 
 
-
-
-
-
-
     public function update(Request $request,$id)
     {
      $musiccats=Musiccat::findOrFail($id);

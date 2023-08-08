@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Graphicscat;
 use Illuminate\Http\Request;
 
-class GraphicsController extends Controller
+class AdminGraphicsController extends Controller
 {
     public function index()
     {

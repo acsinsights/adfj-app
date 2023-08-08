@@ -7,7 +7,7 @@ use App\Models\Image;
 use App\Models\Videocat;
 use Illuminate\Http\Request;
 
-class VideoController extends Controller
+class AdminVideoController extends Controller
 {
         public function index()
     {
