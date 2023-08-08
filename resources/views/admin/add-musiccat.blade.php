@@ -13,9 +13,9 @@
                         <form action="/add-music" method="post" enctype="multipart/form-data">
                             @csrf
                             <input type="url" name="link" class="form-control m-2" placeholder="link">
-                            <select name="type" id="type" class="form-control">
+                            <select name="type" id="type" class="form-control" value="">
                                 <option><-- Select Type --></option>
-                                <option value="music-song">Music song</option>
+                                <option value="cover-song">Cover song</option>
                                 <option value="original-song">Original song</option>
                                 <option value="rap-song">Rap song</option>
                             </select>

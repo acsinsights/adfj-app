@@ -12,7 +12,8 @@ class Musiccat extends Model
     protected $fillable = [
         'id',
         'link',
-        'music-cover',
+        'type',
+        'musiccover',
     ];
     public function images()
     {
