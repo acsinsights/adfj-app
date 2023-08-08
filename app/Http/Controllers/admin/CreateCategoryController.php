@@ -26,8 +26,6 @@ class CreateCategoryController extends Controller
 
     public function video_cat()
     {
-
-
         $videocats=Videocat::all();
         return view('admin.video-cat')->with('videocats', $videocats);
     }

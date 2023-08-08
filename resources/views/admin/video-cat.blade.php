@@ -46,7 +46,7 @@
                                         <td>{{ $ms->link }}</td>
                                         <td>{{ $ms->type }}</td>
 
-                                        <td><img src="/categories-img/video/{{ $ms->musiccover }}"
+                                        <td><img src="/categories-img/video/{{ $ms->videocover }}"
                                                 class="img-responsive" style="max-height:100px; max-width:100px"
                                                 alt="" srcset=""></td>
                                         <td><a href="/editcat/{{ $ms->id }}"
