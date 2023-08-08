@@ -162,7 +162,7 @@
                                     style="overflow: hidden;">
                                     <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
                                             tabindex="0">
-                                        </a><a href="https://www.youtube.com/watch?v=HGN8mufDavg"
+                                        </a><a href="{{ $ms->link }}"
                                             class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
                                             <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -175,8 +175,7 @@
                                         </a>
                                     </div>
                                     <a href="javascript:void(0)">
-                                        <img width="455" height="500"
-                                            src="{{ asset('user-assets/img/graphic-portfolio/majha-pillu-artwork.jpg') }}"
+                                        <img width="455" height="500" src="/categories-img/music/{{ $ms->musiccover }}"
                                             class="attachment-full size-full image-size image-size" alt=""
                                             decoding="async" loading="lazy">
                                     </a>
@@ -198,7 +197,7 @@
                             </div>
                         </div>
                     @endforeach
-                    <div class="col-xl-4 {{ $ms->type }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
+                    <div class="col-xl-4 cover-song col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"

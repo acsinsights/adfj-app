@@ -19,7 +19,6 @@
                     <span class="nav-text">Categories</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ route('admin.createcategory') }}">Add Category</a></li>
                     <li><a href="{{ route('admin.music-cat') }}">Music Production</a></li>
                     <li><a href="{{ route('admin.video-cat') }}">Video Production</a></li>
                     <li><a href="{{ route('admin.graphics-cat') }}">Graphics Production</a></li>
