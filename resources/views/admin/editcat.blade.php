@@ -16,13 +16,18 @@
                             @method('put')
                             <input type="text" name="title" class="form-control m-2" placeholder="title"
                                 value="{{ $musiccats->link }}">
+                            <input type="text" name="" class="form-control m-2" placeholder="type"
+                                value="{{ $musiccats->type }}" disabled>
 
-
+                            <select name="type" id="type" class="form-control m-2" value="">
+                                <option><-- Select Type --></option>
+                                <option value="cover-song">Cover song</option>
+                                <option value="original-song">Original song</option>
+                                <option value="rap-song">Rap song</option>
+                            </select>
 
                             <label class="m-2">music cover Image</label>
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="musiccover">
-
-
 
                             <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                         </form>
@@ -36,9 +41,6 @@
                         <img src="/categories-img/music/{{ $musiccats->musiccover }}" class="img-responsive"
                             style="max-height: 100px; max-width: 100px;" alt="" srcset="">
                         <br>
-
-
-
                     </div>
                 </div>
             </div>
