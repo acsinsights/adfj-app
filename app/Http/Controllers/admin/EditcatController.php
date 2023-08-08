@@ -32,20 +32,20 @@ class EditcatController extends Controller
     public function update(Request $request,$id)
     {
      $musiccats=Musiccat::findOrFail($id);
-     if($request->hasFile("cover")){
-         if (file::exists("cover/".$musiccats->cover)) {
-             File::delete("cover/".$musiccats->cover);
+     if($request->hasFile("musiccover")){
+         if (file::exists("/categories-img/music/".$musiccats->musiccover)) {
+             File::delete("/categories-img/music/".$musiccats->musiccover);
          }
-         $file=$request->file("cover");
-         $musiccats->cover=time()."_".$file->getClientOriginalName();
-         $file->move(\public_path("/categories-img/music"),$musiccats->cover);
-         $request['cover']=$musiccats->cover;
+         $file=$request->file("musiccover");
+         $musiccats->musiccover=time()."_".$file->getClientOriginalName();
+         $file->move(\public_path("/categories-img/music/"),$musiccats->musiccover);
+         $request['musiccover']=$musiccats->musiccover;
      }
 
         $musiccats->update([
 
             "link"=>$musiccats->link,
-            "musiccover"=>$musiccats->cover,
+            "musiccover"=>$musiccats->musiccover,
         ]);
 
         if($request->hasFile("images")){
@@ -59,19 +59,19 @@ class EditcatController extends Controller
             }
         }
 
-        return redirect("/admin/dashboard");
+        return redirect("/admin/music-cat");
     }
 
     public function destroy($id)
     {
         $musiccats=Musiccat::findOrFail($id);
 
-         if (File::exists("cover/".$musiccats->cover)) {
-             File::delete("cover/".$musiccats->cover);
+         if (File::exists("/categories-img/music/".$musiccats->musiccover)) {
+             File::delete("/categories-img/music/".$musiccats->musiccover);
          }
          $images=Image::where("post_id",$musiccats->id)->get();
          foreach($images as $image){
-            if (File::exists("images/".$image->image)) {
+            if (File::exists("images/".$image->musiccover)) {
                 File::delete("images/".$image->image);
             }
          }
@@ -90,9 +90,9 @@ class EditcatController extends Controller
     }
 
     public function deletecover($id){
-        $cover=Post::findOrFail($id)->cover;
-        if (File::exists("cover/".$cover)) {
-            File::delete("cover/".$cover);
+        $cover=Musiccat::findOrFail($id)->musiccover;
+        if (File::exists("/categories-img/music/".$cover)) {
+            File::delete("/categories-img/music/".$cover);
         }
         return back();
     }

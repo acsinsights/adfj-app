@@ -75,7 +75,28 @@ Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
 Route::post('/add-music', [AdminMusicController::class, 'store']);
 
+
+
+
+
+
+
+// categories
+
+
 Route::get('/editcat/{id}', [EditcatController::class, 'index']);
+Route::put('/updatecat/{id}', [EditcatController::class, 'update']);
+Route::delete('/deletecover/{id}', [EditcatController::class, 'destroy']);
+
+
+
+
+
+
+
+
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
