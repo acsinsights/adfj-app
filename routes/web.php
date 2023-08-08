@@ -87,6 +87,13 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 
 
 
+
+
+
+
+
+
+
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
 
@@ -101,44 +108,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
 
-        // Route::get('/create' , function(){
-        //     return view( 'admin.create' );
-        //     });
-
-
-
-
-
-
-            // Route::get('admin/edit/{id}', [DashboardController::class,'edit']);
-
-            // Route::get('/edit',function(){
-            //     return view('admin.edit');
-            //     });
-
-            // Route::get('/admin/edit/{id}', [DashboardController::class,'edit']);
-
-
-            // Route::get('/admin.edit/{id}', [DashboardController::class,'edit']);
-//  Route::post('/admin.dashboard', [DashboardController::class, 'store']);
-            // Route::delete('/delete/{id}',[DashboardController::class,'destroy']);
-            // Route::get('/admin.edit/{id}', [DashboardController::class,'edit']);
-
-            // Route::delete('/deleteimage/{id}',[DashboardController::class,'deleteimage']);
-            // Route::delete('/deletecover/{id}',[DashboardController::class,'deletecover']);
-
-            // Route::put('/update/{id}', [DashboardController::class,'update']);
-
-
-
-
-
-
-
-
-
-
-
+        Route::get('/music-cat', [CreateCategoryController::class,'music_cat'])->name('admin.music-cat');
+        Route::get('/video-cat', [CreateCategoryController::class,'video_cat'])->name('admin.video-cat');
+        Route::get('/graphics-cat', [CreateCategoryController::class,'graphics_cat'])->name('admin.graphics-cat');
 
 
         // Route::delete('/delete/{id}',[PostController::class,'destroy']);

@@ -11,6 +11,7 @@ class CreateCategoryController extends Controller
         return view('admin.createcategory');
     }
 
+
     public function store(Request $request)
     {
         if($request->hasFile("cover")){
@@ -25,4 +26,16 @@ class CreateCategoryController extends Controller
             }
         return redirect("admin.createcategory");
     }
+
+    public function music_cat(){
+        return view ('admin.music-cat');
+    }
+    public function video_cat(){
+        return view ('admin.video-cat');
+    }
+    public function graphics_cat(){
+        return view ('admin.graphics-cat');
+    }
+
+
 }
