@@ -107,7 +107,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
-        Route::get('/add-music-cat', [AddMusicCatController::class, 'index'])->name('admin.createcategory');
+        Route::get('/add-music-cat', [AddMusicCatController::class, 'index'])->name('admin.musiccat');
 
         Route::get('/music-cat', [CreateCategoryController::class,'music_cat'])->name('admin.music-cat');
         Route::get('/video-cat', [CreateCategoryController::class,'video_cat'])->name('admin.video-cat');
