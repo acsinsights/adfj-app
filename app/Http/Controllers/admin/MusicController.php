@@ -10,32 +10,36 @@ use Illuminate\Support\Facades\File;
 
 class MusicController extends Controller
 {
-    public function store(Request $request)
+
+    public function index()
     {
-        if($request->hasFile("cover")){
-            $file=$request->file("cover");
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("cover/"),$imageName);
-
-            $post =new Musiccat([
-                "music-cover" =>$imageName,
-                "link" =>$request->link,
-            ]);
-            $post->save();
-            }
-            if($request->hasFile("images")){
-
-                $files=$request->file("images");
-                foreach($files as $file){
-                    $imageName=time().'_'.$file->getClientOriginalName();
-                    $request['post_id']=$post->id;
-                    $request['image']=$imageName;
-                    $file->move(\public_path("categories-img/music/"),$imageName);
-                    Image::create($request->all());
-                }
-
-            }
-        return redirect("/admin/dashboard");
+        return view('admin.add-musiccat');
     }
 
+    public function store(Request $request)
+    {
+        if ($request->hasFile("cover")) {
+            $file = $request->file("cover");
+            $imageName = time() . '_' . $file->getClientOriginalName();
+            $file->move(\public_path("cover/"), $imageName);
+
+            $post = new Musiccat([
+                "music-cover" => $imageName,
+                "link" => $request->link,
+            ]);
+            $post->save();
+        }
+        if ($request->hasFile("images")) {
+
+            $files = $request->file("images");
+            foreach ($files as $file) {
+                $imageName = time() . '_' . $file->getClientOriginalName();
+                $request['post_id'] = $post->id;
+                $request['image'] = $imageName;
+                $file->move(\public_path("categories-img/music/"), $imageName);
+                Image::create($request->all());
+            }
+        }
+        return redirect("/admin/dashboard");
+    }
 }
