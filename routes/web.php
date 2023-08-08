@@ -74,12 +74,12 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 //     });
 
 
-     Route::post('/post', [CreateController::class, 'store']);
-     Route::delete('/delete/{id}',[CreateController::class,'destroy']);
-     Route::get('/edit/{id}', [CreateController::class,'edit']);
-     Route::delete('/deleteimage/{id}',[CreateController::class,'deleteimage']);
-     Route::delete('/deletecover/{id}',[CreateController::class,'deletecover']);
-     Route::put('/update/{id}', [CreateController::class,'update']);
+Route::post('/post', [CreateController::class, 'store']);
+Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
+Route::get('/edit/{id}', [CreateController::class, 'edit']);
+Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
+Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
+Route::put('/update/{id}', [CreateController::class, 'update']);
 
 
 
@@ -100,7 +100,6 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
         Route::post('/authenticate', [AdminLoginController::class, 'authenticate'])->name('admin.authenticate');
-
     });
 
     Route::group(['middleware' => 'admin.auth'], function () {
@@ -108,16 +107,14 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
-        Route::post('/add-music-cat', [MusicController::class, 'store'])->name('admin.add-musiccat');
+        Route::get('/add-music-cat', [MusicController::class, 'store'])->name('admin.add-musiccat');
 
-        Route::get('/music-cat', [CreateCategoryController::class,'music_cat'])->name('admin.music-cat');
-        Route::get('/video-cat', [CreateCategoryController::class,'video_cat'])->name('admin.video-cat');
-        Route::get('/graphics-cat', [CreateCategoryController::class,'graphics_cat'])->name('admin.graphics-cat');
+        Route::get('/music-cat', [CreateCategoryController::class, 'music_cat'])->name('admin.music-cat');
+        Route::get('/video-cat', [CreateCategoryController::class, 'video_cat'])->name('admin.video-cat');
+        Route::get('/graphics-cat', [CreateCategoryController::class, 'graphics_cat'])->name('admin.graphics-cat');
 
 
         // Route::delete('/delete/{id}',[PostController::class,'destroy']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
-
     });
-
 });
