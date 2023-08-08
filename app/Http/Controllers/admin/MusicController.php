@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Musiccat;
 use Illuminate\Http\Request;
+use App\Models\Image;
+use Illuminate\Support\Facades\File;
 
 class MusicController extends Controller
 {
@@ -14,12 +17,9 @@ class MusicController extends Controller
             $imageName=time().'_'.$file->getClientOriginalName();
             $file->move(\public_path("cover/"),$imageName);
 
-            $post =new Post([
-                "title" =>$request->title,
-                "author" =>$request->author,
-                "location" =>$request->location,
-                "date" =>$request->date,
-                "cover" =>$imageName,
+            $post =new Musiccat([
+                "music-cover" =>$imageName,
+                "link" =>$request->link,
             ]);
             $post->save();
             }
@@ -30,7 +30,7 @@ class MusicController extends Controller
                     $imageName=time().'_'.$file->getClientOriginalName();
                     $request['post_id']=$post->id;
                     $request['image']=$imageName;
-                    $file->move(\public_path("/images"),$imageName);
+                    $file->move(\public_path("categories-img/music/"),$imageName);
                     Image::create($request->all());
                 }
 
