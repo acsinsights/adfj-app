@@ -6,15 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Image;
 
-    class Post extends Model
-    {
+class Videocat extends Model
+{
         use HasFactory;
         protected $fillable=[
-        'title',
-        'author' ,
-        'location' ,
-        'date' ,
-        'cover' ,
+            'id',
+            'link',
+        'video-cover',
+
 
     ];
         public function images(){

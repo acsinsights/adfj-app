@@ -6,15 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Image;
 
-    class Post extends Model
-    {
+class Musiccat extends Model
+{
         use HasFactory;
         protected $fillable=[
-        'title',
-        'author' ,
-        'location' ,
-        'date' ,
-        'cover' ,
+            'id',
+            'link',
+        'music-cover',
+
 
     ];
         public function images(){
