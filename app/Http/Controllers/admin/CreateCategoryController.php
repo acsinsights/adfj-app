@@ -19,8 +19,10 @@ class CreateCategoryController extends Controller
 
     public function music_cat()
     {
-        return view('admin.music-cat');
+        $music=Musiccat::all();
+        return view('admin.music-cat')->with('musiccats', $music);
     }
+
 
     public function video_cat()
     {

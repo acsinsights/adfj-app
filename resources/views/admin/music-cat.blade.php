@@ -31,13 +31,32 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
+                                        <th>link</th>
 
                                         <th>Cover</th>
                                         <th>Update</th>
                                         <th>Delete</th>
                                     </tr>
                                 </thead>
+                                <tbody >
+                                    @foreach ($music as $ms)
+                                      <tr>
+                                          <th style="vertical-align: middle;" scope="row">{{ $ms->id }}</th>
 
+                                          <td>{{ $ms->link }}</td>
+
+                                          <td><img src="/categories-img/music/{{ $ms->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
+                                          <td><a href="/edit/{{ $ms->id }}" class="btn btn-outline-primary">Edit</a></td>
+                                          <td>
+                                              <form action="/delete/{{ $ms->id }}" method="post">
+                                                <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
+                                                @csrf
+                                                @method('delete')
+                                              </form>
+                                          </td>
+                                      </tr>
+                                    @endforeach
+                                  </tbody>
                             </table>
                         </div>
                     </div>
