@@ -22,6 +22,7 @@ use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
+use App\Http\Controllers\admin\AddMusicCatController;
 
 
 
