@@ -12,7 +12,7 @@ class Videocat extends Model
         protected $fillable=[
             'id',
             'link',
-        'video-cover',
+            'video-cover',
 
 
     ];
