@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 
+use App\Http\Controllers\admin\EditcatController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\ServicesController;
@@ -74,7 +75,7 @@ Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
 Route::post('/add-music', [AdminMusicController::class, 'store']);
 
-
+Route::get('/editcat/{id}', [EditcatController::class, 'index']);
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {

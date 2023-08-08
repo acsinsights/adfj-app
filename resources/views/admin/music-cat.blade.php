@@ -39,14 +39,14 @@
                                     </tr>
                                 </thead>
                                 <tbody >
-                                    @foreach ($music as $ms)
+                                    @foreach ($musiccats as $ms)
                                       <tr>
                                           <th style="vertical-align: middle;" scope="row">{{ $ms->id }}</th>
 
                                           <td>{{ $ms->link }}</td>
 
-                                          <td><img src="/categories-img/music/{{ $ms->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-                                          <td><a href="/edit/{{ $ms->id }}" class="btn btn-outline-primary">Edit</a></td>
+                                          <td><img src="/categories-img/music/{{ $ms->musiccover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
+                                          <td><a href="/editcat/{{ $ms->id }}" class="btn btn-outline-primary">Edit</a></td>
                                           <td>
                                               <form action="/delete/{{ $ms->id }}" method="post">
                                                 <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>

@@ -19,7 +19,7 @@ class AdminMusicController extends Controller
         if ($request->hasFile("cover")) {
             $file = $request->file("cover");
             $imageName = time() . '_' . $file->getClientOriginalName();
-            $file->move(\public_path("cover/"), $imageName);
+            $file->move(\public_path("categories-img/music/"), $imageName);
 
             $post = new Musiccat([
                 "music-cover" => $imageName,
@@ -27,17 +27,5 @@ class AdminMusicController extends Controller
             ]);
             $post->save();
         }
-        if ($request->hasFile("images")) {
-
-            $files = $request->file("images");
-            foreach ($files as $file) {
-                $imageName = time() . '_' . $file->getClientOriginalName();
-                $request['post_id'] = $post->id;
-                $request['image'] = $imageName;
-                $file->move(\public_path("categories-img/music/"), $imageName);
-                Image::create($request->all());
-            }
-        }
-        return redirect('/admin/music-cat');
     }
 }
