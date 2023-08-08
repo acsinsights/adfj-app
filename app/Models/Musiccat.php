@@ -8,15 +8,14 @@ use App\Models\Image;
 
 class Musiccat extends Model
 {
-        use HasFactory;
-        protected $fillable=[
-            'id',
-            'link',
+    use HasFactory;
+    protected $fillable = [
+        'id',
+        'link',
         'music-cover',
-
-
     ];
-        public function images(){
-            return $this->hasMany(Image::class);
-        }
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
+}

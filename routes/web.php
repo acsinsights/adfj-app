@@ -72,7 +72,7 @@ Route::get('/edit/{id}', [CreateController::class, 'edit']);
 Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
 Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
-
+Route::post('/add-music', [AdminMusicController::class, 'store']);
 
 
 
@@ -92,7 +92,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/music-cat', [CreateCategoryController::class, 'music_cat'])->name('admin.music-cat');
         Route::get('/video-cat', [CreateCategoryController::class, 'video_cat'])->name('admin.video-cat');
         Route::get('/graphics-cat', [CreateCategoryController::class, 'graphics_cat'])->name('admin.graphics-cat');
-        Route::get('/add-music', [AdminMusicController::class, 'store']);
+        Route::get('/add-music-cat', [AdminMusicController::class, 'index'])->name('admin.music');
+
 
 
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');

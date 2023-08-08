@@ -22,38 +22,29 @@
                 <div class="card">
 
                     <div class="card-body">
-                        <a href="{{ route('') }}" class="btn btn-success btn-sm" title="Add New Post">Add New Category</a>
-                        <br/><br/>
+                        <a href="{{ route('admin.music') }}" class="btn btn-success btn-sm" title="Add New Post">Add New
+                            Category</a>
+                        <br /><br />
                         <div class="table-responsive">
-                        <h2>Music Category</h2>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                  <th>ID</th>
+                            <h2>Music Category</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
 
-                                  <th>Cover</th>
-                                  <th>Update</th>
-                                  <th>Delete</th>
-                                </tr>
-                            </thead>
+                                        <th>Cover</th>
+                                        <th>Update</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
 
-                          </table>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 @endsection
 
 @section('customJs')

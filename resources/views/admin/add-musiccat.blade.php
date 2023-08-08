@@ -15,7 +15,7 @@
                             <input type="url" name="link" class="form-control m-2" placeholder="link">
                             <label class="m-2">Cover Image</label>
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
-{{--
+                            {{--
                             <div class="video-card">
                                 <label for="video" class="m-2">Play Button</label>
                                 <div class="checkbox">
@@ -37,5 +37,3 @@
         </div>
     </div>
 @endsection
-
-

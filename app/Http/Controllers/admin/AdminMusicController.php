@@ -38,6 +38,6 @@ class AdminMusicController extends Controller
                 Image::create($request->all());
             }
         }
-        return redirect("/admin/dashboard");
+        return redirect('/admin/music-cat');
     }
 }
