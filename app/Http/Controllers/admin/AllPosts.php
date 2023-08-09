@@ -30,6 +30,16 @@ class AllPosts extends Controller
         $posts = Post::all();
         return view('admin.music')->with('posts', $posts);
     }
+    public function video()
+    {
+        $posts = Post::all();
+        return view('admin.video')->with('posts', $posts);
+    }
+    public function graphics()
+    {
+        $posts = Post::all();
+        return view('admin.graphics')->with('posts', $posts);
+    }
 
     public function create()
     {

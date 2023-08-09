@@ -96,6 +96,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/allposts', [AllPosts::class, 'index'])->name('admin.allposts');
         Route::get('/music', [AllPosts::class, 'music'])->name('admin.music');
+        Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
+        Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
 
