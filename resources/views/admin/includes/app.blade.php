@@ -13,19 +13,8 @@
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" href="{{asset('user-assets/img/logo/favicon.ico')}}">
-
-
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-
-
-
-
 
     <link href="{{ asset('admin-assets/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet') }}">
     <link rel="stylesheet" href="{{ asset('admin-assets/vendor/dotted-map/css/contrib/jquery.smallipop-0.3.0.min.css') }}"
