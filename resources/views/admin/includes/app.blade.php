@@ -15,7 +15,7 @@
     <!--[ project css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/style.css') }}" />
     <!--[ Jquery Core Js ]-->
-    <script src="{{ asset('admin-assets/assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('admin-assets/js/plugins.js') }}"></script>
 </head>
 
 <body class="qboat admin" data-qboat="theme-DodgerBlue">
