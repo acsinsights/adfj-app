@@ -34,7 +34,9 @@ class AllPosts extends Controller
                 "author" => $request->author,
                 "location" => $request->location,
                 "date" => $request->date,
-                "cover" => $imageName,
+                "media" => $imageName,
+                "serviceid" => $request->serviceid,
+                "stypeid" => $request->stypeid,
             ]);
             $post->save();
         }
@@ -75,7 +77,9 @@ class AllPosts extends Controller
             "author" => $request->author,
             "location" => $request->location,
             "date" => $request->date,
-            "cover" => $post->cover,
+            "media" => $post->cover,
+            "serviceid" => $request->serviceid,
+            "stypeid" => $request->stypeid,
         ]);
 
         if ($request->hasFile("images")) {
