@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit." />
     <meta name="keyword" content="QBoat, Bootstrap 5, Admin Dashboard, Admin Theme" />
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('user-assets/img/logo/adfj.svg') }}" type="image/x-icon">
     <!--[ Favicon]-->
-    <title>:: QBoat :: Dashboard</title>
+    <title>Adfj Studios</title>
     <!--[ plugin css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->
