@@ -31,20 +31,27 @@ class AllPosts extends Controller
         $pservices = Pservices::all();
         return view('admin.music')->with('posts', $posts)->with('pservices', $pservices);
     }
+
     public function video()
     {
         $posts = Post::all();
         return view('admin.video')->with('posts', $posts);
     }
+
     public function graphics()
     {
         $posts = Post::all();
         return view('admin.graphics')->with('posts', $posts);
     }
 
+    public function type()
+    {
+        $posts = Post::all();
+        return view('admin.servicetype')->with('posts', $posts);
+    }
+
     public function create()
     {
-
         $stypes = Stypes::all();
         $pservices = Pservices::all();
         return view('admin.addpost')->with('pservices', $pservices)->with('stypes', $stypes);
@@ -159,5 +166,18 @@ class AllPosts extends Controller
             File::delete("cover/" . $cover);
         }
         return back();
+    }
+
+    public function addtype(Request $request)
+    {
+
+        $post = new Post([
+            "service_name" => $request->type,
+            "slug" => $request->slug,
+        ]);
+        $post->save();
+
+
+        return redirect("/admin/allposts");
     }
 }
