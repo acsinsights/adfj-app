@@ -33,8 +33,8 @@ class EditcatController extends Controller
 
         $musiccats->update([
             "musiccover" => $musiccats->musiccover,
-            "link" => $musiccats->link,
-            "type" => $musiccats->type,
+            "link" => $request->link,
+            "type" => $request->type,
         ]);
 
         if ($request->hasFile("images")) {
