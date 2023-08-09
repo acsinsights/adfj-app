@@ -3210,6 +3210,10 @@ textarea.form-control.is-invalid {
     z-index: 4;
 }
 
+.video-box{
+    display: none;
+}
+
 .btn {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/style.css') }}" />
+
     <!--[ Jquery Core Js ]-->
     <script src="{{ asset('admin-assets/js/plugins.js') }}"></script>
 </head>
@@ -951,6 +952,7 @@
                 d="M224.489 204.577L241.056 225.885H207.923L224.489 204.577Z"></path>
         </svg>
     </div>
+    @yield('customJs')
     <!--[ Jquery Page Js ]-->
     <script src="{{ asset('admin-assets/js/theme.js') }}"></script>
     <!--[ Chart plugin url ]-->
@@ -960,6 +962,13 @@
     <!--[ plugin url ]-->
     <!--[ Jquery Page Js ]-->
     <script>
+
+
+
+
+
+
+
         var options1 = {
             chart: {
                 type: "bar",
@@ -1515,7 +1524,7 @@
         });
     </script>
 
-    @yield('customJs')
+
 </body>
 
 </html>
