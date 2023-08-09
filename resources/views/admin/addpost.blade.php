@@ -23,22 +23,22 @@
                                             <form action="/add-post" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 <input type="text" name="title" class="form-control m-2"
-                                                    placeholder="Service Category">
+                                                    placeholder="Title">
                                                 <input type="text" name="author" class="form-control m-2"
-                                                    placeholder="Title of post">
+                                                    placeholder="Sub title">
                                                 <input type="text" name="location" class="form-control m-2"
                                                     placeholder="location">
                                                 <input type="date" name="date" class="form-control m-2">
 
                                                 <select name="" id="" value=""
                                                     class="form-control m-2">
-                                                    <option value=""><- Select Service -></option>
+                                                    <option value="serviceid"><- Select Service -></option>
                                                     @foreach ($pservices as $item)
                                                         <option value="{{ $item->id }}">{{ $item->service_name }}
                                                         </option>
                                                     @endforeach
                                                 </select>
-                                                <select name="" id="" value=""
+                                                <select name="stypeid" id="" value=""
                                                     class="form-control m-2">
                                                     <option value=""><- Select Service Type -></option>
                                                     @foreach ($stypes as $item1)
