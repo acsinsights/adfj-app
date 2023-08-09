@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="row galley-space tp-gx-20 grid " style="position: relative; height: 1799.76px;">
-                    @foreach ($musiccats as $ms)
+                    {{-- @foreach ($musiccats as $ms)
                         <div class="col-xl-4 {{ $ms->type }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                             style="position: absolute; left: 0%; top: 537px;">
                             <div class="portfolio__grid-item mb-20 tp-el-box">
@@ -196,7 +196,7 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    @endforeach --}}
                     <div class="col-xl-4 cover-song col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
