@@ -29,7 +29,45 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="container" style="padding-top:20px;">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2>All Service Types</h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-custom mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type Name</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
+                                                </tr>
+                                            </thead>
+
+
+                                            <tbody>
+
+                                                @foreach ($stypes as $type)
+                                                    <tr>
+
+                                                        <td>{{ $type->stype_name }}</td>
+                                                        <td>Edit</td>
+                                                        <td>Delete</td>
+                                                    </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </main>
         <!--[ Start:: page footer link copywrite ]-->
         <footer class="page-footer py-4 mt-4">

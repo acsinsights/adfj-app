@@ -11,5 +11,6 @@ class Stypes extends Model
     protected $fillable = [
         'id',
         'stype_name',
+        'slug',
     ];
 }

@@ -46,8 +46,8 @@ class AllPosts extends Controller
 
     public function type()
     {
-        $posts = Post::all();
-        return view('admin.servicetype')->with('posts', $posts);
+        $stypes = Stypes::all();
+        return view('admin.servicetype')->with('stypes', $stypes);
     }
 
     public function create()
@@ -170,14 +170,13 @@ class AllPosts extends Controller
 
     public function addtype(Request $request)
     {
-
-        $pservices = new Stypes([
+        $stypes = new Stypes([
             "stype_name" => $request->type,
             "slug" => $request->slug,
         ]);
-        $pservices->save();
+        $stypes->save();
 
 
-        return redirect("/admin/allposts");
+        return redirect("/admin/add-type");
     }
 }
