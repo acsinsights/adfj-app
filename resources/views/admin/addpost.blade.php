@@ -527,4 +527,22 @@
 @endsection
 
 @section('customJs')
+
+<script>
+    $(function () {
+    $(".checkme").click(function () {
+        var video = $(this).is(":checked");
+        if (video == true) {
+            $(this).parents(".video-card").find(".video-box").show();
+        } else {
+            $(this).parents(".video-card").find(".video-box").hide();
+        }
+    });
+});
+
+
+
+</script>
+
+
 @endsection
