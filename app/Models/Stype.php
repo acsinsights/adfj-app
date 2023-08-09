@@ -4,19 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Image;
 
-class Videocat extends Model
+class Pservices extends Model
 {
     use HasFactory;
     protected $fillable = [
         'id',
-        'link',
-        'type',
-        'videocover',       
+        'stype_name',
     ];
-    public function images()
-    {
-        return $this->hasMany(Image::class);
-    }
 }

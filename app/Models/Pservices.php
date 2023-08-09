@@ -4,18 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Image;
 
-class Graphicscat extends Model
+class Pservices extends Model
 {
     use HasFactory;
     protected $fillable = [
         'id',
-        'link',
-        'graphicscover',
+        'service_name',
     ];
-    public function images()
-    {
-        return $this->hasMany(Image::class);
-    }
 }

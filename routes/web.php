@@ -71,6 +71,7 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 
 
 Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
+Route::post('/add-post', [AllPosts::class, 'store']);
 Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
 Route::get('/edit/{id}', [CreateController::class, 'edit']);
 Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
