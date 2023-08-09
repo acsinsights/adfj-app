@@ -40,7 +40,7 @@
 
                 </li>
                 <li class="collapsed">
-                    <a class="hyper" href="#">
+                    <a class="hyper" href="{{ route('admin.featuredposts') }}">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.4"
                                 d="M14 4.5V11H13V4.5H11C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2L8 11H3H2V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5Z">
