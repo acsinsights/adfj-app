@@ -22,7 +22,7 @@ class EditcatController extends Controller
     {
         $musiccats = Musiccat::findOrFail($id);
         if ($request->hasFile("musiccover")) {
-            if (file::exists("/categories-img/music/" . $musiccats->musiccover)) {
+            if (File::exists("/categories-img/music/" . $musiccats->musiccover)) {
                 File::delete("/categories-img/music/" . $musiccats->musiccover);
             }
             $file = $request->file("musiccover");
@@ -32,9 +32,9 @@ class EditcatController extends Controller
         }
 
         $musiccats->update([
+            "musiccover" => $musiccats->musiccover,
             "link" => $musiccats->link,
             "type" => $musiccats->type,
-            "musiccover" => $musiccats->musiccover,
         ]);
 
         if ($request->hasFile("images")) {

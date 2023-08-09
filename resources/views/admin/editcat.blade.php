@@ -14,10 +14,11 @@
                         <form action="/updatecat/{{ $musiccats->id }}" method="post" enctype="multipart/form-data">
                             @csrf
                             @method('put')
-                            <input type="text" name="title" class="form-control m-2" placeholder="title"
+                            <input type="url" name="title" class="form-control m-2" placeholder="title"
                                 value="{{ $musiccats->link }}">
-                            <input type="text" name="" class="form-control m-2" placeholder="type"
-                                value="{{ $musiccats->type }}" disabled>
+
+                            <input type="text" class="form-control m-2" placeholder="type" value="{{ $musiccats->type }}"
+                                disabled>
 
                             <select name="type" id="type" class="form-control m-2" value="">
                                 <option><-- Select Type --></option>
