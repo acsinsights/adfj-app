@@ -367,7 +367,7 @@
     </div>
 </div>
 <!--[ Start:: page filter ]-->
-<div class="page-filter">
+{{-- <div class="page-filter">
     <div class="collapse" id="collapseFilter">
         <div class="filter-div">
             <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed" href="my-wallet.html">My
@@ -408,7 +408,7 @@
             </path>
         </svg>
     </a>
-</div>
+</div> --}}
 <!--[ Start:: page title and breadcrumb ]-->
 <div class="page-title mb-lg-4">
     <div class="container-fluid">
@@ -421,7 +421,7 @@
         <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <div class="ms-sm-auto mt-2 mt-sm-0">
 
-            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add</a>
+            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add </a>
         </div>
     </div>
 </div>
