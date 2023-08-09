@@ -40,8 +40,7 @@
                 <li class="dropdown d-none d-lg-inline-block">
                     <a class="dropdown-toggle text-white fullscreen" href="javascript:void(0);"
                         onclick="toggleFullScreen()">
-                        <svg width="20" viewbox="0 0 18 18" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" viewbox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-opacity="0.4"
                                 d="M10 0.5C10 0.367392 10.0527 0.240215 10.1464 0.146447C10.2402 0.0526784 10.3674 0 10.5 0L14.5 0C14.8978 0 15.2794 0.158035 15.5607 0.43934C15.842 0.720644 16 1.10218 16 1.5V5.5C16 5.63261 15.9473 5.75979 15.8536 5.85355C15.7598 5.94732 15.6326 6 15.5 6C15.3674 6 15.2402 5.94732 15.1464 5.85355C15.0527 5.75979 15 5.63261 15 5.5V1.5C15 1.36739 14.9473 1.24021 14.8536 1.14645C14.7598 1.05268 14.6326 1 14.5 1H10.5C10.3674 1 10.2402 0.947322 10.1464 0.853553C10.0527 0.759785 10 0.632608 10 0.5ZM0.5 10C0.632608 10 0.759785 10.0527 0.853553 10.1464C0.947322 10.2402 1 10.3674 1 10.5V14.5C1 14.6326 1.05268 14.7598 1.14645 14.8536C1.24021 14.9473 1.36739 15 1.5 15H5.5C5.63261 15 5.75979 15.0527 5.85355 15.1464C5.94732 15.2402 6 15.3674 6 15.5C6 15.6326 5.94732 15.7598 5.85355 15.8536C5.75979 15.9473 5.63261 16 5.5 16H1.5C1.10218 16 0.720644 15.842 0.43934 15.5607C0.158035 15.2794 0 14.8978 0 14.5L0 10.5C0 10.3674 0.0526784 10.2402 0.146447 10.1464C0.240215 10.0527 0.367392 10 0.5 10ZM15.5 10C15.6326 10 15.7598 10.0527 15.8536 10.1464C15.9473 10.2402 16 10.3674 16 10.5V14.5C16 14.8978 15.842 15.2794 15.5607 15.5607C15.2794 15.842 14.8978 16 14.5 16H10.5C10.3674 16 10.2402 15.9473 10.1464 15.8536C10.0527 15.7598 10 15.6326 10 15.5C10 15.3674 10.0527 15.2402 10.1464 15.1464C10.2402 15.0527 10.3674 15 10.5 15H14.5C14.6326 15 14.7598 14.9473 14.8536 14.8536C14.9473 14.7598 15 14.6326 15 14.5V10.5C15 10.3674 15.0527 10.2402 15.1464 10.1464C15.2402 10.0527 15.3674 10 15.5 10Z">
                             </path>
@@ -54,10 +53,8 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle text-white" href="#site_map" data-bs-toggle="offcanvas"
-                        role="button">
-                        <svg width="20" viewbox="0 0 18 18" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <a class="dropdown-toggle text-white" href="#site_map" data-bs-toggle="offcanvas" role="button">
+                        <svg width="20" viewbox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-opacity="0.4" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M5.14286 1.92857C5.14286 1.41708 5.36862 0.926543 5.77049 0.564866C6.17235 0.203188 6.71739 0 7.28571 0H8.71429C9.28261 0 9.82765 0.203188 10.2295 0.564866C10.6314 0.926543 10.8571 1.41708 10.8571 1.92857V3.21429C10.8571 3.72577 10.6314 4.21631 10.2295 4.57799C9.82765 4.93967 9.28261 5.14286 8.71429 5.14286V6.42857H12.2857C12.4752 6.42857 12.6568 6.4963 12.7908 6.61686C12.9247 6.73742 13 6.90093 13 7.07143V8.35714C13 8.52764 12.9247 8.69115 12.7908 8.81171C12.6568 8.93227 12.4752 9 12.2857 9C12.0963 9 11.9146 8.93227 11.7806 8.81171C11.6467 8.69115 11.5714 8.52764 11.5714 8.35714V7.71429H4.42857V8.35714C4.42857 8.52764 4.35332 8.69115 4.21936 8.81171C4.08541 8.93227 3.90373 9 3.71429 9C3.52485 9 3.34316 8.93227 3.20921 8.81171C3.07526 8.69115 3 8.52764 3 8.35714V7.07143C3 6.90093 3.07526 6.73742 3.20921 6.61686C3.34316 6.4963 3.52485 6.42857 3.71429 6.42857H7.28571V5.14286C6.71739 5.14286 6.17235 4.93967 5.77049 4.57799C5.36862 4.21631 5.14286 3.72577 5.14286 3.21429V1.92857ZM8.71429 3.85714C8.90373 3.85714 9.08541 3.78941 9.21936 3.66885C9.35332 3.5483 9.42857 3.38478 9.42857 3.21429V1.92857C9.42857 1.75808 9.35332 1.59456 9.21936 1.474C9.08541 1.35344 8.90373 1.28571 8.71429 1.28571H7.28571C7.09627 1.28571 6.91459 1.35344 6.78064 1.474C6.64668 1.59456 6.57143 1.75808 6.57143 1.92857V3.21429C6.57143 3.38478 6.64668 3.5483 6.78064 3.66885C6.91459 3.78941 7.09627 3.85714 7.28571 3.85714H8.71429Z">
                             </path>
@@ -71,10 +68,8 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle text-white" href="#rightbar" data-bs-toggle="offcanvas"
-                        role="button">
-                        <svg width="20" viewbox="0 0 18 18" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
+                    <a class="dropdown-toggle text-white" href="#rightbar" data-bs-toggle="offcanvas" role="button">
+                        <svg width="20" viewbox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.3"
                                 d="M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12z">
                             </path>
@@ -88,8 +83,7 @@
                     <a class="dropdown-toggle text-white" href="#NotificationsDiv" role="button"
                         data-bs-toggle="offcanvas" aria-expanded="false">
                         <span class="bullet-dot bg-accent animation-blink"></span>
-                        <svg width="20" viewbox="0 0 18 18" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" viewbox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <circle opacity="0.3" cx="11" cy="11" r="4"></circle>
                             <path
                                 d="M9 18C9.59674 18 10.169 17.7629 10.591 17.341C11.0129 16.919 11.25 16.3467 11.25 15.75H6.75C6.75 16.3467 6.98705 16.919 7.40901 17.341C7.83097 17.7629 8.40326 18 9 18ZM9 2.15775L8.10337 2.33888C7.08633 2.5461 6.17212 3.09837 5.51548 3.9022C4.85884 4.70603 4.50011 5.71206 4.5 6.75C4.5 7.4565 4.34925 9.22162 3.98362 10.9597C3.80362 11.8226 3.56063 12.7215 3.23775 13.5H14.7622C14.4394 12.7215 14.1975 11.8237 14.0164 10.9597C13.6507 9.22162 13.5 7.4565 13.5 6.75C13.4996 5.71225 13.1408 4.70649 12.4842 3.90289C11.8275 3.09929 10.9135 2.54719 9.89662 2.34L9 2.15663V2.15775ZM15.9975 13.5C16.2484 14.0029 16.5386 14.4011 16.875 14.625H1.125C1.46137 14.4011 1.75162 14.0029 2.0025 13.5C3.015 11.475 3.375 7.74 3.375 6.75C3.375 4.0275 5.31 1.755 7.88063 1.23637C7.86492 1.07995 7.88218 0.921967 7.93129 0.77262C7.98039 0.623273 8.06026 0.485876 8.16573 0.36929C8.27119 0.252705 8.39993 0.159519 8.54362 0.0957427C8.68732 0.0319665 8.84279 -0.000984192 9 -0.000984192C9.15721 -0.000984192 9.31268 0.0319665 9.45638 0.0957427C9.60007 0.159519 9.72881 0.252705 9.83428 0.36929C9.93974 0.485876 10.0196 0.623273 10.0687 0.77262C10.1178 0.921967 10.1351 1.07995 10.1194 1.23637C11.3909 1.49501 12.534 2.18516 13.3551 3.18994C14.1762 4.19472 14.6248 5.4524 14.625 6.75C14.625 7.74 14.985 11.475 15.9975 13.5Z">
@@ -103,11 +97,13 @@
                         data-bs-toggle="dropdown" aria-expanded="false" title="User">
                         <img class="avatar sm rounded-circle shadow border border-2"
                             src="{{ asset('admin-assets/img/profile_av.png') }}" alt="avatar" />
-                        <span class="ps-1 fs-6 text-white d-none d-lg-inline-block">{{ Auth::guard('admin')->user()->name }}</span>
+                        <span
+                            class="ps-1 fs-6 text-white d-none d-lg-inline-block">{{ Auth::guard('admin')->user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-4 rounded-4">
                         <li class="mb-3">
-                            <a class="h5" href="crafted-profile.html" title="">{{ Auth::guard('admin')->user()->name }}</a>
+                            <a class="h5" href="crafted-profile.html"
+                                title="">{{ Auth::guard('admin')->user()->name }}</a>
 
 
 
@@ -163,8 +159,7 @@
 <div class="offcanvas offcanvas-end" tabindex="-1" id="NotificationsDiv">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Notifications</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body notification custom_scroll">
         <ul class="nav nav-tabs tab-card" role="tablist">
@@ -389,12 +384,12 @@
 <div class="page-filter">
     <div class="collapse" id="collapseFilter">
         <div class="filter-div">
-            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed"
-                href="my-wallet.html">My Wallet</a>
-            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed"
-                href="my-iot.html">Smart Home</a>
-            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed"
-                href="my-task.html">My Task</a>
+            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed" href="my-wallet.html">My
+                Wallet</a>
+            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed" href="my-iot.html">Smart
+                Home</a>
+            <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed" href="my-task.html">My
+                Task</a>
             <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed"
                 href="my-campaigns.html">Campaigns</a>
             <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed"
@@ -403,8 +398,7 @@
     </div>
     <a class="btn btn-sm collapsed py-0" data-bs-toggle="collapse" href="#collapseFilter" role="button"
         aria-expanded="false">
-        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="none">
+        <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
             <style>
                 @keyframes slide-right {
                     0% {
@@ -438,7 +432,7 @@
                 My Dashboard
             </li>
         </ol>
-        <h1 class="mb-0 text-gradient font-heading">Hello, Brian!</h1>
+        <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <div class="ms-sm-auto mt-2 mt-sm-0">
             <div class="avatar-list avatar-list-stacked px-3 d-inline-flex">
                 <span class="pe-4">New User</span>
