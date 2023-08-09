@@ -56,7 +56,7 @@ class AllPosts extends Controller
                 Image::create($request->all());
             }
         }
-        return redirect("/admin/dashboard");
+        return redirect("/admin/allposts");
     }
 
     public function edit($id)
