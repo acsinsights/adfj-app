@@ -22,7 +22,7 @@
     <!--[ Start:: main sidebar menu link ]-->
     @include('admin.includes.sidebar')
     @yield('content')
-    {{-- <!--[ Start modal:: Full screen grid menu ]-->
+    <!--[ Start modal:: Full screen grid menu ]-->
     <div class="modal fade" tabindex="-1" id="full_screen_menu">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content bg-primary-gradient p-lg-5">
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!--[ Start offcanvas:: Need a Help ]-->
     <div class="offcanvas xl offcanvas-start" tabindex="-1" id="need_help">
         <div class="offcanvas-header">
