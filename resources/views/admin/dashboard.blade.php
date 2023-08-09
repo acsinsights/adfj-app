@@ -579,7 +579,8 @@
                                                 <td>$14,500</td>
                                                 <td>Online Payment</td>
                                                 <td>
-                                                    <span class="badge bg-success">Delivered</span>
+                                                    <span class="btn btn-sm btn-primary">Edit</span>
+
                                                 </td>
                                             </tr>
                                             <tr>
