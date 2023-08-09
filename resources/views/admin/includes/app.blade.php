@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit." />
     <meta name="keyword" content="QBoat, Bootstrap 5, Admin Dashboard, Admin Theme" />
-    <link rel="shortcut icon" href="{{ asset('user-assets/img/logo/adfj.svg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
     <!--[ Favicon]-->
     <title>Adfj Studios</title>
     <!--[ plugin css file  ]-->
@@ -27,7 +27,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content bg-primary-gradient p-lg-5">
                 <div class="modal-header border-0">
-                    <h3 class="modal-title text-white">QBoat</h3>
+                    <h3 class="modal-title text-white">Adfj</h3>
                     <div class="modal-menu d-flex align-items-center">
                         <ul class="nav me-3">
                             <li class="nav-item">
