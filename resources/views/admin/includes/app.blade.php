@@ -1514,6 +1514,8 @@
             chart.render();
         });
     </script>
+
+    @yield('customJs')
 </body>
 
 </html>
