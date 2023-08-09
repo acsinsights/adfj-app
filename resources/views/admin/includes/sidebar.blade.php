@@ -65,9 +65,18 @@
                 <li class="collapsed">
                     <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu_auth" href="#">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                            <rect opacity="0.2" width="16" height="16" rx="2"></rect>
-                            <path opacity="0.7"
-                                d="M8 3.625C8.42435 3.625 8.83131 3.7567 9.13137 3.99112C9.43143 4.22554 9.6 4.54348 9.6 4.875V7.375H6.4V4.875C6.4 4.54348 6.56857 4.22554 6.86863 3.99112C7.16869 3.7567 7.57565 3.625 8 3.625ZM10.4 7.375V4.875C10.4 4.37772 10.1471 3.90081 9.69706 3.54917C9.24697 3.19754 8.63652 3 8 3C7.36348 3 6.75303 3.19754 6.30294 3.54917C5.85286 3.90081 5.6 4.37772 5.6 4.875V7.375C5.17565 7.375 4.76869 7.5067 4.46863 7.74112C4.16857 7.97554 4 8.29348 4 8.625V11.75C4 12.0815 4.16857 12.3995 4.46863 12.6339C4.76869 12.8683 5.17565 13 5.6 13H10.4C10.8243 13 11.2313 12.8683 11.5314 12.6339C11.8314 12.3995 12 12.0815 12 11.75V8.625C12 8.29348 11.8314 7.97554 11.5314 7.74112C11.2313 7.5067 10.8243 7.375 10.4 7.375Z">
+                            <path opacity="0.4"
+                                d="M14 4.5V11H13V4.5H11C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2L8 11H3H2V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5Z">
+                            </path>
+                            <path opacity="0.9"
+                                d="M4.264 15.849V11.85H3.473V13.476H1.791V11.85H1V15.849H1.79V14.135H3.473V15.849H4.264Z">
+                            </path>
+                            <path opacity="0.9" d="M6.515 15.849V12.512H7.652V11.85H4.588V12.512H5.721V15.849H6.515Z">
+                            </path>
+                            <path opacity="0.9"
+                                d="M8.691 13.189V15.849H7.985V11.85H8.79L9.93 14.446H9.956L11.096 11.85H11.896V15.849H11.181V13.188H11.143L10.197 15.348H9.681L8.729 13.189H8.691Z">
+                            </path>
+                            <path opacity="0.9" d="M15.097 15.175H13.401H13.4V11.85H12.61V15.849H15.097V15.175Z">
                             </path>
                         </svg>
                         <span class="mx-3">Portfolio</span>
@@ -76,9 +85,9 @@
                     <!-- Menu: Sub menu ul -->
                     <ul class="sub-menu collapse" id="menu_auth">
                         <li><a class="ms-link hyper" href="{{ route('admin.music') }}">Music</a></li>
-                        <li><a class="ms-link hyper" href="auth-signup.html">Video</a></li>
+                        <li><a class="ms-link hyper" href="{{ route('admin.video') }}">Video</a></li>
                         <li>
-                            <a class="ms-link hyper" href="auth-password-reset.html">Graphics </a>
+                            <a class="ms-link hyper" href="{{ route('admin.graphics') }}">Graphics </a>
                         </li>
                     </ul>
                 </li>
