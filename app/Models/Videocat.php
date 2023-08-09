@@ -8,15 +8,15 @@ use App\Models\Image;
 
 class Videocat extends Model
 {
-        use HasFactory;
-        protected $fillable=[
-            'id',
-            'link',
-            'video-cover',
-
-
+    use HasFactory;
+    protected $fillable = [
+        'id',
+        'link',
+        'type',
+        'videocover',       
     ];
-        public function images(){
-            return $this->hasMany(Image::class);
-        }
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
+}

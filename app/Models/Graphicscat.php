@@ -9,14 +9,13 @@ use App\Models\Image;
 class Graphicscat extends Model
 {
     use HasFactory;
-        protected $fillable=[
-            'id',
-            'link',
-            'graphics-cover',
-
-
+    protected $fillable = [
+        'id',
+        'link',
+        'graphicscover',
     ];
-        public function images(){
-            return $this->hasMany(Image::class);
-        }
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
+}

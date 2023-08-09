@@ -18,12 +18,6 @@ class VideoeditcatController extends Controller
         return view('admin.videoeditcat')->with('videocats', $videocats);
     }
 
-
-
-
-
-
-
     public function update(Request $request,$id)
     {
      $videocats=videocat::findOrFail($id);
