@@ -367,7 +367,7 @@
     </div>
 </div>
 <!--[ Start:: page filter ]-->
-<div class="page-filter">
+{{-- <div class="page-filter">
     <div class="collapse" id="collapseFilter">
         <div class="filter-div">
             <a class="px-3 py-2 m-1 d-inline-flex rounded text-decoration-none border dashed" href="my-wallet.html">My
@@ -408,7 +408,7 @@
             </path>
         </svg>
     </a>
-</div>
+</div> --}}
 <!--[ Start:: page title and breadcrumb ]-->
 <div class="page-title mb-lg-4">
     <div class="container-fluid">
