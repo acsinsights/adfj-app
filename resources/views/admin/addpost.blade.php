@@ -30,15 +30,15 @@
                                                     placeholder="location">
                                                 <input type="date" name="date" class="form-control m-2">
 
-                                                <select name="" id="" value=""
+                                                <select name="service" id="" value=""
                                                     class="form-control m-2">
-                                                    <option value="serviceid"><- Select Service -></option>
+                                                    <option value="service"><- Select Service -></option>
                                                     @foreach ($pservices as $item)
                                                         <option value="{{ $item->id }}">{{ $item->service_name }}
                                                         </option>
                                                     @endforeach
                                                 </select>
-                                                <select name="stypeid" id="" value=""
+                                                <select name="type" id="" value=""
                                                     class="form-control m-2">
                                                     <option value=""><- Select Service Type -></option>
                                                     @foreach ($stypes as $item1)

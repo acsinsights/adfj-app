@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('protfolio_service', function (Blueprint $table) {
+        Schema::create('pservices', function (Blueprint $table) {
             $table->id();
             $table->string('service_name', 100);
             $table->timestamps();

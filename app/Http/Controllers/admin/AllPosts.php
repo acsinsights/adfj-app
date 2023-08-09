@@ -40,8 +40,8 @@ class AllPosts extends Controller
                 "location" => $request->location,
                 "date" => $request->date,
                 "media" => $imageName,
-                "serviceid" => $request->serviceid,
-                "stypeid" => $request->stypeid,
+                "serviceid" => $request->service,
+                "stypeid" => $request->type,
             ]);
             $post->save();
         }
