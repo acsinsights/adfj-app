@@ -99,6 +99,7 @@
 
                                         <tbody>
                                             @foreach ($posts as $post)
+                                            @if ($post->serviceid == 2)
                                                 <tr>
                                                     <th style="vertical-align: middle;" scope="row">
                                                         {{ $post->id }}</th>
@@ -123,7 +124,8 @@
                                                         </form>
                                                     </td>
                                                 </tr>
-                                            @endforeach
+                                                @endif
+                                                @endforeach
                                         </tbody>
                                     </table>
                                 </div>
