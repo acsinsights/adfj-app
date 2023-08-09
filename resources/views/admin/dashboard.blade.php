@@ -568,93 +568,39 @@
                                                 <th>Category </th>
                                                 <th>Date</th>
                                                 <th>Location</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>#01</td>
-                                                <td>Sean Black</td>
-                                                <td>PRO12345</td>
-                                                <td>Mi LED Smart TV 4A 80</td>
-                                                <td>$14,500</td>
-                                                <td>Online Payment</td>
-                                                <td>
-                                                    <span class="btn btn-sm btn-primary">Edit</span>
 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#02</td>
-                                                <td>Evan Rees</td>
-                                                <td>PRO8765</td>
-                                                <td>Thomson R9 122cm (48 inch) Full HD LED TV</td>
-                                                <td>$30,000</td>
-                                                <td>Cash on delivered</td>
-                                                <td>
-                                                    <span class="badge bg-primary">Add Cart</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#03</td>
-                                                <td>David Wallace</td>
-                                                <td>PRO54321</td>
-                                                <td>Vu 80cm (32 inch) HD Ready LED TV</td>
-                                                <td>$13,200</td>
-                                                <td>Online Payment</td>
-                                                <td><span class="badge bg-warning">Pending</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>#04</td>
-                                                <td>Julia Bower</td>
-                                                <td>PRO97654</td>
-                                                <td>Micromax 81cm (32 inch) HD Ready LED TV</td>
-                                                <td>$15,100</td>
-                                                <td>Cash on delivered</td>
-                                                <td>
-                                                    <span class="badge bg-secondary">Delivering</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#05</td>
-                                                <td>Kevin James</td>
-                                                <td>PRO4532</td>
-                                                <td>HP 200 Mouse &amp; Wireless Laptop Keyboard</td>
-                                                <td>$5,987</td>
-                                                <td>Online Payment</td>
-                                                <td><span class="badge bg-danger">Shipped</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>#06</td>
-                                                <td>Theresa Wright</td>
-                                                <td>PRO6789</td>
-                                                <td>Digisol DG-HR3400 Router</td>
-                                                <td>$11,987</td>
-                                                <td>Cash on delivered</td>
-                                                <td>
-                                                    <span class="badge bg-success">Delivering</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#07</td>
-                                                <td>Sebastian Black</td>
-                                                <td>PRO4567</td>
-                                                <td>Dell WM118 Wireless Optical Mouse</td>
-                                                <td>$4,700</td>
-                                                <td>Online Payment</td>
-                                                <td>
-                                                    <span class="badge bg-secondary">Add to Cart</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>#08</td>
-                                                <td>Kevin Glover</td>
-                                                <td>PRO32156</td>
-                                                <td>Dell 16 inch Laptop Backpack</td>
-                                                <td>$678</td>
-                                                <td>Cash On delivered</td>
-                                                <td><span class="badge bg-info">Delivered</span></td>
-                                            </tr>
-                                        </tbody>
+
+                                        <tbody >
+                                            @foreach ($posts as $post)
+                                              <tr>
+                                                  <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th>
+                                                  <td>{{ $post->media }}</td>
+                                                  <td>{{ $post->title }}</td>
+                                                  <td>{{ $post->services }}</td>
+                                                  <td>{{ $post->posttype }}</td>
+                                                  <td>{{ $post->category }}</td>
+                                                  <td>{{ $post->date }}</td>
+                                                  <td>{{ $post->location }}</td>
+                                                  <td><img src="/cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
+                                                  <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Edit</a></td>
+                                                  <td>
+                                                      <form action="/delete/{{ $post->id }}" method="post">
+                                                        <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
+                                                        @csrf
+                                                        @method('delete')
+                                                      </form>
+                                                  </td>
+                                              </tr>
+                                            @endforeach
+                                          </tbody>
+
+
+
+
                                     </table>
                                 </div>
                             </div>
