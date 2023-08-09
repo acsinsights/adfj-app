@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Pservices;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
+use App\Models\Stypes;
 use App\Models\Image;
 use Illuminate\Support\Facades\File;
 
@@ -19,7 +21,10 @@ class AllPosts extends Controller
 
     public function create()
     {
-        return view('admin.addpost');
+
+        $stypes = Stypes::all();
+        $pservices = Pservices::all();
+        return view('admin.addpost')->with('pservices', $pservices)->with('stypes', $stypes);
     }
 
     public function store(Request $request)

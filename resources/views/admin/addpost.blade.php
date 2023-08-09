@@ -29,8 +29,23 @@
                                                 <input type="text" name="location" class="form-control m-2"
                                                     placeholder="location">
                                                 <input type="date" name="date" class="form-control m-2">
-                                                <input type="url" name="link" class="form-control m-2"
-                                                    placeholder="link">
+
+                                                <select name="" id="" value=""
+                                                    class="form-control m-2">
+                                                    <option value=""><- Select Service -></option>
+                                                    @foreach ($pservices as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->service_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                                <select name="" id="" value=""
+                                                    class="form-control m-2">
+                                                    <option value=""><- Select Service Type -></option>
+                                                    @foreach ($stypes as $item1)
+                                                        <option value="{{ $item1->id }}">{{ $item1->stype_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
                                                 <label class="m-2">Cover Image</label>
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover">
