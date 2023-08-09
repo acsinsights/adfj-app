@@ -87,7 +87,6 @@
                                                 <th>#No</th>
                                                 <th>Media</th>
                                                 <th>Title</th>
-                                                <th>Services</th>
                                                 <th>Post Type</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
@@ -98,31 +97,33 @@
 
 
                                         <tbody>
+
                                             @foreach ($posts as $post)
-                                                <tr>
-                                                    <th style="vertical-align: middle;" scope="row">
-                                                        {{ $post->id }}</th>
-                                                    <td><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                            style="max-height:100px; max-width:100px" alt=""
-                                                            srcset=""></td>
-                                                    <td>{{ $post->title }}</td>
-                                                    <td>{{ $post->serviceid }}</td>
-                                                    <td>{{ $post->stypeid }}</td>
-                                                    <td>{{ $post->date }}</td>
-                                                    <td>{{ $post->location }}</td>
-                                                    <td><a href="/edit/{{ $post->id }}"
-                                                            class="btn btn-outline-primary">Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <form action="/delete/{{ $post->id }}" method="post">
-                                                            <button class="btn btn-outline-danger"
-                                                                onclick="return confirm('Are you sure?');"
-                                                                type="submit">Delete</button>
-                                                            @csrf
-                                                            @method('delete')
-                                                        </form>
-                                                    </td>
-                                                </tr>
+                                                @if ($post->serviceid == 1)
+                                                    <tr>
+                                                        <th style="vertical-align: middle;" scope="row">
+                                                            {{ $post->id }}</th>
+                                                        <td><img src="/posts/{{ $post->media }}" class="img-responsive"
+                                                                style="max-height:100px; max-width:100px" alt=""
+                                                                srcset=""></td>
+                                                        <td>{{ $post->title }}</td>
+                                                        <td>{{ $post->stypeid }}</td>
+                                                        <td>{{ $post->date }}</td>
+                                                        <td>{{ $post->location }}</td>
+                                                        <td><a href="/edit/{{ $post->id }}"
+                                                                class="btn btn-outline-primary">Edit</a>
+                                                        </td>
+                                                        <td>
+                                                            <form action="/delete/{{ $post->id }}" method="post">
+                                                                <button class="btn btn-outline-danger"
+                                                                    onclick="return confirm('Are you sure?');"
+                                                                    type="submit">Delete</button>
+                                                                @csrf
+                                                                @method('delete')
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                @endif
                                             @endforeach
                                         </tbody>
                                     </table>

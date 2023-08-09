@@ -28,7 +28,8 @@ class AllPosts extends Controller
     public function music()
     {
         $posts = Post::all();
-        return view('admin.music')->with('posts', $posts);
+        $pservices = Pservices::all();
+        return view('admin.music')->with('posts', $posts)->with('pservices', $pservices);
     }
 
     public function create()
