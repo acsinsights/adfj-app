@@ -75,7 +75,7 @@
                     </a>
                     <!-- Menu: Sub menu ul -->
                     <ul class="sub-menu collapse" id="menu_auth">
-                        <li><a class="ms-link hyper" href="auth-signin.html">Music</a></li>
+                        <li><a class="ms-link hyper" href="{{ route('admin.music') }}">Music</a></li>
                         <li><a class="ms-link hyper" href="auth-signup.html">Video</a></li>
                         <li>
                             <a class="ms-link hyper" href="auth-password-reset.html">Graphics </a>

@@ -18,10 +18,17 @@ class AllPosts extends Controller
         $posts = Post::all();
         return view('admin.allposts')->with('posts', $posts);
     }
+
     public function featured()
     {
         $posts = Post::all();
         return view('admin.featuredposts')->with('posts', $posts);
+    }
+
+    public function music()
+    {
+        $posts = Post::all();
+        return view('admin.music')->with('posts', $posts);
     }
 
     public function create()
