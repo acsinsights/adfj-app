@@ -23,6 +23,7 @@ use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\AdminMusicController;
 use App\Http\Controllers\admin\AdminVideoController;
 use App\Http\Controllers\admin\AdminGraphicsController;
+use App\Http\Controllers\admin\AllPosts;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
@@ -98,6 +99,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.auth'], function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::get('/allposts', [AllPosts::class, 'index'])->name('admin.allposts');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
 
