@@ -470,7 +470,7 @@
                                 <h5 class="card-title fw-normal mb-0">Product Summary</h5>
                                 <div class="card-action">
                                     <div class="dropdown">
-                                        <a href="#" class="card-options-remove text-danger"
+                                        {{-- <a href="#" class="card-options-remove text-danger"
                                             data-toggle="card-remove">
                                             <svg width="16" height="16" viewbox="0 0 16 16" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -481,7 +481,7 @@
                                                     d="M5 4C4.73478 4 4.48043 4.10536 4.29289 4.29289C4.10536 4.48043 4 4.73478 4 5V11C4 11.2652 4.10536 11.5196 4.29289 11.7071C4.48043 11.8946 4.73478 12 5 12H11C11.2652 12 11.5196 11.8946 11.7071 11.7071C11.8946 11.5196 12 11.2652 12 11V5C12 4.73478 11.8946 4.48043 11.7071 4.29289C11.5196 4.10536 11.2652 4 11 4H5ZM6.677 6.323L8 7.6465L9.323 6.323C9.34624 6.29976 9.37384 6.28132 9.40421 6.26874C9.43458 6.25616 9.46713 6.24968 9.5 6.24968C9.53287 6.24968 9.56542 6.25616 9.59579 6.26874C9.62616 6.28132 9.65376 6.29976 9.677 6.323C9.70024 6.34624 9.71868 6.37384 9.73126 6.40421C9.74384 6.43458 9.75032 6.46713 9.75032 6.5C9.75032 6.53287 9.74384 6.56542 9.73126 6.59579C9.71868 6.62616 9.70024 6.65376 9.677 6.677L8.3535 8L9.677 9.323C9.70024 9.34624 9.71868 9.37384 9.73126 9.40421C9.74384 9.43458 9.75032 9.46713 9.75032 9.5C9.75032 9.53287 9.74384 9.56542 9.73126 9.59579C9.71868 9.62616 9.70024 9.65376 9.677 9.677C9.65376 9.70024 9.62616 9.71868 9.59579 9.73126C9.56542 9.74384 9.53287 9.75032 9.5 9.75032C9.46713 9.75032 9.43458 9.74384 9.40421 9.73126C9.37384 9.71868 9.34624 9.70024 9.323 9.677L8 8.3535L6.677 9.677C6.65376 9.70024 6.62616 9.71868 6.59579 9.73126C6.56542 9.74384 6.53287 9.75032 6.5 9.75032C6.46713 9.75032 6.43458 9.74384 6.40421 9.73126C6.37384 9.71868 6.34624 9.70024 6.323 9.677C6.29976 9.65376 6.28132 9.62616 6.26874 9.59579C6.25616 9.56542 6.24968 9.53287 6.24968 9.5C6.24968 9.46713 6.25616 9.43458 6.26874 9.40421C6.28132 9.37384 6.29976 9.34624 6.323 9.323L7.6465 8L6.323 6.677C6.27606 6.63006 6.24968 6.56639 6.24968 6.5C6.24968 6.43361 6.27606 6.36994 6.323 6.323C6.36994 6.27606 6.43361 6.24968 6.5 6.24968C6.56639 6.24968 6.63006 6.27606 6.677 6.323V6.323Z">
                                                 </path>
                                             </svg>
-                                        </a>
+                                        </a> --}}
                                         <a href="#" class="card-fullscreen small text-warning"
                                             data-bs-toggle="tooltip" title="Card Full Screen">
                                             <svg width="16" height="16" viewbox="0 0 16 16" fill="currentColor"
@@ -496,7 +496,7 @@
                                                     height="6" rx="1"></rect>
                                             </svg>
                                         </a>
-                                        <a href="#" class="dropdown-toggle after-none text-primary"
+                                        {{-- <a href="#" class="dropdown-toggle after-none text-primary"
                                             data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
                                             <svg width="16" height="16" viewbox="0 0 16 16" fill="currentColor"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -507,7 +507,7 @@
                                                     d="M0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V5C0 5.53043 0.210714 6.03914 0.585786 6.41421C0.960859 6.78929 1.46957 7 2 7H5C5.53043 7 6.03914 6.78929 6.41421 6.41421C6.78929 6.03914 7 5.53043 7 5V2C7 1.46957 6.78929 0.960859 6.41421 0.585786C6.03914 0.210714 5.53043 0 5 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786Z">
                                                 </path>
                                             </svg>
-                                        </a>
+                                        </a> --}}
                                         {{-- <div class="dropdown-menu dropdown-menu-end shadow border-0 rounded-4 p-2">
                                             <a href="javascript:void(0)" class="dropdown-item"><i
                                                     class="me-3 fa fa-share"></i>Share</a>
@@ -552,29 +552,35 @@
                                         </thead>
 
 
-                                        <tbody >
+                                        <tbody>
                                             @foreach ($posts as $post)
-                                              <tr>
-                                                  <th style="vertical-align: middle;" scope="row">{{ $post->id }}</th>
-                                                  <td>{{ $post->media }}</td>
-                                                  <td>{{ $post->title }}</td>
-                                                  <td>{{ $post->services }}</td>
-                                                  <td>{{ $post->posttype }}</td>
-                                                  <td>{{ $post->category }}</td>
-                                                  <td>{{ $post->date }}</td>
-                                                  <td>{{ $post->location }}</td>
-                                                  <td><img src="/cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-                                                  <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Edit</a></td>
-                                                  <td>
-                                                      <form action="/delete/{{ $post->id }}" method="post">
-                                                        <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
-                                                        @csrf
-                                                        @method('delete')
-                                                      </form>
-                                                  </td>
-                                              </tr>
+                                                <tr>
+                                                    <th style="vertical-align: middle;" scope="row">
+                                                        {{ $post->id }}</th>
+                                                    <td>{{ $post->media }}</td>
+                                                    <td>{{ $post->title }}</td>
+                                                    <td>{{ $post->services }}</td>
+                                                    <td>{{ $post->posttype }}</td>
+                                                    <td>{{ $post->category }}</td>
+                                                    <td>{{ $post->date }}</td>
+                                                    <td>{{ $post->location }}</td>
+                                                    <td><img src="/cover/{{ $post->cover }}" class="img-responsive"
+                                                            style="max-height:100px; max-width:100px" alt=""
+                                                            srcset=""></td>
+                                                    <td><a href="/edit/{{ $post->id }}"
+                                                            class="btn btn-outline-primary">Edit</a></td>
+                                                    <td>
+                                                        <form action="/delete/{{ $post->id }}" method="post">
+                                                            <button class="btn btn-outline-danger"
+                                                                onclick="return confirm('Are you sure?');"
+                                                                type="submit">Delete</button>
+                                                            @csrf
+                                                            @method('delete')
+                                                        </form>
+                                                    </td>
+                                                </tr>
                                             @endforeach
-                                          </tbody>
+                                        </tbody>
 
 
 
