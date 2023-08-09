@@ -171,11 +171,11 @@ class AllPosts extends Controller
     public function addtype(Request $request)
     {
 
-        $post = new Post([
-            "service_name" => $request->type,
+        $pservices = new Stypes([
+            "stype_name" => $request->type,
             "slug" => $request->slug,
         ]);
-        $post->save();
+        $pservices->save();
 
 
         return redirect("/admin/allposts");
