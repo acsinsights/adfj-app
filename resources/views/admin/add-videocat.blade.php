@@ -10,10 +10,10 @@
                         <h2>Add New Video category</h2>
                     </div>
                     <div class="card-body">
-                        <form action="/add-video-cat" method="post" enctype="multipart/form-data">
+                        <form action="/add-video" method="post" enctype="multipart/form-data">
                             @csrf
                             <input type="url" name="link" class="form-control m-2" placeholder="link">
-                            <select name="type" id="type" class="form-control m-2">
+                            <select name="type" id="type" class="form-control m-2" value="">
                                 <option value=""><-- Select Type --></option>
                                 <option value="music-song"> Music Videos </option>
                                 <option value="original-song">Animation Videos </option>

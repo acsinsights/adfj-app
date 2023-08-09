@@ -9,11 +9,12 @@ use Illuminate\Http\Request;
 
 class AdminVideoController extends Controller
 {
-        public function index()
+    public function index()
     {
         return view('admin.add-videocat');
     }
-       public function store(Request $request)
+
+    public function store(Request $request)
     {
         if ($request->hasFile("cover")) {
             $file = $request->file("cover");

@@ -76,7 +76,7 @@ Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
 Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
 Route::post('/add-music', [AdminMusicController::class, 'store']);
-
+Route::post('/add-video', [AdminVideoController::class, 'store']);
 
 
 //music categories
@@ -84,6 +84,7 @@ Route::post('/add-music', [AdminMusicController::class, 'store']);
 Route::get('/editcat/{id}', [EditcatController::class, 'index']);
 Route::put('/updatecat/{id}', [EditcatController::class, 'update']);
 Route::delete('/deletecover/{id}', [EditcatController::class, 'destroy']);
+
 
 
 
