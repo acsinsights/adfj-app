@@ -7,7 +7,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h2>Add New music category</h2>
+                            <h2>Add New Music category</h2>
                         </div>
                         <div class="card-body">
                             <form action="/add-music" method="post" enctype="multipart/form-data">

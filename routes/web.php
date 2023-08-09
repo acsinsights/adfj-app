@@ -79,23 +79,11 @@ Route::post('/add-music', [AdminMusicController::class, 'store']);
 
 
 
-
-
-
-
 //music categories
 
 Route::get('/editcat/{id}', [EditcatController::class, 'index']);
 Route::put('/updatecat/{id}', [EditcatController::class, 'update']);
 Route::delete('/deletecover/{id}', [EditcatController::class, 'destroy']);
-
-
-
-
-
-
-
-
 
 
 

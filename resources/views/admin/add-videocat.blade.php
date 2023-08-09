@@ -7,17 +7,18 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Add New music category</h2>
+                        <h2>Add New Video category</h2>
                     </div>
                     <div class="card-body">
                         <form action="/add-video-cat" method="post" enctype="multipart/form-data">
                             @csrf
                             <input type="url" name="link" class="form-control m-2" placeholder="link">
-                            <select name="type" id="type" class="form-control">
+                            <select name="type" id="type" class="form-control m-2">
                                 <option value=""><-- Select Type --></option>
-                                <option value="music-song">Music song</option>
-                                <option value="original-song">Original song</option>
-                                <option value="rap-song">Rap song</option>
+                                <option value="music-song"> Music Videos </option>
+                                <option value="original-song">Animation Videos </option>
+                                <option value="rap-song">Ad Films </option>
+                                <option value="rap-song">Films Vlogs</option>
                             </select>
                             <label class="m-2">Cover Image</label>
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
