@@ -107,17 +107,20 @@
                                 data-bs-toggle="dropdown" aria-expanded="false" title="User">
                                 <img class="avatar sm rounded-circle shadow border border-2"
                                     src="{{ asset('admin-assets/img/profile_av.png') }}" alt="avatar" />
-                                <span class="ps-1 fs-6 text-white d-none d-lg-inline-block">Brian</span>
+                                <span class="ps-1 fs-6 text-white d-none d-lg-inline-block">{{ Auth::guard('admin')->user()->name }}</span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-4 rounded-4">
                                 <li class="mb-3">
-                                    <a class="h5" href="crafted-profile.html" title="">Brian Hughes</a>
-                                    <p>brian.hughes@example.com</p>
+                                    <a class="h5" href="crafted-profile.html" title="">{{ Auth::guard('admin')->user()->name }}</a>
+
+
+
+                                    <p>{{ Auth::guard('admin')->user()->email }}</p>
                                     <a class="btn bg-dark text-white w-100" href="{{ route('admin.logout') }}"
                                         role="button">Logout</a>
                                 </li>
                                 <li class="dropdown-divider"></li>
-                                <li>
+                                {{-- <li>
                                     <a class="dropdown-item" href="crafted-profile.html">My Profile</a>
                                 </li>
                                 <li>
@@ -125,15 +128,15 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="my-task.html">My Taskboard</a>
-                                </li>
-                                <li class="dropdown-divider"></li>
+                                </li> --}}
+                                {{-- <li class="dropdown-divider"></li>
                                 <li>
                                     <a class="dropdown-item" href="my-wallet.html"><span class="align-middle">Balance:
                                             <b>$1399.33</b></span></a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="account.html">Settings</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         <!--[ Start:: setting toggle ]-->
@@ -594,15 +597,15 @@
             </div>
         </main>
         <!--[ Start:: page footer link copywrite ]-->
-        <footer class="page-footer py-4 mt-4">
+        {{-- <footer class="page-footer py-4 mt-4">
             <div class="container-fluid">
                 <p class="col-md-4 mb-0 text-muted">
                     © 2022
-                    <a href="https://pixelwibes.com/" target="_blank" title="Pixelwibes">Pixelwibes</a>, All
+                    <a href="https://pixelwibes.com/" target="_blank" title="Pixelwibes">ADFJ Studios</a>, All
                     Rights Reserved.
                 </p>
             </div>
-        </footer>
+        </footer> --}}
     </div>
 @endsection
 
