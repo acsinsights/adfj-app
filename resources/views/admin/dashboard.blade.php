@@ -561,12 +561,13 @@
                                         <thead>
                                             <tr>
                                                 <th>#No</th>
-                                                <th>Client Name</th>
-                                                <th>Product ID</th>
-                                                <th>Product</th>
-                                                <th>Product Cost</th>
-                                                <th>Payment Mode</th>
-                                                <th>Status</th>
+                                                <th>Media</th>
+                                                <th>Title</th>
+                                                <th>Services</th>
+                                                <th>Post Type </th>
+                                                <th>Category </th>
+                                                <th>Date</th>
+                                                <th>Location</th>
                                             </tr>
                                         </thead>
                                         <tbody>
