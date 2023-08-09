@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Musiccat;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class MusicController extends Controller
 {
     public function index()
     {
-        $musiccats = Musiccat::all();
-        return view('frontend/music')->with('musiccats', $musiccats);
+        $posts = Post::all();
+        return view('frontend/music')->with('posts', $posts);
     }
 }

@@ -18,106 +18,108 @@ class CreateController extends Controller
 
     public function store(Request $request)
     {
-        if($request->hasFile("cover")){
-            $file=$request->file("cover");
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("cover/"),$imageName);
+        if ($request->hasFile("cover")) {
+            $file = $request->file("cover");
+            $imageName = time() . '_' . $file->getClientOriginalName();
+            $file->move(\public_path("cover/"), $imageName);
 
-            $post =new Post([
-                "title" =>$request->title,
-                "author" =>$request->author,
-                "location" =>$request->location,
-                "date" =>$request->date,
-                "cover" =>$imageName,
+            $post = new Post([
+                "title" => $request->title,
+                "author" => $request->author,
+                "location" => $request->location,
+                "date" => $request->date,
+                "media" => $imageName,
             ]);
             $post->save();
-            }
-            if($request->hasFile("images")){
+        }
+        if ($request->hasFile("images")) {
 
-                $files=$request->file("images");
-                foreach($files as $file){
-                    $imageName=time().'_'.$file->getClientOriginalName();
-                    $request['post_id']=$post->id;
-                    $request['image']=$imageName;
-                    $file->move(\public_path("/images"),$imageName);
-                    Image::create($request->all());
-                }
-
+            $files = $request->file("images");
+            foreach ($files as $file) {
+                $imageName = time() . '_' . $file->getClientOriginalName();
+                $request['post_id'] = $post->id;
+                $request['image'] = $imageName;
+                $file->move(\public_path("/images"), $imageName);
+                Image::create($request->all());
             }
+
+        }
         return redirect("/admin/dashboard");
     }
 
     public function edit($id)
     {
-        $posts=Post::findOrFail($id);
-        return view('admin.edit')->with('posts',$posts);
+        $posts = Post::findOrFail($id);
+        return view('admin.edit')->with('posts', $posts);
     }
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
-     $post=Post::findOrFail($id);
-     if($request->hasFile("cover")){
-         if (file::exists("cover/".$post->cover)) {
-             File::delete("cover/".$post->cover);
-         }
-         $file=$request->file("cover");
-         $post->cover=time()."_".$file->getClientOriginalName();
-         $file->move(\public_path("/cover"),$post->cover);
-         $request['cover']=$post->cover;
-     }
+        $post = Post::findOrFail($id);
+        if ($request->hasFile("cover")) {
+            if (file::exists("posts/" . $post->media)) {
+                File::delete("posts/" . $post->media);
+            }
+            $file = $request->file("cover");
+            $post->media = time() . "_" . $file->getClientOriginalName();
+            $file->move(\public_path("/posts"), $post->media);
+            $request['cover'] = $post->media;
+        }
 
         $post->update([
-            "title"=>$request->title,
-            "author"=>$request->author,
-            "location"=>$request->location,
-            "date" =>$request->date,
-            "cover"=>$post->cover,
+            "title" => $request->title,
+            "author" => $request->author,
+            "location" => $request->location,
+            "date" => $request->date,
+            "media" => $post->media,
         ]);
 
-        if($request->hasFile("images")){
-            $files=$request->file("images");
-            foreach($files as $file){
-                $imagename=time()."-".$file->getClientOriginalName();
-                $request["post_id"]=$id;
-                $request["image"]=$imagename;
-                $file->move(\public_path("images"),$imagename);
+        if ($request->hasFile("images")) {
+            $files = $request->file("images");
+            foreach ($files as $file) {
+                $imagename = time() . "-" . $file->getClientOriginalName();
+                $request["post_id"] = $id;
+                $request["image"] = $imagename;
+                $file->move(\public_path("images"), $imagename);
                 Image::create($request->all());
             }
         }
 
-        return redirect("/admin/dashboard");
+        return redirect("/admin/allposts");
     }
 
     public function destroy($id)
     {
-         $posts = Post::findOrFail($id);
+        $posts = Post::findOrFail($id);
 
-         if (File::exists("cover/".$posts->cover)) {
-             File::delete("cover/".$posts->cover);
-         }
-         $images=Image::where("post_id",$posts->id)->get();
-         foreach($images as $image){
-            if (File::exists("images/".$image->image)) {
-                File::delete("images/".$image->image);
+        if (File::exists("posts/" . $posts->media)) {
+            File::delete("posts/" . $posts->media);
+        }
+        $images = Image::where("post_id", $posts->id)->get();
+        foreach ($images as $image) {
+            if (File::exists("images/" . $image->image)) {
+                File::delete("images/" . $image->image);
             }
-         }
-         $posts->delete();
-         return back();
+        }
+        $posts->delete();
+        return back();
     }
 
-    public function deleteimage($id){
-        $images=Image::findOrFail($id);
-        if (File::exists("images/".$images->image)) {
-           File::delete("images/".$images->image);
+    public function deleteimage($id)
+    {
+        $images = Image::findOrFail($id);
+        if (File::exists("images/" . $images->image)) {
+            File::delete("images/" . $images->image);
         }
 
-       Image::find($id)->delete();
-       return back();
+        Image::find($id)->delete();
+        return back();
     }
 
-    public function deletecover($id){
-        $cover=Post::findOrFail($id)->cover;
-        if (File::exists("cover/".$cover)) {
-            File::delete("cover/".$cover);
+    public function deletecover($id)
+    {
+        $cover = Post::findOrFail($id)->media;
+        if (File::exists("cover/" . $cover)) {
+            File::delete("cover/" . $cover);
         }
         return back();
     }

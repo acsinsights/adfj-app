@@ -421,7 +421,7 @@
         <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <div class="ms-sm-auto mt-2 mt-sm-0">
 
-            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add Widget's</a>
+            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add </a>
         </div>
     </div>
 </div>
