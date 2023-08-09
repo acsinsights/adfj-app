@@ -15,7 +15,7 @@
                                 <h2>Add New Post</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/add-type" method="post" enctype="multipart/form-data">
+                                <form action="/add-service-type" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <input type="text" name="type" class="form-control m-2"
                                         placeholder="Enter Type Name">

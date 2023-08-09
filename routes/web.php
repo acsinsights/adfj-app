@@ -71,7 +71,8 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 
 
 Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
-Route::post('/add-type', [AllPosts::class, 'type'])->name('admin.type');
+Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
+Route::post('/add-service-type', [AllPosts::class, 'addtype']);
 Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
 
 
