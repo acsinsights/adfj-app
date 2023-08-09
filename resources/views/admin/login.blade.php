@@ -12,10 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" href="{{ asset('admin-assets/images/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('login-assets/images/favicon.png') }}">
 
-    <link href="{{ asset('admin-assets/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('login-assets/vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ asset('login-assets/css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -102,12 +102,12 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="{{ asset('admin-assets/vendor/global/global.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/custom.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/deznav-init.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/demo.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/styleSwitcher.js') }}"></script>
+    <script src="{{ asset('login-assets/vendor/global/global.min.js') }}"></script>
+    <script src="{{ asset('login-assets/js/custom.min.js') }}"></script>
+    <script src="{{ asset('login-assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('login-assets/js/deznav-init.js') }}"></script>
+    <script src="{{ asset('login-assets/js/demo.js') }}"></script>
+    <script src="{{ asset('login-assets/js/styleSwitcher.js') }}"></script>
 </body>
 
 </html>
