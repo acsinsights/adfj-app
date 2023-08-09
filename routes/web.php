@@ -70,22 +70,12 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 //     });
 
 
-Route::post('/post', [CreateController::class, 'store']);
+Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
 Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
 Route::get('/edit/{id}', [CreateController::class, 'edit']);
 Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
 Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
 Route::put('/update/{id}', [CreateController::class, 'update']);
-Route::post('/add-music', [AdminMusicController::class, 'store']);
-Route::post('/add-video', [AdminVideoController::class, 'store']);
-
-
-//music categories
-
-Route::get('/editcat/{id}', [EditcatController::class, 'index']);
-Route::put('/updatecat/{id}', [EditcatController::class, 'update']);
-Route::delete('/deletecover/{id}', [EditcatController::class, 'destroy']);
-
 
 
 

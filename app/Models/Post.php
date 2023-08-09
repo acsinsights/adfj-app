@@ -6,18 +6,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Image;
 
-    class Post extends Model
-    {
-        use HasFactory;
-        protected $fillable=[
+class Post extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'id',
         'title',
-        'author' ,
-        'location' ,
-        'date' ,
-        'cover' ,
-
+        'author',
+        'location',
+        'date',
+        'media',
+        'serviceid',
+        'stypeid',
     ];
-        public function images(){
-            return $this->hasMany(Image::class);
-        }
+    public function images()
+    {
+        return $this->hasMany(Image::class);
     }
+}
