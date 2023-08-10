@@ -87,7 +87,6 @@
 
                                                 <th>Media</th>
                                                 <th>Title</th>
-                                                <th>Services</th>
                                                 <th>Post Type</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
@@ -105,15 +104,14 @@
                                                                 style="max-height:100px; max-width:100px" alt=""
                                                                 srcset=""></td>
                                                         <td>{{ $post->title }}</td>
-                                                        <td>{{ $post->serviceid }}</td>
-                                                        <td>{{ $post->stypeid }}</td>
+                                                        <td>{{ $post->stypes->slug }}</td>
                                                         <td>{{ $post->date }}</td>
                                                         <td>{{ $post->location }}</td>
-                                                        <td><a href="/edit/{{ $post->id }}"
+                                                        <td><a href="/admin/edit/{{ $post->id }}"
                                                                 class="btn btn-outline-primary">Edit</a>
                                                         </td>
                                                         <td>
-                                                            <form action="/delete/{{ $post->id }}" method="post">
+                                                            <form action="/admin/delete/{{ $post->id }}" method="post">
                                                                 <button class="btn btn-outline-danger"
                                                                     onclick="return confirm('Are you sure?');"
                                                                     type="submit">Delete</button>

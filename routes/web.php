@@ -32,7 +32,7 @@ use App\Http\Controllers\admin\CreateCategoryController;
 
 
 use App\Http\Controllers\frontend\PostController;
-
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,6 +95,18 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);
         Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+        Route::get('/getSlug', function (Request $request) {
+
+            $slug = '';
+            if (!empty($request->title)) {
+                $slug = Str::slug($request->title);
+            }
+
+            return response()->json([
+                'status' => true,
+                'slug' => $slug,
+            ]);
+        });
 
         //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store']);

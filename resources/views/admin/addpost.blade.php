@@ -54,7 +54,8 @@
                                                     <label for="video" class="m-2">Play Button</label>
                                                     <div class="checkbox">
                                                         <label>
-                                                            <input type="checkbox" class="checkme m-2" value="1">
+                                                            <input type="checkbox" name="playbtn" id="playbtn"
+                                                                class="checkme m-2" value="1">
                                                         </label>
                                                     </div>
                                                     <div class="video-box">

@@ -17,9 +17,22 @@ class Post extends Model
         'media',
         'serviceid',
         'stypeid',
+        'status',
+        'hypelinks',
     ];
+
     public function images()
     {
         return $this->hasMany(Image::class);
+    }
+
+    public function pservices()
+    {
+        return $this->belongsTo(Pservices::class, 'serviceid', 'id');
+    }
+
+    public function stypes()
+    {
+        return $this->belongsTo(Stypes::class, 'stypeid', 'id');
     }
 }

@@ -12,16 +12,17 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h2>Add New Post</h2>
+                                <h2>Add Service Type</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/add-service-type" method="post" enctype="multipart/form-data">
+                                <form action="/add-service-type" name="categoryForm" id="categoryForm" method="post"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <input type="text" name="type" class="form-control m-2"
                                         placeholder="Enter Type Name">
 
                                     <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                                        placeholder="Slug">
+                                        placeholder="Slug" readonly>
 
                                     <button type="submit" class="btn btn-success mt-3">Submit</button>
                                 </form>
@@ -91,6 +92,22 @@
                     $(this).parents(".video-card").find(".video-box").hide();
                 }
             });
+        });
+    </script>
+
+    <script>
+        $('#categoryForm').submit(function(event) {
+            event.preventDefault();
+
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: element.serializeArray(),
+                dataType: 'json',
+                success: function(response){
+
+                }
+            })
         });
     </script>
 @endsection

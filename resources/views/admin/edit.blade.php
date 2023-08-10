@@ -31,19 +31,12 @@
 
                                     <label for="" class="">Portfolio Service</label>
 
-                                    <input type="text" class="form-control m-2" value="{{ $posts->serviceid }}" disabled>
-
-                                    <select class="form-control custom-select m-2" id="inlineFormCustomSelect"
-                                        name="service">
-                                        <option selected>Choose Service...</option>
-                                        @foreach ($pservices as $ps)
-                                            <option value="{{ $ps->id }}">{{ $ps->service_name }}</option>
-                                        @endforeach
-                                    </select>
+                                    <input type="text" class="form-control m-2"
+                                        value="{{ $posts->pservices->service_name }}" readonly>
 
                                     <label for="" class="">Service Type</label>
                                     <input type="text" name="type" class="form-control m-2"
-                                        value="{{ $posts->stypeid }}" disabled>
+                                        value="{{ $posts->stypes->slug }}" readonly>
 
                                     <select class="form-control custom-select m-2" id="inlineFormCustomSelect">
                                         <option selected>Choose Type...</option>
