@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
 use App\Models\Image;
+use App\Models\Pservices;
+use App\Models\Stypes;
 use Illuminate\Support\Facades\File;
 
 class CreateController extends Controller
@@ -42,7 +44,6 @@ class CreateController extends Controller
                 $file->move(\public_path("/images"), $imageName);
                 Image::create($request->all());
             }
-
         }
         return redirect("/admin/dashboard");
     }
@@ -50,8 +51,11 @@ class CreateController extends Controller
     public function edit($id)
     {
         $posts = Post::findOrFail($id);
-        return view('admin.edit')->with('posts', $posts);
+        $pservices = Pservices::all();
+        $stypes = Stypes::all();
+        return view('admin.edit')->with('posts', $posts)->with('pservices', $pservices)->with('stypes', $stypes);
     }
+
     public function update(Request $request, $id)
     {
         $post = Post::findOrFail($id);

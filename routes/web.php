@@ -87,12 +87,16 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/music', [AllPosts::class, 'music'])->name('admin.music');
         Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
         Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
+
+        //* categories
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
         Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);
         Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+
+        //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store']);
         Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
         Route::get('/edit/{id}', [CreateController::class, 'edit']);

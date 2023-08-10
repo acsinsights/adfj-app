@@ -20,7 +20,7 @@
                                             <h2>Add New Post</h2>
                                         </div>
                                         <div class="card-body">
-                                            <form action="/add-post" method="post" enctype="multipart/form-data">
+                                            <form action="/admin/add-post" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 <input type="text" name="title" class="form-control m-2"
                                                     placeholder="Title">

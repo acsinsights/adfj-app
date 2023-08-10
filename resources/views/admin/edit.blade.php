@@ -14,23 +14,51 @@
                                 <h2>Edit Post</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/update/{{ $posts->id }}" method="post" enctype="multipart/form-data">
+                                <form action="/admin/update/{{ $posts->id }}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('put')
-                                    <input type="text" name="title" class="form-control m-2" placeholder="title"
-                                        value="{{ $posts->title }}">
-                                    <input type="text" name="author" class="form-control m-2" placeholder="author"
-                                        value="{{ $posts->author }}">
+                                    <label for="" class="title">Title</label>
+                                    <input type="text" name="title" class="form-control m-2"
+                                        placeholder="Service Category" value="{{ $posts->title }}">
+
+                                    <label for="" class="">Sub Title</label>
+                                    <input type="text" name="author" class="form-control m-2"
+                                        placeholder="Title of post" value="{{ $posts->author }}">
+
+                                    <label for="" class="">Location</label>
                                     <input type="text" name="location" class="form-control m-2" placeholder="location"
                                         value="{{ $posts->location }}">
-                                    <input type="date" name="date" class="form-control m-2" placeholder="location"
+
+                                    <label for="" class="">Portfolio Service</label>
+
+                                    <input type="text" class="form-control m-2" value="{{ $posts->serviceid }}" disabled>
+
+                                    <select class="form-control custom-select m-2" id="inlineFormCustomSelect"
+                                        name="service">
+                                        <option selected>Choose Service...</option>
+                                        @foreach ($pservices as $ps)
+                                            <option value="{{ $ps->id }}">{{ $ps->service_name }}</option>
+                                        @endforeach
+                                    </select>
+
+                                    <label for="" class="">Service Type</label>
+                                    <input type="text" name="type" class="form-control m-2"
+                                        value="{{ $posts->stypeid }}" disabled>
+
+                                    <select class="form-control custom-select m-2" id="inlineFormCustomSelect">
+                                        <option selected>Choose Type...</option>
+                                        @foreach ($stypes as $st)
+                                            <option value="{{ $st->id }}">{{ $st->stype_name }}</option>
+                                        @endforeach
+                                    </select>
+
+                                    <input type="date" name="date" class=" form-control m-2"
                                         value="{{ $posts->date }}">
 
-
                                     <label class="m-2">Cover Image</label>
+
                                     <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                         name="cover">
-
 
 
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>
@@ -42,7 +70,7 @@
                                     @csrf
                                     @method('delete')
                                 </form>
-                                <img src="/cover/{{ $posts->cover }}" class="img-responsive"
+                                <img src="/posts/{{ $posts->media }}" class="img-responsive"
                                     style="max-height: 100px; max-width: 100px;" alt="" srcset="">
                                 <br>
 
