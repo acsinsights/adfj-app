@@ -47,7 +47,8 @@ class AllPosts extends Controller
     public function type()
     {
         $stypes = Stypes::all();
-        return view('admin.servicetype')->with('stypes', $stypes);
+        $pservices = Pservices::all();
+        return view('admin.servicetype')->with('stypes', $stypes)->with('pservices', $pservices);
     }
 
     public function create()
@@ -57,6 +58,7 @@ class AllPosts extends Controller
         return view('admin.addpost')->with('pservices', $pservices)->with('stypes', $stypes);
     }
 
+    // ?Store function for posts
     public function store(Request $request)
     {
         if ($request->hasFile("cover")) {
@@ -72,6 +74,8 @@ class AllPosts extends Controller
                 "media" => $imageName,
                 "serviceid" => $request->service,
                 "stypeid" => $request->type,
+                "status" => $request->playbtn,
+                "hypelinks" => $request->videolink,
             ]);
             $post->save();
         }
@@ -89,22 +93,27 @@ class AllPosts extends Controller
         return redirect("/admin/allposts");
     }
 
+    // ?Edit function for posts
     public function edit($id)
     {
         $posts = Post::findOrFail($id);
-        return view('admin.edit')->with('posts', $posts);
+        $pservices = Pservices::all();
+        $stypes = Stypes::all();
+        return view('admin.edit')->with('posts', $posts)->with('pservices', $pservices)->with('stypes', $stypes);
     }
+
+    // ?Update function for posts
     public function update(Request $request, $id)
     {
         $post = Post::findOrFail($id);
         if ($request->hasFile("cover")) {
-            if (file::exists("cover/" . $post->cover)) {
-                File::delete("cover/" . $post->cover);
+            if (file::exists("posts/" . $post->media)) {
+                File::delete("posts/" . $post->media);
             }
             $file = $request->file("cover");
-            $post->cover = time() . "_" . $file->getClientOriginalName();
-            $file->move(\public_path("/cover"), $post->cover);
-            $request['cover'] = $post->cover;
+            $post->media = time() . "_" . $file->getClientOriginalName();
+            $file->move(\public_path("/posts"), $post->media);
+            $request['cover'] = $post->media;
         }
 
         $post->update([
@@ -112,9 +121,10 @@ class AllPosts extends Controller
             "author" => $request->author,
             "location" => $request->location,
             "date" => $request->date,
-            "media" => $post->cover,
-            "serviceid" => $request->serviceid,
-            "stypeid" => $request->stypeid,
+            "media" => $post->media,
+            "serviceid" => $request->service,
+            "stypeid" => $request->type,
+            "hypelinks" => $request->hypelinks,
         ]);
 
         if ($request->hasFile("images")) {
@@ -128,28 +138,24 @@ class AllPosts extends Controller
             }
         }
 
-        return redirect("/admin/dashboard");
+        return redirect("/admin/allposts");
     }
-
-
-
-
-
 
     public function stypeedit($id)
     {
         $stype = Stypes::findOrFail($id);
         return view('admin.edit')->with('stype', $stype);
     }
+
     public function stypeupdate(Request $request, $id)
     {
         $stype = Post::findOrFail($id);
         $stype->stypeupdate([
             "stype_name" => $request->stype_name,
             "slug" => $request->slug,
-
+            "pservices_id" => $request->service,
         ]);
-        return redirect("/admin/dashboard");
+        return redirect("/admin/add-type");
     }
 
     public function destroy($id)
@@ -194,10 +200,9 @@ class AllPosts extends Controller
         $stypes = new Stypes([
             "stype_name" => $request->type,
             "slug" => $request->slug,
+            "pservices_id" => $request->service,
         ]);
         $stypes->save();
-
-
         return redirect("/admin/add-type");
     }
 }

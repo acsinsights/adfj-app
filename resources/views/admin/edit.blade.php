@@ -21,29 +21,35 @@
                                     <input type="text" name="title" class="form-control m-2"
                                         placeholder="Service Category" value="{{ $posts->title }}">
 
-                                    <label for="" class="">Sub Title</label>
+                                    <label>Sub Title</label>
                                     <input type="text" name="author" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $posts->author }}">
 
-                                    <label for="" class="">Location</label>
+                                    <label>Location</label>
                                     <input type="text" name="location" class="form-control m-2" placeholder="location"
                                         value="{{ $posts->location }}">
 
-                                    <label for="" class="">Portfolio Service</label>
+                                    <label>Portfolio Service</label>
 
                                     <input type="text" class="form-control m-2"
                                         value="{{ $posts->pservices->service_name }}" readonly>
 
-                                    <label for="" class="">Service Type</label>
-                                    <input type="text" name="type" class="form-control m-2"
-                                        value="{{ $posts->stypes->slug }}" readonly>
+                                    <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
 
-                                    <select class="form-control custom-select m-2" id="inlineFormCustomSelect">
-                                        <option selected>Choose Type...</option>
+                                    <label>Service Type</label>
+                                    <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
+                                        readonly>
+
+                                    <select name="type" class="form-control custom-select m-2"
+                                        id="inlineFormCustomSelect">
+                                        <option value="{{ $posts->stypeid }}" selected>Choose Type...</option>
                                         @foreach ($stypes as $st)
                                             <option value="{{ $st->id }}">{{ $st->stype_name }}</option>
                                         @endforeach
                                     </select>
+
+                                    <input type="text" name="hypelinks" id="hypelinks" class="form-control m-2"
+                                        value="{{ $posts->hypelinks }}">
 
                                     <input type="date" name="date" class=" form-control m-2"
                                         value="{{ $posts->date }}">

@@ -261,33 +261,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                                <a href="services-details.html">
-                                                                                  <svg
-                                                                                    width="45"
-                                                                                    height="44"
-                                                                                    viewBox="0 0 45 44"
-                                                                                    fill="none"
-                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                  >
-                                                                                    <path
-                                                                                      d="M43.999 22.1553H1.57262"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                    <path
-                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                  </svg>
-                                                                                </a>
-                                                                              </div> -->
+                                                                                                            <a href="services-details.html">
+                                                                                                              <svg
+                                                                                                                width="45"
+                                                                                                                height="44"
+                                                                                                                viewBox="0 0 45 44"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                              >
+                                                                                                                <path
+                                                                                                                  d="M43.999 22.1553H1.57262"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                                <path
+                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                              </svg>
+                                                                                                            </a>
+                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -311,33 +311,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                                <a href="services-details.html">
-                                                                                  <svg
-                                                                                    width="45"
-                                                                                    height="44"
-                                                                                    viewBox="0 0 45 44"
-                                                                                    fill="none"
-                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                  >
-                                                                                    <path
-                                                                                      d="M43.999 22.1553H1.57262"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                    <path
-                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                  </svg>
-                                                                                </a>
-                                                                              </div> -->
+                                                                                                            <a href="services-details.html">
+                                                                                                              <svg
+                                                                                                                width="45"
+                                                                                                                height="44"
+                                                                                                                viewBox="0 0 45 44"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                              >
+                                                                                                                <path
+                                                                                                                  d="M43.999 22.1553H1.57262"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                                <path
+                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                              </svg>
+                                                                                                            </a>
+                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -361,33 +361,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                                <a href="services-details.html">
-                                                                                  <svg
-                                                                                    width="45"
-                                                                                    height="44"
-                                                                                    viewBox="0 0 45 44"
-                                                                                    fill="none"
-                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                  >
-                                                                                    <path
-                                                                                      d="M43.999 22.1553H1.57262"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                    <path
-                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                  </svg>
-                                                                                </a>
-                                                                              </div> -->
+                                                                                                            <a href="services-details.html">
+                                                                                                              <svg
+                                                                                                                width="45"
+                                                                                                                height="44"
+                                                                                                                viewBox="0 0 45 44"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                              >
+                                                                                                                <path
+                                                                                                                  d="M43.999 22.1553H1.57262"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                                <path
+                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                              </svg>
+                                                                                                            </a>
+                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -411,33 +411,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                                <a href="services-details.html">
-                                                                                  <svg
-                                                                                    width="45"
-                                                                                    height="44"
-                                                                                    viewBox="0 0 45 44"
-                                                                                    fill="none"
-                                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                                  >
-                                                                                    <path
-                                                                                      d="M43.999 22.1553H1.57262"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                    <path
-                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                      stroke="currentColor"
-                                                                                      stroke-width="1.5"
-                                                                                      stroke-miterlimit="10"
-                                                                                      stroke-linecap="round"
-                                                                                      stroke-linejoin="round"
-                                                                                    />
-                                                                                  </svg>
-                                                                                </a>
-                                                                              </div> -->
+                                                                                                            <a href="services-details.html">
+                                                                                                              <svg
+                                                                                                                width="45"
+                                                                                                                height="44"
+                                                                                                                viewBox="0 0 45 44"
+                                                                                                                fill="none"
+                                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                              >
+                                                                                                                <path
+                                                                                                                  d="M43.999 22.1553H1.57262"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                                <path
+                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                                                  stroke="currentColor"
+                                                                                                                  stroke-width="1.5"
+                                                                                                                  stroke-miterlimit="10"
+                                                                                                                  stroke-linecap="round"
+                                                                                                                  stroke-linejoin="round"
+                                                                                                                />
+                                                                                                              </svg>
+                                                                                                            </a>
+                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -467,17 +467,17 @@
                                     <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
                                         data-wow-duration="1s">
 
-                                        <a href="https://petals-india.com/">
+                                        <a href="{{ $post->status == 1 ? "$post->hypelinks" : "javascript: void(0);" }}">
                                             <div class="portfolio__thumb-3 w-img"
                                                 data-background="{{ $post->media ? asset('posts/' . $post->media) : '' }}">
                                             </div>
 
                                             <div class="portfolio__content-3 transition-3">
                                                 <div class="portfolio__tag-3">
-                                                    <a href="#">{{ $post->title }}</a>
+                                                    <a href="{{ $post->status == 1 ? "$post->hypelinks" : "javascript: void(0);" }}">{{ $post->pservices->service_name }}</a>
                                                 </div>
                                                 <h3 class="portfolio__title-3">
-                                                    <a href="portfolio-details.html">{{ $post->author }}</a>
+                                                    <a href="{{ $post->status == 1 ? "$post->hypelinks" : "javascript: void(0);" }}">{{ $post->author }}</a>
                                                 </h3>
                                                 <div class="portfolio__meta-3 transition-3">
 
@@ -591,13 +591,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                          >(<span
-                                                                                            data-purecounter-duration="1"
-                                                                                            data-purecounter-end="66"
-                                                                                            class="purecounter"
-                                                                                            >0</span
-                                                                                          >%)</span
-                                                                                        > -->
+                                                                                                                      >(<span
+                                                                                                                        data-purecounter-duration="1"
+                                                                                                                        data-purecounter-end="66"
+                                                                                                                        class="purecounter"
+                                                                                                                        >0</span
+                                                                                                                      >%)</span
+                                                                                                                    > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -646,13 +646,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                          >(<span
-                                                                                            data-purecounter-duration="1"
-                                                                                            data-purecounter-end="80"
-                                                                                            class="purecounter"
-                                                                                            >0</span
-                                                                                          >%)</span
-                                                                                        > -->
+                                                                                                                      >(<span
+                                                                                                                        data-purecounter-duration="1"
+                                                                                                                        data-purecounter-end="80"
+                                                                                                                        class="purecounter"
+                                                                                                                        >0</span
+                                                                                                                      >%)</span
+                                                                                                                    > -->
                                                 </h4>
                                             </div>
                                         </div>

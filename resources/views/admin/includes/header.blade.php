@@ -413,7 +413,7 @@
 <div class="page-title mb-lg-4">
     <div class="container-fluid">
         <ol class="breadcrumb bg-transparent w-100 li_animate mb-3 mb-md-1">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 My Dashboard
             </li>
@@ -421,7 +421,7 @@
         <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <div class="ms-sm-auto mt-2 mt-sm-0">
 
-            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add </a>
+            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add Post</a>
         </div>
     </div>
 </div>

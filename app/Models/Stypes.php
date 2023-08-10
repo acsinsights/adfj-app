@@ -12,5 +12,11 @@ class Stypes extends Model
         'id',
         'stype_name',
         'slug',
+        'pservices_id',
     ];
+
+    public function pservices()
+    {
+        return $this->belongsTo(Pservices::class, 'pservices_id', 'id');
+    }
 }

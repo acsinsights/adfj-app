@@ -11,7 +11,7 @@
                     </a>
                 </li>
                 <!--[ Start:: dashboard ]-->
-                <li class="">
+                <li class="pt-10">
                     <a class="active hyper" href="{{ route('admin.dashboard') }}">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.2"
@@ -26,7 +26,7 @@
 
                 </li>
 
-                <li class="collapsed">
+                <li class="collapsed pt-2">
                     <a class="hyper" href="{{ route('admin.allposts') }}">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.2"
@@ -39,7 +39,7 @@
                     </a>
 
                 </li>
-                <li class="collapsed">
+                <li class="collapsed pt-2">
                     <a class="hyper" href="{{ route('admin.featuredposts') }}">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.4"
@@ -62,7 +62,7 @@
                     </a>
 
                 </li>
-                <li class="collapsed">
+                <li class="collapsed pt-2">
                     <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu_auth" href="#">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.4"
@@ -91,19 +91,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="collapsed">
-                    <a class="hyper" href="{{ route('admin.addposts') }}">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                            fill-rule="evenodd">
-                            <path fill-rule="evenodd"
-                                d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z" />
-                        </svg>
-
-
-                        <span class="mx-3">Add Post</span>
-                    </a>
-                </li>
-                <li class="collapsed">
+                <li class="collapsed pt-2">
                     <a class="hyper" href="/admin/add-type">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                             <path opacity="0.4"
@@ -112,8 +100,7 @@
                             <path opacity="0.9"
                                 d="M4.264 15.849V11.85H3.473V13.476H1.791V11.85H1V15.849H1.79V14.135H3.473V15.849H4.264Z">
                             </path>
-                            <path opacity="0.9"
-                                d="M6.515 15.849V12.512H7.652V11.85H4.588V12.512H5.721V15.849H6.515Z">
+                            <path opacity="0.9" d="M6.515 15.849V12.512H7.652V11.85H4.588V12.512H5.721V15.849H6.515Z">
                             </path>
                             <path opacity="0.9"
                                 d="M8.691 13.189V15.849H7.985V11.85H8.79L9.93 14.446H9.956L11.096 11.85H11.896V15.849H11.181V13.188H11.143L10.197 15.348H9.681L8.729 13.189H8.691Z">
@@ -129,7 +116,7 @@
                 <!--[ Start:: Changelog ]-->
 
             </ul>
-            <div class="card promo text-center">
+            {{-- <div class="card promo text-center">
                 <div class="card-body">
                     <svg class="mx-auto mb-3" width="100" viewbox="0 0 512 317" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -216,10 +203,10 @@
                     </p>
                     <button class="btn btn-primary" type="button">Learn more</button>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <!--[ sidebar: footer link ]-->
-        <ul class="menu-list nav navbar-nav bg-transparent">
+        {{-- <ul class="menu-list nav navbar-nav bg-transparent">
             <li>
                 <a class="m-link" data-bs-toggle="offcanvas" href="#need_help" role="button"
                     aria-controls="need_help" title="Need Help?">
@@ -233,6 +220,6 @@
                     <span class="mx-3">Need Help?</span>
                 </a>
             </li>
-        </ul>
+        </ul> --}}
     </div>
 </aside>

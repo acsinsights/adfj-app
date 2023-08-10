@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Image;
 use Illuminate\Support\Facades\File;
+
 class HomeController extends Controller
 {
 
@@ -14,79 +15,79 @@ class HomeController extends Controller
 
     public function index()
     {
-        $posts=Post::all();
+        $posts = Post::all();
         return view('frontend.index')->with('posts', $posts);
     }
 
-
-
-
-    public function store(Request $request,$id)
+    public function about()
     {
-        if($request->hasFile("cover")){
-            $file=$request->file("cover");
-            $imageName=time().'_'.$file->getClientOriginalName();
-            $file->move(\public_path("cover/"),$imageName);
-
-            $post =new Post([
-                "title" =>$request->title,
-                "author" =>$request->author,
-                "body" =>$request->body,
-                "cover" =>$imageName,
-            ]);
-            $post->save();
-            }
-            if($request->hasFile("images")){
-
-                $files=$request->file("images");
-                foreach($files as $file){
-                    $imageName=time().'_'.$file->getClientOriginalName();
-                    $request['post_id']=$post->id;
-                    $request['image']=$imageName;
-                    $file->move(\public_path("/images"),$imageName);
-                    Image::create($request->all());
-                }
-
-            }
-
+        return view('frontend.about');
     }
-    public function update(Request $request,$id)
+
+    public function audio()
     {
-     $post=Post::findOrFail($id);
-     if($request->hasFile("cover")){
-         if (file::exists("cover/".$post->cover)) {
-             File::delete("cover/".$post->cover);
-         }
-         $file=$request->file("cover");
-         $post->cover=time()."_".$file->getClientOriginalName();
-         $file->move(\public_path("/cover"),$post->cover);
-         $request['cover']=$post->cover;
-     }
+        return view('frontend.audio');
+    }
 
-        $post->update([
-            "title"=>$request->title,
-            "author"=>$request->author,
-            "body"=>$request->body,
-            "cover"=>$post->cover,
+    public function blog()
+    {
+        return view('frontend.blog');
+    }
 
-        ]);
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
 
-        if($request->hasFile("images")){
-            $files=$request->file("images");
-            foreach($files as $file){
-                $imagename=time()."-".$file->getClientOriginalName();
-                $request["post_id"]=$id;
-                $request["image"]=$imagename;
-                $file->move(\public_path("images"),$imagename);
-                Image::create($request->all());
-            }
-        }
+    public function getstarted()
+    {
+        return view('frontend.get-started');
+    }
 
-        return redirect("/dashboard-layout");
+    public function graphics()
+    {
+        return view('frontend.graphics');
+    }
+
+    public function music()
+    {
+        $posts = Post::all();
+        return view('frontend.music')->with('posts', $posts);
+    }
+
+    public function newsletter()
+    {
+        return view('frontend.newsletter');
+    }
+
+    public function pricing()
+    {
+        return view('frontend.pricing-plan');
+    }
+
+    public function privacy()
+    {
+        return view('frontend.privacy');
+    }
+
+    public function service()
+    {
+        $posts = Post::all();
+        return view('frontend.service')->with('posts', $posts);
+    }
+
+    public function subscription()
+    {
+        return view('frontend.subscription');
+    }
+
+    public function terms()
+    {
+        return view('frontend.terms');
+    }
+
+    public function video()
+    {
+        return view('frontend.video');
     }
 }
-
-
-
-
-

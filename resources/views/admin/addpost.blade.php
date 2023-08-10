@@ -25,13 +25,13 @@
                                                 <input type="text" name="title" class="form-control m-2"
                                                     placeholder="Title">
                                                 <input type="text" name="author" class="form-control m-2"
-                                                    placeholder="Sub title">
+                                                    placeholder="Sub title" required>
                                                 <input type="text" name="location" class="form-control m-2"
                                                     placeholder="location">
                                                 <input type="date" name="date" class="form-control m-2">
 
                                                 <select name="service" id="" value=""
-                                                    class="form-control m-2">
+                                                    class="form-control m-2" required>
                                                     <option value="service"><- Select Service -></option>
                                                     @foreach ($pservices as $item)
                                                         <option value="{{ $item->id }}">{{ $item->service_name }}
@@ -39,7 +39,7 @@
                                                     @endforeach
                                                 </select>
                                                 <select name="type" id="" value=""
-                                                    class="form-control m-2">
+                                                    class="form-control m-2" required>
                                                     <option value=""><- Select Service Type -></option>
                                                     @foreach ($stypes as $item1)
                                                         <option value="{{ $item1->id }}">{{ $item1->stype_name }}
@@ -48,7 +48,7 @@
                                                 </select>
                                                 <label class="m-2">Cover Image</label>
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
-                                                    name="cover">
+                                                    name="cover" required>
 
                                                 <div class="video-card">
                                                     <label for="video" class="m-2">Play Button</label>
@@ -58,6 +58,7 @@
                                                                 class="checkme m-2" value="1">
                                                         </label>
                                                     </div>
+
                                                     <div class="video-box">
                                                         <input type="text" name="videolink" id="videolink"
                                                             class="form-control m-2 videolink">

@@ -19,10 +19,19 @@
                                     enctype="multipart/form-data">
                                     @csrf
                                     <input type="text" name="type" id="name" class="form-control m-2"
-                                        placeholder="Enter Type Name">
+                                        placeholder="Enter Type Name" required>
 
                                     <input type="text" name="slug" id="slug" class="form-control m-2 slug"
                                         placeholder="Slug" readonly>
+
+                                    <select name="service" id="service" value="" class="form-control m-2" required>
+                                        <option value=""><- Select Service -></option>
+                                        @foreach ($pservices as $item)
+                                            <option value="{{ $item->id }}">
+                                                {{ $item->service_name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
 
                                     <button type="submit" class="btn btn-success mt-3">Submit</button>
                                 </form>
@@ -45,6 +54,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Type Name</th>
+                                                    <th>Service</th>
                                                     <th>Edit</th>
                                                     <th>Delete</th>
                                                 </tr>
@@ -55,6 +65,7 @@
                                                 @foreach ($stypes as $type)
                                                     <tr>
                                                         <td>{{ $type->stype_name }}</td>
+                                                        <td>{{ $type->pservices->service_name }}</td>
                                                         <td>
                                                             <a href="" class="btn btn-sm btn-outline-primary">
                                                                 Edit

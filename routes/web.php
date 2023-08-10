@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
-
-use App\Http\Controllers\admin\EditcatController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\AboutController;
 use App\Http\Controllers\frontend\ServicesController;
@@ -20,19 +19,11 @@ use App\Http\Controllers\frontend\SubscriptionController;
 use App\Http\Controllers\frontend\TermsController;
 use App\Http\Controllers\frontend\NewsletterController;
 use App\Http\Controllers\admin\AdminLoginController;
-use App\Http\Controllers\admin\AdminMusicController;
-use App\Http\Controllers\admin\AdminVideoController;
-use App\Http\Controllers\admin\AdminGraphicsController;
 use App\Http\Controllers\admin\AllPosts;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 
-
-
-
-use App\Http\Controllers\frontend\PostController;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,20 +37,20 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/about', [AboutController::class, 'index']);
-Route::get('/service', [ServicesController::class, 'index']);
-Route::get('/blog', [BlogController::class, 'index']);
-Route::get('/contact', [ContactController::class, 'index']);
-Route::get('/graphic', [GraphicController::class, 'index']);
-Route::get('/video', [VideoController::class, 'index']);
-Route::get('/audio', [AudioController::class, 'index']);
-Route::get('/music', [MusicController::class, 'index']);
-Route::get('/get-started', [GetstartedController::class, 'index']);
-Route::get('/privacy', [PrivacyController::class, 'index']);
-Route::get('/pricing-plan', [PricingController::class, 'index']);
-Route::get('/subscription', [SubscriptionController::class, 'index']);
-Route::get('/terms', [TermsController::class, 'index']);
-Route::get('/newsletter', [NewsletterController::class, 'index']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/service', [HomeController::class, 'service']);
+Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/graphic', [HomeController::class, 'graphics']);
+Route::get('/video', [HomeController::class, 'video']);
+Route::get('/audio', [HomeController::class, 'audio']);
+Route::get('/music', [HomeController::class, 'music']);
+Route::get('/get-started', [HomeController::class, 'getstarted']);
+Route::get('/privacy', [HomeController::class, 'privacy']);
+Route::get('/pricing-plan', [HomeController::class, 'pricing']);
+Route::get('/subscription', [HomeController::class, 'subscription']);
+Route::get('/terms', [HomeController::class, 'terms']);
+Route::get('/newsletter', [HomeController::class, 'newsletter']);
 
 
 // image  module
@@ -95,6 +86,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);
         Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+
+        //? slug route for service type table
         Route::get('/getSlug', function (Request $request) {
 
             $slug = '';
@@ -110,11 +103,11 @@ Route::group(['prefix' => 'admin'], function () {
 
         //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store']);
-        Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
-        Route::get('/edit/{id}', [CreateController::class, 'edit']);
-        Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
-        Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
-        Route::put('/update/{id}', [CreateController::class, 'update']);
+        Route::delete('/delete/{id}', [AllPosts::class, 'destroy']);
+        Route::get('/edit/{id}', [AllPosts::class, 'edit']);
+        Route::delete('/deleteimage/{id}', [AllPosts::class, 'deleteimage']);
+        Route::delete('/deletecover/{id}', [AllPosts::class, 'deletecover']);
+        Route::put('/update/{id}', [AllPosts::class, 'update']);
 
 
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
