@@ -113,7 +113,7 @@
                     </a>
                 </li>
                 <li class="collapsed">
-                    <a class="hyper" href="/add-type">
+                    <a class="hyper" href="/admin/add-type">
                         <svg width="20" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor">
                             <path opacity="0.4"

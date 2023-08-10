@@ -70,19 +70,6 @@ Route::get('/dashboard-layout', [DashboardController::class, 'index']);
 //     });
 
 
-Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
-Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
-Route::post('/add-service-type', [AllPosts::class, 'addtype']);
-Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
-
-
-
-Route::post('/add-post', [AllPosts::class, 'store']);
-Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
-Route::get('/edit/{id}', [CreateController::class, 'edit']);
-Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
-Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
-Route::put('/update/{id}', [CreateController::class, 'update']);
 
 
 
@@ -102,7 +89,16 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
-
+        Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
+        Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
+        Route::post('/add-service-type', [AllPosts::class, 'addtype']);
+        Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+        Route::post('/add-post', [AllPosts::class, 'store']);
+        Route::delete('/delete/{id}', [CreateController::class, 'destroy']);
+        Route::get('/edit/{id}', [CreateController::class, 'edit']);
+        Route::delete('/deleteimage/{id}', [CreateController::class, 'deleteimage']);
+        Route::delete('/deletecover/{id}', [CreateController::class, 'deletecover']);
+        Route::put('/update/{id}', [CreateController::class, 'update']);
 
 
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');

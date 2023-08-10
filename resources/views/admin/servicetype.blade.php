@@ -49,15 +49,21 @@
                                                 </tr>
                                             </thead>
 
-
                                             <tbody>
 
                                                 @foreach ($stypes as $type)
                                                     <tr>
-
                                                         <td>{{ $type->stype_name }}</td>
-                                                        <td>Edit</td>
-                                                        <td>Delete</td>
+                                                        <td>
+                                                            <a href="" class="btn btn-sm btn-outline-primary">
+                                                                Edit
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="" class="btn btn-sm btn-outline-danger">
+                                                                Delete
+                                                            </a>
+                                                        </td>
                                                     </tr>
                                                 @endforeach
                                             </tbody>
@@ -70,15 +76,7 @@
                 </div>
         </main>
         <!--[ Start:: page footer link copywrite ]-->
-        <footer class="page-footer py-4 mt-4">
-            <div class="container-fluid">
-                <p class="col-md-4 mb-0 text-muted">
-                    © 2022
-                    <a href="https://pixelwibes.com/" target="_blank" title="Pixelwibes">Pixelwibes</a>, All
-                    Rights Reserved.
-                </p>
-            </div>
-        </footer>
+        @include('admin.includes.footer')
     </div>
 @endsection
 

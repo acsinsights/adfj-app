@@ -261,33 +261,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                    <a href="services-details.html">
-                                                                      <svg
-                                                                        width="45"
-                                                                        height="44"
-                                                                        viewBox="0 0 45 44"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                      >
-                                                                        <path
-                                                                          d="M43.999 22.1553H1.57262"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                        <path
-                                                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                      </svg>
-                                                                    </a>
-                                                                  </div> -->
+                                                                                <a href="services-details.html">
+                                                                                  <svg
+                                                                                    width="45"
+                                                                                    height="44"
+                                                                                    viewBox="0 0 45 44"
+                                                                                    fill="none"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                  >
+                                                                                    <path
+                                                                                      d="M43.999 22.1553H1.57262"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                    <path
+                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                  </svg>
+                                                                                </a>
+                                                                              </div> -->
                             </div>
                         </div>
                     </div>
@@ -311,33 +311,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                    <a href="services-details.html">
-                                                                      <svg
-                                                                        width="45"
-                                                                        height="44"
-                                                                        viewBox="0 0 45 44"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                      >
-                                                                        <path
-                                                                          d="M43.999 22.1553H1.57262"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                        <path
-                                                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                      </svg>
-                                                                    </a>
-                                                                  </div> -->
+                                                                                <a href="services-details.html">
+                                                                                  <svg
+                                                                                    width="45"
+                                                                                    height="44"
+                                                                                    viewBox="0 0 45 44"
+                                                                                    fill="none"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                  >
+                                                                                    <path
+                                                                                      d="M43.999 22.1553H1.57262"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                    <path
+                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                  </svg>
+                                                                                </a>
+                                                                              </div> -->
                             </div>
                         </div>
                     </div>
@@ -361,33 +361,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                    <a href="services-details.html">
-                                                                      <svg
-                                                                        width="45"
-                                                                        height="44"
-                                                                        viewBox="0 0 45 44"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                      >
-                                                                        <path
-                                                                          d="M43.999 22.1553H1.57262"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                        <path
-                                                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                      </svg>
-                                                                    </a>
-                                                                  </div> -->
+                                                                                <a href="services-details.html">
+                                                                                  <svg
+                                                                                    width="45"
+                                                                                    height="44"
+                                                                                    viewBox="0 0 45 44"
+                                                                                    fill="none"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                  >
+                                                                                    <path
+                                                                                      d="M43.999 22.1553H1.57262"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                    <path
+                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                  </svg>
+                                                                                </a>
+                                                                              </div> -->
                             </div>
                         </div>
                     </div>
@@ -411,33 +411,33 @@
                                 </p>
 
                                 <!-- <div class="features__btn">
-                                                                    <a href="services-details.html">
-                                                                      <svg
-                                                                        width="45"
-                                                                        height="44"
-                                                                        viewBox="0 0 45 44"
-                                                                        fill="none"
-                                                                        xmlns="http://www.w3.org/2000/svg"
-                                                                      >
-                                                                        <path
-                                                                          d="M43.999 22.1553H1.57262"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                        <path
-                                                                          d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                          stroke="currentColor"
-                                                                          stroke-width="1.5"
-                                                                          stroke-miterlimit="10"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"
-                                                                        />
-                                                                      </svg>
-                                                                    </a>
-                                                                  </div> -->
+                                                                                <a href="services-details.html">
+                                                                                  <svg
+                                                                                    width="45"
+                                                                                    height="44"
+                                                                                    viewBox="0 0 45 44"
+                                                                                    fill="none"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                  >
+                                                                                    <path
+                                                                                      d="M43.999 22.1553H1.57262"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                    <path
+                                                                                      d="M33.6991 32.451L43.998 22.002L33.549 11.703"
+                                                                                      stroke="currentColor"
+                                                                                      stroke-width="1.5"
+                                                                                      stroke-miterlimit="10"
+                                                                                      stroke-linecap="round"
+                                                                                      stroke-linejoin="round"
+                                                                                    />
+                                                                                  </svg>
+                                                                                </a>
+                                                                              </div> -->
                             </div>
                         </div>
                     </div>
@@ -466,10 +466,10 @@
                                 @foreach ($posts as $post)
                                     <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
                                         data-wow-duration="1s">
-                                        
+
                                         <a href="https://petals-india.com/">
                                             <div class="portfolio__thumb-3 w-img"
-                                                data-background="{{ $post->cover ? asset('cover/' . $post->cover) : '' }}">
+                                                data-background="{{ $post->media ? asset('posts/' . $post->media) : '' }}">
                                             </div>
 
                                             <div class="portfolio__content-3 transition-3">
@@ -545,7 +545,7 @@
             </div>
         </section>
 
- <!-- skill area start -->
+        <!-- skill area start -->
         <section class="skill__area pt-55 grey-bg-12 pb-55">
             <div class="container">
                 <div class="row">
@@ -591,13 +591,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                              >(<span
-                                                                                data-purecounter-duration="1"
-                                                                                data-purecounter-end="66"
-                                                                                class="purecounter"
-                                                                                >0</span
-                                                                              >%)</span
-                                                                            > -->
+                                                                                          >(<span
+                                                                                            data-purecounter-duration="1"
+                                                                                            data-purecounter-end="66"
+                                                                                            class="purecounter"
+                                                                                            >0</span
+                                                                                          >%)</span
+                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -646,13 +646,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                              >(<span
-                                                                                data-purecounter-duration="1"
-                                                                                data-purecounter-end="80"
-                                                                                class="purecounter"
-                                                                                >0</span
-                                                                              >%)</span
-                                                                            > -->
+                                                                                          >(<span
+                                                                                            data-purecounter-duration="1"
+                                                                                            data-purecounter-end="80"
+                                                                                            class="purecounter"
+                                                                                            >0</span
+                                                                                          >%)</span
+                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -819,8 +819,7 @@
                                     <div class="blog__thumb m-img fix">
                                         <div class="tp-thumb-overlay wow"></div>
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('user-assets/img/blog/1/blog-1.jpg') }}"
-                                                alt="" />
+                                            <img src="{{ asset('user-assets/img/blog/1/blog-1.jpg') }}" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -835,12 +834,12 @@
                                         </h3>
                                         <div class="blog__meta">
                                             <span>
-                                                <svg width="15" height="15" viewBox="0 0 15 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                     <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor"
                                                         stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -862,8 +861,7 @@
                                     <div class="blog__thumb m-img fix">
                                         <div class="tp-thumb-overlay wow"></div>
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('user-assets/img/blog/1/blog-2.jpg') }}"
-                                                alt="" />
+                                            <img src="{{ asset('user-assets/img/blog/1/blog-2.jpg') }}" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -879,12 +877,12 @@
                                         </h3>
                                         <div class="blog__meta">
                                             <span>
-                                                <svg width="15" height="15" viewBox="0 0 15 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                     <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor"
                                                         stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -906,8 +904,7 @@
                                     <div class="blog__thumb m-img fix">
                                         <div class="tp-thumb-overlay wow"></div>
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('user-assets/img/blog/1/blog-3.jpg') }}"
-                                                alt="" />
+                                            <img src="{{ asset('user-assets/img/blog/1/blog-3.jpg') }}" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -922,12 +919,12 @@
                                         </h3>
                                         <div class="blog__meta">
                                             <span>
-                                                <svg width="15" height="15" viewBox="0 0 15 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                     <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor"
                                                         stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -949,8 +946,7 @@
                                     <div class="blog__thumb m-img fix">
                                         <div class="tp-thumb-overlay wow"></div>
                                         <a href="blog-details.html">
-                                            <img src="{{ asset('user-assets/img/blog/1/blog-4.jpg') }}"
-                                                alt="" />
+                                            <img src="{{ asset('user-assets/img/blog/1/blog-4.jpg') }}" alt="" />
                                         </a>
                                     </div>
                                 </div>
@@ -966,12 +962,12 @@
                                         </h3>
                                         <div class="blog__meta">
                                             <span>
-                                                <svg width="15" height="15" viewBox="0 0 15 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
                                                     <path d="M7.5 3.59961V7.49961L10.1 8.79961" stroke="currentColor"
                                                         stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round" />
@@ -1220,8 +1216,7 @@
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/abhinay-musical.png"
-                                alt="">
+                            <img src="https://adfjstudios.com/user-assets/img/client/abhinay-musical.png" alt="">
                         </div>
                     </div>
 
@@ -1259,8 +1254,7 @@
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/blueberry-events.png"
-                                alt="">
+                            <img src="https://adfjstudios.com/user-assets/img/client/blueberry-events.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
@@ -1301,8 +1295,7 @@
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/akshay-odesseys.png"
-                                alt="">
+                            <img src="https://adfjstudios.com/user-assets/img/client/akshay-odesseys.png" alt="">
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6">
@@ -1368,8 +1361,8 @@
                 <div class=" row d-flex ">
                     <div class="col-lg-2 col-md-6">
                         <div style="gap: 50px;justify-content: center" class="d-flex">
-                            <img style="height: 70px;"
-                                src="{{ asset('user-assets/img/client/valtara-production.png') }}" alt="" />
+                            <img style="height: 70px;" src="{{ asset('user-assets/img/client/valtara-production.png') }}"
+                                alt="" />
                             <img style="height: 70px;" src="{{ asset('user-assets/img/client/client14.png') }}"
                                 alt="" />
                         </div>

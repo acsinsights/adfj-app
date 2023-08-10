@@ -962,13 +962,6 @@
     <!--[ plugin url ]-->
     <!--[ Jquery Page Js ]-->
     <script>
-
-
-
-
-
-
-
         var options1 = {
             chart: {
                 type: "bar",

@@ -110,11 +110,11 @@
                                                     <td>{{ $post->stypeid }}</td>
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
-                                                    <td><a href="/edit/{{ $post->id }}"
+                                                    <td><a href="/admin/edit/{{ $post->id }}"
                                                             class="btn btn-outline-primary">Edit</a>
                                                     </td>
                                                     <td>
-                                                        <form action="/delete/{{ $post->id }}" method="post">
+                                                        <form action="/admin/delete/{{ $post->id }}" method="post">
                                                             <button class="btn btn-outline-danger"
                                                                 onclick="return confirm('Are you sure?');"
                                                                 type="submit">Delete</button>
@@ -137,16 +137,7 @@
                 </div>
             </div>
         </main>
-        <!--[ Start:: page footer link copywrite ]-->
-        {{-- <footer class="page-footer py-4 mt-4">
-            <div class="container-fluid">
-                <p class="col-md-4 mb-0 text-muted">
-                    © 2022
-                    <a href="https://pixelwibes.com/" target="_blank" title="Pixelwibes">ADFJ Studios</a>, All
-                    Rights Reserved.
-                </p>
-            </div>
-        </footer> --}}
+        @include('admin.includes.footer')
     </div>
 @endsection
 
