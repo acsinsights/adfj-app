@@ -138,15 +138,19 @@
                                 <button data-filter="*" class="active tp-el-mas-btn">
                                     All Project
                                 </button>
-                                <button data-filter=".cover-song">
-                                    Cover Song
-                                </button>
-                                <button data-filter=".original-song">
+                                @foreach ($stypes as $st)
+                                    @if ($st->pservices_id == 1)
+                                        <button data-filter=".{{ $st->slug }}">
+                                            {{ $st->stype_name }}
+                                        </button>
+                                    @endif
+                                @endforeach
+                                {{-- <button data-filter=".original-song">
                                     Original Song
                                 </button>
                                 <button data-filter=".rap-song">
                                     Rap Song
-                                </button>
+                                </button> --}}
 
                             </div>
                         </div>
@@ -154,40 +158,45 @@
                 </div>
                 <div class="row galley-space tp-gx-20 grid " style="position: relative; height: 1799.76px;">
                     @foreach ($posts as $ms)
-                        <div class="col-xl-4 {{ $ms->type }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
-                            style="position: absolute; left: 0%; top: 537px;">
-                            <div class="portfolio__grid-item mb-20 tp-el-box">
-                                <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
-                                    data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg"
-                                    style="overflow: hidden;">
-                                    <div class="portfolio__grid-music portfolio__grid-video"><a href="javascript:void(0)"
-                                            tabindex="0">
-                                        </a><a href="{{ $ms->link }}"
-                                            class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                            <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                            </svg>
+                        @if ($ms->serviceid == 1)
+                            <div class="col-xl-4 {{ $ms->stypes->slug }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
+                                style="position: absolute; left: 0%; top: 537px;">
+                                <div class="portfolio__grid-item mb-20 tp-el-box">
+                                    <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
+                                        data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg"
+                                        style="overflow: hidden;">
+                                        <div class="portfolio__grid-music portfolio__grid-video"><a
+                                                href="{{ $ms->hypelinks }}" target="_blank" tabindex="0">
+                                            </a><a href="{{ $ms->hypelinks }}"
+                                                class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0"
+                                                target="_blank">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class=" portfolio__grid-video ">
+                                            <a href="https://www.instagram.com/p/Ccos67BIgoK/" target="_blank"
+                                                tabindex="0">
+                                            </a>
+                                        </div>
+                                        <a href="{{ $ms->hypelinks }}" target="_blank">
+                                            <img width="455" height="500" src="/posts/{{ $ms->media }}"
+                                                class="attachment-full size-full image-size image-size" alt=""
+                                                decoding="async" loading="lazy">
                                         </a>
-                                    </div>
-                                    <div class=" portfolio__grid-video "><a href="https://www.instagram.com/p/Ccos67BIgoK/"
-                                            tabindex="0">
-                                        </a>
-                                    </div>
-                                    <a href="javascript:void(0)">
-                                        <img width="455" height="500" src="/posts/{{ $ms->media }}"
-                                            class="attachment-full size-full image-size image-size" alt=""
-                                            decoding="async" loading="lazy">
-                                    </a>
-                                    <div class="tp-img-reveal-wrapper">
-                                        <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                            <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                                <div class="portfolio__hover-wrapper tp-el-box">
-                                                    <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
-                                                    <div class="portfolio__hover-category tp-el-box-tag">
-                                                        <span>
-                                                            <a href="#">Gul Marg Vlog Video</a>
-                                                        </span>
+                                        <div class="tp-img-reveal-wrapper">
+                                            <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                                <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                                    <div class="portfolio__hover-wrapper tp-el-box">
+                                                        <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
+                                                        <div class="portfolio__hover-category tp-el-box-tag">
+                                                            <span>
+                                                                <a href="{{ $ms->hypelinks }}" target="_blank">Gul Marg Vlog
+                                                                    Video</a>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -195,7 +204,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        @endif
                     @endforeach
                     <div class="col-xl-4 cover-song col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                         style="position: absolute; left: 0%; top: 537px;">

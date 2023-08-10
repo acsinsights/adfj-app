@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Image;
+use App\Models\Pservices;
+use App\Models\Stypes;
 use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
@@ -52,7 +54,8 @@ class HomeController extends Controller
     public function music()
     {
         $posts = Post::all();
-        return view('frontend.music')->with('posts', $posts);
+        $stypes = Stypes::all();
+        return view('frontend.music')->with('posts', $posts)->with('stypes', $stypes);
     }
 
     public function newsletter()
