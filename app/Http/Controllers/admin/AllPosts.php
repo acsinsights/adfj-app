@@ -131,6 +131,27 @@ class AllPosts extends Controller
         return redirect("/admin/dashboard");
     }
 
+
+
+
+
+
+    public function stypeedit($id)
+    {
+        $stype = Stypes::findOrFail($id);
+        return view('admin.edit')->with('stype', $stype);
+    }
+    public function stypeupdate(Request $request, $id)
+    {
+        $stype = Post::findOrFail($id);
+        $stype->stypeupdate([
+            "stype_name" => $request->stype_name,
+            "slug" => $request->slug,
+
+        ]);
+        return redirect("/admin/dashboard");
+    }
+
     public function destroy($id)
     {
         $posts = Post::findOrFail($id);
