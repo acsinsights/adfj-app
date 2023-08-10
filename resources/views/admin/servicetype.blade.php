@@ -15,10 +15,10 @@
                                 <h2>Add Service Type</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/add-service-type" name="categoryForm" id="categoryForm" method="post"
+                                <form action="/admin/add-service-type" name="categoryForm" id="categoryForm" method="post"
                                     enctype="multipart/form-data">
                                     @csrf
-                                    <input type="text" name="type" class="form-control m-2"
+                                    <input type="text" name="type" id="name" class="form-control m-2"
                                         placeholder="Enter Type Name">
 
                                     <input type="text" name="slug" id="slug" class="form-control m-2 slug"
@@ -93,19 +93,21 @@
                 }
             });
         });
-    </script>
 
-    <script>
-        $('#categoryForm').submit(function(event) {
-            event.preventDefault();
+        $('#name').change(function() {
 
+            element = $(this);
             $.ajax({
-                url: '',
-                type: 'POST',
-                data: element.serializeArray(),
+                url: '{{ route('getSlug') }}',
+                type: 'get',
+                data: {
+                    title: element.val()
+                },
                 dataType: 'json',
-                success: function(response){
-
+                success: function(response) {
+                    if (response["status"] == true) {
+                        $("#slug").val(response["slug"]);
+                    }
                 }
             })
         });

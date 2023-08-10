@@ -106,7 +106,7 @@ Route::group(['prefix' => 'admin'], function () {
                 'status' => true,
                 'slug' => $slug,
             ]);
-        });
+        })->name('getSlug');
 
         //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store']);
