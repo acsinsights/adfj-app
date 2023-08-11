@@ -45,9 +45,16 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
+
                                 <div class="card-header">
-                                    <h2>All Service Types</h2>
+                                    <select name="typeid" id="typeid" value="" class="form-control">
+                                        <option class="form-control">All Service Types</option>
+                                        @foreach ($pservices as $ps)
+                                            <option value="{{ $ps->id }}">{{ $ps->service_name }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
+
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table table-custom mb-0">
@@ -61,6 +68,7 @@
                                             </thead>
 
                                             <tbody>
+
 
                                                 @foreach ($stypes as $type)
                                                     <tr>
@@ -78,10 +86,12 @@
                                                         </td>
                                                     </tr>
                                                 @endforeach
+
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -106,7 +116,6 @@
         });
 
         $('#name').change(function() {
-
             element = $(this);
             $.ajax({
                 url: '{{ route('getSlug') }}',

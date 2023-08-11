@@ -91,6 +91,8 @@ class HomeController extends Controller
 
     public function video()
     {
-        return view('frontend.video');
+        $posts = Post::all();
+        $stypes = Stypes::all();
+        return view('frontend.video')->with('posts', $posts)->with('stypes', $stypes);
     }
 }

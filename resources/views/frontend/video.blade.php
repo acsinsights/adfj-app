@@ -37,7 +37,7 @@
 
 
 
-{{--
+        {{--
         <div class="mt-60  text-center section__title-wrapper-9 mb-55">
 
             <h3 class="section__title-6">
@@ -96,56 +96,98 @@
                                 <button data-filter="*" class="active tp-el-mas-btn">
                                     All Videos
                                 </button>
-                                <button data-filter=".music-video">
-                               Music Videos
-                                </button>
 
-                                <button data-filter=".animation-video">
-                                    Animation Videos
-                                </button>
+                                @foreach ($stypes as $st)
+                                    @if ($st->pservices_id == 2)
+                                        <button data-filter=".{{ $st->slug }}">
+                                            {{ $st->stype_name }}
+                                        </button>
+                                    @endif
+                                @endforeach
 
-                                <button data-filter=".ad-films">
-                                   Ad Films
-                                </button>
-
-                                <button data-filter=".films">
-                                    Films
-                                </button>
-                                <button data-filter=".vlogs">
-                                    Vlogs
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row galley-space tp-gx-20 grid" style="position: relative; height: 1799.76px;">
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
-                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=GpjvrCpYYlk" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/gul-marg.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Gul Marg Vlog Video</a>
-                                                </span>
+                <div class="row galley-space tp-gx-20 grid" style="position: relative; height: 1799.76px;">
+                    @foreach ($posts as $pt)
+                        @if ($pt->serviceid == 2)
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item {{ $pt->stypes->slug }}"
+                                style="position: absolute; left: 0%; top: 537px;">
+                                <div class="portfolio__grid-item mb-20 tp-el-box">
+                                    <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                        data-fx="24" data-meta-tag="{{ $pt->author }}" data-title="{{ $pt->title }}">
+                                        <div class="portfolio__grid-video">
+                                            <a href="{{ $pt->hypelinks }}" tabindex="0">
+                                            </a>
+                                            <a href="{{ $pt->hypelinks }}"
+                                                class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <a href="{{ $pt->hypelinks }}">
+                                            <img width="455" height="500" src="posts/{{ $pt->media }}"
+                                                class="attachment-full size-full" alt="" decoding="async"
+                                                loading="lazy">
+                                        </a>
+
+                                        <div class="tp-img-reveal-wrapper">
+                                            <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                                <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                                    <div class="portfolio__hover-wrapper tp-el-box">
+                                                        <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
+                                                        <div class="portfolio__hover-category tp-el-box-tag">
+                                                            <span>
+                                                                <a href="#">Gul Marg Vlog Video</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
+
+
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=GpjvrCpYYlk"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/gul-marg.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
+
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Gul Marg Vlog Video</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -153,7 +195,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
 
 
@@ -164,16 +205,19 @@
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Music Artwork " data-title="Ude">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
                                 <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
                                     <img width="455" height="500"
-                                    src="{{ asset('user-assets/img/graphic-portfolio/ude.jpg') }}"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/ude.jpg') }}"
                                         class="attachment-full size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
@@ -199,32 +243,36 @@
 
 
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-video"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
-                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=_BtGT-maCV0" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/lekhak.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=_BtGT-maCV0"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/lekhak.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Lekhak</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Movie Poster</a>
-                                                </span>
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Lekhak</h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Movie Poster</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -232,7 +280,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
 
