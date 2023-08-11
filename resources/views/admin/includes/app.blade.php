@@ -9,7 +9,7 @@
     <meta name="keyword" content="QBoat, Bootstrap 5, Admin Dashboard, Admin Theme" />
     <link rel="shortcut icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
     <!--[ Favicon]-->
-    <title>Adfj Studios</title>
+    <title>AdFj Studios | @yield('title')</title>
     <!--[ plugin css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->

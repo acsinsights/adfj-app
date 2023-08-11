@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-
+@section('title', 'Add Post')
 @section('content')
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->

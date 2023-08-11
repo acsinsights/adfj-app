@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-
+@section('title', 'Dashboard')
 @section('content')
     <div class="page order-2 flex-grow-1">
         @include('admin.includes.header')

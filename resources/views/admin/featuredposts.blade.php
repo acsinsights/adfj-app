@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-
+@section('title', 'Featured Posts')
 @section('content')
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->
@@ -99,8 +99,8 @@
 
                                         <tbody>
                                             @foreach ($posts as $post)
-                                                <tr>
-                                                    <th style="vertical-align: middle;" scope="row">
+                                                <tr style="vertical-align: middle;">
+                                                    <th scope="row">
                                                         {{ $post->id }}</th>
                                                     <td><img src="/posts/{{ $post->media }}" class="img-responsive"
                                                             style="max-height:100px; max-width:100px" alt=""

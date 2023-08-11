@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-
+@section('title', 'Service Types')
 @section('content')
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->
@@ -71,7 +71,7 @@
 
 
                                                 @foreach ($stypes as $type)
-                                                    <tr>
+                                                    <tr style="vertical-align: center;">
                                                         <td>{{ $type->stype_name }}</td>
                                                         <td>{{ $type->pservices->service_name }}</td>
                                                         <td>

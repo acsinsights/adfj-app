@@ -62,7 +62,7 @@
                             </path>
                         </svg>
 
-                        <span class="mx-3">featured Posts</span>
+                        <span class="mx-3">Featured Posts</span>
 
                     </a>
 

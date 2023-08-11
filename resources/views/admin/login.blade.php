@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>Adfj Studios</title>
+    <title>AdFj Studios | Admin Login</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -31,15 +31,11 @@
                                 <div class="auth-form">
                                     <div class="text-center mb-3">
                                         <a href="#"><img class="logo-light"
-                                                src="{{asset('user-assets/img/logo/adfj.svg')}}"  alt="logo"
-                                                height="50px"
-                                                width="120px"
-                                                alt=""></a>
+                                                src="{{ asset('user-assets/img/logo/adfj.svg') }}" alt="logo"
+                                                height="50px" width="120px" alt=""></a>
                                         <a href="#"><img class="logo-dark"
-                                                src="{{asset('user-assets/img/logo/adfj.svg')}}"  alt="logo"
-                                                height="50px"
-                                                width="120px"
-                                                alt=""></a>
+                                                src="{{ asset('user-assets/img/logo/adfj.svg') }}" alt="logo"
+                                                height="50px" width="120px" alt=""></a>
                                     </div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
                                     <form action="{{ route('admin.authenticate') }}" method="post">
