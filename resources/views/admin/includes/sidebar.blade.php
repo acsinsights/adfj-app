@@ -1,15 +1,20 @@
 <aside class="sidebar">
     <div class="container-fluid">
+
         <!--[ sidebar:: menu list ]-->
+        <ul class="menu-list mt-3 rounded-4" id="menu-list">
+            <!--[ Start:: brand logo and name ]-->
+            <li class="brand-icon mb-3 py-1">
+                <a href="index.html">
+                    <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" alt="">
+                    <span class="fs-5 ms-2 text-white" style="visibility: hidden;">Adfj Studios</span>
+                </a>
+            </li>
+        </ul>
         <div class="flex-grow-1">
             <ul class="menu-list mt-3 rounded-4">
                 <!--[ Start:: brand logo and name ]-->
-                <li class="brand-icon mb-3 py-1">
-                    <a href="index.html">
-                        <img src="{{ asset('user-assets/img/logo/favicon.ico') }}" alt="">
-                        <span class="fs-5 ms-2">Adfj Studios</span>
-                    </a>
-                </li>
+
                 <!--[ Start:: dashboard ]-->
                 <li class="pt-10">
                     <a class="active hyper" href="{{ route('admin.dashboard') }}">
@@ -206,7 +211,7 @@
             </div> --}}
         </div>
         <!--[ sidebar: footer link ]-->
-        {{-- <ul class="menu-list nav navbar-nav bg-transparent">
+        <ul class="menu-list nav navbar-nav bg-transparent">
             <li>
                 <a class="m-link" data-bs-toggle="offcanvas" href="#need_help" role="button"
                     aria-controls="need_help" title="Need Help?">
@@ -218,8 +223,9 @@
                         </path>
                     </svg>
                     <span class="mx-3">Need Help?</span>
+                    <span class="mx-2">v2.1.0</span>
                 </a>
             </li>
-        </ul> --}}
+        </ul>
     </div>
 </aside>

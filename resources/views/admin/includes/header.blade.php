@@ -412,14 +412,14 @@
 <!--[ Start:: page title and breadcrumb ]-->
 <div class="page-title mb-lg-4">
     <div class="container-fluid">
+        <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <ol class="breadcrumb bg-transparent w-100 li_animate mb-3 mb-md-1">
             <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 My Dashboard
             </li>
         </ol>
-        <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
-        <div class="ms-sm-auto mt-2 mt-sm-0">
+        <div class="ms-sm-auto mt-2 mt-sm-0 addpost" >
 
             <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add Post</a>
         </div>
