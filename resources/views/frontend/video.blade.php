@@ -5,9 +5,6 @@
 
 
     <main>
-
-
-
         <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
             data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
             style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
@@ -196,11 +193,7 @@
                         </div>
                     </div>
 
-
-
-
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-video"
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-videos"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -239,10 +232,7 @@
                         </div>
                     </div>
 
-
-
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-video"
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-videos"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -281,10 +271,7 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
-
-
-    @endsection
+    </main>
+@endsection

@@ -55,7 +55,7 @@ Route::get('/newsletter', [HomeController::class, 'newsletter']);
 
 // image  module
 
-Route::get('/dashboard-layout', [DashboardController::class, 'index']);
+
 // Route::get('/create' , function(){
 //     return view( 'admin.create' ) ;
 //     });
@@ -74,6 +74,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.auth'], function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+        // Route::get('/dashboard-layout', [DashboardController::class, 'index']);
         Route::get('/allposts', [AllPosts::class, 'index'])->name('admin.allposts');
         Route::get('/music', [AllPosts::class, 'music'])->name('admin.music');
         Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
@@ -101,6 +102,7 @@ Route::group(['prefix' => 'admin'], function () {
             ]);
         })->name('getSlug');
 
+
         //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store']);
         Route::delete('/delete/{id}', [AllPosts::class, 'destroy']);
@@ -109,6 +111,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/deletecover/{id}', [AllPosts::class, 'deletecover']);
         Route::put('/update/{id}', [AllPosts::class, 'update']);
 
+        //? Routes for service types
+        Route::get('/typeedit/{id}', [AllPosts::class, 'stypeedit']);
+        Route::get('/update/{id}', [CreateController::class, 'update']);
 
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
     });

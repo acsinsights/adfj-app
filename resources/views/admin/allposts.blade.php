@@ -107,7 +107,7 @@
                                                             srcset=""></td>
                                                     <td>{{ $post->author }}</td>
                                                     <td>{{ $post->pservices->service_name }}</td>
-                                                    <td>{{ $post->stypes->slug }}</td>
+                                                    <td>{{ $post->stypes->stype_name }}</td>
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
                                                     <td><a href="/admin/edit/{{ $post->id }}"

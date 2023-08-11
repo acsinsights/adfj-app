@@ -57,7 +57,7 @@
 
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table table-custom mb-0">
+                                        <table class="table table-custom mb-0" id="record_table">
                                             <thead>
                                                 <tr>
                                                     <th>Type Name</th>
@@ -75,7 +75,8 @@
                                                         <td>{{ $type->stype_name }}</td>
                                                         <td>{{ $type->pservices->service_name }}</td>
                                                         <td>
-                                                            <a href="" class="btn btn-sm btn-outline-primary">
+                                                            <a href="/admin/typeedit/{{ $type->id }}"
+                                                                class="btn btn-sm btn-outline-primary">
                                                                 Edit
                                                             </a>
                                                         </td>

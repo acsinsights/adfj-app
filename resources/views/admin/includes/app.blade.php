@@ -952,6 +952,9 @@
                 d="M224.489 204.577L241.056 225.885H207.923L224.489 204.577Z"></path>
         </svg>
     </div>
+
+    <script src="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"></script>
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     @yield('customJs')
     <!--[ Jquery Page Js ]-->
     <script src="{{ asset('admin-assets/js/theme.js') }}"></script>

@@ -48,7 +48,9 @@ class HomeController extends Controller
 
     public function graphics()
     {
-        return view('frontend.graphics');
+        $posts = Post::all();
+        $stypes = Stypes::all();
+        return view('frontend.graphics')->with('posts', $posts)->with('stypes', $stypes);
     }
 
     public function music()

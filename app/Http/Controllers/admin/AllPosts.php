@@ -141,23 +141,6 @@ class AllPosts extends Controller
         return redirect("/admin/allposts");
     }
 
-    public function stypeedit($id)
-    {
-        $stype = Stypes::findOrFail($id);
-        return view('admin.edit')->with('stype', $stype);
-    }
-
-    public function stypeupdate(Request $request, $id)
-    {
-        $stype = Post::findOrFail($id);
-        $stype->stypeupdate([
-            "stype_name" => $request->stype_name,
-            "slug" => $request->slug,
-            "pservices_id" => $request->service,
-        ]);
-        return redirect("/admin/add-type");
-    }
-
     public function destroy($id)
     {
         $posts = Post::findOrFail($id);
@@ -204,5 +187,12 @@ class AllPosts extends Controller
         ]);
         $stypes->save();
         return redirect("/admin/add-type");
+    }
+
+    public function stypeedit($id)
+    {
+        $stypes = Stypes::findOrFail($id);
+        $pservices = Pservices::all();
+        return view('admin.stypesedit')->with('stypes', $stypes)->with('pservices', $pservices);
     }
 }
