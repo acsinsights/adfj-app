@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->take(10)->get();
         return view('frontend.index')->with('posts', $posts);
     }
 
