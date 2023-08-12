@@ -60,18 +60,17 @@ Route::get('/newsletter', [HomeController::class, 'newsletter']);
 //     return view( 'admin.create' ) ;
 //     });
 
-
-
-
+Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
-
+        Route::get('/', [AdminLoginController::class, 'index'])->name('admin.login');
         Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
         Route::post('/authenticate', [AdminLoginController::class, 'authenticate'])->name('admin.authenticate');
     });
 
     Route::group(['middleware' => 'admin.auth'], function () {
+
 
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         // Route::get('/dashboard-layout', [DashboardController::class, 'index']);

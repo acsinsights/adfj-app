@@ -11,9 +11,9 @@
                     <div class="col-xxl-3 col-xl-6 col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-body">
-                                <h3>$15K</h3>
+                                <h3>{{ $posts->count() }}</h3>
                                 <p class="text-muted">
-                                    67% <i class="fa fa-level-up text-success"></i> Total income
+                                    <i class="fa fa-level-up text-success"></i> Total Posts
                                 </p>
                                 <div id="apexspark_bar_1" style="min-height: 40px;">
                                     <div id="apexcharts3tgx34l8"

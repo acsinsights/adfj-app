@@ -31160,3 +31160,21 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role="row"]>th:first-child::
 ::-webkit-scrollbar-thumb:hover {
     background-color: #5e5b5b;
 }
+
+.dark {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .dark {
+        display: block;
+    }
+
+    .light {
+        display: none;
+    }
+}
+
+#no-border-bottom {
+    border-bottom: none !important;
+}

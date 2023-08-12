@@ -13,7 +13,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title fw-normal mb-0">Music Portfolio</h5>
+                                <h5 class="card-title fw-normal mb-0">Graphics Portfolio</h5>
                                 <div class="card-action">
                                     <div class="dropdown">
                                         {{-- <a href="#" class="card-options-remove text-danger"
