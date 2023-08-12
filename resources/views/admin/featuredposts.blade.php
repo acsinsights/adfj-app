@@ -84,7 +84,6 @@
                                     <table class="table table-custom mb-0">
                                         <thead>
                                             <tr>
-                                                <th>#No</th>
                                                 <th>Media</th>
                                                 <th>Title</th>
                                                 <th>Services</th>
@@ -100,8 +99,6 @@
                                         <tbody>
                                             @foreach ($posts as $post)
                                                 <tr style="vertical-align: middle;">
-                                                    <th scope="row">
-                                                        {{ $post->id }}</th>
                                                     <td><img src="/posts/{{ $post->media }}" class="img-responsive"
                                                             style="max-height:100px; max-width:100px" alt=""
                                                             srcset=""></td>
