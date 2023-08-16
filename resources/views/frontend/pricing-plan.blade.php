@@ -25,7 +25,7 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
         </div>
     </div>
 </div> --}}
-<section class="servivces__area pt-110">
+<section class="p-spacing servivces__area pt-110">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -55,9 +55,9 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
 
 
 
-<div class="row mt-100">
+<div class="p-spacing row pt-100">
     <div class="col-xl-12">
-        <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
+        <div class="portfolio__section-title-wrapper text-center p-spacing tp-el-content">
             <span class="portfolio__section-title-pre tp-el-subtitle"> Design Magic Unleashed</span>
 
 
@@ -65,7 +65,7 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
         </div>
     </div>
 </div>
-<div style="margin-top: 50px" class="plan-spacing">
+<div style="margin-top: 50px" class="p-spacing">
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1NZJq1SCz6pJIP37rjTTmqYw"
 publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
@@ -74,11 +74,11 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
 
 <div class="row mt-100">
     <div class="col-xl-12">
-        <div class="portfolio__section-title-wrapper text-center mb-90 tp-el-content">
+        <div class="portfolio__section-title-wrapper p-spacing text-center tp-el-content">
             <span class="portfolio__section-title-pre tp-el-subtitle">Tune Your Dreams</span>
 
 
-            <h2 class="portfolio__section-title tp-el-title">Music Production Pricing</h2>
+            <h2 class="portfolio__section-title tp-el-title pb-50">Music Production Pricing</h2>
         </div>
     </div>
 </div>
@@ -97,11 +97,83 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
 
 
 
+<section class="about__gallery-area fix p-spacing pt-120 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="tp-section-wrapper-3 mb-60 text-center">
+                    <span class="tp-section-subtitle-3">Ongoing Offers</span>
+                    <h3 class="tp-section-title-3">Exciting Offers</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-10">
+                <div class="about__gallery-slider pl-50 pr-50 p-relative">
+                    <div class="about__gallery-slider-active slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 12428px; transform: translate3d(-956px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 956px;"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
+                            </div>
+                        </div></div></div></div></div></div>
+
+                    <div class="about__gallery-arrow d-none d-sm-block"><button type="button" class="about-button-prev slick-prev slick-arrow" style=""><span><i class="fa-regular fa-arrow-left"></i></span></button><button type="button" class="about-button-next slick-next slick-arrow" style=""><span><i class="fa-regular fa-arrow-right"></i></span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
-
-<section class="faq__area faq__style-3 p-relative z-index-1 pt-80 pb-40 tp-el-section">
+<section class="faq__area faq__style-3 p-relative z-index-1 p-spacing pt-80 pb-40 tp-el-section">
     <div class="container">
         <div class="row">
             <div class="txt-align col-xxl-5 col-xl-5 col-lg-6">

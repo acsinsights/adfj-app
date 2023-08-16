@@ -18,7 +18,7 @@
 
 
 
-    <section class="servivces__area pt-110">
+    <section class="p-spacing servivces__area pt-110">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
-                    <div class="services__more-4 mb-65">
+                    <div class="services__more-4 sentense-space">
                         <p>The city and town name generator uses a database of over five million names across modi tempora
                             incidunt.</p>
                     </div>
@@ -42,7 +42,7 @@
 
 
 
-    <div class="plan-spacing">
+    <div class="">
 
 
         <script async src="https://js.stripe.com/v3/pricing-table.js"></script>

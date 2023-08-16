@@ -66,7 +66,7 @@
           </div> --}}
 
         <!-- about area start -->
-        <section class="about__area pt-30 pb-120 p-relative" id="about_page">
+        <section class="about__area pt-30 pb-80 p-relative" id="about_page">
             <div class="about__shape">
                 {{-- <img class="about__shape-3" src="{{ asset('user-assets/img/about/6/shape/about-shape-1.png') }}"
                     alt="" /> --}}
@@ -75,7 +75,7 @@
                 <img class="about__shape-5" src="{{ asset('user-assets/img/about/6/shape/about-shape-3.png') }}"
                     alt="" />
             </div>
-            <div class="container mt-100">
+            <div class="container mt-70">
                 <div class="row">
                     <div class="col-xxl-5 col-xl-7 col-lg-6">
                         <div class="about__section-wrapper-6">
@@ -216,7 +216,7 @@
         <!-- about area end -->
 
         <!-- features area start -->
-        <section class="features__area p-relative z-index-1 grey-bg-7 pt-110 pb-90">
+        <section class="features__area p-relative z-index-1 grey-bg-7 pt-spacing ">
             <div class="features__shape">
                 <img class="features__shape-1" src="assets/img/features/features-shape-1.png" alt="" />
                 <img class="features__shape-2" src="assets/img/features/features-shape-2.png" alt="" />
@@ -227,7 +227,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-6 col-xl-7 col-lg-7">
-                        <div class="section__title-wrapper-6 mb-30 text-center">
+                        <div class="section__title-wrapper-6 mb-30 space text-center">
                             <h3 style=" margin-bottom: 50px;" class="section__title-6">
                                 Shine a Light on Our Featured
                                 <span class="section__title-6-highlight about_title2">
@@ -259,35 +259,6 @@
                                     Creating original music tracks, recording, mixing, and
                                     mastering.
                                 </p>
-
-                                <!-- <div class="features__btn">
-                                                                                                            <a href="services-details.html">
-                                                                                                              <svg
-                                                                                                                width="45"
-                                                                                                                height="44"
-                                                                                                                viewBox="0 0 45 44"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                              >
-                                                                                                                <path
-                                                                                                                  d="M43.999 22.1553H1.57262"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                                <path
-                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                              </svg>
-                                                                                                            </a>
-                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -309,35 +280,6 @@
                                     Professional sound design, editing, and post-production
                                     services.
                                 </p>
-
-                                <!-- <div class="features__btn">
-                                                                                                            <a href="services-details.html">
-                                                                                                              <svg
-                                                                                                                width="45"
-                                                                                                                height="44"
-                                                                                                                viewBox="0 0 45 44"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                              >
-                                                                                                                <path
-                                                                                                                  d="M43.999 22.1553H1.57262"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                                <path
-                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                              </svg>
-                                                                                                            </a>
-                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -359,35 +301,6 @@
                                     High-quality video visuals, filming, editing, and
                                     post-production.
                                 </p>
-
-                                <!-- <div class="features__btn">
-                                                                                                            <a href="services-details.html">
-                                                                                                              <svg
-                                                                                                                width="45"
-                                                                                                                height="44"
-                                                                                                                viewBox="0 0 45 44"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                              >
-                                                                                                                <path
-                                                                                                                  d="M43.999 22.1553H1.57262"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                                <path
-                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                              </svg>
-                                                                                                            </a>
-                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -409,35 +322,6 @@
                                     Eye-catching visuals, logo design, album covers, and
                                     promotional materials.
                                 </p>
-
-                                <!-- <div class="features__btn">
-                                                                                                            <a href="services-details.html">
-                                                                                                              <svg
-                                                                                                                width="45"
-                                                                                                                height="44"
-                                                                                                                viewBox="0 0 45 44"
-                                                                                                                fill="none"
-                                                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                                              >
-                                                                                                                <path
-                                                                                                                  d="M43.999 22.1553H1.57262"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                                <path
-                                                                                                                  d="M33.6991 32.451L43.998 22.002L33.549 11.703"
-                                                                                                                  stroke="currentColor"
-                                                                                                                  stroke-width="1.5"
-                                                                                                                  stroke-miterlimit="10"
-                                                                                                                  stroke-linecap="round"
-                                                                                                                  stroke-linejoin="round"
-                                                                                                                />
-                                                                                                              </svg>
-                                                                                                            </a>
-                                                                                                          </div> -->
                             </div>
                         </div>
                     </div>
@@ -693,7 +577,7 @@
 
 
 
-        <section class="about__gallery-area fix pt-120 pb-80">
+        <section class="about__gallery-area fix p-spacing pt-120 pb-80">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12">
@@ -792,7 +676,7 @@
 
 
         <!-- blog area start -->
-        <section class="blog__area pt-50 pb-80">
+        <section class="blog__area p-spacing pt-50 pb-80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-8 col-sm-10">
@@ -2219,7 +2103,7 @@
 
 
         <!-- brand area end -->
-        <section class="contact__area mt-50 pt-150 pb-50 p-relative z-index-1">
+        <section class="contact__area p-spacing mt-50 p-relative z-index-1">
             <div class="contact__shape">
                 <span class="contact__shape-1"></span>
             </div>

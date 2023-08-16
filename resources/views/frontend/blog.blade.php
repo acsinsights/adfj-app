@@ -137,7 +137,7 @@
         <!-- breadcrumb area end -->
 
         <!-- postbox area start -->
-        <section class="postbox__area grey-bg-4 pt-120 pb-120">
+        <section class="postbox__area grey-bg-4 pt-80 pb-120">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-8 col-lg-8">

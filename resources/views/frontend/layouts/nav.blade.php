@@ -24,16 +24,17 @@
                                     </a>
                                 </div>
                             </div>
-                            <div style="padding-left: 74px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
+                            <div style="padding-left: 64px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
                                 <div class="main-menu main-menu-9 main-menu-ff-space">
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li class="">
-                                                <a href="{{ url('/') }}">Home</a>
-
+                                                <a class="nav-link {{ URL::current() == url('/') ? 'active-pg' : '' }}"
+                                                href="{{ url('/') }}">Home</a>
                                             </li>
                                             <li class="">
-                                                <a href="{{ url('service') }}">Services</a>
+                                                <a class="nav-link {{ URL::current() == url('service') ? 'active-pg' : '' }}"
+                                                href="{{ url('service') }}">services</a>
                                             </li>
 
 
@@ -51,32 +52,28 @@
 
                                                 </ul>
                                             </li>
-
-
-
                                             <li class="">
-                                                <a href="{{ url('pricing-plan') }}">Pricing Plans</a>
-
-                                            <li class="">
-                                                <a href="{{ url('subscription') }}">Subscription</a>
-
+                                                    <a class="nav-link {{ URL::current() == url('pricing-plan') ? 'active-pg' : '' }}"
+                                                    href="{{ url('pricing-plan') }}">Pricing Plans</a>
                                             </li>
 
-
-                                            <li class="">
-                                                <a href="{{ url('about') }}">About Us</a>
-
-                                            <li class="">
-                                                <a href="{{ url('contact') }}">Contact Us</a>
-
-                                            </li>
-                                            <li class="">
-                                                <a href="{{ url('blog') }}">Blogs</a>
-
-
-                                            </li>
-
-                                        </ul>
+                                                <li class="">
+                                                    <a class="nav-link {{ URL::current() == url('subscription') ? 'active-pg' : '' }}"
+                                                    href="{{ url('subscription') }}">Subscription</a>
+                                                </li>
+                                                <li class="">
+                                                    <a class="nav-link {{ URL::current() == url('about') ? 'active-pg' : '' }}"
+                                                    href="{{ url('about') }}">About Us</a>
+                                                </li>
+                                                <li class="">
+                                                    <a class="nav-link {{ URL::current() == url('contact') ? 'active-pg' : '' }}"
+                                                    href="{{ url('contact') }}">Contact Us</a>
+                                                </li>
+                                                <li class="">
+                                                    <a class="nav-link {{ URL::current() == url('blog') ? 'active-pg' : '' }}"
+                                                    href="{{ url('blog') }}">Blogs</a>
+                                                </li>
+                                           </ul>
                                     </nav>
                                     <!-- for wp -->
                                     <div class="header__hamburger ml-50 d-none">

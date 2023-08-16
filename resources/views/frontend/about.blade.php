@@ -22,7 +22,7 @@
         <!-- about top area end -->
 
         <!-- about text area start -->
-        <section class="about__text pt-115 pb-50">
+        <section class="about__text pt-50 pb-50">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4">
@@ -58,7 +58,7 @@
 
 
         <!-- award area start -->
-        <section class="award__area pt-30 pb-120 white-bg">
+        <section class="award__area p-spacing pt-30 pb-120 white-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12">
@@ -157,7 +157,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-end">
                     <div class="col-xxl-7 col-xl-7 col-lg-7">
-                        <div class="faq__wrapper-2 faq__gradient-border faq__style-2 tp-accordion pl-160">
+                        <div class="faq__wrapper-2 mt-space faq__gradient-border faq__style-2 tp-accordion pl-160">
                             <div class="faq__title-wrapper">
                                 <span class="faq__title-pre">Experience the Power of Media Production</span>
                                 <h3 class="faq__title">

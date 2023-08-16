@@ -61175,7 +61175,9 @@ blockquote cite::before {
   opacity: 0.7;
   margin-bottom: 0;
 }
-
+.sentense-space{
+    margin-bottom: 65px;
+}
 .footer__info-text-8 a {
   font-weight: 500;
   font-size: 16px;
@@ -62278,6 +62280,19 @@ blockquote cite::before {
 [dir=rtl] .footer__link a:last-child {
   margin-left: 0;
 }
+
+
+
+
+
+.active-pg{
+    color: #eb1971!important;
+}
+
+
+
+
+
 
 .footer__link a:hover {
   color: var(--tp-common-white);
@@ -63400,7 +63415,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
+.pt-spacing{
+    padding: 80px 0px;
+}
 .newsletter-spacing{
 display: flex;
 justify-content: center;
@@ -64219,6 +64236,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .mobile-brandarea{
     display: none;
 }
+.space{
+    margin-top:50px;
+}
 .slider__thumb-9-main {
     width: 644px;
     /* height: 750px;
@@ -64238,6 +64258,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .txt-align{
         text-align: center;
     }
+    .sentense-space{
+        margin-bottom: 10px;
+    }
     .form-spacing{
         display: flex;
         justify-content: center;
@@ -64255,12 +64278,35 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .getstarted-btn {
     display: none;
   }
+  .mt-space{
+    margin-top: 1px;
+    padding-bottom: 1px;
+    padding-top: 58px;
+  }
+  .footer__top-6 {
+    position: relative;
+    padding-top: 62px;
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+.faq__title {
+    font-size: 41px;
+}
   .skill__content-9 h4 {
     font-size: 16px;
     margin-left: 6px;
 }
 .desktop-brandarea{
     display: none;
+}
+.pt-spacing{
+    padding-top: 27px;
+    transform: translateY(-63px);
+}
+.p-spacing{
+    padding: 30px 0px;
+
 }
 .slider__thumb-9-main {
     width: 381px;

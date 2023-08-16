@@ -825,7 +825,7 @@
     </section>
 
     <!-- cta area start -->
-    <section class="cta__area cta__style-3 p-relative z-index-1 pt-85 pb-60 grey-bg-7">
+    <section class="cta__area cta__style-3 p-relative z-index-1 p-spacing pt-85 pb-60 grey-bg-7">
         <div class="cta__shape">
             <img class="cta__shape-17" src="assets/img/cta/7/cta-shape-1.png" alt="" />
             <img class="cta__shape-18" src="assets/img/cta/7/cta-shape-2.png" alt="" />
