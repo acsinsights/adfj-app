@@ -22,15 +22,11 @@
                                         <div class="card-body">
                                             <form action="/admin/add-post" method="post" enctype="multipart/form-data">
                                                 @csrf
+                                                <label class="m-2">Project Title</label>
                                                 <input type="text" name="title" class="form-control m-2"
-                                                    placeholder="Title">
-                                                <input type="text" name="author" class="form-control m-2"
-                                                    placeholder="Sub title" required>
-                                                <input type="text" name="location" class="form-control m-2"
-                                                    placeholder="location">
-                                                <input type="date" name="date" class="form-control m-2">
-
-                                                <select name="service" id="" value=""
+                                                    placeholder="write your project title here">
+                                                    <label class="m-2">Service Category</label>
+                                                    <select name="service" id="" value=""
                                                     class="form-control m-2" required>
                                                     <option value="service"><- Select Service -></option>
                                                     @foreach ($pservices as $item)
@@ -38,17 +34,31 @@
                                                         </option>
                                                     @endforeach
                                                 </select>
+                                                <label class="m-2">Sub-Service Category</label>
                                                 <select name="type" id="" value=""
-                                                    class="form-control m-2" required>
-                                                    <option value=""><- Select Service Type -></option>
-                                                    @foreach ($stypes as $item1)
-                                                        <option value="{{ $item1->id }}">{{ $item1->stype_name }}
-                                                        </option>
-                                                    @endforeach
-                                                </select>
+                                                class="form-control m-2" required>
+
+                                                <option value=""><- Select Service Type -></option>
+                                                @foreach ($stypes as $item1)
+                                                    <option value="{{ $item1->id }}">{{ $item1->stype_name }}
+                                                    </option>
+                                                @endforeach
+                                            </select>
+                                                    <label class="m-2">Location</label>
+                                                <input type="text" name="location" class="form-control m-2"
+                                                    placeholder="location">
+                                                    <label class="m-2">Date</label>
+                                                <input type="date" name="date" class="form-control m-2">
+
+
+
                                                 <label class="m-2">Cover Image</label>
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover" required>
+                                                <label class="m-2">Hyperlink(optional)</label>
+                                                <input type="url" name="videolink" id="videolink"   placeholder="put hyperlink here"
+                                                class="form-control m-2 videolink">
+
 
                                                 <div class="video-card">
                                                     <label for="video" class="m-2">Play Button</label>
@@ -59,10 +69,7 @@
                                                         </label>
                                                     </div>
 
-                                                    <div class="video-box">
-                                                        <input type="text" name="videolink" id="videolink"
-                                                            class="form-control m-2 videolink">
-                                                    </div>
+
                                                 </div>
 
                                                 <button type="submit" class="btn btn-success mt-3">Submit</button>
