@@ -23,14 +23,13 @@
             <div class="row align-items-end">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="section__title-wrapper-4 mb-60">
-                        <span class="section__title-pre-4">Practice Areas</span>
-                        <h3 class="section__title-4">The area where we practice our law</h3>
+                        <span class="section__title-pre-4">EXPLORE ADFJ STUDIOS SUBSCRIPTION PLANS</span>
+                        <h3 style="font-size:40px;"  class="section__title-4">Unlock Your Creative Potential with Subscription Plans</h3>
                     </div>
                 </div>
                 <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                     <div class="services__more-4 sentense-space">
-                        <p>The city and town name generator uses a database of over five million names across modi tempora
-                            incidunt.</p>
+                        <p>   Elevate your content creation journey with our tailored subscription plans, designed to provide creators and artists with consistent support, financial stability, and a comprehensive suite of media production services.</p>
                     </div>
                 </div>
             </div>
@@ -57,9 +56,8 @@
             <div class="row">
                 <div class="col-xxl-12">
                     <div class="section__title-wrapper-8 text-center mb-60">
-                        <span class="section__title-pre-8">Our Services</span>
-                        <h3 class="section__title-8">Our featured
-                            <span class="section__title-highlight-8">services
+                        <h3 class="section__title-8">
+                            <span class="section__title-highlight-8"> Benefits
                                 <svg width="206" height="24" viewBox="0 0 206 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path class="wow" d="M3 20.7505C47.375 13.8755 135.812 -15.4995 203 20.7505"
@@ -67,6 +65,8 @@
                                 </svg>
                             </span>
                         </h3>
+                        <span style="color: #fff;"  class="section__title-pre-8">Of Subscription Plan </span>
+
                     </div>
                 </div>
             </div>
@@ -78,94 +78,85 @@
                         <div class="services__shape">
                             <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
                         </div>
-                        <div class="services__icon-8 mr-30">
+                        <div class="services__icon-8 mt-40 mr-30">
                             <span>
                                 <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
                             </span>
                         </div>
                         <div class="services__content-8">
                             <h3 class="services__title-8">
-                                <a href="services-details.html">Planning</a>
+                                <a href="javascript:void(0)">Streamlined Content Creation</a>
                             </h3>
-                            <p>There are many variations of passages of lorem Ipsum available.!</p>
+                            <p>Enjoy seamless access to a range of media production services, ensuring a steady <br>  flow of high-quality content.</p>
 
-                            <div class="services__project-no">
-                                <span>350 Project</span>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item9 animate-border3 services__item-8  animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    <div class="services__item9 animate-border3 services__item-8  animate-border-2 d-lg-flex align-items-start transition-3 wow fadeInDown"
                         data-wow-delay=".3s" data-wow-duration="1s">
                         <span class="services-border-2"></span>
                         <div class="services__shape">
                             <img class="services__shape-11"
                                 src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
                         </div>
-                        <div class="services__icon-8 mr-30">
+                        <div class="services__icon-8 mr-30 mt-40">
                             <span>
                                 <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
                             </span>
                         </div>
                         <div class="services__content-8">
                             <h3 class="services__title-8">
-                                <a href="services-details.html">Architecture</a>
+                                <a href="javascript:void(0)">Financial Empowerment</a>
                             </h3>
-                            <p>There are many variations of passages of lorem Ipsum available.!</p>
+                            <p> Overcome financial challenges with cost-effective subscription options, enabling you to focus on your craft without worrying about budgets.</p>
 
-                            <div class="services__project-no">
-                                <span>120 Project</span>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="services__item9 services__item-8 animate-border3 animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    <div class="services__item9 services__item-8 animate-border3 animate-border-2 d-lg-flex align-items-start transition-3 wow fadeInDown"
                         data-wow-delay=".7s" data-wow-duration="1s">
                         <span class="services-border-2"></span>
                         <div class="services__shape">
                             <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
                         </div>
-                        <div class="services__icon-8 mr-30">
+                        <div class="services__icon-8 mr-30 mt-40">
                             <span>
                                 <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
                             </span>
                         </div>
                         <div class="services__content-8">
                             <h3 class="services__title-8">
-                                <a href="services-details.html">Design</a>
+                                <a href="javascript:void(0)">Personalized Guidance</a>
                             </h3>
-                            <p>There are many variations of passages of lorem Ipsum available.!</p>
+                            <p>Receive expert guidance and tailored solutions from our team, empowering you to refine your artistic vision and reach new heights</p>
 
-                            <div class="services__project-no">
-                                <span>240 Project</span>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class=" services__item-8 animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    <div class=" services__item-8 animate-border-2 d-lg-flex align-items-start transition-3 wow fadeInDown"
                         data-wow-delay=".7s" data-wow-duration="1s">
                         <span class="services-border-2"></span>
                         <div class="services__shape">
                             <img class="services__shape-11"
                                 src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
                         </div>
-                        <div class="services__icon-8 mr-30">
+                        <div class="services__icon-8 mr-30 mt-40">
                             <span>
                                 <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
                             </span>
                         </div>
                         <div class="services__content-8">
                             <h3 class="services__title-8">
-                                <a href="services-details.html">Products</a>
+                                <a href="javascript:void(0)">Exclusive <br> Resources</a>
                             </h3>
-                            <p>There are many variations of passages of lorem Ipsum available.!</p>
+                            <p>Access a treasure trove of exclusive resources, tools, and workshops to refine your skills and stay ahead in the creative landscape.</p>
 
-                            <div class="services__project-no">
-                                <span>220 Project</span>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -649,10 +640,26 @@
         <div class="container">
             <div class="one-title dsn-active wow fadeInUp"data-wow-delay=".7s"
             data-wow-duration="1s">
-                <div class="title-sub-container">
+                {{-- <div class="title-sub-container">
                     <p class="title-sub">OUR SERVCIES</p>
+                </div> --}}
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="section__title-wrapper-8 text-center mb-60">
+                            <h3 style="color: #000000;" class="section__title-8">
+                                <span class="section__title-highlight-8">Onboarding
+                                    <svg width="206" height="24" viewBox="0 0 206 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="wow" d="M3 20.7505C47.375 13.8755 135.812 -15.4995 203 20.7505"
+                                            stroke="#FF5A1B" stroke-width="6" stroke-linecap="round"></path>
+                                    </svg>
+                                </span>
+                            </h3>
+                            <span style="color: #000000;"  class="section__title-pre-8"> with Team AdFJ Studios</span>
+
+                        </div>
+                    </div>
                 </div>
-                <h2 class="title-main">New Branding Agency</h2>
             </div>
             <section class="design-section">
                 <div class="timeline">
@@ -665,14 +672,11 @@
                         <div class="img-brand">
                             <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
                         </div>
-                        <h3>Who we are </h3>
+                        <h2 class="mb-30">Step 1</h2>
+                        <h3> Apply and Connect</h3>
                         <br>
                         <!-- <h6>Hello we are, <br> Acs Team. </h6> -->
-                        <p>Founded in 2020, ACS Insights has become one of the best Digital Agency in India.
-                            We at ACS Insights are passionate about helping businesses thrive in the digital realm.
-                            As a dynamic digital marketing firm, we merge data-driven strategies with stunning graphic
-                            design
-                            to craft immersive brand experiences that leave a lasting impression.
+                        <p> Submit your application online, detailing your creative journey and aspirations. Our team will review your submission and initiate a personalized conversation.
                         </p>
                     </div>
                     <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
@@ -680,13 +684,10 @@
                             <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
                                 alt="">
                         </div>
-                        <h3>What We Do</h3>
+                        <h2 class="mb-30">Step 2</h2>
+                        <h3>Tailored Plan Creation</h3>
                         <br>
-                        <p>We create remarkable experiences for businesses and their products at Acs. With our digital
-                            marketing experience and web development expertise, our clients count on us to develop solutions
-                            to their problems.
-                            Embracing hard problems and creative challenges is part of our DNA as an agency integrating
-                            marketing, technology, and design.
+                        <p>Collaborate with our experts to craft a subscription plan that suits your needs, addressing your content goals and financial considerations.
                         </p>
                     </div>
                     <div class="timeline-middle wow fadeInUp">
@@ -705,13 +706,29 @@
                         <div class="img-brand">
                             <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
                         </div>
-                        <h3>Why Work With Us?</h3>
+                        <h2 class="mb-30">Step 3</h2>
+                        <h3>Content Strategy Workshop</h3>
                         <br>
-                        <p>In the last four years, ACS Insights has been assisting ambitious Business Owners with more than
-                            300 successful project completions. Knowing how the digital market works, knowing your market,
-                            and understanding our clients' needs are all part of what we do. We utilize best-in-class
-                            creative solutions to create customized projects that are tailored specifically to your business
-                            objectives.</p>
+                        <p>Engage in an insightful workshop where we align your artistic vision with a comprehensive content strategy, ensuring every creation resonates with your audience.</p>
+                    </div>
+                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+                        <div class="d-flex">
+                            <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
+                                alt="">
+                        </div>
+                        <h2 class="mb-30">Step 4</h2>
+                        <h3>Launch and Support</h3>
+                        <br>
+                        <p>With your subscription plan in place, embark on your content creation journey with confidence. Our team stands by you, providing ongoing support, resources, and feedback to drive your success.
+                        </p>
+                    </div>
+                    <div class="timeline-middle wow fadeInUp">
+                        <div class="timeline-circle"  data-wow-delay=".7s" data-wow-duration="1s"></div>
+                    </div>
+                    <div class="timeline-empty">
+                    </div>
+
+                    <div class="timeline-empty">
                     </div>
                 </div>
 

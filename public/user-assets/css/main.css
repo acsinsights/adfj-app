@@ -12988,18 +12988,18 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 
 
-            -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            /* -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424; */
 
             /* box-shadow: inset 0 0 35px 5px rgba(0,0,0,0.25), inset 0 2px 1px 1px rgba(255,255,255,0.9), inset 0 -2px 1px rgba(0,0,0,0.25); */
 
 
 
 
-            /* box-shadow:
+            box-shadow:
             inset 0 -3em 3em rgba(0, 0, 0, 0.1),
             0 0 0 2px rgb(255, 255, 255),
-            0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
+            0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
     border-radius: 5px;
     color: white;
@@ -28062,7 +28062,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .services__title-8 a:hover {
-  color: var(--tp-theme-8);
+  /* color: var(--tp-theme-8); */
+
 }
 
 .services__title-9 {
@@ -64152,6 +64153,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .zoom-instagram-widget__item {
     width: 30%;
   }
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 800px) {
@@ -64230,6 +64232,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .menu-btn {
     display: none;
   }
+  .mobile-foot{
+    display: none;
+  }
+
   .mobile-canvasmenu{
     display: none;
 }
@@ -64258,6 +64264,16 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .txt-align{
         text-align: center;
     }
+    .deskfoot-row{
+        display: none;
+    }
+    .twobox-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+.desktop-foot{
+    display: none;
+}
     .sentense-space{
         margin-bottom: 10px;
     }
@@ -64278,6 +64294,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .getstarted-btn {
     display: none;
   }
+  .section__title-highlight-8 svg {
+    position: absolute;
+    bottom: -33%;
+    left: -3%;
+    z-index: -1;
+    width: 100%;
+}
   .mt-space{
     margin-top: 1px;
     padding-bottom: 1px;

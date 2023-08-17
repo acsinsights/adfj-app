@@ -17,11 +17,11 @@
                                 <form action="/admin/update/{{ $posts->id }}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('put')
-                                    <label for="" class="title">Title</label>
+                                    <label for="" class="title">Project Title</label>
                                     <input type="text" name="title" class="form-control m-2"
                                         placeholder="Service Category" value="{{ $posts->title }}">
 
-                                    <label>Sub Title</label>
+                                    <label>Sub Project Title</label>
                                     <input type="text" name="author" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $posts->author }}">
 
@@ -36,7 +36,7 @@
 
                                     <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
 
-                                    <label>Service Type</label>
+                                    <label>Sub Project Title</label>
                                     <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
                                         readonly>
 

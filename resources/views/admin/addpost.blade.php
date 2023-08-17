@@ -26,13 +26,13 @@
                                                 <input type="text" name="title" class="form-control m-2"
                                                     placeholder="write your project title here">
                                                     <label class="m-2">Service Category</label>
-                                                    <select name="service" id="" value=""
-                                                    class="form-control m-2" required>
-                                                    <option value="service"><- Select Service -></option>
-                                                    @foreach ($pservices as $item)
-                                                        <option value="{{ $item->id }}">{{ $item->service_name }}
-                                                        </option>
-                                                    @endforeach
+                                              <select name="service" id="" value=""
+                                                 class="form-control m-2" required>
+                                                <option value="service"><- Select Service -></option>
+                                                @foreach ($pservices as $item)
+                                                    <option value="{{ $item->id }}">{{ $item->service_name }}
+                                                    </option>
+                                                 @endforeach
                                                 </select>
                                                 <label class="m-2">Sub-Service Category</label>
                                                 <select name="type" id="" value=""
@@ -56,7 +56,7 @@
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover" required>
                                                 <label class="m-2">Hyperlink(optional)</label>
-                                                <input type="url" name="videolink" id="videolink"   placeholder="put hyperlink here"
+                                                <input type="url" name="videolink" id="videolink" placeholder="put hyperlink here"
                                                 class="form-control m-2 videolink">
 
 

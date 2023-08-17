@@ -86,9 +86,9 @@
                                             <tr>
                                                 <th>#No</th>
                                                 <th>Media</th>
-                                                <th>Title</th>
-                                                <th>Services</th>
-                                                <th>Post Type</th>
+                                                <th>Project Title</th>
+                                                <th>Service Category</th>
+                                                <th>Sub-Service Category</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
                                                 <th>Edit</th>

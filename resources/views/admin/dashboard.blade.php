@@ -15,7 +15,7 @@
                                 <p class="text-muted">
                                     <i class="fa fa-level-up text-success"></i> Total Posts
                                 </p>
-                                <div id="apexspark_bar_1" style="min-height: 40px;">
+                                {{-- <div id="apexspark_bar_1" style="min-height: 40px;">
                                     <div id="apexcharts3tgx34l8"
                                         class="apexcharts-canvas apexcharts3tgx34l8 apexcharts-theme-light"
                                         style="width: 100px; height: 40px;"><svg id="SvgjsSvg2025" width="100"
@@ -302,11 +302,11 @@
                                             <div class="apexcharts-yaxistooltip-text"></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-6 col-lg-3 col-md-6 col-sm-12">
+                    {{-- <div class="col-xxl-3 col-xl-6 col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <h3>$1258</h3>
@@ -604,7 +604,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>

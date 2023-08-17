@@ -30,14 +30,13 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
         <div class="row align-items-end">
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div class="section__title-wrapper-4 mb-60">
-                    <span class="section__title-pre-4">Practice Areas</span>
-                    <h3 class="section__title-4">The area where we practice our law</h3>
+                    <span class="section__title-pre-4">Explore AdFJ Studios Pricing Plans</span>
+                    <h3 class="section__title-4"> Empowering Creators and Artists</h3>
                 </div>
             </div>
             <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                 <div class="services__more-4 mb-65">
-                    <p>The city and town name generator uses a database of over five million names across modi tempora
-                        incidunt.</p>
+                    <p>  Discover pricing plans meticulously crafted to empower creators and artists, fostering content consistency, addressing financial hurdles, and providing a holistic creative solution at AdFJ Studios.</p>
                 </div>
             </div>
         </div>
@@ -49,6 +48,118 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
 
 
 
+<section class="services__area pt-115 pb-105 black-bg-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="section__title-wrapper-8 text-center mb-60">
+                    <h3 class="section__title-8">
+                        <span class="section__title-highlight-8"> Benefits
+                            <svg width="206" height="24" viewBox="0 0 206 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="wow" d="M3 20.7505C47.375 13.8755 135.812 -15.4995 203 20.7505"
+                                    stroke="#FF5A1B" stroke-width="6" stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                    </h3>
+                    <span style="color: #fff;"  class="section__title-pre-8">Of Subscription Plan </span>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="services__item-8  animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    data-wow-delay=".3s" data-wow-duration="1s">
+                    <span class="services-border-2"></span>
+                    <div class="services__shape">
+                        <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
+                    </div>
+                    <div class="services__icon-8 mt-40 mr-30">
+                        <span>
+                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                        </span>
+                    </div>
+                    <div class="services__content-8">
+                        <h3 class="services__title-8">
+                            <a href="javascript:void(0)">Content Consistency</a>
+                        </h3>
+                        <p>Achieve a steady stream of captivating content through our plans tailored to your needs, ensuring your creative journey remains uninterrupted.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="services__item9 animate-border3 services__item-8  animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    data-wow-delay=".3s" data-wow-duration="1s">
+                    <span class="services-border-2"></span>
+                    <div class="services__shape">
+                        <img class="services__shape-11"
+                            src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
+                    </div>
+                    <div class="services__icon-8 mr-30 mt-40">
+                        <span>
+                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                        </span>
+                    </div>
+                    <div class="services__content-8">
+                        <h3 class="services__title-8">
+                            <a href="javascript:void(0)">Financial Ease</a>
+                        </h3>
+                        <p>Overcome financial challenges with cost-effective pricing options, enabling you to invest in your creativity while benefiting from top-notch media production services.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="services__item9 services__item-8 animate-border3 animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    data-wow-delay=".7s" data-wow-duration="1s">
+                    <span class="services-border-2"></span>
+                    <div class="services__shape">
+                        <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
+                    </div>
+                    <div class="services__icon-8 mr-30 mt-40">
+                        <span>
+                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                        </span>
+                    </div>
+                    <div class="services__content-8">
+                        <h3 class="services__title-8">
+                            <a href="javascript:void(0)">Dedicated Project Management</a>
+                        </h3>
+                        <p> Enjoy the luxury of a dedicated project manager who ensures seamless communication, efficient workflow, and timely delivery of your projects.</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class=" services__item-8 animate-border-2 d-lg-flex align-items-start transition-3 mb-30 wow fadeInDown"
+                    data-wow-delay=".7s" data-wow-duration="1s">
+                    <span class="services-border-2"></span>
+                    <div class="services__shape">
+                        <img class="services__shape-11"
+                            src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
+                    </div>
+                    <div class="services__icon-8 mr-30 mt-40">
+                        <span>
+                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                        </span>
+                    </div>
+                    <div class="services__content-8">
+                        <h3 class="services__title-8">
+                            <a href="javascript:void(0)">Comprehensive Solutions</a>
+                        </h3>
+                        <p>Access a range of additional benefits such as workshops, resources, and expert insights, maximizing the value of your partnership with AdFJ Studios.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -94,6 +205,117 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<section class="mt-80 our-services section-margin">
+    <div class="container">
+        <div class="one-title dsn-active wow fadeInUp"data-wow-delay=".7s"
+        data-wow-duration="1s">
+            {{-- <div class="title-sub-container">
+                <p class="title-sub">OUR SERVCIES</p>
+            </div> --}}
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="section__title-wrapper-8 text-center ">
+                        <h3 style="color: #000000;" class="section__title-8">
+                            <span class="section__title-highlight-8">Onboarding
+                                <svg width="206" height="24" viewBox="0 0 206 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="wow" d="M3 20.7505C47.375 13.8755 135.812 -15.4995 203 20.7505"
+                                        stroke="#FF5A1B" stroke-width="6" stroke-linecap="round"></path>
+                                </svg>
+                            </span>
+                        </h3>
+                        <span style="color: #000000;"  class="section__title-pre-8"> with Team AdFJ Studios</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<section class=" design-section">
+    <div class="timeline">
+        <div class="timeline-empty">
+        </div>
+        <div class="timeline-middle wow fadeInUp">
+            <div class="timeline-circle " data-wow-delay=".7s" data-wow-duration="1s"></div>
+        </div>
+        <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+            <div class="img-brand">
+                <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
+            </div>
+            <h2 class="mb-30">Step 1</h2>
+            <h3>Choose a Plan</h3>
+            <br>
+            <!-- <h6>Hello we are, <br> Acs Team. </h6> -->
+            <p> Browse through our range of pricing plans and select the one that aligns with your creative goals and budget.
+            </p>
+        </div>
+        <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+            <div class="d-flex">
+                <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
+                    alt="">
+            </div>
+            <h2 class="mb-30">Step 2</h2>
+            <h3> Pay Securely</h3>
+            <br>
+            <p>Complete the payment process securely through our trusted payment gateway, setting the foundation for your collaboration.
+            </p>
+        </div>
+        <div class="timeline-middle wow fadeInUp">
+            <div class="timeline-circle"  data-wow-delay=".7s" data-wow-duration="1s"></div>
+        </div>
+        <div class="timeline-empty">
+        </div>
+
+        <div class="timeline-empty">
+        </div>
+
+        <div class="timeline-middle wow fadeInUp">
+            <div class="timeline-circle" data-wow-delay=".7s" data-wow-duration="1s"></div>
+        </div>
+        <div class=" timeline-component timeline-content wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+            <div class="img-brand">
+                <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
+            </div>
+            <h2 class="mb-30">Step 3</h2>
+            <h3>Get Dedicated Project Manager</h3>
+            <br>
+            <p>Upon payment confirmation, you'll be assigned a dedicated project manager who will guide you through the entire production journey, ensuring your vision comes to life.</p>
+        </div>
+        <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+            <div class="d-flex">
+                <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
+                    alt="">
+            </div>
+            <h2 class="mb-30">Step 4</h2>
+            <h3>Get Your Project Delivered</h3>
+            <br>
+            <p>Watch your creative vision materialize as our team of experts collaborates to deliver your project efficiently and to your utmost satisfaction.
+            </p>
+        </div>
+        <div class="timeline-middle wow fadeInUp">
+            <div class="timeline-circle"  data-wow-delay=".7s" data-wow-duration="1s"></div>
+        </div>
+        <div class="timeline-empty">
+        </div>
+
+        <div class="timeline-empty">
+        </div>
+    </div>
+
+</section>
+
+</div>
+</section>
 
 
 
@@ -212,66 +434,13 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
                                                                     <div class="accordion-item tp-el-box">
                                                                         <h2 class="accordion-header" id="headingOne-0">
                                                                             <button class="accordion-button tp-el-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-0" aria-expanded="true" aria-controls="collapseOne-0">
-                                                                                How does AdFJ Studios cater to the
-                                                                                unique needs of the media production
-                                                                                industry?
+                                                                                Can I upgrade my pricing plan later?
                                                                             </button>
                                                                         </h2>
                                                                         <div id="collapseOne-0" class="accordion-collapse collapse " aria-labelledby="headingOne-0" data-bs-parent="#general_accordion-a8b120e">
                                                                             <div class="accordion-body">
                                                                                 <p class="tp-el-box-desc">
-                                                                                    AdFJ Studios understands the
-                                                                                    specific requirements of the
-                                                                                    media
-                                                                                    production industry and offers
-                                                                                    tailor-made solutions to meet
-                                                                                    those
-                                                                                    needs. We have in-depth
-                                                                                    knowledge of
-                                                                                    industry standards and trends
-                                                                                    and
-                                                                                    ensure our services fit the
-                                                                                    ever-changing landscape. Our
-                                                                                    team of
-                                                                                    skilled professionals combine
-                                                                                    their
-                                                                                    expertise with state-of-the-art
-                                                                                    technology to deliver
-                                                                                    exceptional
-                                                                                    media productions. Whether
-                                                                                    music,
-                                                                                    audio or video, AdFJ Studios is
-                                                                                    committed to providing top
-                                                                                    quality
-                                                                                    services tailored to the unique
-                                                                                    demands of the media production
-                                                                                    industry. (Original) AdFJ
-                                                                                    Studios
-                                                                                    understands the specific
-                                                                                    requirements of the media
-                                                                                    production
-                                                                                    industry and offers customized
-                                                                                    solutions to meet those needs.
-                                                                                    We
-                                                                                    have a deep understanding of the
-                                                                                    industry' s standards and
-                                                                                    trends,
-                                                                                    ensuring that our services align
-                                                                                    with the ever-changing
-                                                                                    landscape.
-                                                                                    Our team of skilled
-                                                                                    professionals
-                                                                                    combines their expertise with
-                                                                                    state-of-the-art technology to
-                                                                                    deliver exceptional media
-                                                                                    productions. Whether it's music,
-                                                                                    audio, or video, AdFJ Studios is
-                                                                                    dedicated to providing
-                                                                                    top-quality
-                                                                                    services tailored to the unique
-                                                                                    demands of the media production
-                                                                                    industry.
-
+                                                                                    Yes, you can upgrade your plan at any time to accommodate your evolving needs and creative ambitions.
 
                                                                                 </p>
                                                                             </div>
@@ -280,31 +449,13 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
                                                                     <div class="accordion-item tp-el-box">
                                                                         <h2 class="accordion-header" id="headingOne-1">
                                                                             <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-1" aria-expanded="false" aria-controls="collapseOne-1">
-                                                                                Can AdFJ Studios handle video
-                                                                                production
-                                                                                for the entertainment industry?
+                                                                                What if I have specific requirements for my project?
                                                                             </button>
                                                                         </h2>
                                                                         <div id="collapseOne-1" class="accordion-collapse collapse" aria-labelledby="headingOne-1" data-bs-parent="#general_accordion-a8b120e">
                                                                             <div class="accordion-body">
                                                                                 <p class="tp-el-box-desc">
-                                                                                    Absolutely! AdFJ Studios
-                                                                                    specializes
-                                                                                    in video visuals production for
-                                                                                    the
-                                                                                    entertainment industry. We
-                                                                                    provide
-                                                                                    end-to-end video production
-                                                                                    services, including concept
-                                                                                    development, scriptwriting,
-                                                                                    filming,
-                                                                                    editing, visual effects, and
-                                                                                    post-production. Whether it's a
-                                                                                    music video, promotional
-                                                                                    content, or
-                                                                                    a short film, our team of
-                                                                                    experts
-                                                                                    will bring your vision to life.
+                                                                                    Our dedicated project manager will work closely with you to understand your unique requirements and ensure they are integrated into the production process.
 
 
                                                                                 </p>
@@ -314,29 +465,13 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
                                                                     <div class="accordion-item tp-el-box">
                                                                         <h2 class="accordion-header" id="headingOne-2">
                                                                             <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2">
-                                                                                What types of music and audio
-                                                                                production
-                                                                                services does AdFJ Studios offer?
+                                                                                Do you offer a satisfaction guarantee?
                                                                             </button>
                                                                         </h2>
                                                                         <div id="collapseOne-2" class="accordion-collapse collapse" aria-labelledby="headingOne-2" data-bs-parent="#general_accordion-a8b120e">
                                                                             <div class="accordion-body">
                                                                                 <p class="tp-el-box-desc">
-                                                                                    AdFJ Studios offers a wide range
-                                                                                    of
-                                                                                    music and audio production
-                                                                                    services,
-                                                                                    including recording, mixing,
-                                                                                    mastering, sound design,
-                                                                                    voice-over
-                                                                                    production, and music
-                                                                                    composition.
-                                                                                    Whether you need a professional
-                                                                                    studio for your band's album or
-                                                                                    require high-quality audio
-                                                                                    production for your podcast or
-                                                                                    commercial, we've got you
-                                                                                    covered.
+                                                                                    Absolutely, your satisfaction is our priority. We strive to exceed your expectations, and if you're not satisfied, we'll work with you to make it right.
 
 
                                                                                 </p>

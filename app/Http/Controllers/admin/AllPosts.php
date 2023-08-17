@@ -148,27 +148,9 @@ class AllPosts extends Controller
         if (File::exists("cover/" . $posts->cover)) {
             File::delete("cover/" . $posts->cover);
         }
-        $images = Image::where("post_id", $posts->id)->get();
-        foreach ($images as $image) {
-            if (File::exists("images/" . $image->image)) {
-                File::delete("images/" . $image->image);
-            }
-        }
         $posts->delete();
         return back();
     }
-
-    public function deleteimage($id)
-    {
-        $images = Image::findOrFail($id);
-        if (File::exists("images/" . $images->image)) {
-            File::delete("images/" . $images->image);
-        }
-
-        Image::find($id)->delete();
-        return back();
-    }
-
     public function deletecover($id)
     {
         $cover = Post::findOrFail($id)->cover;
