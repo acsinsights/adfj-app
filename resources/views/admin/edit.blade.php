@@ -44,7 +44,9 @@
                                         id="inlineFormCustomSelect">
                                         <option value="{{ $posts->stypeid }}" selected>Choose Type...</option>
                                         @foreach ($stypes as $st)
-                                            <option value="{{ $st->id }}">{{ $st->stype_name }}</option>
+                                            @if ($st->pservices_id == $posts->serviceid)
+                                                <option value="{{ $st->id }}">{{ $st->stype_name }}</option>
+                                            @endif
                                         @endforeach
                                     </select>
 
