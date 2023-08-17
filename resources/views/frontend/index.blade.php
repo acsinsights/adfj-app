@@ -226,7 +226,7 @@
             </div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xxl-6 col-xl-7 col-lg-7">
+                    <div class="pb-spacing col-xxl-6 col-xl-7 col-lg-7">
                         <div class="section__title-wrapper-6 mb-30 space text-center">
                             <h3 style=" margin-bottom: 50px;" class="section__title-6">
                                 Shine a Light on Our Featured
@@ -332,7 +332,7 @@
 
 
         <!-- portfolio area start -->
-        <section class="portfolio__area p-relative portfolio__overlay pt-50 pb-90 fix">
+        <section class="portfolio__area p-relative portfolio__overlay pt-spacing pt-50 pb-90 fix">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12">

@@ -98,7 +98,7 @@
                                         <tbody>
                                             @foreach ($posts as $post)
                                                 @if ($post->serviceid == 2)
-                                                    <tr>
+                                                    <tr  style="vertical-align: middle;">
                                                         <td><img src="/posts/{{ $post->media }}" class="img-responsive"
                                                                 style="max-height:100px; max-width:100px" alt=""
                                                                 srcset=""></td>

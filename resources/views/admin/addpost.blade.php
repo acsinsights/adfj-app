@@ -38,7 +38,6 @@
                                                 <label class="m-2">Sub-Service Category</label>
                                                 <select name="type" id="" value=""
                                                 class="form-control m-2" required>
-
                                                 <option value=""><- Select Service Type -></option>
                                                 @foreach ($stypes as $item1)
                                                     <option value="{{ $item1->id }}">{{ $item1->stype_name }}

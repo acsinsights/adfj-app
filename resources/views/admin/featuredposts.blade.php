@@ -85,9 +85,9 @@
                                         <thead>
                                             <tr>
                                                 <th>Media</th>
-                                                <th>Title</th>
-                                                <th>Services</th>
-                                                <th>Post Type</th>
+                                                <th>Project Title</th>
+                                                <th>Services Category</th>
+                                                <th>Sub-Service Category</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
                                                 <th>Edit</th>
@@ -102,7 +102,7 @@
                                                     <td><img src="/posts/{{ $post->media }}" class="img-responsive"
                                                             style="max-height:100px; max-width:100px" alt=""
                                                             srcset=""></td>
-                                                    <td>{{ $post->author }}</td>
+                                                    <td>{{ $post->title }}</td>
                                                     <td>{{ $post->pservices->service_name }}</td>
                                                     <td>{{ $post->stypes->slug }}</td>
                                                     <td>{{ $post->date }}</td>
