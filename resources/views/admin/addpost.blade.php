@@ -23,8 +23,9 @@
                                             <form action="/admin/add-post" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 <label class="m-2">Project Title</label>
-                                                <input type="text" name="title" class="form-control m-2"
+                                                <input type="text" name="author" class="form-control m-2"
                                                     placeholder="write your project title here">
+
                                                     <label class="m-2">Service Category</label>
                                               <select name="service" id="" value=""
                                                  class="form-control m-2" required>

@@ -67,7 +67,7 @@ class AllPosts extends Controller
             $file->move(\public_path("posts/"), $imageName);
 
             $post = new Post([
-                "title" => $request->title,
+                "title" => $request->author,
                 "author" => $request->author,
                 "location" => $request->location,
                 "date" => $request->date,

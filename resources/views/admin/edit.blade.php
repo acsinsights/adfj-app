@@ -25,19 +25,8 @@
                                     <input type="text" name="author" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $posts->author }}">
 
-                                    <label>Location</label>
-                                    <input type="text" name="location" class="form-control m-2" placeholder="location"
-                                        value="{{ $posts->location }}">
-
-                                    <label>Portfolio Service</label>
-
-                                    <input type="text" class="form-control m-2"
-                                        value="{{ $posts->pservices->service_name }}" readonly>
-
-                                    <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
-
-                                    <label>Sub Project Title</label>
-                                    <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
+                                        <label>Portfolio Service</label>
+                                        <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
                                         readonly>
 
                                     <select name="type" class="form-control custom-select m-2"
@@ -50,6 +39,18 @@
                                         @endforeach
                                     </select>
 
+
+                                    <label>Location</label>
+                                    <input type="text" name="location" class="form-control m-2" placeholder="location"
+                                        value="{{ $posts->location }}">
+
+
+
+                                    <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
+
+
+
+                                    <label>Hyperlink</label>
                                     <input type="text" name="hypelinks" id="hypelinks" class="form-control m-2"
                                         value="{{ $posts->hypelinks }}">
 
