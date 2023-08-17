@@ -103,8 +103,8 @@
                                                             style="max-height:100px; max-width:100px" alt=""
                                                             srcset=""></td>
                                                     <td>{{ $post->title }}</td>
-                                                    <td>{{ $post->pservices->service_name }}</td>
-                                                    <td>{{ $post->stypes->slug }}</td>
+                                                    <td>{{ $post->pservices->service_name}}</td>
+                                                    <td>{{ $post->stypes->slug}}</td>
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
                                                     <td><a href="/edit/{{ $post->id }}"

@@ -24,12 +24,15 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                     <div class="section__title-wrapper-4 mb-60">
                         <span class="section__title-pre-4">EXPLORE ADFJ STUDIOS SUBSCRIPTION PLANS</span>
-                        <h3 style="font-size:40px;"  class="section__title-4">Unlock Your Creative Potential with Subscription Plans</h3>
+                        <h3 style="font-size:40px;" class="section__title-4">Unlock Your Creative Potential with
+                            Subscription Plans</h3>
                     </div>
                 </div>
                 <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                     <div class="services__more-4 sentense-space">
-                        <p>   Elevate your content creation journey with our tailored subscription plans, designed to provide creators and artists with consistent support, financial stability, and a comprehensive suite of media production services.</p>
+                        <p> Elevate your content creation journey with our tailored subscription plans, designed to provide
+                            creators and artists with consistent support, financial stability, and a comprehensive suite of
+                            media production services.</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +68,7 @@
                                 </svg>
                             </span>
                         </h3>
-                        <span style="color: #fff;"  class="section__title-pre-8">Of Subscription Plan </span>
+                        <span style="color: #fff;" class="section__title-pre-8">Of Subscription Plan </span>
 
                     </div>
                 </div>
@@ -76,18 +79,25 @@
                         data-wow-delay=".3s" data-wow-duration="1s">
                         <span class="services-border-2"></span>
                         <div class="services__shape">
-                            <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
+                            {{-- <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt=""> --}}
                         </div>
                         <div class="services__icon-8 mt-40 mr-30">
                             <span>
-                                <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58"
+                                    viewBox="0 0 58 58">
+                                    <image x="-11" y="-11" width="80" height="80" fill="#fff"
+                                        xlink:href="data:img/png;base64,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" />
+                                </svg>
+
                             </span>
                         </div>
                         <div class="services__content-8">
                             <h3 class="services__title-8">
                                 <a href="javascript:void(0)">Streamlined Content Creation</a>
                             </h3>
-                            <p>Enjoy seamless access to a range of media production services, ensuring a steady <br>  flow of high-quality content.</p>
+                            <p>Enjoy seamless access to a range of media production services, ensuring a steady <br> flow of
+                                high-quality content.</p>
 
 
                         </div>
@@ -110,7 +120,8 @@
                             <h3 class="services__title-8">
                                 <a href="javascript:void(0)">Financial Empowerment</a>
                             </h3>
-                            <p> Overcome financial challenges with cost-effective subscription options, enabling you to focus on your craft without worrying about budgets.</p>
+                            <p> Overcome financial challenges with cost-effective subscription options, enabling you to
+                                focus on your craft without worrying about budgets.</p>
 
 
                         </div>
@@ -132,7 +143,8 @@
                             <h3 class="services__title-8">
                                 <a href="javascript:void(0)">Personalized Guidance</a>
                             </h3>
-                            <p>Receive expert guidance and tailored solutions from our team, empowering you to refine your artistic vision and reach new heights</p>
+                            <p>Receive expert guidance and tailored solutions from our team, empowering you to refine your
+                                artistic vision and reach new heights</p>
 
 
                         </div>
@@ -155,7 +167,8 @@
                             <h3 class="services__title-8">
                                 <a href="javascript:void(0)">Exclusive <br> Resources</a>
                             </h3>
-                            <p>Access a treasure trove of exclusive resources, tools, and workshops to refine your skills and stay ahead in the creative landscape.</p>
+                            <p>Access a treasure trove of exclusive resources, tools, and workshops to refine your skills
+                                and stay ahead in the creative landscape.</p>
 
                         </div>
                     </div>
@@ -638,8 +651,7 @@
 
     <section class="our-services section-margin">
         <div class="container">
-            <div class="one-title dsn-active wow fadeInUp"data-wow-delay=".7s"
-            data-wow-duration="1s">
+            <div class="one-title dsn-active wow fadeInUp"data-wow-delay=".7s" data-wow-duration="1s">
                 {{-- <div class="title-sub-container">
                     <p class="title-sub">OUR SERVCIES</p>
                 </div> --}}
@@ -655,7 +667,7 @@
                                     </svg>
                                 </span>
                             </h3>
-                            <span style="color: #000000;"  class="section__title-pre-8"> with Team AdFJ Studios</span>
+                            <span style="color: #000000;" class="section__title-pre-8"> with Team AdFJ Studios</span>
 
                         </div>
                     </div>
@@ -668,7 +680,8 @@
                     <div class="timeline-middle wow fadeInUp">
                         <div class="timeline-circle " data-wow-delay=".7s" data-wow-duration="1s"></div>
                     </div>
-                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s"
+                        data-wow-duration="1s">
                         <div class="img-brand">
                             <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
                         </div>
@@ -676,10 +689,12 @@
                         <h3> Apply and Connect</h3>
                         <br>
                         <!-- <h6>Hello we are, <br> Acs Team. </h6> -->
-                        <p> Submit your application online, detailing your creative journey and aspirations. Our team will review your submission and initiate a personalized conversation.
+                        <p> Submit your application online, detailing your creative journey and aspirations. Our team will
+                            review your submission and initiate a personalized conversation.
                         </p>
                     </div>
-                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s"
+                        data-wow-duration="1s">
                         <div class="d-flex">
                             <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
                                 alt="">
@@ -687,11 +702,12 @@
                         <h2 class="mb-30">Step 2</h2>
                         <h3>Tailored Plan Creation</h3>
                         <br>
-                        <p>Collaborate with our experts to craft a subscription plan that suits your needs, addressing your content goals and financial considerations.
+                        <p>Collaborate with our experts to craft a subscription plan that suits your needs, addressing your
+                            content goals and financial considerations.
                         </p>
                     </div>
                     <div class="timeline-middle wow fadeInUp">
-                        <div class="timeline-circle"  data-wow-delay=".7s" data-wow-duration="1s"></div>
+                        <div class="timeline-circle" data-wow-delay=".7s" data-wow-duration="1s"></div>
                     </div>
                     <div class="timeline-empty">
                     </div>
@@ -702,16 +718,19 @@
                     <div class="timeline-middle wow fadeInUp">
                         <div class="timeline-circle" data-wow-delay=".7s" data-wow-duration="1s"></div>
                     </div>
-                    <div class=" timeline-component timeline-content wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                    <div class=" timeline-component timeline-content wow fadeInUp" data-wow-delay=".7s"
+                        data-wow-duration="1s">
                         <div class="img-brand">
                             <img style="border-radius: 100%;" src="assets/img/avatar/2.jpg" alt="">
                         </div>
                         <h2 class="mb-30">Step 3</h2>
                         <h3>Content Strategy Workshop</h3>
                         <br>
-                        <p>Engage in an insightful workshop where we align your artistic vision with a comprehensive content strategy, ensuring every creation resonates with your audience.</p>
+                        <p>Engage in an insightful workshop where we align your artistic vision with a comprehensive content
+                            strategy, ensuring every creation resonates with your audience.</p>
                     </div>
-                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s" data-wow-duration="1s">
+                    <div class="timeline-component wow fadeInUp timeline-content" data-wow-delay=".7s"
+                        data-wow-duration="1s">
                         <div class="d-flex">
                             <img style="border-radius: 100%; margin-bottom: 20px;" src="assets/img/avatar/1.jpg"
                                 alt="">
@@ -719,11 +738,13 @@
                         <h2 class="mb-30">Step 4</h2>
                         <h3>Launch and Support</h3>
                         <br>
-                        <p>With your subscription plan in place, embark on your content creation journey with confidence. Our team stands by you, providing ongoing support, resources, and feedback to drive your success.
+                        <p>With your subscription plan in place, embark on your content creation journey with confidence.
+                            Our team stands by you, providing ongoing support, resources, and feedback to drive your
+                            success.
                         </p>
                     </div>
                     <div class="timeline-middle wow fadeInUp">
-                        <div class="timeline-circle"  data-wow-delay=".7s" data-wow-duration="1s"></div>
+                        <div class="timeline-circle" data-wow-delay=".7s" data-wow-duration="1s"></div>
                     </div>
                     <div class="timeline-empty">
                     </div>
@@ -762,27 +783,44 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-6">
                     <div class="faq__tab-content tp-accordion">
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-general-0" role="tabpanel" aria-labelledby="nav-general-tab-0">
+                            <div class="tab-pane fade show active" id="nav-general-0" role="tabpanel"
+                                aria-labelledby="nav-general-tab-0">
                                 <style></style>
-                                <div data-elementor-type="landing-page" data-elementor-id="1793" class="elementor elementor-1793">
-                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-de6fcf0 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="de6fcf0" data-element_type="section">
+                                <div data-elementor-type="landing-page" data-elementor-id="1793"
+                                    class="elementor elementor-1793">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-de6fcf0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="de6fcf0" data-element_type="section">
                                         <div class="elementor-container elementor-column-gap-no">
-                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-804665f" data-id="804665f" data-element_type="column">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-804665f"
+                                                data-id="804665f" data-element_type="column">
                                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                                    <div class="elementor-element elementor-element-a8b120e elementor-widget elementor-widget-tp-faq" data-id="a8b120e" data-element_type="widget" data-widget_type="tp-faq.default">
+                                                    <div class="elementor-element elementor-element-a8b120e elementor-widget elementor-widget-tp-faq"
+                                                        data-id="a8b120e" data-element_type="widget"
+                                                        data-widget_type="tp-faq.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="tp-accordion-style tp-el-section">
                                                                 <div class="faq__tab-content tp-accordion">
                                                                     <div class="accordion" id="general_accordion-a8b120e">
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="headingOne-0">
-                                                                                <button class="accordion-button tp-el-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-0" aria-expanded="true" aria-controls="collapseOne-0">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingOne-0">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseOne-0"
+                                                                                    aria-expanded="true"
+                                                                                    aria-controls="collapseOne-0">
                                                                                     How does AdFJ Studios cater to the
                                                                                     unique needs of the media production
                                                                                     industry?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="collapseOne-0" class="accordion-collapse collapse " aria-labelledby="headingOne-0" data-bs-parent="#general_accordion-a8b120e">
+                                                                            <div id="collapseOne-0"
+                                                                                class="accordion-collapse collapse "
+                                                                                aria-labelledby="headingOne-0"
+                                                                                data-bs-parent="#general_accordion-a8b120e">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         AdFJ Studios understands the
@@ -843,14 +881,24 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="headingOne-1">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-1" aria-expanded="false" aria-controls="collapseOne-1">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingOne-1">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseOne-1"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseOne-1">
                                                                                     Can AdFJ Studios handle video
                                                                                     production
                                                                                     for the entertainment industry?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="collapseOne-1" class="accordion-collapse collapse" aria-labelledby="headingOne-1" data-bs-parent="#general_accordion-a8b120e">
+                                                                            <div id="collapseOne-1"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingOne-1"
+                                                                                data-bs-parent="#general_accordion-a8b120e">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         Absolutely! AdFJ Studios
@@ -877,14 +925,24 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="headingOne-2">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2">
+                                                                            <h2 class="accordion-header"
+                                                                                id="headingOne-2">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#collapseOne-2"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="collapseOne-2">
                                                                                     What types of music and audio
                                                                                     production
                                                                                     services does AdFJ Studios offer?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="collapseOne-2" class="accordion-collapse collapse" aria-labelledby="headingOne-2" data-bs-parent="#general_accordion-a8b120e">
+                                                                            <div id="collapseOne-2"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="headingOne-2"
+                                                                                data-bs-parent="#general_accordion-a8b120e">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         AdFJ Studios offers a wide range
@@ -920,26 +978,43 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-general-1" role="tabpanel" aria-labelledby="nav-general-tab-1">
+                            <div class="tab-pane fade" id="nav-general-1" role="tabpanel"
+                                aria-labelledby="nav-general-tab-1">
                                 <style></style>
-                                <div data-elementor-type="landing-page" data-elementor-id="1805" class="elementor elementor-1805">
-                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-0233931 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="0233931" data-element_type="section">
+                                <div data-elementor-type="landing-page" data-elementor-id="1805"
+                                    class="elementor elementor-1805">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-0233931 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="0233931" data-element_type="section">
                                         <div class="elementor-container elementor-column-gap-no">
-                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b0d7ee1" data-id="b0d7ee1" data-element_type="column">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b0d7ee1"
+                                                data-id="b0d7ee1" data-element_type="column">
                                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                                    <div class="elementor-element elementor-element-d4c66cf elementor-widget elementor-widget-tp-faq" data-id="d4c66cf" data-element_type="widget" data-widget_type="tp-faq.default">
+                                                    <div class="elementor-element elementor-element-d4c66cf elementor-widget elementor-widget-tp-faq"
+                                                        data-id="d4c66cf" data-element_type="widget"
+                                                        data-widget_type="tp-faq.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="tp-accordion-style tp-el-section">
                                                                 <div class="faq__tab-content tp-accordion">
                                                                     <div class="accordion" id="general_accordion-d4c66cf">
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-2-0">
-                                                                                <button class="accordion-button tp-el-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-2-0" aria-expanded="true" aria-controls="ac-id-2-0">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-2-0">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-2-0"
+                                                                                    aria-expanded="true"
+                                                                                    aria-controls="ac-id-2-0">
                                                                                     What kind of marketing efforts do
                                                                                     you specialize in?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-2-0" class="accordion-collapse collapse show" aria-labelledby="ac-id-head-2-0" data-bs-parent="#general_accordion-d4c66cf">
+                                                                            <div id="ac-id-2-0"
+                                                                                class="accordion-collapse collapse show"
+                                                                                aria-labelledby="ac-id-head-2-0"
+                                                                                data-bs-parent="#general_accordion-d4c66cf">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -954,13 +1029,23 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-2-1">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-2-1" aria-expanded="false" aria-controls="ac-id-2-1">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-2-1">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-2-1"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-2-1">
                                                                                     What is video marketing and why do
                                                                                     I need it?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-2-1" class="accordion-collapse collapse" aria-labelledby="ac-id-head-2-1" data-bs-parent="#general_accordion-d4c66cf">
+                                                                            <div id="ac-id-2-1"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-2-1"
+                                                                                data-bs-parent="#general_accordion-d4c66cf">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -975,13 +1060,23 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-2-2">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-2-2" aria-expanded="false" aria-controls="ac-id-2-2">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-2-2">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-2-2"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-2-2">
                                                                                     Does my business really need
                                                                                     digital marketing?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-2-2" class="accordion-collapse collapse" aria-labelledby="ac-id-head-2-2" data-bs-parent="#general_accordion-d4c66cf">
+                                                                            <div id="ac-id-2-2"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-2-2"
+                                                                                data-bs-parent="#general_accordion-d4c66cf">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -996,12 +1091,22 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-2-3">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-2-3" aria-expanded="false" aria-controls="ac-id-2-3">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-2-3">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-2-3"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-2-3">
                                                                                     Do you offer startup packages?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-2-3" class="accordion-collapse collapse" aria-labelledby="ac-id-head-2-3" data-bs-parent="#general_accordion-d4c66cf">
+                                                                            <div id="ac-id-2-3"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-2-3"
+                                                                                data-bs-parent="#general_accordion-d4c66cf">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -1026,25 +1131,42 @@
                                     </section>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-general-2" role="tabpanel" aria-labelledby="nav-general-tab-2">
+                            <div class="tab-pane fade" id="nav-general-2" role="tabpanel"
+                                aria-labelledby="nav-general-tab-2">
                                 <style></style>
-                                <div data-elementor-type="landing-page" data-elementor-id="1814" class="elementor elementor-1814">
-                                    <section class="elementor-section elementor-top-section elementor-element elementor-element-fb5b2cc elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="fb5b2cc" data-element_type="section">
+                                <div data-elementor-type="landing-page" data-elementor-id="1814"
+                                    class="elementor elementor-1814">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-fb5b2cc elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="fb5b2cc" data-element_type="section">
                                         <div class="elementor-container elementor-column-gap-no">
-                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-624bcd2" data-id="624bcd2" data-element_type="column">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-624bcd2"
+                                                data-id="624bcd2" data-element_type="column">
                                                 <div class="elementor-widget-wrap elementor-element-populated">
-                                                    <div class="elementor-element elementor-element-9c31428 elementor-widget elementor-widget-tp-faq" data-id="9c31428" data-element_type="widget" data-widget_type="tp-faq.default">
+                                                    <div class="elementor-element elementor-element-9c31428 elementor-widget elementor-widget-tp-faq"
+                                                        data-id="9c31428" data-element_type="widget"
+                                                        data-widget_type="tp-faq.default">
                                                         <div class="elementor-widget-container">
                                                             <div class="tp-accordion-style tp-el-section">
                                                                 <div class="faq__tab-content tp-accordion">
                                                                     <div class="accordion" id="general_accordion-9c31428">
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-3-0">
-                                                                                <button class="accordion-button tp-el-box-title" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-3-0" aria-expanded="true" aria-controls="ac-id-3-0">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-3-0">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-3-0"
+                                                                                    aria-expanded="true"
+                                                                                    aria-controls="ac-id-3-0">
                                                                                     Who is the typical Curious client?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-3-0" class="accordion-collapse collapse show" aria-labelledby="ac-id-head-3-0" data-bs-parent="#general_accordion-9c31428">
+                                                                            <div id="ac-id-3-0"
+                                                                                class="accordion-collapse collapse show"
+                                                                                aria-labelledby="ac-id-head-3-0"
+                                                                                data-bs-parent="#general_accordion-9c31428">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -1059,12 +1181,22 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-3-1">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-3-1" aria-expanded="false" aria-controls="ac-id-3-1">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-3-1">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-3-1"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-3-1">
                                                                                     What are your typical timelines?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-3-1" class="accordion-collapse collapse" aria-labelledby="ac-id-head-3-1" data-bs-parent="#general_accordion-9c31428">
+                                                                            <div id="ac-id-3-1"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-3-1"
+                                                                                data-bs-parent="#general_accordion-9c31428">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -1079,13 +1211,23 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-3-2">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-3-2" aria-expanded="false" aria-controls="ac-id-3-2">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-3-2">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-3-2"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-3-2">
                                                                                     Do you offer flexible payment
                                                                                     terms?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-3-2" class="accordion-collapse collapse" aria-labelledby="ac-id-head-3-2" data-bs-parent="#general_accordion-9c31428">
+                                                                            <div id="ac-id-3-2"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-3-2"
+                                                                                data-bs-parent="#general_accordion-9c31428">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
@@ -1100,12 +1242,22 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="accordion-item tp-el-box">
-                                                                            <h2 class="accordion-header" id="ac-id-head-3-3">
-                                                                                <button class="accordion-button tp-el-box-title collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ac-id-3-3" aria-expanded="false" aria-controls="ac-id-3-3">
+                                                                            <h2 class="accordion-header"
+                                                                                id="ac-id-head-3-3">
+                                                                                <button
+                                                                                    class="accordion-button tp-el-box-title collapsed"
+                                                                                    type="button"
+                                                                                    data-bs-toggle="collapse"
+                                                                                    data-bs-target="#ac-id-3-3"
+                                                                                    aria-expanded="false"
+                                                                                    aria-controls="ac-id-3-3">
                                                                                     Do you trade services for equity?
                                                                                 </button>
                                                                             </h2>
-                                                                            <div id="ac-id-3-3" class="accordion-collapse collapse" aria-labelledby="ac-id-head-3-3" data-bs-parent="#general_accordion-9c31428">
+                                                                            <div id="ac-id-3-3"
+                                                                                class="accordion-collapse collapse"
+                                                                                aria-labelledby="ac-id-head-3-3"
+                                                                                data-bs-parent="#general_accordion-9c31428">
                                                                                 <div class="accordion-body">
                                                                                     <p class="tp-el-box-desc">
                                                                                         A startup or start-up is started
