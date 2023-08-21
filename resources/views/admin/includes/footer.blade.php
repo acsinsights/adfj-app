@@ -1,6 +1,5 @@
-<footer class="page-footer py-4 mt-4">
-    <div class="container-fluid" style="display: flex;
-    justify-content: center;">
+<footer class="page-footer sticky-bottom py-4 mt-4">
+    <div class="container-fluid">
         <p class="col-md-4 mb-0 text-muted">
             © 2022
             <a href="#" target="_blank" title="ADFJ Studios">ADFJ Studios</a>, All

@@ -66,7 +66,7 @@
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                 </form>
 
-                                <label class="m-2">Cover Image</label>
+                                <label class="m-2">Cover Image ( 570 × 600 px)</label>
                                 <form action="/deletecover/{{ $posts->id }}" method="post">
                                     <button class="btn text-danger">X</button>
                                     @csrf
