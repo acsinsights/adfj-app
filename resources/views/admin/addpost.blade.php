@@ -52,7 +52,7 @@
 
 
 
-                                                <label class="m-2">Cover Image</label>
+                                                <label class="m-2">Cover Image (570 × 600 px)</label>
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover" required>
                                                 <label class="m-2">Hyperlink(optional)</label>
