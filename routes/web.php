@@ -92,6 +92,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('/add-post', [AllPosts::class, 'store']);
         Route::delete('/delete/{id}', [AllPosts::class, 'destroy']);
         Route::get('/edit/{id}', [AllPosts::class, 'edit']);
+        Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
+        Route::put('/update-profile/{id}', [DashboardController::class, 'update'])->name('admin.profile');
         Route::delete('/deleteimage/{id}', [AllPosts::class, 'deleteimage']);
         Route::delete('/deletecover/{id}', [AllPosts::class, 'deletecover']);
         Route::put('/update/{id}', [AllPosts::class, 'update']);

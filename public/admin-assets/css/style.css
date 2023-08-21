@@ -31201,3 +31201,8 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role="row"]>th:first-child::
         text-align: center;
     }
 }
+
+.size {
+    font-size: 15px;
+    color: #cd494d;
+}

@@ -102,9 +102,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-4 rounded-4">
                         <li class="mb-3">
-                            <a class="h5" href="crafted-profile.html"
+                            <a class="h5" href="/admin/profile/{{ Auth::guard('admin')->user()->id }}"
                                 title="">{{ Auth::guard('admin')->user()->name }}</a>
-
 
 
                             <p>{{ Auth::guard('admin')->user()->email }}</p>

@@ -50,15 +50,13 @@
                                                 <label class="m-2">Date</label>
                                                 <input type="date" name="date" class="form-control m-2">
 
-
-
-                                                <label class="m-2">Cover Image (570 × 600 px)</label>
+                                                <label class="m-2">Cover Image <span class="text-danger">(570 × 600
+                                                        px)</span></label>
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover" required>
                                                 <label class="m-2">Hyperlink(optional)</label>
                                                 <input type="url" name="videolink" id="videolink"
                                                     placeholder="put hyperlink here" class="form-control m-2 videolink">
-
 
                                                 <div class="video-card">
                                                     <label for="video" class="m-2">Play Button</label>
