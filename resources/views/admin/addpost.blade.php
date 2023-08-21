@@ -26,28 +26,28 @@
                                                 <input type="text" name="author" class="form-control m-2"
                                                     placeholder="write your project title here">
 
-                                                    <label class="m-2">Service Category</label>
-                                              <select name="service" id="" value=""
-                                                 class="form-control m-2" required>
-                                                <option value="service"><- Select Service -></option>
-                                                @foreach ($pservices as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->service_name }}
-                                                    </option>
-                                                 @endforeach
+                                                <label class="m-2">Service Category</label>
+                                                <select name="service" id="" value=""
+                                                    class="form-control m-2" required>
+                                                    <option value="service"><- Select Service -></option>
+                                                    @foreach ($pservices as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->service_name }}
+                                                        </option>
+                                                    @endforeach
                                                 </select>
                                                 <label class="m-2">Sub-Service Category</label>
                                                 <select name="type" id="" value=""
-                                                class="form-control m-2" required>
-                                                <option value=""><- Select Service Type -></option>
-                                                @foreach ($stypes as $item1)
-                                                    <option value="{{ $item1->id }}">{{ $item1->stype_name }}
-                                                    </option>
-                                                @endforeach
-                                            </select>
-                                                    <label class="m-2">Location</label>
+                                                    class="form-control m-2" required>
+                                                    <option value=""><- Select Service Type -></option>
+                                                    @foreach ($stypes as $item1)
+                                                        <option value="{{ $item1->id }}">{{ $item1->stype_name }}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                                <label class="m-2">Location</label>
                                                 <input type="text" name="location" class="form-control m-2"
                                                     placeholder="location">
-                                                    <label class="m-2">Date</label>
+                                                <label class="m-2">Date</label>
                                                 <input type="date" name="date" class="form-control m-2">
 
 
@@ -56,8 +56,8 @@
                                                 <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                     name="cover" required>
                                                 <label class="m-2">Hyperlink(optional)</label>
-                                                <input type="url" name="videolink" id="videolink" placeholder="put hyperlink here"
-                                                class="form-control m-2 videolink">
+                                                <input type="url" name="videolink" id="videolink"
+                                                    placeholder="put hyperlink here" class="form-control m-2 videolink">
 
 
                                                 <div class="video-card">
@@ -68,8 +68,14 @@
                                                                 class="checkme m-2" value="1">
                                                         </label>
                                                     </div>
+                                                </div>
 
-
+                                                <label for="video" class="m-2">Featured Post</label>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="featured" id="featured"
+                                                            class="checkme m-2" value="1">
+                                                    </label>
                                                 </div>
 
                                                 <button type="submit" class="btn btn-success mt-3">Submit</button>

@@ -165,23 +165,24 @@
                                     <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item myBox"
                                         data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg"
                                         style="overflow: hidden;">
-                                        <div class="portfolio__grid-music portfolio__grid-video"><a
-                                                href="{{ $ms->hypelinks }}" target="_blank" tabindex="0">
-                                            </a><a href="{{ $ms->hypelinks }}"
-                                                class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0"
-                                                target="_blank">
-                                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        @if ($ms->status == 1)
+                                            <div class="portfolio__grid-music portfolio__grid-video"><a
+                                                    href="{{ $ms->hypelinks }}" tabindex="0">
+                                                </a><a href="{{ $ms->hypelinks }}"
+                                                    class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        @endif
                                         <div class=" portfolio__grid-video ">
-                                            <a href="https://www.instagram.com/p/Ccos67BIgoK/" target="_blank"
-                                                tabindex="0">
+                                            <a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
                                             </a>
                                         </div>
-                                        <a href="{{ $ms->hypelinks }}" target="_blank">
+                                        <a href="{{ $ms->hypelinks }}">
                                             <img width="455" height="500" src="/posts/{{ $ms->media }}"
                                                 class="attachment-full size-full image-size image-size" alt=""
                                                 decoding="async" loading="lazy">
@@ -193,7 +194,7 @@
                                                         <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
                                                         <div class="portfolio__hover-category tp-el-box-tag">
                                                             <span>
-                                                                <a href="{{ $ms->hypelinks }}" target="_blank">Gul Marg Vlog
+                                                                <a href="{{ $ms->hypelinks }}">Gul Marg Vlog
                                                                     Video</a>
                                                             </span>
                                                         </div>

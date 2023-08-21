@@ -19,6 +19,7 @@ class Post extends Model
         'stypeid',
         'status',
         'hypelinks',
+        'featured_post',
     ];
 
     public function images()

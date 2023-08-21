@@ -306,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-xxl-3 col-xl-6 col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-xxl-3 col-xl-6 col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <h3>$1258</h3>
@@ -314,7 +314,7 @@
                                     15% <i class="fa fa-level-up text-success"></i> Total
                                     Expense
                                 </p>
-                                <div id="apexspark_bar_2" style="min-height: 40px;">
+                                {{-- <div id="apexspark_bar_2" style="min-height: 40px;">
                                     <div id="apexcharts7c8kfuo1"
                                         class="apexcharts-canvas apexcharts7c8kfuo1 apexcharts-theme-light"
                                         style="width: 100px; height: 40px;"><svg id="SvgjsSvg3582" width="100"
@@ -601,16 +601,18 @@
                                             <div class="apexcharts-yaxistooltip-text"></div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
 
                 </div>
             </div>
         </main>
         <!--[ Start:: page footer link copywrite ]-->
-        @include('admin.includes.footer')
+        <div class="footer">
+            @include('admin.includes.footer')
+        </div>
     </div>
 @endsection
 

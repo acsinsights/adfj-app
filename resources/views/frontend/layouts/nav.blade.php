@@ -30,11 +30,11 @@
                                         <ul>
                                             <li class="">
                                                 <a class="nav-link {{ URL::current() == url('/') ? 'active-pg' : '' }}"
-                                                href="{{ url('/') }}">Home</a>
+                                                    href="{{ url('/') }}">Home</a>
                                             </li>
                                             <li class="">
                                                 <a class="nav-link {{ URL::current() == url('service') ? 'active-pg' : '' }}"
-                                                href="{{ url('service') }}">services</a>
+                                                    href="{{ url('service') }}">services</a>
                                             </li>
 
 
@@ -53,27 +53,27 @@
                                                 </ul>
                                             </li>
                                             <li class="">
-                                                    <a class="nav-link {{ URL::current() == url('pricing-plan') ? 'active-pg' : '' }}"
+                                                <a class="nav-link {{ URL::current() == url('pricing-plan') ? 'active-pg' : '' }}"
                                                     href="{{ url('pricing-plan') }}">Pricing Plans</a>
                                             </li>
 
-                                                <li class="">
-                                                    <a class="nav-link {{ URL::current() == url('subscription') ? 'active-pg' : '' }}"
+                                            <li class="">
+                                                <a class="nav-link {{ URL::current() == url('subscription') ? 'active-pg' : '' }}"
                                                     href="{{ url('subscription') }}">Subscription</a>
-                                                </li>
-                                                <li class="">
-                                                    <a class="nav-link {{ URL::current() == url('about') ? 'active-pg' : '' }}"
+                                            </li>
+                                            <li class="">
+                                                <a class="nav-link {{ URL::current() == url('about') ? 'active-pg' : '' }}"
                                                     href="{{ url('about') }}">About Us</a>
-                                                </li>
-                                                <li class="">
-                                                    <a class="nav-link {{ URL::current() == url('contact') ? 'active-pg' : '' }}"
+                                            </li>
+                                            <li class="">
+                                                <a class="nav-link {{ URL::current() == url('contact') ? 'active-pg' : '' }}"
                                                     href="{{ url('contact') }}">Contact Us</a>
-                                                </li>
-                                                <li class="">
-                                                    <a class="nav-link {{ URL::current() == url('blog') ? 'active-pg' : '' }}"
+                                            </li>
+                                            <li class="">
+                                                <a class="nav-link {{ URL::current() == url('blog') ? 'active-pg' : '' }}"
                                                     href="{{ url('blog') }}">Blogs</a>
-                                                </li>
-                                           </ul>
+                                            </li>
+                                        </ul>
                                     </nav>
                                     <!-- for wp -->
                                     <div class="header__hamburger ml-50 d-none">
@@ -129,7 +129,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo logo">
-                        <a href="home-main.html">
+                        <a href="/">
                             <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" alt="logo" height="75px"
                                 width="150px" />
                         </a>

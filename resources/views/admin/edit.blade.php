@@ -25,8 +25,8 @@
                                     <input type="text" name="author" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $posts->author }}">
 
-                                        <label>Portfolio Service</label>
-                                        <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
+                                    <label>Portfolio Service</label>
+                                    <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}"
                                         readonly>
 
                                     <select name="type" class="form-control custom-select m-2"
@@ -44,11 +44,7 @@
                                     <input type="text" name="location" class="form-control m-2" placeholder="location"
                                         value="{{ $posts->location }}">
 
-
-
                                     <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
-
-
 
                                     <label>Hyperlink</label>
                                     <input type="text" name="hypelinks" id="hypelinks" class="form-control m-2"
@@ -56,6 +52,10 @@
 
                                     <input type="date" name="date" class=" form-control m-2"
                                         value="{{ $posts->date }}">
+
+                                    <label class="m-2">Featured Post</label>
+                                    <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}
+                                        name="featured" class="m-2" value="1"><br>
 
                                     <label class="m-2">Cover Image</label>
 

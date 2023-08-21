@@ -1,5 +1,5 @@
 @if (Session::has('error'))
-    <div class="col-xl-6">
+    <div class="col-xl-12">
         <div class="alert alert-danger left-icon-big alert-dismissible fade show">
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"><span><i
                         class="mdi mdi-btn-close"></i></span>
@@ -18,7 +18,7 @@
 @endif
 
 @if (Session::has('success'))
-    <div class="col-xl-6">
+    <div class="col-xl-12">
         <div class="alert alert-success left-icon-big alert-dismissible fade show">
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"><span><i
                         class="mdi mdi-btn-close"></i></span>

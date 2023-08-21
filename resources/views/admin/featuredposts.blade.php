@@ -98,28 +98,30 @@
 
                                         <tbody>
                                             @foreach ($posts as $post)
-                                                <tr style="vertical-align: middle;">
-                                                    <td><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                            style="max-height:100px; max-width:100px" alt=""
-                                                            srcset=""></td>
-                                                    <td>{{ $post->title }}</td>
-                                                    <td>{{ $post->pservices->service_name}}</td>
-                                                    <td>{{ $post->stypes->slug}}</td>
-                                                    <td>{{ $post->date }}</td>
-                                                    <td>{{ $post->location }}</td>
-                                                    <td><a href="/edit/{{ $post->id }}"
-                                                            class="btn btn-outline-primary">Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <form action="/delete/{{ $post->id }}" method="post">
-                                                            <button class="btn btn-outline-danger"
-                                                                onclick="return confirm('Are you sure?');"
-                                                                type="submit">Delete</button>
-                                                            @csrf
-                                                            @method('delete')
-                                                        </form>
-                                                    </td>
-                                                </tr>
+                                                @if ($post->featured_post == 1)
+                                                    <tr style="vertical-align: middle;">
+                                                        <td><img src="/posts/{{ $post->media }}" class="img-responsive"
+                                                                style="max-height:100px; max-width:100px" alt=""
+                                                                srcset=""></td>
+                                                        <td>{{ $post->title }}</td>
+                                                        <td>{{ $post->pservices->service_name }}</td>
+                                                        <td>{{ $post->stypes->slug }}</td>
+                                                        <td>{{ $post->date }}</td>
+                                                        <td>{{ $post->location }}</td>
+                                                        <td><a href="/edit/{{ $post->id }}"
+                                                                class="btn btn-outline-primary">Edit</a>
+                                                        </td>
+                                                        <td>
+                                                            <form action="/delete/{{ $post->id }}" method="post">
+                                                                <button class="btn btn-outline-danger"
+                                                                    onclick="return confirm('Are you sure?');"
+                                                                    type="submit">Delete</button>
+                                                                @csrf
+                                                                @method('delete')
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                @endif
                                             @endforeach
                                         </tbody>
                                     </table>

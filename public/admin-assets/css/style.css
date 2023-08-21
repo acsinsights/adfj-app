@@ -26129,6 +26129,8 @@ pre[class*="language-"] {
     .page {
         padding: 0 1rem;
     }
+
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -26254,6 +26256,10 @@ pre[class*="language-"] {
     .page-title h1 {
         width: 100%;
     }
+
+    .addpost {
+        margin-top: 0px !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -26295,6 +26301,8 @@ pre[class*="language-"] {
 
 .page-body {
     color: var(--gray-7);
+    position: relative;
+    height: auto;
 }
 
 .page-body.layout-1 {
@@ -31177,4 +31185,19 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role="row"]>th:first-child::
 
 #no-border-bottom {
     border-bottom: none !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
+
+@media only screen and (max-width: 991px) {
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
 }

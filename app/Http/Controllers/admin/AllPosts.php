@@ -15,7 +15,7 @@ class AllPosts extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->paginate(15);
         return view('admin.allposts')->with('posts', $posts);
     }
 
@@ -76,6 +76,7 @@ class AllPosts extends Controller
                 "stypeid" => $request->type,
                 "status" => $request->playbtn,
                 "hypelinks" => $request->videolink,
+                "featured_post" => $request->featured,
             ]);
             $post->save();
         }
@@ -125,6 +126,7 @@ class AllPosts extends Controller
             "serviceid" => $request->service,
             "stypeid" => $request->type,
             "hypelinks" => $request->hypelinks,
+            "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 
         if ($request->hasFile("images")) {
@@ -151,6 +153,7 @@ class AllPosts extends Controller
         $posts->delete();
         return back();
     }
+
     public function deletecover($id)
     {
         $cover = Post::findOrFail($id)->cover;
