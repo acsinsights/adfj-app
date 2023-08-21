@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\Image;
 use App\Models\User;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Request as FacadesRequest;
 
 class DashboardController extends Controller
@@ -44,6 +45,7 @@ class DashboardController extends Controller
         $users->update([
             "name" => $request->name,
             "email" => $request->email,
+            "password" => Hash::make($request->password),
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
 

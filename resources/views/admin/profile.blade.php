@@ -79,7 +79,7 @@
                                         <div class="col-sm-6 col-md-4">
                                             <label class="form-label small text-muted">New Password</label>
                                             <input type="password" name="password" class="form-control"
-                                                placeholder="Password">
+                                                placeholder="Password" value="">
                                         </div>
                                         {{-- <div class="col-sm-6 col-md-3">
                                             <label class="form-label small text-muted">Postal Code</label>
