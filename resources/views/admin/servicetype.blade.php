@@ -81,7 +81,8 @@
                                                             </a>
                                                         </td>
                                                         <td>
-                                                            <a href="" class="btn btn-sm btn-outline-danger">
+                                                            <a href="/admin/delete-service/{{ $type->id }}"
+                                                                class="btn btn-sm btn-outline-danger">
                                                                 Delete
                                                             </a>
                                                         </td>
