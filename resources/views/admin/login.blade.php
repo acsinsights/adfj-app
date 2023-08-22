@@ -24,7 +24,7 @@
         <div class="container h-100">
             <div class="row justify-content-center h-100 align-items-center">
                 <div class="col-md-6">
-                    @include('admin.message')
+                    
                     <div class="authincation-content">
                         <div class="row no-gutters">
                             <div class="col-xl-12">

@@ -61,8 +61,6 @@
 
                                     <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                         name="cover">
-
-
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                 </form>
 

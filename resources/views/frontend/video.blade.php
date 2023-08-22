@@ -154,7 +154,7 @@
 
 
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
+                    {{-- <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item vlogs"
                         style="position: absolute; left: 0%; top: 537px;">
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
@@ -191,85 +191,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-videos"
-                        style="position: absolute; left: 0%; top: 537px;">
-                        <div class="portfolio__grid-item mb-20 tp-el-box">
-                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                                data-fx="24" data-meta-tag="Music Artwork " data-title="Ude">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
-                                        tabindex="0">
-                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
-                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                    <img width="455" height="500"
-                                        src="{{ asset('user-assets/img/graphic-portfolio/ude.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
-                                        loading="lazy"> </a>
 
-                                <div class="tp-img-reveal-wrapper">
-                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                            <div class="portfolio__hover-wrapper tp-el-box">
-                                                <h4 class="portfolio__hover-title tp-el-box-title">Music ArtWork </h4>
-                                                <div class="portfolio__hover-category tp-el-box-tag">
-                                                    <span>
-                                                        <a href="#">Ude</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item animation-videos"
-                        style="position: absolute; left: 0%; top: 537px;">
-                        <div class="portfolio__grid-item mb-20 tp-el-box">
-                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                                data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
-                                        tabindex="0">
-                                    </a><a href="https://www.youtube.com/watch?v=_BtGT-maCV0"
-                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                    <img width="455" height="500"
-                                        src="{{ asset('user-assets/img/graphic-portfolio/lekhak.jpg') }}"
-                                        class="attachment-full size-full" alt="" decoding="async"
-                                        loading="lazy"> </a>
-
-                                <div class="tp-img-reveal-wrapper">
-                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                            <div class="portfolio__hover-wrapper tp-el-box">
-                                                <h4 class="portfolio__hover-title tp-el-box-title">Lekhak</h4>
-                                                <div class="portfolio__hover-category tp-el-box-tag">
-                                                    <span>
-                                                        <a href="#">Movie Poster</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
