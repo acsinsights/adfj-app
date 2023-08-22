@@ -73,7 +73,8 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label small text-muted">Profile Image <span></span></label>
+                                            <label class="form-label small text-muted">Profile Image <span
+                                                    class="text-danger">(160 x 160)</span></label>
                                             <input type="file" name="cover" class="form-control">
                                         </div>
                                         <div class="col-sm-6 col-md-4">

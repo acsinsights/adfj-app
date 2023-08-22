@@ -96,13 +96,13 @@
                     <a class="dropdown-toggle text-decoration-none" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false" title="User">
                         <img class="avatar sm rounded-circle shadow border border-2"
-                            src="{{ asset('admin-assets/img/profile_av.png') }}" alt="avatar" />
+                            src="/profile/{{ Auth::guard('admin')->user()->profile_img }}" alt="avatar" />
                         <span
                             class="ps-1 fs-6 text-white d-none d-lg-inline-block">{{ Auth::guard('admin')->user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow border-0 p-4 rounded-4">
                         <li class="mb-3">
-                            <a class="h5" href="/admin/profile/{{ Auth::guard('admin')->user()->id }}"
+                            <a class="h5" href="/admin/profile"
                                 title="">{{ Auth::guard('admin')->user()->name }}</a>
 
 
@@ -111,10 +111,10 @@
                                 role="button">Logout</a>
                         </li>
                         <li class="dropdown-divider"></li>
-                        {{-- <li>
-                            <a class="dropdown-item" href="crafted-profile.html">My Profile</a>
-                        </li>
                         <li>
+                            <a class="dropdown-item" href="{{ route('admin.profile') }}">My Profile</a>
+                        </li>
+                        {{-- <li>
                             <a class="dropdown-item" href="app-chat.html">Messages</a>
                         </li>
                         <li>

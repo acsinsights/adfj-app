@@ -32,8 +32,10 @@ class DashboardController extends Controller
     {
         $users = User::findOrFail($id);
         if ($request->hasFile("cover")) {
-            if (file::exists("profile/" . $users->profile_img)) {
-                File::delete("profile/" . $users->profile_img != 'profile_av.png');
+            if ($users->profile_img != 'profile_av.png') {
+                if (file::exists("profile/" . $users->profile_img)) {
+                    File::delete("profile/" . $users->profile_img);
+                }
             }
 
             $file = $request->file("cover");
