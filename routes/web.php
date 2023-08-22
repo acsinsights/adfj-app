@@ -101,6 +101,7 @@ Route::group(['prefix' => 'admin'], function () {
         //? Routes for service types
         Route::get('/typeedit/{id}', [AllPosts::class, 'stypeedit']);
         Route::get('/update/{id}', [CreateController::class, 'update']);
+        Route::delete('/delete-service/{id}', [CreateController::class, 'destroy']);
 
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
     });
