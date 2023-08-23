@@ -3,94 +3,39 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Pservices;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Post;
-use App\Models\Stypes;
+use App\Models\Testimonial;
 use App\Models\Image;
 use Illuminate\Support\Facades\File;
 
-class AllPosts extends Controller
+class TestimonialController extends Controller
 {
     public function index()
     {
-        $posts = Post::latest()->paginate(15);
-        return view('admin.allposts')->with('posts', $posts);
+        $testimonials = Testimonial::all();
+        return view('admin.testimonial')->with('testimonials', $testimonials);
     }
 
-    public function featured()
-    {
-        $posts = Post::latest()->take(10)->get();
-        return view('admin.featuredposts')->with('posts', $posts);
-    }
 
-    public function music()
-    {
-        $posts = Post::all();
-        $pservices = Pservices::all();
-        return view('admin.music')->with('posts', $posts)->with('pservices', $pservices);
-    }
-
-    public function video()
-    {
-        $posts = Post::all();
-        return view('admin.video')->with('posts', $posts);
-    }
-
-    public function graphics()
-    {
-        $posts = Post::all();
-        return view('admin.graphics')->with('posts', $posts);
-    }
-
-    public function type()
-    {
-        $stypes = Stypes::all();
-        $pservices = Pservices::all();
-        return view('admin.servicetype')->with('stypes', $stypes)->with('pservices', $pservices);
-    }
-
-    public function create()
-    {
-        $stypes = Stypes::all();
-        $pservices = Pservices::all();
-        return view('admin.addpost')->with('pservices', $pservices)->with('stypes', $stypes);
-    }
-
-    // ?Store function for posts
-    public function store(Request $request)
+ public function store(Request $request)
     {
         if ($request->hasFile("cover")) {
             $file = $request->file("cover");
             $imageName = time() . '_' . $file->getClientOriginalName();
-            $file->move(\public_path("posts/"), $imageName);
+            $file->move(\public_path("testiimages/"), $imageName);
 
-            $post = new Post([
-                "title" => $request->author,
-                "author" => $request->author,
-                "location" => $request->location,
-                "date" => $request->date,
-                "media" => $imageName,
-                "serviceid" => $request->service,
-                "stypeid" => $request->type,
-                "status" => $request->playbtn,
-                "hypelinks" => $request->videolink,
-                "featured_post" => $request->featured,
+            $testimonials = new Testimonial([
+                "custname" => $request->custname,
+                "custreview" => $request->custreview,
+                "custimg" => $imageName,
+                "custstar" => $request->custstar,
+
             ]);
-            $post->save();
+            $testimonials->save();
         }
-        if ($request->hasFile("images")) {
 
-            $files = $request->file("images");
-            foreach ($files as $file) {
-                $imageName = time() . '_' . $file->getClientOriginalName();
-                $request['post_id'] = $post->id;
-                $request['image'] = $imageName;
-                $file->move(\public_path("/images"), $imageName);
-                Image::create($request->all());
-            }
-        }
+
         return redirect("/admin/allposts");
     }
 
@@ -118,15 +63,10 @@ class AllPosts extends Controller
         }
 
         $post->update([
-            "title" => $request->title,
-            "author" => $request->author,
-            "location" => $request->location,
-            "date" => $request->date,
-            "media" => $post->media,
-            "serviceid" => $request->service,
-            "stypeid" => $request->type,
-            "hypelinks" => $request->hypelinks,
-            "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
+            "custname" => $request->custname,
+            "custreview" => $request->custreview,
+            "custimg" => $request->custimg,
+            "custstar" => $request->custstar,
         ]);
 
         if ($request->hasFile("images")) {
@@ -180,4 +120,10 @@ class AllPosts extends Controller
         $pservices = Pservices::all();
         return view('admin.stypesedit')->with('stypes', $stypes)->with('pservices', $pservices);
     }
+
+
+
+
 }
+
+

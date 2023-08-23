@@ -9,6 +9,7 @@ use App\Http\Controllers\admin\AllPosts;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
+use App\Http\Controllers\admin\TestimonialController;
 
 
 /*
@@ -64,6 +65,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/music', [AllPosts::class, 'music'])->name('admin.music');
         Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
         Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
+
+        Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.testimonial');
+        Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.addtestimonial');
 
         //* categories
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
