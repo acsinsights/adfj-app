@@ -31261,9 +31261,9 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role="row"]>th:first-child::
     display: none;
 }
 .star-widget label {
-    font-size: 35px;
+    font-size: 20px;
     color: #444;
-    padding: 10px;
+    /* padding: 10px; */
     float: right;
     transition: all .2s ease;
 }
@@ -31305,7 +31305,7 @@ input:checked ~ label {
     border: 1px solid #e4e5e7;
     background: white;
     color: #6C6C6E;
-    padding: 22px;
+    /* padding: 22px; */
     font-size: 16px;
     margin-top: 15px;
     letter-spacing: -0.011em;
@@ -31349,7 +31349,7 @@ input:checked ~ label {
     background-color: #fff;
     box-shadow: 0px 4px 40px 0px rgb(0 0 0 / 5%);
     border-radius: 10px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 @media (max-width:576px) {
     .star-rating-bx {

@@ -42,8 +42,9 @@
                                                     name="cover" required>
                                                 <label class="m-2">Customer Rating</label>
 
-                                                <section class="section">
-                                                    <div class="star-rating-bx">
+                                                        <section class="section">
+                                                            <div style="display: flex;
+                                                            flex-direction: row;" class="star-rating-bx ">
 
                                                         <div class="star-widget">
                                                             <form method="GET" name="feedback" action="#"
@@ -67,27 +68,22 @@
                                                                 <p class="rating-desc"></p>
 
 
-                                                                <div class="modal fade" id="simpleModal" tabindex="-1"
-                                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                                    <div class="modal-dialog modal-dialog-centered">
-                                                                        <div class="modal-content">
-                                                                            <div class="modal-header">
-                                                                                <h3 class="modal-title"
-                                                                                    id="exampleModalLabel">Thank you</h3>
-                                                                                <button type="button" class="btn-close"
-                                                                                    data-bs-dismiss="modal"
-                                                                                    aria-label="Close"
-                                                                                    onClick="reload"></button>
-                                                                            </div>
+                                                                        <div class="modal fade" id="simpleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                <h3 class="modal-title" id="exampleModalLabel">Thank you</h3>
+                                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick="reload"></button>
+                                                                                </div>
 
+                                                                            </div>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
+                                                                    </form>
                                                                 </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </section>
-                                                {{-- <div class="testimonial__rating testimonial__rating-6">
+                                                            </div>
+                                                        </section>
+                                                        {{-- <div class="testimonial__rating testimonial__rating-6">
                                                             <a href="#">
                                                                 <i class="fa-solid fa-star"></i>
                                                             </a>
