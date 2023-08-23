@@ -24701,6 +24701,12 @@ body.monochrome .sidebar {
     box-shadow: none;
 }
 
+.isactive {
+    color: #2ebbc4;
+    outline: 0;
+    box-shadow: none;
+}
+
 img:hover {
     filter: saturate(0.5);
 }

@@ -33,7 +33,8 @@
                 </li>
 
                 <li class="collapsed pt-2">
-                    <a class="hyper" href="{{ route('admin.allposts') }}">
+                    <a class="hyper {{ URL::current() == route('admin.allposts') ? 'isactive' : '' }}"
+                        href="{{ route('admin.allposts') }}">
                         <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                             y="0px" width="20" height="20" viewBox="0 0 122.879 96.568"
@@ -50,7 +51,8 @@
 
                 </li>
                 <li class="collapsed pt-2">
-                    <a class="hyper" href="{{ route('admin.featuredposts') }}">
+                    <a class="hyper {{ URL::current() == route('admin.featuredposts') ? 'isactive' : '' }}"
+                        href="{{ route('admin.featuredposts') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
                             height="25" width="25" id="recent" fill="currentColor">
                             <circle cx="14" cy="13" r="8" opacity="0.5"></circle>
@@ -89,15 +91,19 @@
                     </a>
                     <!-- Menu: Sub menu ul -->
                     <ul class="sub-menu collapse" id="menu_auth">
-                        <li><a class="ms-link hyper" href="{{ route('admin.music') }}">Music</a></li>
-                        <li><a class="ms-link hyper" href="{{ route('admin.video') }}">Video</a></li>
+                        <li><a class="ms-link hyper {{ URL::current() == route('admin.music') ? 'isactive' : '' }}"
+                                href="{{ route('admin.music') }}">Music</a></li>
+                        <li><a class="ms-link hyper {{ URL::current() == route('admin.video') ? 'isactive' : '' }}"
+                                href="{{ route('admin.video') }}">Video</a></li>
                         <li id="no-border-bottom">
-                            <a class="ms-link hyper" href="{{ route('admin.graphics') }}">Graphics</a>
+                            <a class="ms-link hyper {{ URL::current() == route('admin.graphics') ? 'isactive' : '' }}"
+                                href="{{ route('admin.graphics') }}">Graphics</a>
                         </li>
                     </ul>
                 </li>
                 <li class="collapsed pt-2">
-                    <a class="hyper" href="/admin/add-type">
+                    <a class="hyper {{ URL::current() == route('admin.type') ? 'isactive' : '' }}"
+                        href="/admin/add-type">
                         <svg width="20" height="20" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="currentColor">
@@ -123,7 +129,8 @@
 
 
                 <li class="collapsed pt-2">
-                    <a class="hyper" href="/admin/testimonial">
+                    <a class="hyper {{ URL::current() == route('admin.testimonial') ? 'isactive' : '' }}"
+                        href="/admin/testimonial">
                         <svg width="20" height="20" viewBox="-3.2 -3.2 38.40 38.40" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="currentColor">
