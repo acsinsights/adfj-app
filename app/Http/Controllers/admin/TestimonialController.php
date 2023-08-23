@@ -36,11 +36,9 @@ class TestimonialController extends Controller
                 "custreview" => $request->custreview,
                 "custimg" => $imageName,
                 "custstar" => $request->custstar,
-
             ]);
             $testimonials->save();
         }
-
 
         return redirect("/admin/allposts");
     }
@@ -48,10 +46,8 @@ class TestimonialController extends Controller
     // ?Edit function for posts
     public function edit($id)
     {
-        $posts = Post::findOrFail($id);
-        $pservices = Pservices::all();
-        $stypes = Stypes::all();
-        return view('admin.edit')->with('posts', $posts)->with('pservices', $pservices)->with('stypes', $stypes);
+        $posts = Testimonial::findOrFail($id);
+        return view('admin.addtestimonial')->with('posts', $posts);
     }
 
     // ?Update function for posts
