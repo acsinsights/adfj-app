@@ -91,8 +91,6 @@
                                                 <th>Date</th>
                                                 <th>Location</th>
                                                 <th>Status</th>
-                                                {{-- <th>Edit</th>
-                                                <th>Delete</th> --}}
                                             </tr>
                                         </thead>
 
@@ -109,6 +107,24 @@
                                                         <td>{{ $post->stypes->slug }}</td>
                                                         <td>{{ $post->date }}</td>
                                                         <td>{{ $post->location }}</td>
+                                                        <td class="text-center vertical-center">
+                                                            @if ($post->fstatus == 1)
+                                                                <p class="text-success">Added</p>
+                                                            @else
+                                                                <p class="text-danger">Deactive</p>
+                                                            @endif
+                                                            <form action="/admin/fstatus/{{ $post->id }}"
+                                                                method="POST">
+                                                                @csrf
+                                                                @method('put')
+                                                                <select name="fstatus" id="status" class="form-control">
+                                                                    <option value="1">Add</option>
+                                                                    <option value="0">Remove</option>
+                                                                </select>
+                                                                <button class="btn btn-sm btn-outline-secondary mt-2"
+                                                                    type="submit">Submit</button>
+                                                            </form>
+                                                        </td>
                                                         {{-- <td><a href="/admin/edit/{{ $post->id }}"
                                                                 class="btn btn-outline-primary">Edit</a>
                                                         </td> --}}
@@ -136,7 +152,4 @@
         <!--[ Start:: page footer link copywrite ]-->
         @include('admin.includes.footer')
     </div>
-@endsection
-
-@section('customJs')
 @endsection

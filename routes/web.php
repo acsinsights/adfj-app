@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminFeaturedPostController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -103,6 +104,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/update/{id}', [CreateController::class, 'update']);
         Route::delete('/delete-service/{id}', [CreateController::class, 'destroy']);
 
+        Route::put('/fstatus/{id}', [AdminFeaturedPostController::class, 'update']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
     });
 });

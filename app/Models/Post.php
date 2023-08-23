@@ -18,6 +18,7 @@ class Post extends Model
         'serviceid',
         'stypeid',
         'status',
+        'fstatus',
         'hypelinks',
         'featured_post',
     ];
