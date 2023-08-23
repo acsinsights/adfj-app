@@ -4,6 +4,10 @@
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->
         @include('admin.includes.header')
+        <div style="text-align: right;margin-bottom:10px;" class="ms-sm-auto mb-10 mt-sm-0 addpost">
+
+            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add Post</a>
+        </div>
         <!--[ Start:: page body area ]-->
         <main class="page-body">
             <div class="container-fluid">

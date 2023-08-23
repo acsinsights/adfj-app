@@ -418,9 +418,6 @@
                 @yield('title')
             </li>
         </ol>
-        <div class="ms-sm-auto mt-2 mt-sm-0 addpost">
-
-            <a href="{{ route('admin.addposts') }}" title="Widget" class="btn btn-primary">Add Post</a>
-        </div>
+     
     </div>
 </div>

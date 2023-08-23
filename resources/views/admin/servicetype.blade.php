@@ -18,11 +18,6 @@
                                 <form action="/admin/add-service-type" name="categoryForm" id="categoryForm" method="post"
                                     enctype="multipart/form-data">
                                     @csrf
-                                    <input type="text" name="type" id="name" class="form-control m-2"
-                                        placeholder="Enter Type Name" required>
-
-                                    <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                                        placeholder="Slug" readonly>
 
                                     <select name="service" id="service" value="" class="form-control m-2" required>
                                         <option value=""><- Select Service -></option>
@@ -32,6 +27,13 @@
                                             </option>
                                         @endforeach
                                     </select>
+                                    
+                                    <input type="text" name="type" id="name" class="form-control m-2"
+                                        placeholder="Enter Type Name" required>
+
+                                    <input type="text" name="slug" id="slug" class="form-control m-2 slug"
+                                        placeholder="Slug" readonly>
+
 
                                     <button type="submit" class="btn btn-success mt-3">Submit</button>
                                 </form>
