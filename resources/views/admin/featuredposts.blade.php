@@ -94,7 +94,6 @@
                                             </tr>
                                         </thead>
 
-
                                         <tbody>
                                             @foreach ($posts as $post)
                                                 @if ($post->featured_post == 1)
@@ -111,7 +110,7 @@
                                                             @if ($post->fstatus == 1)
                                                                 <p class="text-success">Added</p>
                                                             @else
-                                                                <p class="text-danger">Deactive</p>
+                                                                <p class="text-danger">Removed</p>
                                                             @endif
                                                             <form action="/admin/fstatus/{{ $post->id }}"
                                                                 method="POST">
