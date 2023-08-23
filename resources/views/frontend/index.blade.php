@@ -482,13 +482,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                              >(<span
-                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                data-purecounter-end="66"
-                                                                                                                                                class="purecounter"
-                                                                                                                                                >0</span
-                                                                                                                                              >%)</span
-                                                                                                                                            > -->
+                                                                                                                                                              >(<span
+                                                                                                                                                                data-purecounter-duration="1"
+                                                                                                                                                                data-purecounter-end="66"
+                                                                                                                                                                class="purecounter"
+                                                                                                                                                                >0</span
+                                                                                                                                                              >%)</span
+                                                                                                                                                            > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -537,13 +537,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                              >(<span
-                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                data-purecounter-end="80"
-                                                                                                                                                class="purecounter"
-                                                                                                                                                >0</span
-                                                                                                                                              >%)</span
-                                                                                                                                            > -->
+                                                                                                                                                              >(<span
+                                                                                                                                                                data-purecounter-duration="1"
+                                                                                                                                                                data-purecounter-end="80"
+                                                                                                                                                                class="purecounter"
+                                                                                                                                                                >0</span
+                                                                                                                                                              >%)</span
+                                                                                                                                                            > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -917,6 +917,44 @@
                         <div class="testimonial__slider-6 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                             <div class="testimonial__slider-active-6 swiper-container">
                                 <div class="swiper-wrapper">
+                                    @foreach ($testimonials as $tt)
+                                        <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
+                                            <div class="testimonial__rating testimonial__rating-6">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__content-6">
+                                                <p>
+                                                    {{ $tt->custreview }}
+                                                </p>
+                                            </div>
+                                            <div class="testimonial__avater-6 d-flex align-items-center">
+                                                <div class="testimonial__avater-thumb-6">
+                                                    <img src="{{ asset('user-assets/img/review/one.png') }}"
+                                                        alt="" />
+                                                </div>
+                                                <div class="testimonial__avater-info-6">
+                                                    <h3 class="testimonial__avater-title-6">
+                                                        {{ $tt->custname }}
+                                                    </h3>
+                                                    <span class="testimonial__avater-designation-6">Customer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
                                     <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
                                         <div class="testimonial__rating testimonial__rating-6">
                                             <a href="#">

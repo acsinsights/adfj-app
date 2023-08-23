@@ -8,6 +8,7 @@ use App\Models\Post;
 use App\Models\Image;
 use App\Models\Pservices;
 use App\Models\Stypes;
+use App\Models\Testimonial;
 use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
@@ -18,7 +19,8 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::latest()->take(10)->get();
-        return view('frontend.index')->with('posts', $posts);
+        $testimonials = Testimonial::all();
+        return view('frontend.index')->with('posts', $posts)->with('testimonials', $testimonials);
     }
 
     public function about()
