@@ -74,7 +74,7 @@ class AllPosts extends Controller
                 "media" => $imageName,
                 "serviceid" => $request->service,
                 "stypeid" => $request->type,
-                "status" => $request->playbtn,
+                "status" => $request->playbtn == 1 ? "$request->playbtn" : '0',
                 "hypelinks" => $request->videolink,
                 "featured_post" => $request->featured,
             ]);
