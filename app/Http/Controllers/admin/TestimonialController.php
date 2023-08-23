@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Testimonial;
 use App\Models\Image;
+use App\Models\Post;
+use App\Models\Pservices;
+use App\Models\Stypes;
 use Illuminate\Support\Facades\File;
 
 class TestimonialController extends Controller
@@ -18,12 +21,10 @@ class TestimonialController extends Controller
     }
     public function create()
     {
-
-
         return view('admin.addtestimonial');
     }
 
- public function store(Request $request)
+    public function store(Request $request)
     {
         if ($request->hasFile("cover")) {
             $file = $request->file("cover");
@@ -125,10 +126,4 @@ class TestimonialController extends Controller
         $pservices = Pservices::all();
         return view('admin.stypesedit')->with('stypes', $stypes)->with('pservices', $pservices);
     }
-
-
-
-
 }
-
-
