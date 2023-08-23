@@ -69,7 +69,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.testimonial');
         Route::get('/addtestimonial', [TestimonialController::class, 'create'])->name('admin.addtestimonial');
-        Route::get('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
+        Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
 
         //* categories
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');

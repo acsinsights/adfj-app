@@ -10,7 +10,7 @@ class Testimonial extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'Custname',
+        'custname',
         'custreview',
         'custimg',
         'custstar',
@@ -21,5 +21,4 @@ class Testimonial extends Model
     {
         return $this->hasMany(Image::class);
     }
-
 }

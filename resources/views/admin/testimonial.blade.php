@@ -105,13 +105,13 @@
                                                 <tr style="vertical-align: middle;">
                                                     <th scope="row">
                                                         {{ $tsti->id }}</th>
-                                                    <td><img src="/poststi/{{ $tsti->media }}" class="img-responsive"
+                                                    <td><img src="/testiimages/{{ $tsti->custimg }}" class="img-responsive"
                                                             style="max-height:100px; max-width:100px" alt=""
                                                             srcset=""></td>
                                                     <td>{{ $tsti->custname }}</td>
-                                                    <td>{{ $tsti->custreview}}</td>
+                                                    <td>{{ $tsti->custreview }}</td>
                                                     <td>{{ $tsti->custstar }}</td>
-                                                    <td>{{ $tsti->date }}</td>
+                                                    <td>{{ $tsti->created_at }}</td>
 
                                                     <td><a href="/admin/edit/{{ $tsti->id }}"
                                                             class="btn btn-outline-primary">Edit</a>

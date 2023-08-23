@@ -32,15 +32,15 @@ class TestimonialController extends Controller
             $file->move(\public_path("testiimages/"), $imageName);
 
             $testimonials = new Testimonial([
-                "custname" => $request->custname,
-                "custreview" => $request->custreview,
+                "custname" => $request->name,
+                "custreview" => $request->review,
                 "custimg" => $imageName,
-                "custstar" => $request->custstar,
+                "custstar" => $request->star,
             ]);
             $testimonials->save();
         }
 
-        return redirect("/admin/allposts");
+        return redirect("/admin/testimonial");
     }
 
     // ?Edit function for posts
