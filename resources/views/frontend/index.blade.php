@@ -943,7 +943,7 @@
                                             </div>
                                             <div class="testimonial__avater-6 d-flex align-items-center">
                                                 <div class="testimonial__avater-thumb-6">
-                                                    <img src="{{ asset('user-assets/img/review/one.png') }}"
+                                                    <img src="{{ $tt->custimg }}"
                                                         alt="" />
                                                 </div>
                                                 <div class="testimonial__avater-info-6">

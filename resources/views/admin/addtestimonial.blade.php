@@ -45,7 +45,7 @@
                                                 <section class="section">
                                                     <div style="display: flex;
                                                             flex-direction: row;"
-                                                        class="star-rating-bx ">
+                                                        class="star-rating-bx p-1">
 
                                                         <div class="star-widget">
                                                             <input type="radio" name="star" id="rate-5"
