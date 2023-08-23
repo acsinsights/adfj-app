@@ -28,14 +28,8 @@
 
 
                                                 <label class="m-2">Customer Review</label>
-                                                <select name="service" id="" value=""
-                                                    class="form-control m-2" required>
-                                                    {{-- <option value="service"><- Select Service -></option>
-                                                    @foreach ($pservices as $item)
-                                                        <option value="{{ $item->id }}">{{ $item->service_name }}
-                                                        </option>
-                                                    @endforeach --}}
-                                                </select>
+                                                <input type="text" name="author" class="form-control m-2"
+                                                placeholder="write your testimonial review">
 
 
                                                 <label class="m-2">Date</label>
@@ -43,14 +37,11 @@
 
                                                 <label class="m-2">Customer Image <span class="text-danger">(570 × 600
                                                         px)</span></label>
-                                                        <label class="m-2">Customer Review</label>
-                                                        <input type="text" name="author" class="form-control m-2"
-                                                            placeholder="write your project title here">
+                                                        <input type="file" id="input-file-now-custom-3" class="form-control m-2"
+                                                        name="cover" required>
                                                         <label class="m-2">Customer Rating</label>
                                                         <input type="text" name="author" class="form-control m-2"
                                                             placeholder="write your project title here">
-
-
                                                 <button type="submit" class="btn btn-success mt-3">Submit</button>
                                             </form>
                                         </div>
