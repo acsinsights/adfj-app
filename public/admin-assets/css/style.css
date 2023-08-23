@@ -24691,12 +24691,12 @@ body.monochrome .sidebar {
 }
 
 :is(a) {
-    color: var(--primary-color);
+    color: #eb1971;
 }
 
 :is(a):focus,
 :is(a):hover {
-    color: var(--accent-color);
+    color: #2ebbc4;
     outline: 0;
     box-shadow: none;
 }
@@ -26034,7 +26034,7 @@ pre[class*="language-"] {
 }
 
 .sidebar .menu-list a.m-link {
-    color: var(--gray-8);
+    color: #eb1971;
     display: flex;
     align-items: center;
     text-decoration: none;
