@@ -41,7 +41,8 @@
                                                         <label class="m-2">Customer Rating</label>
 
                                                         <section class="section">
-                                                            <div class="star-rating-bx">
+                                                            <div style="display: flex;
+                                                            flex-direction: row;" class="star-rating-bx ">
 
                                                                 <div class="star-widget">
                                                                     <form method="GET" name="feedback" action="#" onsubmit="feedBack(); return false">
@@ -66,7 +67,7 @@
                                                                                 <h3 class="modal-title" id="exampleModalLabel">Thank you</h3>
                                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick="reload"></button>
                                                                                 </div>
-                                                                             
+
                                                                             </div>
                                                                             </div>
                                                                         </div>
