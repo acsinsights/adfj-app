@@ -35,11 +35,27 @@
                                                 <label class="m-2">Date</label>
                                                 <input type="date" name="date" class="form-control m-2">
 
-                                                <label class="m-2">Customer Image <span class="text-danger">(570 × 600
-                                                        px)</span></label>
+                                                <label class="m-2">Customer Image <span class="text-danger">(44 × 44px)</span></label>
                                                         <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                                                         name="cover" required>
                                                         <label class="m-2">Customer Rating</label>
+                                                        {{-- <div class="testimonial__rating testimonial__rating-6">
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </a>
+                                                        </div> --}}
                                                         <input type="text" name="author" class="form-control m-2"
                                                             placeholder="write your project title here">
                                                 <button type="submit" class="btn btn-success mt-3">Submit</button>

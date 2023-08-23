@@ -11,6 +11,7 @@
     <!--[ Favicon]-->
     <title>AdFj Studios | @yield('title')</title>
     <!--[ plugin css file  ]-->
+    <link rel="stylesheet" href="{{asset('user-assets/css/font-awesome-pro.css')}}"/>
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/style.css') }}" />
