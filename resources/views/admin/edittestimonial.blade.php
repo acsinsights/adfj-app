@@ -34,19 +34,22 @@
                                     <input type="date" name="date" class=" form-control m-2"
                                         value="{{ $testimonials->created_at }}">
 
-                                    <img src="/posts/{{ $testimonials->custimg }}" class="img-responsive"
+
+                                        <label class="m-2">Customer Image (44 ×
+                                            44px)</label>  <br>
+                                    <img src="/testiimages/{{ $testimonials->custimg }}" class="img-responsive"
                                         style="max-height: 100px; max-width: 100px;" alt="" srcset="">
-                                    <br>
+                                        <br>
+                                        <form action="/deletecover/{{ $testimonials->id }}" method="post">
+                                            <button class="btn text-danger">X</button>
+                                            @csrf
+                                            @method('delete')
+                                        </form>
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                 </form>
 
-                                <label class="m-2">Customer Image (44 ×
-                                    44px)</label>
-                                <form action="/deletecover/{{ $testimonials->id }}" method="post">
-                                    <button class="btn text-danger">X</button>
-                                    @csrf
-                                    @method('delete')
-                                </form>
+
+
 
                                 <br>
 
