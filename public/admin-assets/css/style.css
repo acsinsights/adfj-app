@@ -24691,7 +24691,7 @@ body.monochrome .sidebar {
 }
 
 :is(a) {
-    color: #eb1971;
+    color: black;
 }
 
 :is(a):focus,
@@ -24702,7 +24702,7 @@ body.monochrome .sidebar {
 }
 
 .isactive {
-    color: #2ebbc4;
+    color: #eb1971;
     outline: 0;
     box-shadow: none;
 }
