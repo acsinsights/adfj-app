@@ -495,13 +495,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                                                  >(<span
-                                                                                                                                                                    data-purecounter-duration="1"
-                                                                                                                                                                    data-purecounter-end="66"
-                                                                                                                                                                    class="purecounter"
-                                                                                                                                                                    >0</span
-                                                                                                                                                                  >%)</span
-                                                                                                                                                                > -->
+                                                                                                                                                                                          >(<span
+                                                                                                                                                                                            data-purecounter-duration="1"
+                                                                                                                                                                                            data-purecounter-end="66"
+                                                                                                                                                                                            class="purecounter"
+                                                                                                                                                                                            >0</span
+                                                                                                                                                                                          >%)</span
+                                                                                                                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -550,13 +550,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                                                  >(<span
-                                                                                                                                                                    data-purecounter-duration="1"
-                                                                                                                                                                    data-purecounter-end="80"
-                                                                                                                                                                    class="purecounter"
-                                                                                                                                                                    >0</span
-                                                                                                                                                                  >%)</span
-                                                                                                                                                                > -->
+                                                                                                                                                                                          >(<span
+                                                                                                                                                                                            data-purecounter-duration="1"
+                                                                                                                                                                                            data-purecounter-end="80"
+                                                                                                                                                                                            class="purecounter"
+                                                                                                                                                                                            >0</span
+                                                                                                                                                                                          >%)</span
+                                                                                                                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -933,21 +933,57 @@
                                     @foreach ($testimonials as $tt)
                                         <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
                                             <div class="testimonial__rating testimonial__rating-6">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </a>
-                                                <a href="#">
-                                                    <i class="fa-solid fa-star"></i>
-                                                </a>
+                                                @if ($tt->custstar == 1)
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                @elseif ($tt->custstar == 2)
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                @elseif ($tt->custstar == 3)
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                @elseif ($tt->custstar == 4)
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                @elseif ($tt->custstar == 5)
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </a>
+                                                @endif
                                             </div>
                                             <div class="testimonial__content-6">
                                                 <p>

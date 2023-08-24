@@ -36,6 +36,7 @@ class TestimonialController extends Controller
                 "custreview" => $request->review,
                 "custimg" => $imageName,
                 "custstar" => $request->star,
+                "date" => $request->date,
             ]);
             $testimonials->save();
         }
@@ -65,8 +66,8 @@ class TestimonialController extends Controller
         }
 
         $post->update([
-            "custname" => $request->custname,
-            "custreview" => $request->custreview,
+            "custname" => $request->name,
+            "custreview" => $request->review,
             "custimg" => $request->custimg,
             "custstar" => $request->custstar,
         ]);
