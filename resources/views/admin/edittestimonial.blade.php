@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-@section('title', 'Edit Post')
+@section('title', 'Edit Testimonials')
 @section('content')
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->
@@ -27,7 +27,7 @@
 
 
                                     <label>Customer Rating</label>
-                                    <input type="text" name="review" class="form-control m-2"
+                                    <input type="text" name="star" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $testimonials->custstar }}">
 
                                     <input type="date" name="date" class=" form-control m-2"

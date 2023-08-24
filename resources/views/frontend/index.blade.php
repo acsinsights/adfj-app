@@ -956,7 +956,7 @@
                                             </div>
                                             <div class="testimonial__avater-6 d-flex align-items-center">
                                                 <div class="testimonial__avater-thumb-6">
-                                                    <img src="{{ $tt->custimg }}" alt="" />
+                                                    <img src="/testiimages/{{ $tt->custimg }}" alt="" />
                                                 </div>
                                                 <div class="testimonial__avater-info-6">
                                                     <h3 class="testimonial__avater-title-6">
