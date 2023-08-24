@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Responsive Bootstrap 5 admin dashboard template & web App ui kit." />
-    <meta name="keyword" content="QBoat, Bootstrap 5, Admin Dashboard, Admin Theme" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link rel="shortcut icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
     <!--[ Favicon]-->
     <title>AdFj Studios | @yield('title')</title>
     <!--[ plugin css file  ]-->
-    <link rel="stylesheet" href="{{asset('user-assets/css/font-awesome-pro.css')}}"/>
+    <link rel="stylesheet" href="{{ asset('user-assets/css/font-awesome-pro.css') }}" />
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/style.css') }}" />
@@ -956,6 +956,13 @@
 
     <script src="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"></script>
     <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
     @yield('customJs')
     <!--[ Jquery Page Js ]-->
     <script src="{{ asset('admin-assets/js/theme.js') }}"></script>

@@ -56,7 +56,7 @@
             element = $(this);
             $.ajax({
                 url: '{{ route('getSlug') }}',
-                type: 'get',
+                type: 'post',
                 data: {
                     title: element.val()
                 },

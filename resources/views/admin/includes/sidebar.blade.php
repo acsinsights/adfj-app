@@ -51,7 +51,7 @@
                     </a>
 
                 </li>
-                {{-- <li class="collapsed pt-2">
+                <li class="collapsed pt-2">
                     <a class="hyper {{ URL::current() == route('admin.featuredposts') ? 'isactive' : '' }}"
                         href="{{ route('admin.featuredposts') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
@@ -68,11 +68,11 @@
                             </path>
                         </svg>
 
-                        <span class="mx-2">Featured Posts</span>
+                        <span class="mx-2">Manage Featured Posts</span>
 
                     </a>
 
-                </li> --}}
+                </li>
                 <li class="collapsed pt-2">
                     <a class="m-link" data-bs-toggle="collapse" data-bs-target="#menu_auth" href="#">
                         <svg width="30" height="30" viewBox="-2.4 -2.4 28.80 28.80"

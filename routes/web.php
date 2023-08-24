@@ -97,12 +97,12 @@ Route::group(['prefix' => 'admin'], function () {
 
 
         //* categories
-        Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
+        // Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
         Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);
-        // Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+        Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
 
         //? slug route for service type table
         Route::get('/getSlug', function (Request $request) {
@@ -120,7 +120,7 @@ Route::group(['prefix' => 'admin'], function () {
 
 
         //* Add data/update/delete in categories
-        Route::post('/add-post', [AllPosts::class, 'store']);
+        Route::post('/add-post', [AllPosts::class, 'store'])->name('addPost');
         Route::delete('/delete/{id}', [AllPosts::class, 'destroy']);
         Route::get('/edit/{id}', [AllPosts::class, 'edit']);
         Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
@@ -128,6 +128,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/deleteimage/{id}', [AllPosts::class, 'deleteimage']);
         Route::delete('/deletecover/{id}', [AllPosts::class, 'deletecover']);
         Route::put('/update/{id}', [AllPosts::class, 'update']);
+        Route::post('/status/{id}', [AdminFeaturedPostController::class, 'update'])->name('status');
 
         //? Routes for service types
         Route::get('/typeedit/{id}', [AllPosts::class, 'stypeedit']);

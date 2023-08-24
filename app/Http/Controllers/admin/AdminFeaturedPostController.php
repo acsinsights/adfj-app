@@ -12,7 +12,13 @@ class AdminFeaturedPostController extends Controller
     {
         $stypes = Post::findOrFail($id);
         $stypes->update([
-            "fstatus" => $request->fstatus,
+            "featured_post" => $request->featured,
+            "fstatus" => $request->fstatus == 1 ? "$request->fstatus" : '0',
+        ]);
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Post updated successfully'
         ]);
 
         return redirect('/admin/allposts')->with('success', 'Status updated successfully for ' . $stypes->title);

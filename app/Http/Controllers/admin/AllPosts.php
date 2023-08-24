@@ -121,7 +121,7 @@ class AllPosts extends Controller
             "status" => $request->status == 1 ? "$request->status" : '0',
             "stypeid" => $request->type,
             "hypelinks" => $request->hypelinks,
-            "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
+            "featured_post" => $request->featured == 0 ? "$request->featured" : '1',
         ]);
 
         return redirect("/admin/allposts")->with('success', 'Post Updated Successfully');
