@@ -31277,7 +31277,7 @@ input:checked ~ label {
 
 }
 
-#rate-1:checked ~ .rating-desc:before {
+/* #rate-1:checked ~ .rating-desc:before {
     content: "Poor😋";
 }
 #rate-2:checked ~ .rating-desc:before {
@@ -31291,7 +31291,7 @@ input:checked ~ label {
 }
 #rate-5:checked ~ .rating-desc:before {
     content: "Excellent😋";
-}
+} */
 
  .rating-desc {
     width: 100%;
