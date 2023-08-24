@@ -14,7 +14,8 @@
                                 <h2>Edit Testimonial</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/admin/updatetestimonial/{{ $testimonials->id }}" method="post" enctype="multipart/form-data">
+                                <form action="/admin/updatetestimonial/{{ $testimonials->id }}" method="post"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     @method('put')
                                     <label for="" class="title">Customer Name</label>
@@ -27,13 +28,13 @@
 
 
                                     <label>Customer Rating</label>
-                                    <input type="text" name="review" class="form-control m-2"
+                                    <input type="text" name="star" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $testimonials->custstar }}">
 
                                     <input type="date" name="date" class=" form-control m-2"
                                         value="{{ $testimonials->created_at }}">
 
-                                        <img src="/posts/{{ $testimonials->custimg }}" class="img-responsive"
+                                    <img src="/posts/{{ $testimonials->custimg }}" class="img-responsive"
                                         style="max-height: 100px; max-width: 100px;" alt="" srcset="">
                                     <br>
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>

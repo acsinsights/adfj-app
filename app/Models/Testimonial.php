@@ -14,6 +14,7 @@ class Testimonial extends Model
         'custreview',
         'custimg',
         'custstar',
+        'date',
         'created_at',
     ];
 
