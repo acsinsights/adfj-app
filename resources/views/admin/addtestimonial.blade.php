@@ -66,8 +66,6 @@
                                                             <label for="rate-1" class="fa-solid fa-star"></label>
                                                             <p id="error-rating"></p>
                                                             <p class="rating-desc"></p>
-
-
                                                             <div class="modal fade" id="simpleModal" tabindex="-1"
                                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                 <div class="modal-dialog modal-dialog-centered">
