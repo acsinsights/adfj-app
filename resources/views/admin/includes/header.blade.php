@@ -413,11 +413,11 @@
     <div class="container-fluid">
         <h1 class="mb-0 text-gradient font-heading">Hello, {{ Auth::guard('admin')->user()->name }}!</h1>
         <ol class="breadcrumb bg-transparent w-100 li_animate mb-3 mb-md-1">
-            <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 @yield('title')
             </li>
         </ol>
-     
+
     </div>
 </div>

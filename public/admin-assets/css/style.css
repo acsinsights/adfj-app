@@ -31297,7 +31297,7 @@ input:checked~label {
 
 #rate-5:checked~.rating-desc:before {
     content: "Excellent😋";
-}
+} */
 
 .rating-desc {
     width: 100%;

@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-@section('title', 'All Posts')
+@section('title', 'Testimonials')
 @section('content')
     <div class="page order-2 flex-grow-1">
         <!--[ Start:: page header link ]-->
@@ -17,7 +17,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title fw-normal mb-0">All Testimonial</h5>
+                                <h5 class="card-title fw-normal mb-0">All Testimonials</h5>
                                 <div class="card-action">
                                     <div class="dropdown">
                                         {{-- <a href="#" class="card-options-remove text-danger"
