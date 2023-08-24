@@ -57,6 +57,10 @@
                                     <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}
                                         name="featured" class="m-2" value="1"><br>
 
+                                    <label class="m-2">Play Button</label>
+                                    <input type="checkbox" {{ $posts->status == 1 ? 'checked' : '' }} name="status"
+                                        class="m-2" value="1"><br>
+
                                     <label class="m-2">Cover Image</label>
 
                                     <input type="file" id="input-file-now-custom-3" class="form-control m-2"

@@ -359,6 +359,19 @@
                                                         data-background="{{ $post->media ? asset('posts/' . $post->media) : '' }}">
                                                     </div>
 
+                                                    @if ($post->status == 1)
+                                                        <div class="portfolio__grid-video">
+                                                            <a href="https://www.youtube.com/watch?v=HGN8mufDavg"
+                                                                class="portfolio-play-btn popup-video tp-el-video-btn">
+                                                                <svg width="18" height="22" viewBox="0 0 18 22"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z"
+                                                                        fill="currentColor"></path>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    @endif
+
                                                     <div class="portfolio__content-3 transition-3">
                                                         <div class="portfolio__tag-3">
                                                             <a
@@ -482,13 +495,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                                              >(<span
-                                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                                data-purecounter-end="66"
-                                                                                                                                                                class="purecounter"
-                                                                                                                                                                >0</span
-                                                                                                                                                              >%)</span
-                                                                                                                                                            > -->
+                                                                                                                                                                  >(<span
+                                                                                                                                                                    data-purecounter-duration="1"
+                                                                                                                                                                    data-purecounter-end="66"
+                                                                                                                                                                    class="purecounter"
+                                                                                                                                                                    >0</span
+                                                                                                                                                                  >%)</span
+                                                                                                                                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -537,13 +550,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                                              >(<span
-                                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                                data-purecounter-end="80"
-                                                                                                                                                                class="purecounter"
-                                                                                                                                                                >0</span
-                                                                                                                                                              >%)</span
-                                                                                                                                                            > -->
+                                                                                                                                                                  >(<span
+                                                                                                                                                                    data-purecounter-duration="1"
+                                                                                                                                                                    data-purecounter-end="80"
+                                                                                                                                                                    class="purecounter"
+                                                                                                                                                                    >0</span
+                                                                                                                                                                  >%)</span
+                                                                                                                                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -943,8 +956,7 @@
                                             </div>
                                             <div class="testimonial__avater-6 d-flex align-items-center">
                                                 <div class="testimonial__avater-thumb-6">
-                                                    <img src="{{ asset('user-assets/img/review/one.png') }}"
-                                                        alt="" />
+                                                    <img src="{{ $tt->custimg }}" alt="" />
                                                 </div>
                                                 <div class="testimonial__avater-info-6">
                                                     <h3 class="testimonial__avater-title-6">

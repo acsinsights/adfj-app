@@ -46,21 +46,21 @@ class TestimonialController extends Controller
     // ?Edit function for posts
     public function edit($id)
     {
-        $posts = Testimonial::findOrFail($id);
-        return view('admin.addtestimonial')->with('posts', $posts);
+        $testimonials = Testimonial::findOrFail($id);
+        return view('admin.edittestimonial')->with('testimonials', $testimonials);
     }
 
     // ?Update function for posts
     public function update(Request $request, $id)
     {
-        $post = Post::findOrFail($id);
+        $post = Testimonial::findOrFail($id);
         if ($request->hasFile("cover")) {
             if (file::exists("posts/" . $post->media)) {
                 File::delete("posts/" . $post->media);
             }
             $file = $request->file("cover");
             $post->media = time() . "_" . $file->getClientOriginalName();
-            $file->move(\public_path("/posts"), $post->media);
+            $file->move(\public_path("/testiimages"), $post->media);
             $request['cover'] = $post->media;
         }
 
@@ -70,27 +70,15 @@ class TestimonialController extends Controller
             "custimg" => $request->custimg,
             "custstar" => $request->custstar,
         ]);
-
-        if ($request->hasFile("images")) {
-            $files = $request->file("images");
-            foreach ($files as $file) {
-                $imagename = time() . "-" . $file->getClientOriginalName();
-                $request["post_id"] = $id;
-                $request["image"] = $imagename;
-                $file->move(\public_path("images"), $imagename);
-                Image::create($request->all());
-            }
-        }
-
-        return redirect("/admin/allposts");
+        return redirect("/admin/testimonial");
     }
 
     public function destroy($id)
     {
-        $posts = Post::findOrFail($id);
+        $posts = Testimonial::findOrFail($id);
 
-        if (File::exists("cover/" . $posts->cover)) {
-            File::delete("cover/" . $posts->cover);
+        if (File::exists("testiimages/" . $posts->custimg)) {
+            File::delete("testiimages/" . $posts->custimg);
         }
         $posts->delete();
         return back();
@@ -98,28 +86,10 @@ class TestimonialController extends Controller
 
     public function deletecover($id)
     {
-        $cover = Post::findOrFail($id)->cover;
-        if (File::exists("cover/" . $cover)) {
-            File::delete("cover/" . $cover);
+        $custimg = Testimonial::findOrFail($id)->custimg;
+        if (File::exists("testiimages/" . $custimg)) {
+            File::delete("testiimages/" . $custimg);
         }
         return back();
-    }
-
-    public function addtype(Request $request)
-    {
-        $stypes = new Stypes([
-            "stype_name" => $request->type,
-            "slug" => $request->slug,
-            "pservices_id" => $request->service,
-        ]);
-        $stypes->save();
-        return redirect("/admin/add-type");
-    }
-
-    public function stypeedit($id)
-    {
-        $stypes = Stypes::findOrFail($id);
-        $pservices = Pservices::all();
-        return view('admin.stypesedit')->with('stypes', $stypes)->with('pservices', $pservices);
     }
 }

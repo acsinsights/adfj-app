@@ -67,9 +67,35 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
         Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
 
+
+
         Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.testimonial');
         Route::get('/addtestimonial', [TestimonialController::class, 'create'])->name('admin.addtestimonial');
-        Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
+       Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
+
+
+
+
+        Route::delete('/deletetestimonial/{id}', [TestimonialController::class, 'destroy']);
+        Route::get('/edittestimonial/{id}', [TestimonialController::class, 'edit']);
+        // Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
+        // Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
+        Route::delete('/deleteimage/{id}', [TestimonialController::class, 'deleteimage']);
+        Route::delete('/deletecover/{id}', [TestimonialController::class, 'deletecover']);
+        Route::put('/updatetestimonial/{id}', [TestimonialController::class, 'update']);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //* categories
         Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
