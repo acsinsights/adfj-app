@@ -51,7 +51,7 @@ class DashboardController extends Controller
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
 
-        return redirect("/admin/profile");
+        return redirect("/admin/profile")->with('success', 'Profile Updated Successfully');
     }
 
     protected function logout()

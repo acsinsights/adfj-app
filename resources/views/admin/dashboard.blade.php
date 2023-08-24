@@ -311,8 +311,8 @@
                             <div class="card-body">
                                 <h3></h3>
                                 <p class="text-muted">
-                                    15% <i class="fa fa-level-up text-success"></i> Total
-                                    Expense
+                                    <i class="fa fa-level-up text-success"></i> Total
+                                    Testimonials
                                 </p>
                                 {{-- <div id="apexspark_bar_2" style="min-height: 40px;">
                                     <div id="apexcharts7c8kfuo1"

@@ -15,6 +15,9 @@
                 <div class="row g-3 row-deck">
 
                     <div class="col-12">
+                        <div class="col-md-5 alert-message">
+                            @include('admin.message')
+                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <h5 class="card-title fw-normal mb-0">All Testimonials</h5>

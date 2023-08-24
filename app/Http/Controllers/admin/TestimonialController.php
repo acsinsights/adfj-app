@@ -42,7 +42,7 @@ class TestimonialController extends Controller
             $testimonials->save();
         }
 
-        return redirect("/admin/testimonial");
+        return redirect("/admin/testimonial")->with('success', 'Added Successfully');
     }
 
     // ?Edit function for posts
@@ -72,7 +72,7 @@ class TestimonialController extends Controller
             "custstar" => $request->custstar,
             "date" => $request->date,
         ]);
-        return redirect("/admin/testimonial");
+        return redirect("/admin/testimonial")->with('success', 'Updated Successfully');
     }
 
     public function destroy($id)
@@ -83,7 +83,7 @@ class TestimonialController extends Controller
             File::delete("testiimages/" . $posts->custimg);
         }
         $posts->delete();
-        return back();
+        return back()->with('success', 'Deleted Successfully');
     }
 
     public function deletecover($id)

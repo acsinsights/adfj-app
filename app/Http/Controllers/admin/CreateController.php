@@ -21,13 +21,13 @@ class CreateController extends Controller
             "slug" => $request->slug,
         ]);
 
-        return redirect("/admin/add-type");
+        return redirect("/admin/add-type")->with('success', 'Added Successfully');
     }
 
     public function destroy($id)
     {
-        $posts = Post::findOrFail($id);
+        $posts = Stypes::findOrFail($id);
         $posts->delete();
-        return back();
+        return back()->with('success', 'Deleted Successfully');
     }
 }

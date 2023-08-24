@@ -10,6 +10,9 @@
                 <!--[ Start:: My Dashboard ]-->
                 <div class="row">
                     <div class="col-12">
+                        <div class="col-md-5 alert-message">
+                            @include('admin.message')
+                        </div>
                         <div class="card">
                             <div class="card-header">
                                 <h2>Add Service Type</h2>
@@ -27,7 +30,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                    
+
                                     <input type="text" name="type" id="name" class="form-control m-2"
                                         placeholder="Enter Type Name" required>
 

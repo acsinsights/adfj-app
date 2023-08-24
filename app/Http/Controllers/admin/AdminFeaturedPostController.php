@@ -15,6 +15,6 @@ class AdminFeaturedPostController extends Controller
             "fstatus" => $request->fstatus,
         ]);
 
-        return redirect('/admin/featured-posts');
+        return redirect('/admin/allposts')->with('success', 'Status updated successfully for ' . $stypes->title);
     }
 }

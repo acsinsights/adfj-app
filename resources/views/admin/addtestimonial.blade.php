@@ -24,9 +24,8 @@
                                                 enctype="multipart/form-data">
                                                 @csrf
                                                 <label class="m-2">Customer Name</label>
-                                                <input  type="text" name="name" class="form-control m-2"
-                                                    placeholder="write your project title here">
-
+                                                <input type="text" name="name" class="form-control m-2"
+                                                    placeholder="Customer Name Goes Here">
 
                                                 <label class="textarea m-2">Customer Review</label>
 

@@ -102,7 +102,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);
-        Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
+        // Route::get('/featured-posts', [AllPosts::class, 'featured'])->name('admin.featuredposts');
 
         //? slug route for service type table
         Route::get('/getSlug', function (Request $request) {
@@ -132,7 +132,7 @@ Route::group(['prefix' => 'admin'], function () {
         //? Routes for service types
         Route::get('/typeedit/{id}', [AllPosts::class, 'stypeedit']);
         Route::get('/update/{id}', [CreateController::class, 'update']);
-        Route::delete('/delete-service/{id}', [CreateController::class, 'destroy']);
+        Route::get('/delete-service/{id}', [CreateController::class, 'destroy']);
 
         Route::put('/fstatus/{id}', [AdminFeaturedPostController::class, 'update']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');

@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\File;
 
 class AllPosts extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::latest()->paginate(15);
-        return view('admin.allposts')->with('posts', $posts);
+        $posts = Post::latest();
+        if (!empty($request->get('keyword'))) {
+            $posts = $posts->where('title', 'like', '%' . $request->get('keyword') . '%');
+        }
+
+        $posts = $posts->paginate(10);
+        return view('admin.allposts', compact('posts'));
     }
 
     public function featured()
@@ -76,22 +81,11 @@ class AllPosts extends Controller
                 "stypeid" => $request->type,
                 "status" => $request->playbtn == 1 ? "$request->playbtn" : '0',
                 "hypelinks" => $request->videolink,
-                "featured_post" => $request->featured,
+                "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
             ]);
             $post->save();
         }
-        if ($request->hasFile("images")) {
-
-            $files = $request->file("images");
-            foreach ($files as $file) {
-                $imageName = time() . '_' . $file->getClientOriginalName();
-                $request['post_id'] = $post->id;
-                $request['image'] = $imageName;
-                $file->move(\public_path("/images"), $imageName);
-                Image::create($request->all());
-            }
-        }
-        return redirect("/admin/allposts");
+        return redirect("/admin/allposts")->with('success', 'Post Created Successfully');
     }
 
     // ?Edit function for posts
@@ -130,18 +124,7 @@ class AllPosts extends Controller
             "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 
-        if ($request->hasFile("images")) {
-            $files = $request->file("images");
-            foreach ($files as $file) {
-                $imagename = time() . "-" . $file->getClientOriginalName();
-                $request["post_id"] = $id;
-                $request["image"] = $imagename;
-                $file->move(\public_path("images"), $imagename);
-                Image::create($request->all());
-            }
-        }
-
-        return redirect("/admin/allposts");
+        return redirect("/admin/allposts")->with('success', 'Post Updated Successfully');
     }
 
     public function destroy($id)
@@ -152,7 +135,7 @@ class AllPosts extends Controller
             File::delete("cover/" . $posts->cover);
         }
         $posts->delete();
-        return back();
+        return back()->with('success', 'Post Deleted Successfully');
     }
 
     public function deletecover($id)
@@ -172,7 +155,7 @@ class AllPosts extends Controller
             "pservices_id" => $request->service,
         ]);
         $stypes->save();
-        return redirect("/admin/add-type");
+        return redirect("/admin/add-type")->with('success', 'Service Type Create Successfully');
     }
 
     public function stypeedit($id)

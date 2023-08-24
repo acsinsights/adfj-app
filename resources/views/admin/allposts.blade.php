@@ -13,11 +13,32 @@
             <div class="container-fluid">
                 <!--[ Start:: My Dashboard ]-->
                 <div class="row g-3 row-deck">
-
+                    <div class="col-md-5 alert-message">
+                        @include('admin.message')
+                    </div>
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
                                 <h5 class="card-title fw-normal mb-0">All Posts</h5>
+                                <form action="" method="get">
+                                    <div class="card-tools d-flex">
+                                        <div class="card-title mt-1 me-2">
+                                            <a href="{{ route('admin.allposts') }}" class="btn btn-sm text-grey">X</a>
+                                        </div>
+                                        <div class="input-group input-group" style="width: 100%; height:15px">
+
+                                            <input type="text" name="keyword" class="form-control float-right"
+                                                placeholder="Search" value="{{ Request::get('keyword') }}">
+                                            <div class="input-group-append">
+                                                <button type="submit" class="btn btn-default">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
                                 <div class="card-action">
                                     <div class="dropdown">
                                         {{-- <a href="#" class="card-options-remove text-danger"
@@ -46,6 +67,8 @@
                                                     height="6" rx="1"></rect>
                                             </svg>
                                         </a>
+
+
                                         {{-- <a href="#" class="dropdown-toggle after-none text-primary"
                                             data-bs-toggle="dropdown" aria-expanded="false" title="More Action">
                                             <svg width="16" height="16" viewbox="0 0 16 16" fill="currentColor"
@@ -84,6 +107,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
+
                                 <div class="table-responsive">
                                     <table class="table table-custom mb-0">
                                         <thead>
@@ -97,37 +121,79 @@
                                                 <th>Location</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
+                                                <th>Featured Post</th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody>
-                                            @foreach ($posts as $post)
-                                                <tr style="vertical-align: middle;">
-                                                    <th scope="row">
-                                                        {{ $post->id }}</th>
-                                                    <td><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                            style="max-height:100px; max-width:100px" alt=""
-                                                            srcset=""></td>
-                                                    <td>{{ $post->title }}</td>
-                                                    <td>{{ $post->pservices->service_name }}</td>
-                                                    <td>{{ $post->stypes->stype_name }}</td>
-                                                    <td>{{ $post->date }}</td>
-                                                    <td>{{ $post->location }}</td>
-                                                    <td><a href="/admin/edit/{{ $post->id }}"
-                                                            class="btn btn-outline-primary">Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <form action="/admin/delete/{{ $post->id }}" method="post">
-                                                            <button class="btn btn-outline-danger"
-                                                                onclick="return confirm('Are you sure?');"
-                                                                type="submit">Delete</button>
-                                                            @csrf
-                                                            @method('delete')
-                                                        </form>
-                                                    </td>
+                                            @if ($posts->isNotEmpty())
+                                                @foreach ($posts as $post)
+                                                    <tr style="vertical-align: middle;">
+                                                        <th scope="row">
+                                                            {{ $post->id }}</th>
+                                                        <td><img src="/posts/{{ $post->media }}" class="img-responsive"
+                                                                style="max-height:100px; max-width:100px" alt=""
+                                                                srcset=""></td>
+                                                        <td>{{ $post->title }}</td>
+                                                        <td>{{ $post->pservices->service_name }}</td>
+                                                        <td>{{ $post->stypes->stype_name }}</td>
+                                                        <td>{{ $post->date }}</td>
+                                                        <td>{{ $post->location }}</td>
+                                                        <td><a href="/admin/edit/{{ $post->id }}"
+                                                                class="btn btn-outline-primary">Edit</a>
+                                                        </td>
+                                                        <td>
+                                                            <form action="/admin/delete/{{ $post->id }}"
+                                                                method="post">
+                                                                <button class="btn btn-outline-danger"
+                                                                    onclick="return confirm('Are you sure?');"
+                                                                    type="submit">Delete</button>
+                                                                @csrf
+                                                                @method('delete')
+                                                            </form>
+                                                        </td>
+                                                        {{-- @if ($post->featured_post == 1)
+                                                            <td class="text-center vertical-center">
+                                                                @if ($post->fstatus == 1)
+                                                                    <p class="text-success">Added</p>
+                                                                @else
+                                                                    <p class="text-danger">Removed</p>
+                                                                @endif
+                                                                <form action="/admin/fstatus/{{ $post->id }}"
+                                                                    method="POST">
+                                                                    @csrf
+                                                                    @method('put')
+                                                                    <select name="fstatus" id="status"
+                                                                        class="form-control">
+                                                                        <option value="1">Add</option>
+                                                                        <option value="0">Remove</option>
+                                                                    </select>
+                                                                    <button class="btn btn-sm btn-outline-secondary mt-2"
+                                                                        type="submit">Submit</button>
+                                                                </form>
+                                                            </td>
+                                                        @endif --}}
+                                                        <td>
+                                                            <div class="toggle-button-cover">
+                                                                <div class="button-cover">
+                                                                    <div class="button r" id="button-3">
+                                                                        <input type="hidden" value="{{ $post->id }}">
+                                                                        <input type="checkbox" class="checkbox"
+                                                                            {{ $post->featured_post == 1 ? '' : 'checked' }} />
+                                                                        <div class="knobs"></div>
+                                                                        <div class="layer"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                            @else
+                                                <tr>
+                                                    <td colspan="10" class="text-center">No records found!</td>
                                                 </tr>
-                                            @endforeach
+                                            @endif
                                         </tbody>
                                     </table>
                                     {{ $posts->links() }}
@@ -143,4 +209,6 @@
 @endsection
 
 @section('customJs')
+<script>
+</script>
 @endsection
