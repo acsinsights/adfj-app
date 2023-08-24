@@ -24,13 +24,14 @@
                                                 enctype="multipart/form-data">
                                                 @csrf
                                                 <label class="m-2">Customer Name</label>
-                                                <input type="text" name="name" class="form-control m-2"
+                                                <input  type="text" name="name" class="form-control m-2"
                                                     placeholder="write your project title here">
 
 
-                                                <label class="m-2">Customer Review</label>
-                                                <input type="text" name="review" class="form-control m-2"
-                                                    placeholder="write your testimonial review">
+                                                <label class="textarea m-2">Customer Review</label>
+
+                                                <textarea cols="5" rows="5" type="text" name="review" class="form-control m-2"
+                                                    placeholder="write your testimonial review"> </textarea>
 
 
                                                 <label class="m-2">Date</label>
