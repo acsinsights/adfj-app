@@ -19,7 +19,7 @@ class TestimonialController extends Controller
         $testimonials = Testimonial::all();
         return view('admin.testimonial')->with('testimonials', $testimonials);
     }
-    
+
     public function create()
     {
         return view('admin.addtestimonial');
@@ -57,20 +57,20 @@ class TestimonialController extends Controller
     {
         $post = Testimonial::findOrFail($id);
         if ($request->hasFile("cover")) {
-            if (file::exists("posts/" . $post->media)) {
-                File::delete("posts/" . $post->media);
+            if (file::exists("testiimages/" . $post->custimg)) {
+                File::delete("testiimages/" . $post->custimg);
             }
             $file = $request->file("cover");
-            $post->media = time() . "_" . $file->getClientOriginalName();
-            $file->move(\public_path("/testiimages"), $post->media);
-            $request['cover'] = $post->media;
+            $imageName = time() . '_' . $file->getClientOriginalName();
+            $file->move(\public_path("testiimages/"), $imageName);
+            $request['cover'] = $imageName;
         }
-
         $post->update([
             "custname" => $request->name,
             "custreview" => $request->review,
-            "custimg" => $request->custimg,
+            "custimg" => $request->cover,
             "custstar" => $request->custstar,
+            "date" => $request->date,
         ]);
         return redirect("/admin/testimonial");
     }
