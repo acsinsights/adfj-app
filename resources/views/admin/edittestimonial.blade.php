@@ -11,17 +11,17 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h2>Edit Post</h2>
+                                <h2>Edit Testimonial</h2>
                             </div>
                             <div class="card-body">
-                                <form action="/admin/update/{{ $testimonials->id }}" method="post" enctype="multipart/form-data">
+                                <form action="/admin/updatetestimonial/{{ $testimonials->id }}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('put')
                                     <label for="" class="title">Customer Name</label>
                                     <input type="text" name="name" class="form-control m-2"
                                         placeholder="Service Category" value="{{ $testimonials->custname }}">
 
-                                    <label>Customer Review</label>
+                                    <label class="textarea">Customer Review</label>
                                     <input type="text" name="review" class="form-control m-2"
                                         placeholder="Title of post" value="{{ $testimonials->custreview }}">
 

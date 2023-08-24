@@ -113,11 +113,11 @@
                                                     <td>{{ $tsti->custstar }}</td>
                                                     <td>{{ $tsti->created_at }}</td>
 
-                                                    <td><a href="/admin/edit/{{ $tsti->id }}"
+                                                    <td><a href="/admin/edittestimonial/{{ $tsti->id }}"
                                                             class="btn btn-outline-primary">Edit</a>
                                                     </td>
                                                     <td>
-                                                        <form action="/admin/delete/{{ $tsti->id }}" method="post">
+                                                        <form action="/admin/deletetestimonial/{{ $tsti->id }}" method="post">
                                                             <button class="btn btn-outline-danger"
                                                                 onclick="return confirm('Are you sure?');"
                                                                 type="submit">Delete</button>
