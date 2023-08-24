@@ -110,7 +110,67 @@
                                                             srcset=""></td>
                                                     <td>{{ $tsti->custname }}</td>
                                                     <td>{{ $tsti->custreview }}</td>
-                                                    <td>{{ $tsti->custstar }}</td>
+                                                    <td>
+                                                        @if ($tsti->custstar == 4)
+                                                            <section class="section">
+                                                                <div style="display: flex;
+                                                            flex-direction: row;"
+                                                                    class="star-rating-bx">
+
+                                                                    <div class="star-widget">
+                                                                        <input type="radio" name="star" id="rate-5"
+                                                                            value="5"
+                                                                            {{ $tsti->custstar == 5 ? 'checked' : '' }}>
+                                                                        <label for="rate-5"
+                                                                            class="fa-solid fa-star"></label>
+                                                                        <input type="radio" name="star" id="rate-4"
+                                                                            value="4"
+                                                                            {{ $tsti->custstar == 4 ? 'checked' : '' }}>
+                                                                        <label for="rate-4"
+                                                                            class="fa-solid fa-star"></label>
+                                                                        <input type="radio" name="star" id="rate-3"
+                                                                            value="3"
+                                                                            {{ $tsti->custstar == 3 ? 'checked' : '' }}>
+                                                                        <label for="rate-3"
+                                                                            class="fa-solid fa-star"></label>
+                                                                        <input type="radio" name="star" id="rate-2"
+                                                                            value="2"
+                                                                            {{ $tsti->custstar == 2 ? 'checked' : '' }}>
+                                                                        <label for="rate-2"
+                                                                            class="fa-solid fa-star"></label>
+                                                                        <input type="radio" name="star" id="rate-1"
+                                                                            value="1"{{ $tsti->custstar == 1 ? 'checked' : '' }}>
+                                                                        <label for="rate-1"
+                                                                            class="fa-solid fa-star"></label>
+                                                                        <p id="error-rating"></p>
+                                                                        <p class="rating-desc"></p>
+
+
+                                                                        <div class="modal fade" id="simpleModal"
+                                                                            tabindex="-1"
+                                                                            aria-labelledby="exampleModalLabel"
+                                                                            aria-hidden="true">
+                                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                                <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                        <h3 class="modal-title"
+                                                                                            id="exampleModalLabel">
+                                                                                            Thank you</h3>
+                                                                                        <button type="button"
+                                                                                            class="btn-close"
+                                                                                            data-bs-dismiss="modal"
+                                                                                            aria-label="Close"
+                                                                                            onClick="reload"></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+                                                        @endif
+                                                    </td>
                                                     <td>{{ $tsti->created_at }}</td>
 
                                                     <td><a href="/admin/edit/{{ $tsti->id }}"
