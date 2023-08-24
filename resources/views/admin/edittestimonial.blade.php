@@ -47,14 +47,7 @@
                                         </form>
                                     <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                 </form>
-
-
-
-
                                 <br>
-
-
-
                             </div>
                         </div>
                     </div>
