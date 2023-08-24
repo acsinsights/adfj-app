@@ -19,6 +19,7 @@ class TestimonialController extends Controller
         $testimonials = Testimonial::all();
         return view('admin.testimonial')->with('testimonials', $testimonials);
     }
+    
     public function create()
     {
         return view('admin.addtestimonial');

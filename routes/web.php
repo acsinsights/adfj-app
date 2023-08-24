@@ -71,7 +71,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.testimonial');
         Route::get('/addtestimonial', [TestimonialController::class, 'create'])->name('admin.addtestimonial');
-       Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
+        Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
 
 
 
