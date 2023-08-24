@@ -80,9 +80,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/edittestimonial/{id}', [TestimonialController::class, 'edit']);
         // Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
         // Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
-        Route::delete('/deleteimage/{id}', [TestimonialController::class, 'deleteimage']);
-        Route::delete('/deletecover/{id}', [TestimonialController::class, 'deletecover']);
-        Route::put('/updatetestimonial/{id}', [TestimonialController::class, 'update']);
+        Route::delete('/delete-testimonial-image/{id}', [TestimonialController::class, 'deletecover']);
+        Route::any('/updatetestimonial/{id}', [TestimonialController::class, 'update']);
 
 
 
