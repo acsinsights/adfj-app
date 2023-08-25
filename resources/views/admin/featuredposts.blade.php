@@ -116,6 +116,8 @@
                                                                 method="POST">
                                                                 @csrf
                                                                 @method('put')
+                                                                <input type="hidden" name="featured_post"
+                                                                    value="{{ $request->featured }}">
                                                                 <select name="fstatus" id="status" class="form-control">
                                                                     <option value="1">Add</option>
                                                                     <option value="0">Remove</option>
@@ -151,4 +153,8 @@
         <!--[ Start:: page footer link copywrite ]-->
         @include('admin.includes.footer')
     </div>
+@endsection
+
+@section('customJS')
+    <script></script>
 @endsection

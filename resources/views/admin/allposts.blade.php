@@ -121,7 +121,7 @@
                                                 <th>Location</th>
                                                 <th>Edit</th>
                                                 <th>Delete</th>
-                                                <th class="text-center">Featured Post</th>
+                                                <th class="text-center">Featured Post </th>
                                             </tr>
                                         </thead>
 
@@ -178,13 +178,16 @@
                                                             <div class="toggle-button-cover">
                                                                 <div class="button-cover">
                                                                     <div class="button r" id="button-3">
-                                                                        <input type="hidden" value="{{ $post->id }}"
-                                                                            id="id">
-                                                                        <input type="checkbox" id="fstatus" value="0"
-                                                                            name="featured" class="checkbox"
-                                                                            {{ $post->featured_post == 1 ? '' : 'checked' }} />
-                                                                        <div class="knobs"></div>
-                                                                        <div class="layer"></div>
+                                                                        <form action="/admin/status/{{ $post->id }}"
+                                                                            method="post">
+                                                                            <input type="hidden"
+                                                                                value="{{ $post->id }}" id="id">
+                                                                            <label class="switch">
+                                                                                <input type="checkbox"
+                                                                                    {{ $post->featured_post == 1 ? 'checked' : '' }}>
+                                                                                <span class="slider round"></span>
+                                                                            </label>
+                                                                        </form>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -211,27 +214,5 @@
 @endsection
 
 @section('customJs')
-    <script>
-        $('#fstatus').click(function(event) {
-            event.preventDefault();
-            var element = $(this);
-            var id = $('#id').val();
-            $.ajax({
-                url: '/admin/status/'
-                id,
-                type: 'post',
 
-                data: element.serializeArray(),
-                dataType: 'json',
-                success: function(response) {
-                    if (response['status'] == true) {
-                        return 200;
-                    }
-                },
-                error: function(jqXHR, exception) {
-                    alert('Something went wrong');
-                }
-            })
-        });
-    </script>
 @endsection
