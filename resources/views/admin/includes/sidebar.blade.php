@@ -158,10 +158,6 @@
 
 
 
-
-
-
-
         {{-- <li class="side-item side-item-category">Messages</li>
          <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('form') }}">
