@@ -120,6 +120,36 @@
                 <span class="side-menu__label">Graphic</span>
             </a>
         </li>
+        <li class="side-item side-item-category">Testiminials</li>
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.testimonial') }}">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="48"
+                    viewBox="0 -960 960 960" width="48">
+                    <path
+                        d="M393-120q-63 0-106.5-43.5T243-270q0-63 43.5-106.5T393-420q28 0 50.5 8t39.5 22v-450h234v135H543v435q0 63-43.5 106.5T393-120Z" />
+                </svg>
+                <span class="side-menu__label">All Testimonials</span>
+            </a>
+        </li>
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.addtestimonial') }}">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24" style="transform: rotate(45deg) !important;">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z">
+                    </path>
+                </svg>
+                <span class="side-menu__label">Add Testimonial</span>
+            </a>
+        </li>
+
+
+
+
+
+
+
         {{-- <li class="side-item side-item-category">Messages</li>
          <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('form') }}">
