@@ -2,20 +2,11 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="{{ route('admin.dashboard') }}">
-            <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
-                alt="AdFj Studios">
+
             <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
-                alt="AdFj Studios">
-            <img src="{{ asset('user-assets/img/logo/favicon.ico') }}" class="header-brand-img mobile-logo"
-                alt="AdFj Studios">
-            <img src="{{ asset('user-assets/img/logo/favicon.ico') }}" class="header-brand-img darkmobile-logo"
-                alt="AdFj Studios">
-            <img style="margin: 0px 1px;" src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
-                alt="Maestloper Media">
-            <img style="margin: 0px 1px;" src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
-                alt="Maestloper Media">
-            <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img mobile-logo"
-                alt="Maestloper Media">
+                alt="AdFj Studios" style="margin: 0 0;">
+            <img style="margin: 0px 1px;" src="{{asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
+                alt="Maestloper Media" style="margin: 0 0;">
             <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img darkmobile-logo"
                 alt="Maestloper Media">
         </a>
