@@ -35,7 +35,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </form>
                     <div class="card-options">
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
