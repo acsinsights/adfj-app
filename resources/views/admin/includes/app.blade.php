@@ -10,7 +10,7 @@
     <title>AdFj Studios | @yield('title')</title>
 
     <!--Favicon -->
-    <link rel="icon" href="{{ asset('user-assets/images/logos/favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
 
     <!--Bootstrap css -->
     <link id="style" href="{{ asset('admin-assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
