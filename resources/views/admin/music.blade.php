@@ -54,7 +54,7 @@
                                     <th>Date</th>
                                     <th>Location</th>
                                     <th>Edit</th>
-                                    <th>Delete</th>
+                                    {{-- <th>Delete</th> --}}
                                 </tr>
                             </thead>
 
@@ -74,7 +74,7 @@
                                             <td><a href="/admin/edit/{{ $post->id }}"
                                                     class="btn btn-outline-primary">Edit</a>
                                             </td>
-                                            <td>
+                                            {{-- <td>
                                                 <form action="/admin/delete/{{ $post->id }}" method="post">
                                                     <button class="btn btn-outline-danger"
                                                         onclick="return confirm('Are you sure?');"
@@ -82,7 +82,7 @@
                                                     @csrf
                                                     @method('delete')
                                                 </form>
-                                            </td>
+                                            </td> --}}
                                         </tr>
                                     @endif
                                 @endforeach
