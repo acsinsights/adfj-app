@@ -27,7 +27,7 @@ class AllPosts extends Controller
     public function featured()
     {
         $posts = Post::latest()->take(10)->get();
-        return view('admin.featuredposts')->with('posts', $posts);
+        return view('admin.featuredpost')->with('posts', $posts);
     }
 
     public function music()
@@ -94,7 +94,7 @@ class AllPosts extends Controller
         $posts = Post::findOrFail($id);
         $pservices = Pservices::all();
         $stypes = Stypes::all();
-        return view('admin.edit')->with('posts', $posts)->with('pservices', $pservices)->with('stypes', $stypes);
+        return view('admin.editpost')->with('posts', $posts)->with('pservices', $pservices)->with('stypes', $stypes);
     }
 
     // ?Update function for posts
