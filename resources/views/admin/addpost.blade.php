@@ -8,7 +8,6 @@
         </div>
     </div>
     <!--End Page header-->
-
     <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12">
             <div class="card">
@@ -61,7 +60,6 @@
                                     </label>
                                 </div>
                             </div>
-
                             <label for="video" class="m-2">Featured Post</label>
                             <div class="checkbox">
                                 <label>
@@ -69,7 +67,6 @@
                                         value="1">
                                 </label>
                             </div>
-
                             <button type="submit" class="btn btn-success mt-3">Submit</button>
                         </form>
                     </div>
