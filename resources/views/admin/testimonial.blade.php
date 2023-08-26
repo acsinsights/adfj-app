@@ -40,7 +40,7 @@
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
                     </div>
                     <div class="card-options">
-                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+                        <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
                     </div>
                 </div>
                 <div class="card-body p-0">

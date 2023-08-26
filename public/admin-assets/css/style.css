@@ -52491,7 +52491,7 @@ input:checked~label {
 
 
 .star-rating-bx {
-    background-color: #f38282;
+    /* background-color: #f38282; */
     /* box-shadow: 0px 4px 40px 0px rgb(0 0 0 / 5%); */
     border-radius: 10px;
     /* padding: 40px; */
