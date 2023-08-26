@@ -57,7 +57,7 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-6">
                             <div class="">
-                                <span class="fs-14">Total Services</span>
+                                <span class="fs-14">Total Posts</span>
                                 <h2 class="mb-2 mt-1 number-font carn2 font-weight-bold"></h2>
                                 <span class="">
                                     <i class="fa fa-circle-arrow-up"></i>

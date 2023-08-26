@@ -26,7 +26,7 @@ $(function(e){
 		  endingShape:'rounded'
 		},
 	  },
-	  
+
 	  dataLabels: {
 		enabled: false
 	  },
@@ -63,17 +63,17 @@ $(function(e){
 		opacity: 1
 	  },
 	  legend: {
-		position: "bottom"	
+		position: "bottom"
 		},
 	  };
 
 	  var chart = new ApexCharts(document.querySelector("#statistics"), options);
 	  chart.render();
-	
-	  
+
+
 	  /* Apexcharts (#bar) closed */
-	
-	  
+
+
 
     var spark1 = {
 		chart: {
@@ -105,7 +105,7 @@ $(function(e){
 		},
 		series: [{
 
-		  name: 'Total Sales',
+		  name: 'Total Posts',
 		  data: [0, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46]
 		}],
 		yaxis: {
@@ -116,18 +116,18 @@ $(function(e){
 			axisBorder: {
 				show: false
 			},
-		},   
+		},
 		yaxis: {
 			axisBorder: {
 				show: false
 			},
-		},  
+		},
 		colors: ['rgba(255,255,255,0.3)'],
-  
+
 	  }
 	  var spark1 = new ApexCharts(document.querySelector("#spark1"), spark1);
 	  spark1.render();
- 
+
 	  var spark2 = {
 		chart: {
 		  type: 'area',
@@ -163,7 +163,7 @@ $(function(e){
 		  min: 0
 		},
 		colors: ['rgba(255,255,255,0.4)'],
-  
+
 	  }
 	  var spark2 = new ApexCharts(document.querySelector("#spark2"), spark2);
 	  spark2.render();
@@ -203,11 +203,11 @@ $(function(e){
 		  min: 0
 		},
 		colors: ['rgba(255,255,255,0.3)'],
-  
+
 	  }
 	  var spark3 = new ApexCharts(document.querySelector("#spark3"), spark3);
 	  spark3.render();
-  
+
 
 	  var spark4 = {
 		  chart: {
@@ -220,7 +220,7 @@ $(function(e){
 			dropShadow: {
 				enabled: false,
 				blur: 3,
-				opacity: 0.2,	
+				opacity: 0.2,
 			}
 			},
 			stroke: {
@@ -244,12 +244,12 @@ $(function(e){
 			min: 0
 		  },
 		  colors: ['rgba(255,255,255,0.3)'],
-	
+
 		}
 		var spark4 = new ApexCharts(document.querySelector("#spark4"), spark4);
 		spark4.render();
 
-	
+
 
 	$('#datatable').DataTable({
 		language: {
@@ -259,10 +259,10 @@ $(function(e){
 		}
 	});
 
-	
+
 	const ps4 = new PerfectScrollbar('.recent-activity', {
 		useBothWheelAxes:true,
 		suppressScrollX:true,
 	  });
-	
+
  });
