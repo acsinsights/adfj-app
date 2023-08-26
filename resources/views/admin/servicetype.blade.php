@@ -1,4 +1,3 @@
-
 @extends('admin.includes.app')
 @section('title', 'Add Service Type')
 @section('content')
@@ -35,8 +34,8 @@
                         <input type="text" name="type" id="name" class="form-control m-2"
                             placeholder="Enter Type Name" required>
 
-                        <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                            placeholder="Slug" readonly>
+                        <input type="text" name="slug" id="slug" class="form-control m-2 slug" placeholder="Slug"
+                            readonly>
 
 
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
@@ -110,17 +109,6 @@
 
 @section('customJs')
     <script>
-        $(function() {
-            $(".checkme").click(function() {
-                var video = $(this).is(":checked");
-                if (video == true) {
-                    $(this).parents(".video-card").find(".video-box").show();
-                } else {
-                    $(this).parents(".video-card").find(".video-box").hide();
-                }
-            });
-        });
-
         $('#name').change(function() {
             element = $(this);
             $.ajax({

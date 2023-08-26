@@ -1,3 +1,4 @@
+
 $(document).on("click", "#fsubmit", function (e) {
     e.preventDefault();
 
@@ -39,6 +40,7 @@ $(document).on("click", "#fsubmit", function (e) {
         },
     });
 });
+
 
 (function ($) {
     "use strict";

@@ -110,8 +110,8 @@
                                                             </td>
                                                         @endif --}}
                                             <td>
-                                                <div class="toggle-button-cover">
-                                                    <div class="button-cover">
+                                                <div class="toggle-button-cover" id="margin-zero">
+                                                    <div class="button-cover" id="button-cover">
                                                         <div class="button r" id="button-3">
                                                             <form action="/admin/status/{{ $post->id }}"
                                                                 method="post">
