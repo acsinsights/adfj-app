@@ -2,9 +2,9 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="{{ route('admin.dashboard') }}">
-            <img src="{{ asset('user-assets/images/logos/logomm.png') }}" class="header-brand-img desktop-lgo"
+            <img style="margin: 0px 1px;" src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
                 alt="Maestloper Media">
-            <img src="{{ asset('user-assets/images/logos/logo-1.png') }}" class="header-brand-img dark-logo"
+            <img style="margin: 0px 1px;" src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
                 alt="Maestloper Media">
             <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img mobile-logo"
                 alt="Maestloper Media">
