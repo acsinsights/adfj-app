@@ -5,17 +5,40 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class AdminFeaturedPostController extends Controller
 {
     public function update(Request $request, $id)
     {
-        $stypes = Post::findOrFail($id);
-        $stypes->update([
-            "featured_post" => $request->featured_post == 1 ? "$request->featured_post" : '0',
-            "fstatus" => $request->fstatus,
+        $validator = Validator::make($request->all(), [
+            'featured_post' => 'required',
+            'fstatus' => 'required',
         ]);
 
-        return redirect('/admin/featured-posts')->with('success', 'Status updated successfully for ' . $stypes->title);
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 400,
+                'errors' => $validator->messages(),
+            ]);
+        } else {
+            $posts = Post::find($id);
+
+            if ($posts) {
+                $posts->featured_post = $request->input('featured_post');
+                $posts->fstatus = $request->input('fstatus');
+                $posts->update();
+
+                return response()->json([
+                    'status' => 200,
+                    'errors' => 'Updated Successfully' . $posts->title,
+                ]);
+            } else {
+                return response()->json([
+                    'status' => 404,
+                    'errors' => 'Not Found!',
+                ]);
+            }
+        }
     }
 }

@@ -52722,3 +52722,17 @@ input:checked+.slider:before {
     margin: 20px;
     border-radius: 4px;
 }
+
+#margin-zero2 {
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+    width: 118px !important;
+    height: 41px !important;
+}
+
+#button-cover2 {
+    height: 0px;
+    margin: 20px;
+    border-radius: 4px;
+}

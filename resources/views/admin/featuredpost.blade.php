@@ -8,6 +8,7 @@
         </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')
+            <p class="" id="alert"></p>
         </div>
     </div>
     <!--End Page header-->
@@ -56,17 +57,20 @@
                                                 @else
                                                     <p class="text-danger">Removed</p>
                                                 @endif
-                                                <form action="/admin/fstatus/{{ $post->id }}" method="POST">
+                                                <form action="" method="POST">
                                                     @csrf
                                                     @method('put')
-                                                    <input type="hidden" name="featured_post"
+
+                                                    <input type="hidden" name="postid" id="postid"
+                                                        value="{{ $post->id }}">
+                                                    <input type="hidden" name="featured_post" id="featured_post"
                                                         value="{{ $post->featured_post }}">
-                                                    <select name="fstatus" id="status" class="form-control">
+                                                    <select name="fstatus" id="fstatus" class="form-control">
                                                         <option value="1">Add</option>
                                                         <option value="0">Remove</option>
                                                     </select>
-                                                    <button class="btn btn-sm btn-outline-secondary mt-2"
-                                                        type="submit">Submit</button>
+                                                    <button class="btn btn-sm btn-outline-secondary mt-2" type="submit"
+                                                        id="fsubmit">Submit</button>
                                                 </form>
                                             </td>
                                         </tr>

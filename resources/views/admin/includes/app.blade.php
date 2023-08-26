@@ -12,6 +12,7 @@
     <!--Favicon -->
     <link rel="icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--Bootstrap css -->
     <link id="style" href="{{ asset('admin-assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
@@ -91,6 +92,13 @@
     <!-- Back to top -->
     <a href="#top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+    <script type="text/javascript">
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
 
     @yield('customJs')
     <!-- Jquery js-->

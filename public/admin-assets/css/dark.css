@@ -2977,7 +2977,7 @@
 }
 
 .dark-mode .btn-close {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .dark-mode .btn-close:hover,

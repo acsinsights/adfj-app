@@ -9,7 +9,7 @@
                     <span><i class="mdi mdi-alert"></i></span>
                 </div>
                 <div class="media-body">
-                    <h5 class="mt-1 mb-2">Error!</h5>
+                    {{-- <h5 class="mt-1 mb-2">Error!</h5> --}}
                     <p class="mb-0">{{ Session::get('error') }}</p>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <span><i class="mdi mdi-check-circle-outline"></i></span>
                 </div>
                 <div class="media-body">
-                    <h5 class="mt-1 mb-2">Success!</h5>
+                    {{-- <h5 class="mt-1 mb-2"></h5> --}}
                     <p class="mb-0">{{ Session::get('success') }}</p>
                 </div>
             </div>
