@@ -1,5 +1,5 @@
 @extends('admin.includes.app')
-@section('title', 'Add Post')
+@section('title', 'Add Testimonial')
 @section('content')
     <!--Page header-->
     <div class="page-header">

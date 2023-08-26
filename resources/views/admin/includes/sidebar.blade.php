@@ -61,6 +61,18 @@
                 <span class="side-menu__label">Add Post</span>
             </a>
         </li>
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.type') }}">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24" style="transform: rotate(45deg) !important;">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z">
+                    </path>
+                </svg>
+                <span class="side-menu__label">Add Services Type</span>
+            </a>
+        </li>
         <li class="side-item side-item-category">Portfolio</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.music') }}">
