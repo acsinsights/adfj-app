@@ -303,7 +303,6 @@
                     />
                   </a>
                 </div>
-
                 <div class="footer__widget-content">
                   <div class="footer__info">
                     <p>
@@ -311,7 +310,6 @@
                       Studios is your destination for excellence in music,
                       audio, and video visuals.
                     </p>
-
                     <a
                       href="{{url('newsletter')}}"
                       class="tp-link-btn-2 tp-link-btn-white"
@@ -325,12 +323,10 @@
                 </div>
               </div>
             </div>
-
     <div class="twobox-footer">
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-2">
                 <h3 class="footer__widget-title-6">Quick Links</h3>
-
                 <div class="footer__widget-content">
                   <ul>
                     <li><a href="{{url('/')}}">Home</a></li>
@@ -350,25 +346,20 @@
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__widget-6 mb-50 footer-col-6-2">
                   <h3 class="footer__widget-title-6">Useful Links</h3>
-
                   <div class="footer__widget-content">
                     <ul>
                       <li><a href="javascript:void(0)">Career
-
                     </a></li>
                       <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
                       <li><a href="{{url('terms')}}">Terms & Conditions</a></li>
-
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-
             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <div class="footer__widget-6 mb-50 footer-col-6-4">
                 <h3 class="footer__widget-title-6">Contact Us</h3>
-
                 <div class="footer__widget-content">
                   <div class="footer__info">
                     <div class="footer__info-item-6 d-flex align-items-start">
