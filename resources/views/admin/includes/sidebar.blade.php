@@ -2,7 +2,6 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="{{ route('admin.dashboard') }}">
-
             <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
                 alt="AdFj Studios" style="margin: 0 0;">
             <img style="margin: 0px 1px;" src="{{asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
@@ -62,6 +61,7 @@
                 <span class="side-menu__label">Add Post</span>
             </a>
         </li>
+        
         {{-- <li class="side-item side-item-category">Services</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addservice') }}">

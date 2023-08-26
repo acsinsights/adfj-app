@@ -1,4 +1,4 @@
-<aside class="sidebar">
+ <aside class="sidebar">
     <div class="container-fluid">
 
         <!--[ sidebar:: menu list ]-->
@@ -15,7 +15,6 @@
         <div class="flex-grow-1">
             <ul class="menu-list mt-3 rounded-4">
                 <!--[ Start:: brand logo and name ]-->
-
                 <!--[ Start:: dashboard ]-->
                 <li class="pt-10">
                     <a class="{{ URL::current() == route('admin.dashboard') ? 'isactive' : '' }} hyper"
