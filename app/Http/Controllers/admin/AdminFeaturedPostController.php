@@ -12,7 +12,7 @@ class AdminFeaturedPostController extends Controller
     {
         $stypes = Post::findOrFail($id);
         $stypes->update([
-            "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
+            "featured_post" => $request->featured_post == 1 ? "$request->featured_post" : '0',
             "fstatus" => $request->fstatus,
         ]);
 

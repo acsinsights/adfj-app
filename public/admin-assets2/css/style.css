@@ -31257,6 +31257,7 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role="row"]>th:first-child::
     background-size: cover;
     opacity: 1;
 } */
+
 .star-widget input {
     display: none;
 }
@@ -31354,6 +31355,7 @@ input:checked~label {
  .btn button:hover {
     background: #1a5e49;
 } */
+
 .star-rating-bx {
     background-color: #f38282;
     /* box-shadow: 0px 4px 40px 0px rgb(0 0 0 / 5%); */
@@ -31387,7 +31389,7 @@ input:checked~label {
 
 .alert-message {
     position: absolute;
-    top: -5%;
+    top: 0%;
     right: 0;
     z-index: 100;
 }

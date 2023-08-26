@@ -6,11 +6,15 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Posts</h4>
         </div>
+        <div class="col-md-5 alert-message">
+            @include('admin.message')
+        </div>
     </div>
     <!--End Page header-->
 
     <div class="row">
         <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
+
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">

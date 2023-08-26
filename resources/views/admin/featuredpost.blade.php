@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Featured Posts</h4>
         </div>
+        <div class="col-md-5 alert-message">
+            @include('admin.message')
+        </div>
     </div>
     <!--End Page header-->
 
@@ -57,7 +60,7 @@
                                                     @csrf
                                                     @method('put')
                                                     <input type="hidden" name="featured_post"
-                                                        value="{{ $post->featured }}">
+                                                        value="{{ $post->featured_post }}">
                                                     <select name="fstatus" id="status" class="form-control">
                                                         <option value="1">Add</option>
                                                         <option value="0">Remove</option>
