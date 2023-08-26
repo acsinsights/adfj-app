@@ -52426,7 +52426,7 @@ Dimmer
 
 input:not(:checked)~label:hover,
 input:not(:checked)~label:hover~label {
-    color: #fd4;
+    color: black;
 }
 
 input:checked~label {
