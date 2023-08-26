@@ -33,7 +33,6 @@
                                 </path>
                             </svg>
                         </button>
-
                     </div>
                 </form>
             </div><!-- SEARCH -->

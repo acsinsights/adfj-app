@@ -12,7 +12,6 @@
                 alt="Maestloper Media">
         </a>
     </div>
-
     <ul class="side-menu app-sidebar3">
         <li class="side-item side-item-category">Main</li>
         <li class="slide">
@@ -64,7 +63,6 @@
                 <span class="side-menu__label">Add Post</span>
             </a>
         </li>
-
         {{-- <li class="side-item side-item-category">Services</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('addservice') }}">
