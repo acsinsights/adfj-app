@@ -102,8 +102,8 @@
                                 <a href="javascript:void(0);" class="nav-link pe-0 leading-none"
                                     data-bs-toggle="dropdown">
                                     <span class="header-avatar1">
-                                        <img src="{{ asset('admin-assets/images/users/2.jpg') }}" alt="img"
-                                            class="avatar avatar-md brround">
+                                        <img src="/profile/{{ Auth::guard('admin')->user()->profile_img }}"
+                                            alt="img" class="avatar avatar-md brround">
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow animated">
