@@ -52709,3 +52709,16 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+#margin-zero {
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+    width: 118px !important;
+    height: 65px !important;
+}
+
+#button-cover {
+    height: 21px;
+    margin: 20px;
+    border-radius: 4px;
+}

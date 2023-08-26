@@ -53,19 +53,27 @@
 
                             <div class="video-card">
                                 <label for="video" class="m-2">Play Button</label>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="playbtn" id="playbtn" class="checkme m-2"
-                                            value="1">
-                                    </label>
+                                <div class="toggle-button-cover" id="margin-zero">
+                                    <div class="button-cover" id="button-cover">
+                                        <div class="button r" id="button-3">
+                                            <label class="switch">
+                                                <input type="checkbox" name="playbtn" id="playbtn" value="1">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <label for="video" class="m-2">Featured Post</label>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="featured" id="featured" class="checkme m-2"
-                                        value="1">
-                                </label>
+                            <div class="toggle-button-cover" id="margin-zero">
+                                <div class="button-cover" id="button-cover">
+                                    <div class="button r" id="button-3">
+                                        <label class="switch">
+                                            <input type="checkbox" name="featured" id="featured" value="1">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-success mt-3">Submit</button>
                         </form>

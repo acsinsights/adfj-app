@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="{{ asset('admin-assets/bundles/bootstrapdatepicker.min.css') }}" />
     <!--[ project css file  ]-->
     <link rel="stylesheet" href="{{ asset('admin-assets/css/style.css') }}" />
-    {{-- Google Material Icons Cdn --}}
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!--[ Jquery Core Js ]-->
     <script src="{{ asset('admin-assets/js/plugins.js') }}"></script>

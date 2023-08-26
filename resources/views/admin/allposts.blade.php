@@ -17,7 +17,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    {{-- <h3 class="card-title">
+                     {{-- <h3 class="card-title">
                         All Posts
                     </h3> --}}
                     <form action="" method="get" class="ms-5">
