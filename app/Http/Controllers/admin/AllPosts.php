@@ -5,10 +5,8 @@ namespace App\Http\Controllers\admin;
 use App\Http\Controllers\Controller;
 use App\Models\Pservices;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Models\Post;
 use App\Models\Stypes;
-use App\Models\Image;
 use Illuminate\Support\Facades\File;
 
 class AllPosts extends Controller
@@ -24,8 +22,12 @@ class AllPosts extends Controller
         return view('admin.allposts', compact('posts'));
     }
 
-    public function featured()
+    public function featured(Request $request)
     {
+        $posts = Post::latest();
+        if (!empty($request->get('keyword'))) {
+            $posts = $posts->where('title', 'like', '%' . $request->get('keyword') . '%');
+        }
         $posts = Post::latest()->take(10)->get();
         return view('admin.featuredpost')->with('posts', $posts);
     }

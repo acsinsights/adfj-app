@@ -17,7 +17,7 @@
 
             <div class="card">
                 <div class="card-header">
-                     {{-- <h3 class="card-title">
+                    {{-- <h3 class="card-title">
                         All Posts
                     </h3> --}}
                     <form action="" method="get" class="ms-5">
@@ -37,9 +37,7 @@
                         </div>
                     </form>
                     <div class="card-options">
-                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
-                    </div>
-                    <div class="card-options">
+                        <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp;
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
                     </div>
                 </div>
