@@ -4,7 +4,7 @@
         <a class="header-brand" href="{{ route('admin.dashboard') }}">
             <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
                 alt="AdFj Studios" style="margin: 0 0;">
-            <img src="{{asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
+            <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
                 alt="AdFj Studios" style="margin-right: 70px;">
             <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img darkmobile-logo"
                 alt="AdFj Studios">
@@ -135,10 +135,14 @@
         <li class="side-item side-item-category">Testiminials</li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.testimonial') }}">
-                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="48"
-                    viewBox="0 -960 960 960" width="48">
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M20 4H4v13.17L5.17 16H20V4zm-6 10H6v-2h8v2zm4-3H6V9h12v2zm0-3H6V6h12v2z" opacity=".3">
+                    </path>
                     <path
-                        d="M393-120q-63 0-106.5-43.5T243-270q0-63 43.5-106.5T393-420q28 0 50.5 8t39.5 22v-450h234v135H543v435q0 63-43.5 106.5T393-120Z" />
+                        d="M20 18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14zm-16-.83V4h16v12H5.17L4 17.17zM6 12h8v2H6zm0-3h12v2H6zm0-3h12v2H6z">
+                    </path>
                 </svg>
                 <span class="side-menu__label">All Testimonials</span>
             </a>
