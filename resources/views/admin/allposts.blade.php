@@ -87,26 +87,24 @@
                                                 </form>
                                             </td>
                                             {{-- @if ($post->featured_post == 1)
-                                                            <td class="text-center vertical-center">
-                                                                @if ($post->fstatus == 1)
-                                                                    <p class="text-success">Added</p>
-                                                                @else
-                                                                    <p class="text-danger">Removed</p>
-                                                                @endif
-                                                                <form action="/admin/fstatus/{{ $post->id }}"
-                                                                    method="POST">
-                                                                    @csrf
-                                                                    @method('put')
-                                                                    <select name="fstatus" id="status"
-                                                                        class="form-control">
-                                                                        <option value="1">Add</option>
-                                                                        <option value="0">Remove</option>
-                                                                    </select>
-                                                                    <button class="btn btn-sm btn-outline-secondary mt-2"
-                                                                        type="submit">Submit</button>
-                                                                </form>
-                                                            </td>
-                                                        @endif --}}
+                                                <td class="text-center vertical-center">
+                                                    @if ($post->fstatus == 1)
+                                                        <p class="text-success">Added</p>
+                                                    @else
+                                                        <p class="text-danger">Removed</p>
+                                                    @endif
+                                                    <form action="/admin/fstatus/{{ $post->id }}" method="POST">
+                                                        @csrf
+                                                        @method('put')
+                                                        <select name="fstatus" id="status" class="form-control">
+                                                            <option value="1">Add</option>
+                                                            <option value="0">Remove</option>
+                                                        </select>
+                                                        <button class="btn btn-sm btn-outline-secondary mt-2"
+                                                            type="submit">Submit</button>
+                                                    </form>
+                                                </td>
+                                            @endif --}}
                                             <td>
                                                 <div class="toggle-button-cover" id="margin-zero">
                                                     <div class="button-cover" id="button-cover">

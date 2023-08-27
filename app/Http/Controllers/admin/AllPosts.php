@@ -22,12 +22,8 @@ class AllPosts extends Controller
         return view('admin.allposts', compact('posts'));
     }
 
-    public function featured(Request $request)
+    public function featured()
     {
-        $posts = Post::latest();
-        if (!empty($request->get('keyword'))) {
-            $posts = $posts->where('title', 'like', '%' . $request->get('keyword') . '%');
-        }
         $posts = Post::latest()->take(10)->get();
         return view('admin.featuredpost')->with('posts', $posts);
     }

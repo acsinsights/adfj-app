@@ -15,17 +15,17 @@
                     <h2>Edit Service Type</h2>
                 </div>
                 <div class="card-body">
-                    <form action="/admin/update/{{ $stypes->id }}" name="categoryForm" id="categoryForm"
-                        method="get" enctype="multipart/form-data">
+                    <form action="/admin/update/{{ $stypes->id }}" name="categoryForm" id="categoryForm" method="get"
+                        enctype="multipart/form-data">
                         @csrf
+                        <input type="text" name="pservices" id="pservices" class="form-control m-2" placeholder="Service"
+                            value="{{ $stypes->pservices->service_name }}" readonly>
+
                         <input type="text" name="type" id="name" class="form-control m-2"
                             placeholder="Enter Type Name" value="{{ $stypes->stype_name }}" required>
 
-                        <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                            placeholder="Slug" value="{{ $stypes->slug }}" readonly>
-
-                        <input type="text" name="slug" id="slug" class="form-control m-2 slug"
-                            placeholder="Slug" value="{{ $stypes->pservices->service_name }}" readonly>
+                        <input type="text" name="slug" id="slug" class="form-control m-2 slug" placeholder="Slug"
+                            value="{{ $stypes->slug }}" readonly>
 
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>
@@ -36,26 +36,13 @@
 
 @endsection
 
-
-
 @section('customJs')
     <script>
-        $(function() {
-            $(".checkme").click(function() {
-                var video = $(this).is(":checked");
-                if (video == true) {
-                    $(this).parents(".video-card").find(".video-box").show();
-                } else {
-                    $(this).parents(".video-card").find(".video-box").hide();
-                }
-            });
-        });
-
         $('#name').change(function() {
             element = $(this);
             $.ajax({
                 url: '{{ route('getSlug') }}',
-                type: 'post',
+                type: 'get',
                 data: {
                     title: element.val()
                 },

@@ -13,7 +13,7 @@
                             <div class="card-body">
                                 <div class="d-flex align-items-md-start align-items-center flex-column flex-md-row">
                                     <img src="/profile/{{ Auth::guard('admin')->user()->profile_img }}" alt="profile_img"
-                                        class="rounded-4" height="160px" width="160px"> 
+                                        class="rounded-4" height="160px" width="160px">
                                     <div class="media-body ms-md-5 m-0 mt-4 mt-md-0 text-md-start text-center">
                                         <h4 class="mb-1">{{ Auth::guard('admin')->user()->name }}</h4>
                                         <p>{{ Auth::guard('admin')->user()->email }}</p>
@@ -25,15 +25,15 @@
                                         </div> --}}
                                         <div
                                             class="d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-md-start">
-                                            <div class="bg-body py-2 px-3 me-1 mt-1">
+                                            <div class="py-2 px-3 me-1 mt-1">
                                                 <small class="text-muted">City</small>
                                                 <div class="fs-5">Mumbai</div>
                                             </div>
-                                            <div class="bg-body py-2 px-3 me-1 mt-1">
+                                            <div class="py-2 px-3 me-1 mt-1">
                                                 <small class="text-muted">Awards</small>
                                                 <div class="fs-5">13</div>
                                             </div>
-                                            <div class="bg-body py-2 px-3 me-1 mt-1">
+                                            <div class="py-2 px-3 me-1 mt-1">
                                                 <small class="text-muted">Experience</small>
                                                 <div class="fs-5">5+</div>
                                             </div>

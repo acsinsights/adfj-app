@@ -1,10 +1,10 @@
 @extends('admin.includes.app')
-@section('title', 'All Posts')
+@section('title', 'Graphic Portfolio')
 @section('content')
     <!--Page header-->
     <div class="page-header">
         <div class="page-leftheader">
-            <h4 class="page-title mb-0 text-primary">All Posts</h4>
+            <h4 class="page-title mb-0 text-primary">Graphic Portfolio</h4>
         </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')

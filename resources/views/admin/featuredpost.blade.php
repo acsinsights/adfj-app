@@ -40,42 +40,49 @@
                             </thead>
 
                             <tbody>
-                                @foreach ($posts as $post)
-                                    @if ($post->featured_post == 1)
-                                        <tr style="vertical-align: middle;">
-                                            <td><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                    style="max-height:100px; max-width:100px" alt="" srcset="">
-                                            </td>
-                                            <td>{{ $post->title }}</td>
-                                            <td>{{ $post->pservices->service_name }}</td>
-                                            <td>{{ $post->stypes->slug }}</td>
-                                            <td>{{ $post->date }}</td>
-                                            <td>{{ $post->location }}</td>
-                                            <td class="text-center vertical-center">
-                                                @if ($post->fstatus == 1)
-                                                    <p class="text-success">Added</p>
-                                                @else
-                                                    <p class="text-danger">Removed</p>
-                                                @endif
-                                                <form action="" method="POST">
-                                                    @csrf
-                                                    @method('put')
+                                @if ($posts->isNotEmpty())
+                                    @foreach ($posts as $post)
+                                        @if ($post->featured_post == 1)
+                                            <tr style="vertical-align: middle;">
+                                                <td><img src="/posts/{{ $post->media }}" class="img-responsive"
+                                                        style="max-height:100px; max-width:100px" alt=""
+                                                        srcset="">
+                                                </td>
+                                                <td>{{ $post->title }}</td>
+                                                <td>{{ $post->pservices->service_name }}</td>
+                                                <td>{{ $post->stypes->slug }}</td>
+                                                <td>{{ $post->date }}</td>
+                                                <td>{{ $post->location }}</td>
+                                                <td class="text-center vertical-center">
+                                                    @if ($post->fstatus == 1)
+                                                        <p class="text-success">Added</p>
+                                                    @else
+                                                        <p class="text-danger">Removed</p>
+                                                    @endif
+                                                    <form action="" method="POST">
+                                                        @csrf
+                                                        @method('put')
 
-                                                    <input type="hidden" name="postid" id="postid"
-                                                        value="{{ $post->id }}">
-                                                    <input type="hidden" name="featured_post" id="featured_post"
-                                                        value="{{ $post->featured_post }}">
-                                                    <select name="fstatus" id="fstatus" class="form-control">
-                                                        <option value="1">Add</option>
-                                                        <option value="0">Remove</option>
-                                                    </select>
-                                                    <button class="btn btn-sm btn-outline-secondary mt-2" type="submit"
-                                                        id="fsubmit">Submit</button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @endif
-                                @endforeach
+                                                        <input type="hidden" name="postid" id="postid"
+                                                            value="{{ $post->id }}">
+                                                        <input type="hidden" name="featured_post" id="featured_post"
+                                                            value="{{ $post->featured_post }}">
+                                                        <select name="fstatus" id="fstatus" class="form-control">
+                                                            <option value="1">Add</option>
+                                                            <option value="0">Remove</option>
+                                                        </select>
+                                                        <button class="btn btn-sm btn-outline-secondary mt-2" type="submit"
+                                                            id="fsubmit">Submit</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @endif
+                                    @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="7" class="text-center">No records found!</td>
+                                    </tr>
+                                @endif
                             </tbody>
                         </table>
                     </div>
