@@ -34,10 +34,6 @@
                         <input type="text" name="type" id="name" class="form-control m-2"
                             placeholder="Enter Type Name" required>
 
-                        <input type="text" name="slug" id="slug" class="form-control m-2 slug" placeholder="Slug"
-                            readonly>
-
-
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>
                 </div>
