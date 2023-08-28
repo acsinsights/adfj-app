@@ -17,7 +17,7 @@
 
             <div class="card">
                 <div class="card-header">
-                     {{-- <h3 class="card-title">
+                    {{-- <h3 class="card-title">
                         All Posts
                     </h3> --}}
                     <form action="" method="get" class="ms-5">
@@ -66,10 +66,16 @@
                                         <th scope="row">
                                             {{ $tsti->id }}</th>
                                         <td><img src="/testiimages/{{ $tsti->custimg }}" class="img-responsive"
-                                                style="max-height:100px; max-width:100px" alt=""
-                                                srcset=""></td>
+                                                style="max-height:80px; max-width:50px" alt="" srcset=""></td>
                                         <td>{{ $tsti->custname }}</td>
-                                        <td>{{ $tsti->custreview }}</td>
+                                        <td>
+                                            <textarea cols="auto" rows="3" style="padding: 10px; text-align:left" readonly class="">
+                                                {{ $tsti->custreview }}
+                                            </textarea>
+                                            {{-- <textarea class="form-control" cols="auto" rows="3" style="padding: 10px; text-align:left !important" readonly>
+                                                 {{ $tsti->custreview }}
+                                            </textarea> --}}
+                                        </td>
                                         <td>
                                             <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
                                                 <div class="testimonial__rating testimonial__rating-6">
@@ -133,8 +139,7 @@
                                                 class="btn btn-outline-primary">Edit</a>
                                         </td>
                                         <td>
-                                            <form action="/admin/deletetestimonial/{{ $tsti->id }}"
-                                                method="post">
+                                            <form action="/admin/deletetestimonial/{{ $tsti->id }}" method="post">
                                                 <button class="btn btn-outline-danger"
                                                     onclick="return confirm('Are you sure?');"
                                                     type="submit">Delete</button>
