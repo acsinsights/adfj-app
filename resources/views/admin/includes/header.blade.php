@@ -3,23 +3,25 @@
     <div class="container-fluid">
         <div class="d-flex">
             <a class="header-brand" href="{{ route('admin.dashboard') }}">
-                <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
+
+                <h1>ADMIN</h1>
+                {{-- <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
                     alt="Maestloper Media">
                 <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img dark-logo"
-                    alt="Maestloper Media">
+                    alt="Maestloper Media"> --}}
                 <img src="{{ asset('user-assets/img/logo/favicon.png') }}" class="header-brand-img mobile-logo"
                     alt="Maestloper Media">
                 <img src="{{ asset('user-assets/img/logo/favicon.png') }}" class="header-brand-img darkmobile-logo"
                     alt="Maestloper Media">
             </a>
-            {{-- <div class="app-sidebar__toggle d-flex" data-bs-toggle="sidebar">
+            <div class="app-sidebar__toggle d-flex" data-bs-toggle="sidebar">
                 <a class="open-toggle" href="javascript:void(0);">
                     <svg xmlns="http://www.w3.org/2000/svg" class="feather feather-align-left header-icon"
                         width="24" height="24" viewbox="0 0 24 24">
                         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
                     </svg>
                 </a>
-            </div> --}}
+            </div>
             <div class="mt-1 d-md-block d-none">
                 <form class="form-inline">
                     <div class="search-element">

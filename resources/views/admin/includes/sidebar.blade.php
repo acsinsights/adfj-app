@@ -2,10 +2,14 @@
 <aside class="app-sidebar">
     <div class="app-sidebar__logo">
         <a class="header-brand" href="{{ route('admin.dashboard') }}">
-            <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
+
+            <h2 style="font-weight: bolder;margin-top: 20px;
+     
+            ">Dashboard</h2>
+            {{-- <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
                 alt="AdFj Studios" style="margin: 0 0;">
             <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
-                alt="AdFj Studios" style="margin-right: 70px;">
+                alt="AdFj Studios" style="margin-right: 70px;"> --}}
             <img src="{{ asset('user-assets/images/logos/favicon.png') }}" class="header-brand-img darkmobile-logo"
                 alt="AdFj Studios">
         </a>
