@@ -119,7 +119,7 @@ class AllPosts extends Controller
             "status" => $request->status == 1 ? "$request->status" : '0',
             "stypeid" => $request->type,
             "hypelinks" => $request->hypelinks,
-            "featured_post" => $request->featured == 0 ? "$request->featured" : '1',
+            "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 
         return redirect("/admin/allposts")->with('success', 'Post Updated Successfully');
@@ -149,7 +149,9 @@ class AllPosts extends Controller
     {
         $stypes = new Stypes([
             "stype_name" => $request->type,
-            "slug" => $request->slug,
+            "slug" =>  str_replace(' ', '-', strtolower(
+                $request->type
+            )),
             "pservices_id" => $request->service,
         ]);
         $stypes->save();

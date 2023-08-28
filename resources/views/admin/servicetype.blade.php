@@ -106,7 +106,7 @@
 
 @endsection
 
-
+{{--
 @section('customJs')
     <script>
         $('#name').change(function() {
@@ -126,4 +126,4 @@
             })
         });
     </script>
-@endsection
+@endsection --}}

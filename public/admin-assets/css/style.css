@@ -52736,3 +52736,19 @@ input:checked+.slider:before {
     margin: 20px;
     border-radius: 4px;
 }
+
+.testi-text {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d4e50;
+    border-radius: 20px;
+}
