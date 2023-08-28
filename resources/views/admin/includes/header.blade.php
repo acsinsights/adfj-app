@@ -125,7 +125,7 @@
                                         </svg>
                                         <div class="fs-13">Profile</div>
                                     </a>
-                                    <a class="dropdown-item d-flex" href="">
+                                    <a class="dropdown-item d-flex" href="{{ route('admin.logout') }}">
                                         <svg class="header-icon me-2" xmlns="http://www.w3.org/2000/svg"
                                             enable-background="new 0 0 24 24" height="24" viewbox="0 0 24 24"
                                             width="24">
