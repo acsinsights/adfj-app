@@ -1,4 +1,3 @@
-
 $(document).on("click", "#fsubmit", function (e) {
     e.preventDefault();
 
@@ -40,7 +39,6 @@ $(document).on("click", "#fsubmit", function (e) {
         },
     });
 });
-
 
 (function ($) {
     "use strict";
@@ -482,7 +480,8 @@ $(document).on("click", "#fsubmit", function (e) {
     /*Light Layout End*/
 
     /*Dark Layout Start*/
-    $(document).on("click", "#myonoffswitch2", function () {
+    $(document).on("click", "#myonoffswitch2", function (e) {
+        e.preventDefault();
         if (this.checked) {
             $("body").addClass("dark-mode");
             $("body").removeClass("light-mode");

@@ -41,4 +41,35 @@ class AdminFeaturedPostController extends Controller
             }
         }
     }
+
+    protected function featured(Request $request, $id)
+    {
+        $validator = Validator::make($request->all(), [
+            'featured_post' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 400,
+                'errors' => $validator->messages(),
+            ]);
+        } else {
+            $posts = Post::find($id);
+
+            if ($posts) {
+                $posts->featured_post = $request->data == 1 ? "1" : '0';
+                $posts->update();
+
+                return response()->json([
+                    'status' => 200,
+                    'success' => 'Status Updated Successfully' . ' ' . $posts->title,
+                ]);
+            } else {
+                return response()->json([
+                    'status' => 404,
+                    'errors' => 'Not Found!',
+                ]);
+            }
+        }
+    }
 }

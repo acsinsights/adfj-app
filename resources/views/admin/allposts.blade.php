@@ -37,8 +37,12 @@
                         </div>
                     </form>
                     <div class="card-options">
-                        <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp;
-                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+                        <form action="" method="post">
+                            @csrf
+                            @method('put')
+                            <button type="submit" id="featured_post"
+                                class="btn btn-sm btn-primary">Update</button>&nbsp;&nbsp;&nbsp;
+                            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
                     </div>
                 </div>
                 <div class="card-body p-0">
@@ -78,13 +82,10 @@
                                                     class="btn btn-outline-primary">Edit</a>
                                             </td>
                                             <td>
-                                                <form action="/admin/delete/{{ $post->id }}" method="post">
-                                                    <button class="btn btn-outline-danger"
-                                                        onclick="return confirm('Are you sure?');"
-                                                        type="submit">Delete</button>
-                                                    @csrf
-                                                    @method('delete')
-                                                </form>
+
+                                                <a class="btn btn-outline-danger" onclick="return confirm('Are you sure?');"
+                                                    href="/admin/delete/{{ $post->id }}">Delete</a>
+
                                             </td>
                                             {{-- @if ($post->featured_post == 1)
                                                 <td class="text-center vertical-center">
@@ -109,20 +110,19 @@
                                                 <div class="toggle-button-cover" id="margin-zero">
                                                     <div class="button-cover" id="button-cover">
                                                         <div class="button r" id="button-3">
-                                                            <form action="/admin/status/{{ $post->id }}"
-                                                                method="post">
-                                                                <input type="hidden" value="{{ $post->id }}"
-                                                                    id="id">
-                                                                <label class="switch">
-                                                                    <input type="checkbox"
-                                                                        {{ $post->featured_post == 1 ? 'checked' : '' }}>
-                                                                    <span class="slider round"></span>
-                                                                </label>
-                                                            </form>
+                                                            <input type="hidden" value="{{ $post->id }}"
+                                                                id="pid">
+                                                            <label class="switch">
+                                                                <input type="checkbox"
+                                                                    {{ $post->featured_post == 1 ? 'checked' : '' }}
+                                                                    id="featured" value="1">
+                                                                <span class="slider round"></span>
+                                                            </label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </td>
+                                            </form>
                                         </tr>
                                     @endforeach
                                 @else
@@ -140,4 +140,48 @@
         </div>
 
     </div>
+@endsection
+
+@section('customJs')
+    <script type="text/javascript">
+        $(document).on("click", "#featured_post", function(e) {
+            e.preventDefault();
+
+            var id = $("#pid").val();
+            var data = {
+                featured_post: $("#featured").val(),
+            };
+
+            $.ajaxSetup({
+                headers: {
+                    "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+                },
+            });
+
+            $.ajax({
+                type: "PUT",
+                url: "/admin/featured/" + id,
+                data: data,
+                dataType: "json",
+                success: function(response) {
+                    if (response.status == 400) {
+                        $("#alert").html("");
+                        $("#alert").addClass("alert alert-danger");
+                        $.each(response.errors, function(key, err_values) {
+                            $("#alert").append(err_values);
+                        });
+                    } else if (response.status == 404) {
+                        $("#alert").html("");
+                        $("#alert").addClass("alert alert-danger");
+                        $("#alert").text(response.message);
+                    } else {
+                        $("#alert").html("");
+                        $("#alert").addClass("alert alert-seccess");
+                        $("#alert").text(response.message);
+                    }
+                },
+            });
+        });
+    </script>
+
 @endsection

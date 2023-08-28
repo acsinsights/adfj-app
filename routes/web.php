@@ -121,7 +121,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         //* Add data/update/delete in categories
         Route::post('/add-post', [AllPosts::class, 'store'])->name('addPost');
-        Route::delete('/delete/{id}', [AllPosts::class, 'destroy']);
+        Route::get('/delete/{id}', [AllPosts::class, 'destroy']);
         Route::get('/edit/{id}', [AllPosts::class, 'edit']);
         Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
         Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
@@ -137,5 +137,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::put('/fstatus/{id}', [AdminFeaturedPostController::class, 'update']);
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
+
+        Route::put('/featured/{id}', [AdminFeaturedPostController::class, 'featured']);
     });
 });
