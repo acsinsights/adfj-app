@@ -110,17 +110,35 @@
                                                 <div class="toggle-button-cover" id="margin-zero">
                                                     <div class="button-cover" id="button-cover">
                                                         <div class="button r" id="button-3">
-                                                            <input type="hidden" value="{{ $post->id }}"
-                                                                id="pid">
                                                             <label class="switch">
-                                                                <input type="checkbox"
-                                                                    {{ $post->featured_post == 1 ? 'checked' : '' }}
-                                                                    id="featured" value="1">
+                                                                <input type="checkbox" name="featured" id="featured" value="1">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                            <form action="/admin/status/{{ $post->id }}"
+                                                                method="post">
+                                                                <input type="hidden" value="{{ $post->id }}"
+                                                                    id="id">
+                                                                <label class="switch">
+                                                                    <input type="checkbox"
+                                                                        {{ $post->featured_post == 1 ? 'checked' : '' }}>
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {{-- <label class="m-2">Play Button</label> --}}
+
+                                                {{-- <div class="toggle-button-cover" id="margin-zero">
+                                                    <div class="button-cover" id="button-cover">
+                                                        <div class="button r" id="button-3">
+                                                            <label class="switch">
+                                                                <input type="checkbox" name="featured" id="featured" value="1">
                                                                 <span class="slider round"></span>
                                                             </label>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </td>
                                             </form>
                                         </tr>

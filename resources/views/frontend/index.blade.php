@@ -495,13 +495,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                                                                              >(<span
-                                                                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                                                                data-purecounter-end="66"
-                                                                                                                                                                                                class="purecounter"
-                                                                                                                                                                                                >0</span
-                                                                                                                                                                                              >%)</span
-                                                                                                                                                                                            > -->
+                                                                                                                                                                                                  >(<span
+                                                                                                                                                                                                    data-purecounter-duration="1"
+                                                                                                                                                                                                    data-purecounter-end="66"
+                                                                                                                                                                                                    class="purecounter"
+                                                                                                                                                                                                    >0</span
+                                                                                                                                                                                                  >%)</span
+                                                                                                                                                                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -550,13 +550,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                                                                              >(<span
-                                                                                                                                                                                                data-purecounter-duration="1"
-                                                                                                                                                                                                data-purecounter-end="80"
-                                                                                                                                                                                                class="purecounter"
-                                                                                                                                                                                                >0</span
-                                                                                                                                                                                              >%)</span
-                                                                                                                                                                                            > -->
+                                                                                                                                                                                                  >(<span
+                                                                                                                                                                                                    data-purecounter-duration="1"
+                                                                                                                                                                                                    data-purecounter-end="80"
+                                                                                                                                                                                                    class="purecounter"
+                                                                                                                                                                                                    >0</span
+                                                                                                                                                                                                  >%)</span
+                                                                                                                                                                                                > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -815,7 +815,7 @@
                                 <div class="col-xxl-7 col-xl-7">
                                     <div class="blog__content">
                                         <div class="blog__tag">
-                                            <a href="#">Harry Design</a>
+                                            <a href="#">adfj-studios Design</a>
                                         </div>
                                         <h3 class="blog__title">
                                             <a href="blog-details.html">The Key To A Successful Non-Profit Marketing
@@ -1004,7 +1004,7 @@
                                         </div>
                                     @endforeach
 
-                          
+
                                 </div>
                             </div>
                         </div>

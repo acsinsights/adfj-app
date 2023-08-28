@@ -17,6 +17,28 @@
 
             <div class="card">
                 <div class="card-header">
+                    {{-- <h3 class="card-title">
+                        All Posts
+                    </h3> --}}
+                    {{-- <form action="" method="get" class="ms-5">
+                        <div class="card-tools d-flex">
+                            <div class="card-title mt-1 p-1">
+                                <a href="{{ route('admin.allposts') }}" class="btn btn-sm btn-outline-primary">X</a>
+                            </div>
+                            <div class="input-group input-group" style="width: 100%; height:15px">
+                                <input type="text" name="keyword" class="form-control float-right" placeholder="Search"
+                                    value="{{ Request::get('keyword') }}">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="card-options">
+                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
+                    </div> --}}
                     <div class="card-options">
                         <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
                     </div>
@@ -46,7 +68,9 @@
                                                 style="max-height:80px; max-width:50px" alt="" srcset=""></td>
                                         <td>{{ $tsti->custname }}</td>
                                         <td>
-                                            <textarea cols="auto" rows="3" style="padding: 10px; text-align:left" readonly class="testi-text">
+                                    </button>
+                                    <textarea cols="auto" rows="3" style="padding: 10px;     color: white;
+                                    background: #2a2e3f; text-align:left" readonly class="">
                                                 {{ $tsti->custreview }}
                                             </textarea>
                                             {{-- <textarea class="form-control" cols="auto" rows="3" style="padding: 10px; text-align:left !important" readonly>
