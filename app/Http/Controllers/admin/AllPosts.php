@@ -129,8 +129,8 @@ class AllPosts extends Controller
     {
         $posts = Post::findOrFail($id);
 
-        if (File::exists("cover/" . $posts->cover)) {
-            File::delete("cover/" . $posts->cover);
+        if (File::exists("posts/" . $posts->media)) {
+            File::delete("posts/" . $posts->media);
         }
         $posts->delete();
         return back()->with('success', 'Post Deleted Successfully');
