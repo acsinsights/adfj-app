@@ -18,7 +18,9 @@ class CreateController extends Controller
         $stypes = Stypes::findOrFail($id);
         $stypes->update([
             "stype_name" => $request->type,
-            "slug" => $request->slug,
+            "slug" =>  str_replace(' ', '-', strtolower(
+                $request->type
+            )),
         ]);
 
         return redirect("/admin/add-type")->with('success', 'Added Successfully');

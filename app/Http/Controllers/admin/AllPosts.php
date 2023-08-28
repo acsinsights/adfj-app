@@ -129,8 +129,8 @@ class AllPosts extends Controller
     {
         $posts = Post::findOrFail($id);
 
-        if (File::exists("cover/" . $posts->cover)) {
-            File::delete("cover/" . $posts->cover);
+        if (File::exists("posts/" . $posts->media)) {
+            File::delete("posts/" . $posts->media);
         }
         $posts->delete();
         return back()->with('success', 'Post Deleted Successfully');
@@ -149,7 +149,9 @@ class AllPosts extends Controller
     {
         $stypes = new Stypes([
             "stype_name" => $request->type,
-            "slug" => $request->slug,
+            "slug" =>  str_replace(' ', '-', strtolower(
+                $request->type
+            )),
             "pservices_id" => $request->service,
         ]);
         $stypes->save();
