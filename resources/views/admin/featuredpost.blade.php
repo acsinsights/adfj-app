@@ -20,9 +20,9 @@
                     <h3 class="card-title">
                         All Featured Posts
                     </h3>
-                    <div class="card-options">
+                    {{-- <div class="card-options">
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
@@ -44,9 +44,7 @@
                                     @foreach ($posts as $post)
                                         @if ($post->featured_post == 1)
                                             <tr style="vertical-align: middle;">
-                                                <td><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                        style="max-height:100px; max-width:100px" alt=""
-                                                        srcset="">
+                                                <td><img src="/posts/{{ $post->media }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset="">
                                                 </td>
                                                 <td>{{ $post->title }}</td>
                                                 <td>{{ $post->pservices->service_name }}</td>
