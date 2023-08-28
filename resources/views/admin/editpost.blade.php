@@ -61,20 +61,23 @@
                             <input type="checkbox" {{ $posts->status == 1 ? 'checked' : '' }} name="status" class="m-2"
                                 value="1"><br>
 
-                            <label class="m-2">Cover Image</label>
+                            <label class="m-2">Cover Image ( 570 × 600 px)</label>
 
                             <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
                             <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                         </form>
 
-                        <label class="m-2">Cover Image ( 570 × 600 px)</label>
+                        <label class="m-2">Cover Image</label>
                         <form action="/deletecover/{{ $posts->id }}" method="post">
-                            <button class="btn text-danger">X</button>
+
+                            <img src="/posts/{{ $posts->media }}" class="img-responsive"
+                            style="max-height: 100px; max-width: 100px;" alt="" srcset="">
+                            <br>
+                            {{-- <button class="btn text-danger">X</button> --}}
                             @csrf
                             @method('delete')
                         </form>
-                        <img src="/posts/{{ $posts->media }}" class="img-responsive"
-                            style="max-height: 100px; max-width: 100px;" alt="" srcset="">
+
                         <br>
                     </div>
                 </div>

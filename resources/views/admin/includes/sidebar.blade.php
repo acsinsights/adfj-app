@@ -152,7 +152,7 @@
                 <span class="side-menu__label">All Testimonials</span>
             </a>
         </li>
-        <li class="slide">
+        {{-- <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.addtestimonial') }}">
                 <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
                     viewBox="0 0 24 24" width="24" style="transform: rotate(45deg) !important;">
@@ -163,7 +163,7 @@
                 </svg>
                 <span class="side-menu__label">Add Testimonial</span>
             </a>
-        </li>
+        </li> --}}
 
 
 

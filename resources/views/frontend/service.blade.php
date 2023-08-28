@@ -54,7 +54,8 @@
                         </div>
                         <div class="services__content-15">
                             <h3 class="services__title-15 tp-el-box-title">
-                                <a href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">Music Production</a>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/services/pixel-perfect/">Music
+                                    Production</a>
                             </h3>
 
                             <p class="tp-el-box-desc">
@@ -100,7 +101,8 @@
                         </div>
                         <div class="services__content-15">
                             <h3 class="services__title-15 tp-el-box-title">
-                                <a href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">Video Production</a>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/services/pixel-perfect/">Video
+                                    Production</a>
                             </h3>
 
                             <p class="tp-el-box-desc">
@@ -146,7 +148,8 @@
                         </div>
                         <div class="services__content-15">
                             <h3 class="services__title-15 tp-el-box-title">
-                                <a href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">Audio Engineering</a>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/services/pixel-perfect/">Audio
+                                    Engineering</a>
                             </h3>
 
                             <p class="tp-el-box-desc">
@@ -193,7 +196,7 @@
                         </div>
                         <div class="services__content-15">
                             <h3 class="services__title-15 tp-el-box-title">
-                                <a href="https://weblearnbd.net/wp/harry/services/pixel-perfect/">Graphic Design</a>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/services/pixel-perfect/">Graphic Design</a>
                             </h3>
 
                             <p class="tp-el-box-desc">
@@ -290,9 +293,9 @@
                                                         <span>
                                                             <svg width="13" height="15" viewBox="0 0 13 15"
                                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path d="M4 1.5V3.3" stroke="white"
-                                                                    stroke-width="1.5" stroke-miterlimit="10"
-                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M4 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                                    stroke-miterlimit="10" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
                                                                 <path d="M8.80029 1.5V3.3" stroke="white"
                                                                     stroke-width="1.5" stroke-miterlimit="10"
                                                                     stroke-linecap="round" stroke-linejoin="round" />

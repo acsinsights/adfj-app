@@ -20,7 +20,7 @@
                     {{-- <h3 class="card-title">
                         All Posts
                     </h3> --}}
-                    <form action="" method="get" class="ms-5">
+                    {{-- <form action="" method="get" class="ms-5">
                         <div class="card-tools d-flex">
                             <div class="card-title mt-1 p-1">
                                 <a href="{{ route('admin.allposts') }}" class="btn btn-sm btn-outline-primary">X</a>
@@ -38,7 +38,7 @@
                     </form>
                     <div class="card-options">
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
-                    </div>
+                    </div> --}}
                     <div class="card-options">
                         <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
                     </div>
@@ -69,7 +69,9 @@
                                                 style="max-height:80px; max-width:50px" alt="" srcset=""></td>
                                         <td>{{ $tsti->custname }}</td>
                                         <td>
-                                            <textarea cols="auto" rows="3" style="padding: 10px; text-align:left" readonly class="">
+                                    </button>
+                                    <textarea cols="auto" rows="3" style="padding: 10px;     color: white;
+                                    background: #2a2e3f; text-align:left" readonly class="">
                                                 {{ $tsti->custreview }}
                                             </textarea>
                                             {{-- <textarea class="form-control" cols="auto" rows="3" style="padding: 10px; text-align:left !important" readonly>

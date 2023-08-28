@@ -17,12 +17,29 @@
         <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">
-                        All Featured Posts
-                    </h3>
-                    {{-- <div class="card-options">
+                    {{-- <h3 class="card-title">
+                        All Posts
+                    </h3> --}}
+                    {{-- <form action="" method="get" class="ms-5">
+                        <div class="card-tools d-flex">
+                            <div class="card-title mt-1 p-1">
+                                <a href="{{ route('admin.featuredposts') }}" class="btn btn-sm btn-outline-primary">X</a>
+                            </div>
+                            <div class="input-group input-group" style="width: 100%; height:15px">
+                                <input type="text" name="keyword" class="form-control float-right" placeholder="Search"
+                                    value="{{ Request::get('keyword') }}">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form> --}}
+                    <div class="card-options">
+                        {{-- <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp; --}}
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">

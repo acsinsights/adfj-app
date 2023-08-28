@@ -450,6 +450,12 @@ $(document).on("click", "#fsubmit", function (e) {
         barColor: "#fa057a",
     });
 
+
+
+
+
+
+
     // ______________ SWITCHER-toggle ______________//
 
     $(".layout-setting").on("click", function (e) {

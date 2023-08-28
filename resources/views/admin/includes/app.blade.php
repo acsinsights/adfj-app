@@ -61,7 +61,7 @@
 
 </head>
 
-<body class="app sidebar-mini">
+<body class="dark-mode app sidebar-mini">
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">

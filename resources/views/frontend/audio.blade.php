@@ -7,30 +7,30 @@
     <main>
         <!-- about top area start -->
         <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
-        data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
-        style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-7 col-lg-9">
-                    <div class="breadcrumb__content p-relative z-index-1">
-                        <div class="breadcrumb__video mb-30">
-                            <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
-                                class="breadcrumb__video-btn popup-video">
-                                <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
+            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+            style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="breadcrumb__content p-relative z-index-1">
+                            <div class="breadcrumb__video mb-30">
+                                <a href="https://www.youtube.com/watch?v=LA4hnu1OM7k"
+                                    class="breadcrumb__video-btn popup-video">
+                                    <svg width="14" height="18" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
 
-                        <h3 style="font-size: 5rem" class="breadcrumb__title">
-                            Audio Production Portfolio
-                        </h3>
+                            <h3 style="font-size: 5rem" class="breadcrumb__title">
+                                Audio Production Portfolio
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
         {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
             <div class="container">
@@ -204,17 +204,17 @@
         <section class="portfolio__area pb-75 pt-110 p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
-                    src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/circle-1.png"
-                    alt="Harry">
+                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/circle-1.png"
+                    alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-21"
-                    src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-green.png"
-                    alt="Harry">
+                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-green.png"
+                    alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-22"
-                    src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-pink.png"
-                    alt="Harry">
+                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-pink.png"
+                    alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-23"
-                    src="https://weblearnbd.net/wp/harry/wp-content/themes/harry/assets/img/portfolio/masonary/shape/polygon-yellow.png"
-                    alt="Harry">
+                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-yellow.png"
+                    alt="adfj-studios">
             </div>
             <div class="container-fluid tp-gx-20">
                 <div class="row">
@@ -238,7 +238,7 @@
                                     All Project
                                 </button>
                                 <button data-filter=".music-artwork">
-                                 Music Artwork
+                                    Music Artwork
                                 </button>
 
                                 <button data-filter=".movie-poster">
@@ -258,25 +258,26 @@
                 </div>
                 <div class="row tp-gx-20 grid" style="position: relative; height: 1799.76px;">
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/gul-marg.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Gul Marg Vlog Video" data-title="Gul Marg">
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/gul-marg.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Gul Marg Vlog Video</a>
-                                                </span>
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Gul Marg </h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Gul Marg Vlog Video</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -284,34 +285,37 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                 <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item movie-poster"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Short Film Poster  " data-title="Cappuccino">
-                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/cappuccino.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item movie-poster"
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Short Film Poster  " data-title="Cappuccino">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/cappuccino.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Cappuccino</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Short Film Poster</a>
-                                                </span>
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Cappuccino</h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Short Film Poster</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -319,7 +323,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
 
 
@@ -329,16 +332,19 @@
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Music Artwork " data-title="Ude">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
                                     <img width="455" height="500"
-                                    src="{{ asset('user-assets/img/graphic-portfolio/ude.jpg') }}"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/ude.jpg') }}"
                                         class="attachment-full size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
@@ -364,32 +370,36 @@
 
 
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item music-artwork"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
-                            <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                            </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                </svg>
-                            </a>
-                        </div>
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/lekhak.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Movie Poster" data-title="Lekhak">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/lekhak.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Lekhak</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Movie Poster</a>
-                                                </span>
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Lekhak</h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Movie Poster</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -397,7 +407,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
 
 
@@ -410,16 +419,19 @@
                         <div class="portfolio__grid-item mb-20 tp-el-box">
                             <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
                                 data-fx="24" data-meta-tag="Music Art Work" data-title="Tum Yaad Aaye" style="">
-                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/" tabindex="0">
-                                </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s" class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
-                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                                <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
+                                <div class="portfolio__grid-video"><a href="https://www.instagram.com/p/Ccos67BIgoK/"
+                                        tabindex="0">
+                                    </a><a href="https://www.youtube.com/watch?v=EW4ZYb3mCZk&amp;t=147s"
+                                        class="portfolio-play-btn popup-video tp-el-video-btn" tabindex="0">
+                                        <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
                                     <img width="455" height="500"
-                                    src="{{ asset('user-assets/img/graphic-portfolio/tum-yaad-aaye.jpg') }}"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/tum-yaad-aaye.jpg') }}"
                                         class="attachment-full size-full" alt="" decoding="async"
                                         loading="lazy"> </a>
 
@@ -444,25 +456,26 @@
                     </div>
 
                     <div class="col-xl-4 col-lg-6 col-md-6 col-12 tp-portfolio grid-item movie-poster"
-                    style="position: absolute; left: 0%; top: 537px;">
-                    <div class="portfolio__grid-item mb-20 tp-el-box">
-                        <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
-                            data-fx="24" data-meta-tag="Movie Poster" data-title="Vimukti">
-                            <a href="https://weblearnbd.net/wp/harry/portfolio/portfolio-details/">
-                                <img width="455" height="500"
-                                src="{{ asset('user-assets/img/graphic-portfolio/vimukti.jpg') }}"
-                                    class="attachment-full size-full" alt="" decoding="async"
-                                    loading="lazy"> </a>
+                        style="position: absolute; left: 0%; top: 537px;">
+                        <div class="portfolio__grid-item mb-20 tp-el-box">
+                            <div class="portfolio__grid-thumb tp-protfolio-masonary w-img fix tp-img-reveal tp-img-reveal-item"
+                                data-fx="24" data-meta-tag="Movie Poster" data-title="Vimukti">
+                                <a href="https://weblearnbd.net/wp/adfj-studios/portfolio/portfolio-details/">
+                                    <img width="455" height="500"
+                                        src="{{ asset('user-assets/img/graphic-portfolio/vimukti.jpg') }}"
+                                        class="attachment-full size-full" alt="" decoding="async"
+                                        loading="lazy"> </a>
 
-                            <div class="tp-img-reveal-wrapper">
-                                <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
-                                    <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
-                                        <div class="portfolio__hover-wrapper tp-el-box">
-                                            <h4 class="portfolio__hover-title tp-el-box-title">Movie Poster</h4>
-                                            <div class="portfolio__hover-category tp-el-box-tag">
-                                                <span>
-                                                    <a href="#">Vimukti</a>
-                                                </span>
+                                <div class="tp-img-reveal-wrapper">
+                                    <div class="tp-img-reveal-wrapper__inner" style="overflow: hidden;">
+                                        <div class="tp-img-reveal-wrapper__img" style="background-image:url()">
+                                            <div class="portfolio__hover-wrapper tp-el-box">
+                                                <h4 class="portfolio__hover-title tp-el-box-title">Movie Poster</h4>
+                                                <div class="portfolio__hover-category tp-el-box-tag">
+                                                    <span>
+                                                        <a href="#">Vimukti</a>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -470,7 +483,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
 
 
