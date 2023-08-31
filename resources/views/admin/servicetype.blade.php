@@ -14,9 +14,9 @@
                 @include('admin.message')
             </div>
             <div class="card">
-                <div class="card-header">
+                {{-- <div class="card-header">
                     <h2>Add New Sub-Service</h2>
-                </div>
+                </div> --}}
                 <div class="card-body">
                     <form action="/admin/add-service-type" name="categoryForm" id="categoryForm" method="post"
                         enctype="multipart/form-data">
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div class="container" style="padding-top:20px;">
+    <div class="" style="padding-top:20px;">
 
         <div class="row">
             <div class="col-12">

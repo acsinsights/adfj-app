@@ -11,7 +11,9 @@ class Testimonial extends Model
     use HasFactory;
     protected $fillable = [
         'custname',
+        'custdesignation',
         'custreview',
+        // 'custlogo',
         'custimg',
         'custstar',
         'date',

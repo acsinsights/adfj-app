@@ -14,17 +14,17 @@
                                 <div class="d-flex align-items-md-start align-items-center flex-column flex-md-row">
                                     <img src="/profile/{{ Auth::guard('admin')->user()->profile_img }}" alt="profile_img"
                                         class="rounded-4" height="160px" width="160px">
-                                    <div class="media-body ms-md-5 m-0 mt-4 mt-md-0 text-md-start text-center">
-                                        <h4 class="mb-1">{{ Auth::guard('admin')->user()->name }}</h4>
-                                        <p>{{ Auth::guard('admin')->user()->email }}</p>
+                                    <div class="media-body ms-md-5 m-0 mt-4 mt-md-0 text-md-start text-left">
+                                        <h4 style="margin-left: 10px;" class="mb-1">{{ Auth::guard('admin')->user()->name }}</h4>
+                                        <p  style="margin-left: 10px;">{{ Auth::guard('admin')->user()->email }}</p>
                                         {{-- <span class="text-muted">It is a long established fact that a reader will be
                                             distracted by the readable content of a page when looking at its layout.</span>
                                         <div class="my-3">
                                             <button class="btn btn-primary">Follow</button>
                                             <button class="btn btn-dark">Message</button>
                                         </div> --}}
-                                        <div
-                                            class="d-flex flex-row flex-wrap align-items-center justify-content-center justify-content-md-start">
+
+                                        <div class="d-flex flex-row flex-wrap align-items-center justify-content-left justify-content-md-start">
                                             <div class="py-2 px-3 me-1 mt-1">
                                                 <small class="text-muted">City</small>
                                                 <div class="fs-5">Mumbai</div>
@@ -84,7 +84,7 @@
                                         </div> --}}
 
 
-@include('admin.message')
+                                    @include('admin.message')
                                         @if (session('message'))
                                         <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
                                     @endif

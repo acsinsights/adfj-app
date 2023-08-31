@@ -46,6 +46,12 @@
                                                 class="form-control @error('email') is-invalid @enderror"
                                                 value="{{ old('email') }}" placeholder="Username">
 
+
+                                                @if ($errors->has('email'))
+                                                <span class="text-danger">{{ $errors->first('email') }}</span>
+                                                @endif
+
+
                                             @error('email')
                                                 <p class="invalid-feedback">{{ $message }}</p>
                                             @enderror
@@ -55,6 +61,11 @@
                                             <input type="password" name="password" id="dz-password"
                                                 class="form-control @error('password') is-invalid @enderror"
                                                 value="" placeholder="Password">
+
+                                                @if ($errors->has('password'))
+                                                <span class="text-danger">{{ $errors->first('password') }}</span>
+                                            @endif
+
                                             <span class="show-pass eye">
 
                                                 <i class="fa fa-eye-slash"></i>
@@ -66,24 +77,24 @@
                                                 <p class="invalid-feedback">{{ $message }}</p>
                                             @enderror
                                         </div>
-                                        <div class="row d-flex justify-content-between mt-4 mb-2">
-                                            {{-- <div class="mb-3">
+                                        {{-- <div class="new-account mt-3">
+                                            <p><a class="text-primary" href="{{ route('forgetpassword') }}">Forgot Password</a></p>
+                                        </div> --}}
+                                        {{-- <div class="row d-flex justify-content-between mt-4 mb-2">
+                                            <div class="mb-3">
                                                 <div class="form-check custom-checkbox ms-1">
                                                     <input type="checkbox" class="form-check-input"
                                                         id="basic_checkbox_1">
                                                     <label class="form-check-label" for="basic_checkbox_1">Remember my
                                                         preference</label>
                                                 </div>
-                                            </div> --}}
-                                        </div>
+                                            </div>
+                                        </div> --}}
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                                         </div>
                                     </form>
-                                    {{-- <div class="new-account mt-3">
-                                        <p>Don't have an account? <a class="text-primary" href="page-register.html">Sign
-                                                up</a></p>
-                                    </div> --}}
+
                                 </div>
                             </div>
                         </div>

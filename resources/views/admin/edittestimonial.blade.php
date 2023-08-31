@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                             
+
                                 <div class="card-body">
                                     <form action="/admin/updatetestimonial/{{ $testimonials->id }}" method="post"
                                         enctype="multipart/form-data">
@@ -29,10 +29,14 @@
                                         <input type="text" name="name" class="form-control m-2"
                                             placeholder="Service Category" value="{{ $testimonials->custname }}">
 
+
+                                        <label for="" class="title">Customer Designation</label>
+                                        <input type="text" name="custdesignation" class="form-control m-2"
+                                            placeholder="Customer Designation" value="{{ $testimonials->custdesignation }}">
+
                                         <label class="textarea">Customer Review</label>
                                         <input type="text" name="review" class="form-control m-2"
                                             placeholder="Title of post" value="{{ $testimonials->custreview }}">
-
 
                                         <label>Customer Rating</label>
                                         <section class="section">
@@ -87,11 +91,39 @@
                                         <input type="date" name="date" class=" form-control m-2"
                                             value="{{ $testimonials->date }}">
 
-                                        <input type="hidden" name="cover" class=" form-control m-2"
+                                    {{-- <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="hidden" name="cover" class=" form-control m-2"
                                             value="{{ $testimonials->custimg }}">
+                                            <label class="m-2">Customer Image (44 ×
+                                                44px)</label>
+                                                <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
 
-                                        <label class="m-2">Customer Image (44 ×
-                                            44px)</label> <br>
+
+                                                <br>
+                                                <img src="/testiimages/{{ $testimonials->custimg }}" name="custimg" class="img-responsive"
+                                                    style="max-height: 100px; max-width: 100px;" alt="" srcset="">
+                                            </div>
+
+
+                                        <div class="col-md-6">
+                                            <input type="hidden" name="cover" class=" form-control m-2"
+                                            value="{{ $testimonials->custlogo }}">
+                                            <label class="m-2">Customer Logo (44 ×
+                                                44px)</label>
+                                                <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+                                                <br>
+
+                                                <img src="/testilogos/{{ $testimonials->custlogo }}" name="custimg" class="img-responsive"
+                                                    style="max-height: 100px; max-width: 100px;" alt="" srcset="">
+                                            </div>
+                                        </div> --}}
+
+
+
+
+
+                                       <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
                                         <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                     </form><br>
                                     <form action="/delete-testimonial-image/{{ $testimonials->id }}" method="post">

@@ -17,7 +17,8 @@ class DashboardController extends Controller
     protected function index()
     {
         $posts = Post::all();
-        return view('admin.dashboard')->with('posts', $posts);
+        $users= User::all();
+        return view('admin.dashboard', compact('posts', 'users'));
         // $admin = Auth::guard('admin')->user();
         // echo 'Welcome ' . $admin->name . ' <a href="' . route('admin.logout') . '">Logout</a>';
     }

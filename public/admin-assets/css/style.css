@@ -32137,7 +32137,9 @@ body.fixed-header .page {
 }
 
 
-
+#hover-c a:hover{
+    color: #ccd4e0 !important;
+}
 
 
 

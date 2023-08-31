@@ -7,7 +7,7 @@
             <h4 class="page-title mb-0 text-primary">All Posts</h4>
         </div>
            <div class="card-options">
-                        <form action="" method="post">
+                        <form style="margin-right: 67px;" action="" method="post">
                             @csrf
                             @method('put')
                             <button type="submit" id="featured_post"

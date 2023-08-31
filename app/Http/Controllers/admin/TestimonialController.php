@@ -34,8 +34,10 @@ class TestimonialController extends Controller
 
             $testimonials = new Testimonial([
                 "custname" => $request->name,
+                "custdesignation" => $request->custdesignation,
                 "custreview" => $request->review,
                 "custimg" => $imageName,
+            //   "custlogo" => $imageName,
                 "custstar" => $request->star,
                 "date" => $request->date,
             ]);
@@ -67,8 +69,10 @@ class TestimonialController extends Controller
         }
         $post->update([
             "custname" => $request->name,
+            "custdesignation" => $request->custdesignation,
             "custreview" => $request->review,
-            "custimg" => $request->cover,
+             "custimg" => $imageName,
+        //    "custlogo" => $request->cover,
             "custstar" => $request->custstar,
             "date" => $request->date,
         ]);

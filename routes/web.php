@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\admin\ForgotPasswordController;
 use App\Http\Controllers\admin\AllPosts;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 use App\Http\Controllers\admin\TestimonialController;
+
+
 
 
 /*
@@ -49,6 +52,33 @@ Route::get('/newsletter', [HomeController::class, 'newsletter']);
 //     });
 
 Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
+
+Route::get('/forgetpassword',[ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forgetpassword');
+Route::get('/forgetPasswordLink',[ForgotPasswordController::class, 'showResetPasswordForm'])->name('forgetPasswordLink');
+
+
+
+
+
+
+
+Route::get('forgetpassword', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('forgetpassword', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
+Route::get('resetpassword/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::post('resetpassword', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {

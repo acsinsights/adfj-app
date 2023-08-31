@@ -21,6 +21,10 @@
                         <input type="text" name="name" class="form-control m-2"
                             placeholder="Customer Name Goes Here">
 
+                        <label class="m-2">Customer Designation</label>
+                        <input type="text" name="custdesignation" class="form-control m-2"
+                            placeholder="Customer Designation Goes Here">
+
                         <label class="textarea m-2">Customer Review</label>
 
                         <textarea cols="5" rows="5" type="text" name="review" class="form-control m-2"

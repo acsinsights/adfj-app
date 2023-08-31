@@ -6,7 +6,7 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Featured Posts</h4>
         </div>
-        <div class="card-options">
+        <div style="margin-right: 27px;" class="card-options">
             {{-- <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp; --}}
             <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
         </div>
@@ -69,7 +69,7 @@
                                                 <td>{{ $post->stypes->slug }}</td>
                                                 <td>{{ $post->date }}</td>
                                                 <td>{{ $post->location }}</td>
-                                                <td class="text-center vertical-center">
+                                                <td class="text-left vertical-center">
                                                     @if ($post->fstatus == 1)
                                                         <p class="text-success">Added</p>
                                                     @else

@@ -6,7 +6,7 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Testimonials</h4>
         </div>
-        <div class="card-options">
+        <div style="margin-right: 57px;" class="card-options">
             <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
         </div>
         <div class="col-md-5 alert-message">
@@ -50,9 +50,11 @@
                         <table class="table table-hover card-table table-vcenter text-nowrap">
                             <thead>
                                 <tr>
-                                    <th>#No</th>
+                                    {{-- <th>SR. No</th> --}}
                                     <th>Customer Image</th>
+                                    {{-- <th>Logo</th> --}}
                                     <th>Customer Name</th>
+                                    <th>Customer Designation</th>
                                     <th>Customer Review</th>
                                     <th>Customer Rating</th>
                                     <th>Date</th>
@@ -64,14 +66,21 @@
                             <tbody>
                                 @foreach ($testimonials as $tsti)
                                     <tr style="vertical-align: middle;">
-                                        <th scope="row">
-                                            {{ $tsti->id }}</th>
+                                               {{--  <th scope="row">
+                                    {{ $tsti->id }}</th> --}}
                                         <td><img src="/testiimages/{{ $tsti->custimg }}" class="img-responsive"
-                                                style="max-height:80px; max-width:50px" alt="" srcset=""></td>
-                                        <td>{{ $tsti->custname }}</td>
+                                                style="max-height:80px; max-width:50px" alt="" srcset="">
+                                            </td>
+                                            {{-- <td><img src="/testilogos/{{ $tsti->custlogo }}" class="img-responsive"
+                                                style="max-height:80px; max-width:50px" alt="" srcset=""></td> --}}
+
+
+                                                <td>{{ $tsti->custname }}</td>
+
+                                        <td>{{ $tsti->custdesignation }}</td>
                                         <td>
                                     </button>
-                                    <textarea cols="auto" rows="3" style="padding: 10px;     color: white;
+                                    <textarea cols="auto" rows="3" style="padding: 10px;color: white;
                                     background: #2a2e3f; text-align:left" readonly class="">
                                                 {{ $tsti->custreview }}
                                             </textarea>
@@ -81,7 +90,7 @@
                                         </td>
                                         <td>
                                             <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
-                                                <div class="testimonial__rating testimonial__rating-6">
+                                                <div id="hover-c" class="testimonial__rating testimonial__rating-6">
                                                     @if ($tsti->custstar == 1)
                                                         <a href="#">
                                                             <i class="fa-solid fa-star"></i>
