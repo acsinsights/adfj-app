@@ -62,7 +62,6 @@
                                     <th>Delete</th>
                                 </tr>
                             </thead>
-
                             <tbody>
                                 @foreach ($testimonials as $tsti)
                                     <tr style="vertical-align: middle;">
