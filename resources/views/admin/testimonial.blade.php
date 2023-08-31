@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Testimonials</h4>
         </div>
+        <div class="card-options">
+            <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
+        </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')
         </div>
@@ -16,6 +19,7 @@
         <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
 
             <div class="card">
+
                 <div class="card-header">
                     {{-- <h3 class="card-title">
                         All Posts
@@ -39,9 +43,7 @@
                     <div class="card-options">
                         <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Update</a>
                     </div> --}}
-                    <div class="card-options">
-                        <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
-                    </div>
+
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">

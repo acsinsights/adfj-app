@@ -6,6 +6,14 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Posts</h4>
         </div>
+           <div class="card-options">
+                        <form action="" method="post">
+                            @csrf
+                            @method('put')
+                            <button type="submit" id="featured_post"
+                                class="btn btn-sm btn-primary">Update</button>&nbsp;&nbsp;&nbsp;
+                            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+                    </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')
         </div>
@@ -36,14 +44,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="card-options">
-                        <form action="" method="post">
-                            @csrf
-                            @method('put')
-                            <button type="submit" id="featured_post"
-                                class="btn btn-sm btn-primary">Update</button>&nbsp;&nbsp;&nbsp;
-                            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
-                    </div>
+
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
@@ -52,9 +53,9 @@
                                 <tr>
                                     <th>#No</th>
                                     <th>Media</th>
-                                    <th>Project Title</th>
-                                    <th>Service Category</th>
-                                    <th>Sub-Service Category</th>
+                                    <th>Title</th>
+                                    <th>Service</th>
+                                    <th>Sub-Service</th>
                                     <th>Date</th>
                                     <th>Location</th>
                                     <th>Edit</th>

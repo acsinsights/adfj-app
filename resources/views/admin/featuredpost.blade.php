@@ -6,6 +6,10 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">All Featured Posts</h4>
         </div>
+        <div class="card-options">
+            {{-- <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp; --}}
+            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+        </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')
             <p class="" id="alert"></p>
@@ -36,10 +40,7 @@
                             </div>
                         </div>
                     </form> --}}
-                    <div class="card-options">
-                        {{-- <a href="" class="btn btn-sm btn-primary">Update</a>&nbsp;&nbsp;&nbsp; --}}
-                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
-                    </div>
+
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
@@ -47,9 +48,9 @@
                             <thead>
                                 <tr>
                                     <th>Media</th>
-                                    <th>Project Title</th>
-                                    <th>Services Category</th>
-                                    <th>Sub-Service Category</th>
+                                    <th>Title</th>
+                                    <th>Service</th>
+                                    <th>Sub-Service</th>
                                     <th>Date</th>
                                     <th>Location</th>
                                     <th>Status</th>

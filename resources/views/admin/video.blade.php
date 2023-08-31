@@ -6,6 +6,9 @@
         <div class="page-leftheader">
             <h4 class="page-title mb-0 text-primary">Video Portfolio</h4>
         </div>
+        <div class="card-options">
+            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+        </div>
         <div class="col-md-5 alert-message">
             @include('admin.message')
         </div>
@@ -20,9 +23,7 @@
                     {{-- <h3 class="card-title">
                         All Posts
                     </h3> --}}
-                    <div class="card-options">
-                        <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
-                    </div>
+
                 </div>
                 <div class="card-body p-0">
                     <div class="table-responsive">

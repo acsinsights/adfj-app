@@ -32131,6 +32131,17 @@ body.fixed-header .page {
     flex: 1 1 auto;
 }
 
+
+.twobtn{
+    display: flex;
+}
+
+
+
+
+
+
+
 .pos-absolute {
     position: absolute;
     top: 0;

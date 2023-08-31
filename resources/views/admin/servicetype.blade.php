@@ -4,7 +4,7 @@
     <!--Page header-->
     <div class="page-header">
         <div class="page-leftheader">
-            <h4 class="page-title mb-0 text-primary">Add Service Type</h4>
+            <h4 class="page-title mb-0 text-primary">Add New Sub-Service</h4>
         </div>
     </div>
     <!--End Page header-->
@@ -15,7 +15,7 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h2>Add Service Type</h2>
+                    <h2>Add New Sub-Service</h2>
                 </div>
                 <div class="card-body">
                     <form action="/admin/add-service-type" name="categoryForm" id="categoryForm" method="post"
@@ -23,7 +23,7 @@
                         @csrf
 
                         <select name="service" id="service" value="" class="form-control m-2" required>
-                            <option value=""><- Select Service -></option>
+                            <option value=""><- Select Main Service -></option>
                             @foreach ($pservices as $item)
                                 <option value="{{ $item->id }}">
                                     {{ $item->service_name }}
@@ -32,7 +32,7 @@
                         </select>
 
                         <input type="text" name="type" id="name" class="form-control m-2"
-                            placeholder="Enter Type Name" required>
+                            placeholder="Enter New Sub-Service" required>
 
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>
@@ -61,8 +61,8 @@
                             <table class="table table-custom mb-0" id="record_table">
                                 <thead>
                                     <tr>
-                                        <th>Type Name</th>
-                                        <th>Service</th>
+                                        <th>Main Service</th>
+                                        <th>Sub Service</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>

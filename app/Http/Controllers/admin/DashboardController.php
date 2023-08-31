@@ -44,13 +44,39 @@ class DashboardController extends Controller
             $request['cover'] = $users->profile_img;
         }
 
+    //    $users->update([
+    //        "name" => $request->name,
+    //        "email" => $request->email,
+    //        "password" => Hash::make($request->password),
+    //        "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
+    //    ]);
+
+
         $users->update([
             "name" => $request->name,
             "email" => $request->email,
-            "password" => Hash::make($request->password),
+            // "password" => Hash::make($request->password),
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
 
+            $request->validate([
+                'current_password',
+                'password' => ['confirmed']
+            ]);
+
+            $currentPasswordStatus = Hash::check($request->current_password, auth()->user()->password);
+            if($currentPasswordStatus){
+
+                User::findOrFail(Auth::user()->id)->update([
+                    'password' => Hash::make($request->password),
+                ]);
+
+                return redirect()->back()->with('success','Password Updated Successfully');
+
+            }else{
+
+                return redirect()->back()->with('error','Current Password does not match with Old Password');
+            }
         return redirect("/admin/profile")->with('success', 'Profile Updated Successfully');
     }
 

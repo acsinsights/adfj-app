@@ -4,7 +4,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close"><span><i
                         class="mdi mdi-btn-close"></i></span>
             </button>
-            <div class="media">
+            <div style="align-items: center;!important" class="media">
                 <div class="alert-left-icon-big">
                     <span><i class="mdi mdi-alert"></i></span>
                 </div>

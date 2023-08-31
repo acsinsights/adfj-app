@@ -62,7 +62,7 @@
                                                 value="AdFj Studios">
                                         </div>
                                         <div class="col-sm-6 col-md-3">
-                                            <label class="form-label small text-muted">Username</label>
+                                            <label class="form-label small text-muted">Full Name</label>
                                             <input type="text" name="name" class="form-control" placeholder="Username"
                                                 value="{{ Auth::guard('admin')->user()->name }}">
                                         </div>
@@ -77,11 +77,49 @@
                                                     class="text-danger">(160 x 160)</span></label>
                                             <input type="file" name="cover" class="form-control">
                                         </div>
+                                        {{-- <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Current Password</label>
+                                            <input type="text" name="password" class="form-control"
+                                                placeholder="Password" value="{{ Auth::guard('admin')->user()->password }}">
+                                        </div> --}}
+
+
+@include('admin.message')
+                                        @if (session('message'))
+                                        <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
+                                    @endif
+
+                                    @if ($errors->any())
+                                    <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                        <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Current Password</label>
+                                            <input type="text" name="current_password" class="form-control"
+                                                placeholder="current Password">
+
+                                        </div>
                                         <div class="col-sm-6 col-md-4">
                                             <label class="form-label small text-muted">New Password</label>
-                                            <input type="password" name="password" class="form-control"
-                                                placeholder="Password" value="">
+                                            <input type="text" name="password" class="form-control"
+                                                placeholder="Password">
+
                                         </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Confirm Password</label>
+
+                                            <input type="text" name="password_confirmation" class="form-control"  placeholder="Confirm Password">
+                                        </div>
+
+
+
+
+
+
                                         {{-- <div class="col-sm-6 col-md-3">
                                             <label class="form-label small text-muted">Postal Code</label>
                                             <input type="number" class="form-control" placeholder="ZIP Code">
