@@ -1023,7 +1023,7 @@
 
 
 
-
+{{--
         <section class=" pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
@@ -1053,200 +1053,20 @@
                     <div class=" col-lg-2 col-md-6">
                         <div class="">
                             <img style="width: 135; height: 87px;" src="/clientleleimg/{{ $cli->clientimg }}" alt="" />
-                            {{-- <img src="https://adfjstudios.com/user-assets/img/client/yfj-films.png" alt=""> --}}
                         </div>
                     </div>
-                    {{-- <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/abhinay-musical.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/petals-india.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/valtara-production.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client14.png" alt="">
-                        </div>
-                    </div> --}}
+
                 </div>
                 @endforeach
 
 
 
-                {{-- <div class="row mb-50">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/blueberry-events.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency6.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency10.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client12.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/akshay-odesseys.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/aawara-films.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/rang-marathi.png" alt="">
-                        </div>
-                    </div>
-                </div> --}}
-
-                    {{-- <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/petals-india.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/valtara-production.png"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client14.png" alt="">
-                        </div>
-                    </div> --}}
 
                 </div>
 
-                {{-- <div class="mb-50 row d-flex">
 
-
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/blueberry-events.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency6.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency10.png" alt="">
-                        </div>
-                    </div>
-
-                </div> --}}
-
-                {{-- <div class="mb-50 row d-flex">
-
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client11.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/client12.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/akshay-odesseys.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/aawara-films.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/agency5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <div class="">
-                            <img src="https://adfjstudios.com/user-assets/img/client/rang-marathi.png" alt="">
-                        </div>
-                    </div>
-                </div> --}}
             </div>
-        </section>
+        </section> --}}
 
 
 
@@ -1280,7 +1100,7 @@
 
 
 
-        {{-- <section class="desktop-brandarea pb-50 brand__area grey-bg-7">
+     <section class="desktop-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
@@ -1410,10 +1230,10 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
 
         <!--mobile View brand area start -->
-        {{-- <section class="mobile-brandarea pb-50 brand__area grey-bg-7">
+      <section class="mobile-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 txt-align col-xl-9 col-lg-9 col-md-9">
@@ -1519,7 +1339,7 @@
                 </div>
             </div>
             </div>
-        </section> --}}
+        </section>
 
 
 
