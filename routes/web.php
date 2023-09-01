@@ -12,6 +12,7 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 use App\Http\Controllers\admin\TestimonialController;
+use App\Http\Controllers\admin\ClientleleController;
 
 
 
@@ -42,6 +43,9 @@ Route::get('/pricing-plan', [HomeController::class, 'pricing']);
 Route::get('/subscription', [HomeController::class, 'subscription']);
 Route::get('/terms', [HomeController::class, 'terms']);
 Route::get('/newsletter', [HomeController::class, 'newsletter']);
+
+
+
 
 
 // image  module
@@ -96,6 +100,24 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/music', [AllPosts::class, 'music'])->name('admin.music');
         Route::get('/video', [AllPosts::class, 'video'])->name('admin.video');
         Route::get('/graphics', [AllPosts::class, 'graphics'])->name('admin.graphics');
+
+
+        Route::get('/our-clientlele', [ClientleleController::class, 'index'])->name('admin.our-clientlele');
+        // Route::post('/add-clientlele', [ClientleleController::class, 'addclientele'])->name('admin.add-clientlele');
+        // Route::get('/edit-ourclientlele', [ClientleleController::class, 'editclientele'])->name('admin.edit-ourclientlele');
+        Route::get('/add-clientlele', [ClientleleController::class, 'create'])->name('admin.add-clientlele');
+        Route::post('/addclientlele', [ClientleleController::class, 'store'])->name('admin.addclientlele');
+
+        Route::delete('/deleteclientlele/{id}', [ClientleleController::class, 'destroy']);
+        Route::get('/editclientlele/{id}', [ClientleleController::class, 'edit']);
+        Route::delete('/delete-clientlele-image/{id}', [ClientleleController::class, 'deletecover']);
+        Route::any('/updateclientlele/{id}', [ClientleleController::class, 'update']);
+
+
+
+
+
+
 
 
 
