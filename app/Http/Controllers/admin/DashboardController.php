@@ -60,25 +60,13 @@ class DashboardController extends Controller
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
 
-      
+
         return redirect("/admin/profile")->with('success', 'Profile Updated Successfully');
     }
 
 
     protected function updatepass(Request $request, $id)
     {
-
-
-    //    $users->update([
-    //        "name" => $request->name,
-    //        "email" => $request->email,
-    //        "password" => Hash::make($request->password),
-    //        "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
-    //    ]);
-
-
-
-
             $request->validate([
                 'current_password',
                 'password' => ['confirmed']

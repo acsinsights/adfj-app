@@ -46,27 +46,50 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card mt-3">
-                            <div class="card-header">
-                                <h4 class="card-title mb-0">Edit Profile</h4>
-                            </div>
+
+
+
+
+                        <div class="card-header">
+                            <h4 class="card-title mb-0">Edit Profile</h4>
+
+                        </div>
+
+                        @include('admin.message')
+                        @if (session('message'))
+                        <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
+                    @endif
+
+                    @if ($errors->any())
+                    <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                        <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                    @endif
+
+                        <div class="col-xl-12 p-card card mt-3">
+
+
+                            <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
                             <form action="/admin/update-profile/{{ Auth::guard('admin')->user()->id }}" method="POST"
                                 enctype="multipart/form-data">
                                 @csrf
                                 @method('put')
                                 <div class="card-body">
                                     <div class="row g-3">
-                                        <div class="col-md-5">
+                                        <div class="col-md-6">
                                             <label class="form-label small text-muted">Company</label>
                                             <input type="text" class="form-control" disabled="" placeholder="Company"
                                                 value="AdFj Studios">
                                         </div>
-                                        <div class="col-sm-6 col-md-3">
+                                        <div class="col-sm-6 col-md-6">
                                             <label class="form-label small text-muted">Full Name</label>
                                             <input type="text" name="name" class="form-control" placeholder="Username"
                                                 value="{{ Auth::guard('admin')->user()->name }}">
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <br>
+                                        <div class="col-sm-6 col-md-12">
                                             <label class="form-label small text-muted">Email address</label>
                                             <input type="email" name="email" class="form-control" placeholder="Email"
                                                 value="{{ Auth::guard('admin')->user()->email }}">
@@ -133,27 +156,27 @@
                                     </div>
 
                                 </div>
-                                <div class="card-footer text-end">
+                                <div class="card-footer text-start">
                                     <button type="submit" class="btn btn-primary">Update Profile</button>
                                 </div>
                             </form>
+                        </div>
 
 
 
 
 
 
-
-                            <div class="card-header">
-                                <h2 class="card-title mb-0">Update Password</h2>
-                            </div>
-
+                        <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
+                                {{-- <div class="card-header">
+                                    <h2 class="card-title mb-0">Update Password</h2>
+                                </div> --}}
                             <form action="/admin/update-pass/{{ Auth::guard('admin')->user()->id }}" method="POST"
                                 enctype="multipart/form-data">
                                 @csrf
                                 @method('put')
                                 <div class="card-body">
-                                    <div class="row g-3">
+                                    <div  style="flex-direction: column;align-items: center;" class="row g-3">
 
                                         {{-- <div class="col-sm-6 col-md-4">
                                             <label class="form-label small text-muted">Current Password</label>
@@ -162,32 +185,19 @@
                                         </div> --}}
 
 
-                                    @include('admin.message')
-                                        @if (session('message'))
-                                        <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
-                                    @endif
-
-                                    @if ($errors->any())
-                                    <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
-                                        @foreach ($errors->all() as $error)
-                                        <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                    @endif
-
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-12">
                                             <label class="form-label small text-muted">Current Password</label>
                                             <input type="text" name="current_password" class="form-control"
                                                 placeholder="current Password">
 
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-12">
                                             <label class="form-label small text-muted">New Password</label>
                                             <input type="text" name="password" class="form-control"
                                                 placeholder="Password">
 
                                         </div>
-                                        <div class="col-sm-6 col-md-4">
+                                        <div class="col-sm-6 col-md-12">
                                             <label class="form-label small text-muted">Confirm Password</label>
 
                                             <input type="text" name="password_confirmation" class="form-control"  placeholder="Confirm Password">
@@ -211,10 +221,11 @@
                                     </div>
 
                                 </div>
-                                <div class="card-footer text-end">
+                                <div class="card-footer text-start">
                                     <button type="submit" class="btn btn-primary">Update Password</button>
                                 </div>
                             </form>
+                        </div>
                         </div>
                     </div>
 

@@ -52510,9 +52510,26 @@ input:checked~label {
     /* padding: 40px; */
 }
 
+.p-card{
+    padding-left: 1px!important;
+    flex-direction: row!important;
+    gap: 20px!important;
+    background-color: #212332!important;
+}
+
+
+
+
+
 @media (max-width:576px) {
     .star-rating-bx {
         padding: 20px 15px;
+    }
+    .p-card{
+        padding-left: 1px!important;
+        flex-direction: column!important;
+        gap: 20px!important;
+        background-color: #212332!important;
     }
 }
 

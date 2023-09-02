@@ -4,11 +4,11 @@
         <div class="d-flex">
             <a class="header-brand" href="{{ route('admin.dashboard') }}">
 
-                <h1>ADMIN</h1>
-                {{-- <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
-                    alt="Maestloper Media">
-                <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img dark-logo"
-                    alt="Maestloper Media"> --}}
+                <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img dark-logo"
+                alt="AdFj Studios" style="margin: 0 0 0 54px;">
+           {{-- <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
+                alt="AdFj Studios" style="margin-right: 70px;"> --}}
+
                 <img src="{{ asset('user-assets/img/logo/favicon.png') }}" class="header-brand-img mobile-logo"
                     alt="Maestloper Media">
                 <img src="{{ asset('user-assets/img/logo/favicon.png') }}" class="header-brand-img darkmobile-logo"
@@ -22,7 +22,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="mt-1 d-md-block d-none">
+            {{-- <div class="mt-1 d-md-block d-none">
                 <form class="form-inline">
                     <div class="search-element">
                         <input type="search" class="form-control header-search mobile-view-search"
@@ -37,7 +37,8 @@
                         </button>
                     </div>
                 </form>
-            </div><!-- SEARCH -->
+            </div> --}}
+            <!-- SEARCH -->
             <div class="d-flex order-lg-2 ms-auto main-header-end">
                 <button class="navbar-toggler navresponsive-toggler d-md-none ms-auto" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
