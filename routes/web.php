@@ -177,6 +177,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/edit/{id}', [AllPosts::class, 'edit']);
         Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
         Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
+        Route::put('/update-pass/{id}', [DashboardController::class, 'updatepass']);
         Route::delete('/deleteimage/{id}', [AllPosts::class, 'deleteimage']);
         Route::delete('/deletecover/{id}', [AllPosts::class, 'deletecover']);
         Route::put('/update/{id}', [AllPosts::class, 'update']);

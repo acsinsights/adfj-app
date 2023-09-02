@@ -10,7 +10,7 @@
                 alt="AdFj Studios" style="margin: 0 0;">
               {{-- <img src="{{ asset('user-assets/img/logo/adfj.svg') }}" class="header-brand-img desktop-lgo"
                 alt="AdFj Studios" style="margin-right: 70px;"> --}}
-            <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="header-brand-img darkmobile-logo"
+            <img src="{{ asset('user-assets/img/logo/favicon.ico') }}" class="header-brand-img darkmobile-logo"
                 alt="AdFj Studios">
         </a>
     </div>

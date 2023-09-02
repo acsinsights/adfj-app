@@ -5,9 +5,9 @@
                         class="mdi mdi-btn-close"></i></span>
             </button>
             <div style="align-items: center;!important" class="media">
-                <div class="alert-left-icon-big">
-                    <span><i class="mdi mdi-alert"></i></span>
-                </div>
+                {{-- <div class="alert-left-icon-big">
+                    <span><i class="alert"></i></span>
+                </div> --}}
                 <div class="media-body">
                     {{-- <h5 class="mt-1 mb-2">Error!</h5> --}}
                     <p class="mb-0">{{ Session::get('error') }}</p>
@@ -25,7 +25,7 @@
             </button>
             <div class="media">
                 <div class="alert-left-icon-big">
-                    <span><i class="mdi mdi-check-circle-outline"></i></span>
+                    <span><i class="check-circle-outline"></i></span>
                 </div>
                 <div class="media-body">
                     {{-- <h5 class="mt-1 mb-2"></h5> --}}

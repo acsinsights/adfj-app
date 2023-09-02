@@ -39,7 +39,7 @@
 
 
                                             <li class="has-dropdown">
-                                                <a class="mean-clicked" href="{{ url('javascript:void(0)') }}">Portfolio</a>
+                                                <a class="mean-clicked" href="{{ url('#') }}">Portfolio</a>
                                                 <ul class="submenu">
                                                     <li style="margin-left:10px;margin-top:10px"><a
                                                             href="{{ url('music') }}">Music Production</a></li>

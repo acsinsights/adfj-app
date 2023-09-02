@@ -83,6 +83,83 @@
                                                 placeholder="Password" value="{{ Auth::guard('admin')->user()->password }}">
                                         </div> --}}
 
+{{--
+                                    @include('admin.message')
+                                        @if (session('message'))
+                                        <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
+                                    @endif
+
+                                    @if ($errors->any())
+                                    <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
+                                        @foreach ($errors->all() as $error)
+                                        <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                    @endif
+
+                                        <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Current Password</label>
+                                            <input type="text" name="current_password" class="form-control"
+                                                placeholder="current Password">
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">New Password</label>
+                                            <input type="text" name="password" class="form-control"
+                                                placeholder="Password">
+
+                                        </div>
+                                        <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Confirm Password</label>
+
+                                            <input type="text" name="password_confirmation" class="form-control"  placeholder="Confirm Password">
+                                        </div> --}}
+
+
+
+
+
+
+                                        {{-- <div class="col-sm-6 col-md-3">
+                                            <label class="form-label small text-muted">Postal Code</label>
+                                            <input type="number" class="form-control" placeholder="ZIP Code">
+                                        </div>
+                                        <div class="col-md-5">
+                                            <label class="form-label small text-muted">Country</label>
+                                            <select class="form-control custom-select">
+                                                <option value="">India</option>
+                                            </select>
+                                        </div> --}}
+                                    </div>
+
+                                </div>
+                                <div class="card-footer text-end">
+                                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                                </div>
+                            </form>
+
+
+
+
+
+
+
+
+
+
+                            <form action="/admin/update-pass/{{ Auth::guard('admin')->user()->id }}" method="POST"
+                                enctype="multipart/form-data">
+                                @csrf
+                                @method('put')
+                                <div class="card-body">
+                                    <div class="row g-3">
+
+                                        {{-- <div class="col-sm-6 col-md-4">
+                                            <label class="form-label small text-muted">Current Password</label>
+                                            <input type="text" name="password" class="form-control"
+                                                placeholder="Password" value="{{ Auth::guard('admin')->user()->password }}">
+                                        </div> --}}
+
 
                                     @include('admin.message')
                                         @if (session('message'))
@@ -134,7 +211,7 @@
 
                                 </div>
                                 <div class="card-footer text-end">
-                                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
                                 </div>
                             </form>
                         </div>

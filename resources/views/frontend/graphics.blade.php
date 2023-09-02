@@ -53,16 +53,17 @@
         <section class="portfolio__area pb-75 p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
-                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/circle-1.png"
+
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/circle-1.png') }}"
                     alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-21"
-                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-green.png"
+                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-green.png') }}"
                     alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-22"
-                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-pink.png"
+                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-pink.png') }}"
                     alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-23"
-                    src="https://weblearnbd.net/wp/adfj-studios/wp-content/themes/adfj-studios/assets/img/portfolio/masonary/shape/polygon-yellow.png"
+                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-yellow.png') }}"
                     alt="adfj-studios">
             </div>
             <div class=" mt-50  container-fluid tp-gx-20">
