@@ -39763,8 +39763,10 @@ div.team__details-shape-4 img {
 
 .testimonial__slider-arrow-6 button:hover {
     color: var(--tp-common-white);
-    background-color: var(--tp-theme-6);
-    border-color: var(--tp-theme-6);
+    /* background-color: var(--tp-theme-6);
+    border-color: var(--tp-theme-6); */
+    background-color: #2ebbc4;
+    border-color: #2ebbc4;
 }
 
 .testimonial__slider-arrow-6 button.testimonial-6-button-next {

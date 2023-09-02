@@ -63,15 +63,15 @@ class TestimonialController extends Controller
                 File::delete("testiimages/" . $post->custimg);
             }
             $file = $request->file("cover");
-            $imageName = time() . '_' . $file->getClientOriginalName();
-            $file->move(\public_path("testiimages/"), $imageName);
-            $request['cover'] = $imageName;
+            $post->custimg = time() . '_' . $file->getClientOriginalName();
+            $file->move(\public_path("testiimages/"),  $post->custimg);
+            $request['cover'] =  $post->custimg;
         }
         $post->update([
             "custname" => $request->name,
             "custdesignation" => $request->custdesignation,
             "custreview" => $request->review,
-             "custimg" => $imageName,
+             "custimg" =>  $post->custimg,
         //    "custlogo" => $request->cover,
             "custstar" => $request->custstar,
             "date" => $request->date,

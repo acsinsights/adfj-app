@@ -137,17 +137,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         //* categories
         // Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
