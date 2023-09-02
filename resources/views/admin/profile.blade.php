@@ -144,8 +144,9 @@
 
 
 
-
-
+                            <div class="card-header">
+                                <h2 class="card-title mb-0">Update Password</h2>
+                            </div>
 
                             <form action="/admin/update-pass/{{ Auth::guard('admin')->user()->id }}" method="POST"
                                 enctype="multipart/form-data">
