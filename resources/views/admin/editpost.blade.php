@@ -24,9 +24,9 @@
                             <input type="text" name="title" class="form-control m-2" placeholder="Service Category"
                                 value="{{ $posts->title }}">
 
-                            <label>Sub Project Title</label>
+                            {{-- <label>Sub Project Title</label>
                             <input type="text" name="author" class="form-control m-2" placeholder="Title of post"
-                                value="{{ $posts->author }}">
+                                value="{{ $posts->author }}"> --}}
 
                             <label>Portfolio Service</label>
                             <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}" readonly>

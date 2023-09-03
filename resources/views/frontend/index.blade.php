@@ -931,7 +931,7 @@
                             <div class="testimonial__slider-active-6 swiper-container">
                                 <div class="swiper-wrapper">
                                     @foreach ($testimonials as $tt)
-                                        <div class="testimonial__item-6 transition-3 mb-75 swiper-slide">
+                                        <div style="height: 250px!important;" class="testimonial__item-6 transition-3 mb-75 swiper-slide">
                                             <div class="testimonial__rating testimonial__rating-6">
                                                 @if ($tt->custstar == 1)
                                                     <a href="#">
@@ -985,7 +985,7 @@
                                                     </a>
                                                 @endif
                                             </div>
-                                            <div class="testimonial__content-6">
+                                            <div style="height: 100px;" class="testimonial__content-6">
                                                 <p>
                                                     {{ $tt->custreview }}
                                                 </p>
