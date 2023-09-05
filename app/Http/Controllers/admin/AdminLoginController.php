@@ -18,7 +18,7 @@ class AdminLoginController extends Controller
     {
         $validator = Validator::make($request->all(), [
 
-            'username' => 'username',
+            'name' => 'name',
             'email' => 'email',
             'password' => 'required'
         ]);
@@ -27,8 +27,7 @@ class AdminLoginController extends Controller
 
             if (
                 Auth::guard('admin')->attempt(
-                    ['username' => $request->username, 'password' => $request->password],
-                    ['email' => $request->email, 'password' => $request->password],
+                    ['email' => $request->email, 'name' => $request->email, 'password' => $request->password],
                     $request->get('remember')
                 )
             ) {
