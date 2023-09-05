@@ -65,7 +65,7 @@
                                                {{--  <th scope="row">
                                     {{ $tsti->id }}</th> --}}
                                         <td><img src="/clientleleimg/{{ $client->clientimg }}" class="img-responsive"
-                                                style="max-height:80px; max-width:50px" alt="" srcset="">
+                                                style="max-height:120px; max-width:120px" alt="" srcset="">
                                             </td>
                                             {{-- <td><img src="/testilogos/{{ $tsti->custlogo }}" class="img-responsive"
                                                 style="max-height:80px; max-width:50px" alt="" srcset=""></td> --}}
@@ -74,7 +74,7 @@
 
 
                                         {{-- <td>{{ $client->date }}</td> --}}
-{{-- 
+{{--
                                         <td><a href="/admin/editclientlele/{{ $client->id }}"
                                                 class="btn btn-outline-primary">Edit</a>
                                         </td> --}}

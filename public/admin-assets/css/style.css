@@ -1162,6 +1162,11 @@ h2.animate {
     padding: 2px 15px;
 }
 
+@media (max-width: 1400px) {
+    .f-direct{
+        flex-direction: column-reverse;
+    }
+}
 @media (max-width: 767px) {
     .files .btn span {
         display: none;

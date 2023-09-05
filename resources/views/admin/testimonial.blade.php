@@ -51,7 +51,7 @@
                             <thead>
                                 <tr>
                                     {{-- <th>SR. No</th> --}}
-                                    <th>Customer Image</th>
+                                    <th>Client Logo</th>
                                     {{-- <th>Logo</th> --}}
                                     <th>Customer Name</th>
                                     <th>Customer Designation</th>

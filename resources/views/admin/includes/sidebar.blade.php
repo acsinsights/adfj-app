@@ -37,7 +37,7 @@
                         d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z">
                     </path>
                 </svg>
-                <span class="side-menu__label">All posts</span>
+                <span class="side-menu__label">All Posts</span>
             </a>
         </li>
         <li class="slide">
@@ -50,15 +50,10 @@
                         d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l1.41 1.41.59.59H20v10z">
                     </path>
                 </svg>
-                <span class="side-menu__label">Featured posts</span>
+                <span class="side-menu__label">Featured Posts</span>
             </a>
         </li>
-        <li class="slide">
-            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.our-clientlele') }}">
-                <svg height="24" width="24" class="svg-icon side-menu__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg>
-                <span class="side-menu__label">Our Clientlele</span>
-            </a>
-        </li>
+
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.addposts') }}">
                 <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
@@ -142,7 +137,13 @@
                 <span class="side-menu__label">Graphic</span>
             </a>
         </li>
-        <li class="side-item side-item-category">Testiminials</li>
+        <li class="side-item side-item-category">Our Clientele</li>
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.our-clientlele') }}">
+                <svg height="24" width="24" class="svg-icon side-menu__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg>
+                <span class="side-menu__label">Client Logo</span>
+            </a>
+        </li>
         <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.testimonial') }}">
                 {{-- <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
@@ -159,7 +160,7 @@
                     <path
                         d="m354-247 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-80l65-281L80-550l288-25 112-265 112 265 288 25-218 189 65 281-247-149L233-80Zm247-350Z" />
                 </svg>
-                <span class="side-menu__label">All Testimonials</span>
+                <span class="side-menu__label">Testimonials</span>
             </a>
         </li>
         {{-- <li class="slide">

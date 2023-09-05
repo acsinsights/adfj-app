@@ -24,7 +24,7 @@ class AllPosts extends Controller
 
     public function featured()
     {
-        $posts = Post::latest()->take(10)->get();
+        $posts = Post::latest()->take(100)->get();
         return view('admin.featuredpost')->with('posts', $posts);
     }
 
