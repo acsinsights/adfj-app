@@ -55,6 +55,8 @@ class DashboardController extends Controller
 
         $users->update([
             "name" => $request->name,
+             "username" => $request->username,
+            "phone" => $request->phone,
             "email" => $request->email,
             // "password" => Hash::make($request->password),
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',

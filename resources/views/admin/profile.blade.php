@@ -26,7 +26,7 @@
 
                                             <small style="margin: 0 0 10px 10px" class="text-muted">Phone No.</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
-                                        1234567895</h4>
+                                            {{ Auth::guard('admin')->user()->phone }}</h4>
                                         </div>
                                     <div class="">
 
@@ -114,16 +114,21 @@
                                             <div class="col-sm-6 col-md-6">
                                                 <label class="form-label small text-muted">Email Address</label>
                                                 <input type="email" name="email" class="form-control"
-                                                    placeholder="Enter Your Email Address" value="">
+                                                    placeholder="Enter Your Email Address" value=" {{ Auth::guard('admin')->user()->email }}">
                                                     {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                             </div>
                                             <div class="col-sm-6 col-md-6">
                                                 <label class="form-label small text-muted">Phone No.</label>
-                                                <input type="email" name="email" class="form-control"
-                                                    placeholder="Enter Your Phone No." value="">
+                                                <input type="text" name="phone" class="form-control"
+                                                    placeholder="Enter Your Phone No." value=" {{ Auth::guard('admin')->user()->phone }}">
                                                     {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                             </div>
-
+                                            <div class="col-sm-6 col-md-12">
+                                                <label class="form-label small text-muted">Username</label>
+                                                <input type="text" name="username" class="form-control"
+                                                    placeholder="username" value="{{ Auth::guard('admin')->user()->username }}">
+                                                    {{-- {{ Auth::guard('admin')->user()->email }} --}}
+                                            </div>
                                             <div class="col-md-12">
                                                 <label class="form-label small text-muted">Profile Image <span>(160 x 160)</span></label>
                                                 <input type="file" name="cover" class="form-control">

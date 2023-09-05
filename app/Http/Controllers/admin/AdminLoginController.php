@@ -17,7 +17,9 @@ class AdminLoginController extends Controller
     public function authenticate(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email',
+
+            'username' => 'username',
+            'email' => 'email',
             'password' => 'required'
         ]);
 
@@ -25,6 +27,7 @@ class AdminLoginController extends Controller
 
             if (
                 Auth::guard('admin')->attempt(
+                    ['username' => $request->username, 'password' => $request->password],
                     ['email' => $request->email, 'password' => $request->password],
                     $request->get('remember')
                 )

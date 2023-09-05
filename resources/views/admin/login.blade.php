@@ -41,20 +41,13 @@
                                     <form action="{{ route('admin.authenticate') }}" method="post">
                                         @csrf
                                         <div class="mb-3">
-                                            <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" name="email"
-                                                class="form-control @error('email') is-invalid @enderror"
-                                                value="{{ old('email') }}" placeholder="Username">
+                                            <label class="mb-1"><strong>username</strong></label>
+                                            <input type="text" name="username"
+                                                class="form-control"
+                                                 placeholder="Username">
 
 
-                                                @if ($errors->has('email'))
-                                                <span class="text-danger">{{ $errors->first('email') }}</span>
-                                                @endif
 
-
-                                            @error('email')
-                                                <p class="invalid-feedback">{{ $message }}</p>
-                                            @enderror
                                         </div>
                                         <div class="mb-3 position-relative">
                                             <label class="mb-1"><strong>Password</strong></label>
