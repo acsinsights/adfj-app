@@ -1,9 +1,9 @@
 @extends('frontend.layouts.app')
-@section('title', 'Your Destination for Media Production Excellence')
+@section('title', 'Blogs')
 @section('page')
 
     <!-- offcanvas area start -->
-    <div class="offcanvas__area offcanvas__area-1">
+    {{-- <div class="offcanvas__area offcanvas__area-1">
         <div class="offcanvas__wrapper">
             <div class="offcanvas__shape">
                 <img class="offcanvas__shape-1" src="assets/img/shape/offcanvas-shape-1.png" alt="" />
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="body-overlay"></div>
     <!-- offcanvas area end -->
 

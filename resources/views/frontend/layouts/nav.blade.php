@@ -69,10 +69,10 @@
                                                 <a class="nav-link {{ URL::current() == url('contact') ? 'active-pg' : '' }}"
                                                     href="{{ url('contact') }}">Contact Us</a>
                                             </li>
-                                            <li class="">
+                                            {{-- <li class="">
                                                 <a class="nav-link {{ URL::current() == url('blog') ? 'active-pg' : '' }}"
                                                     href="{{ url('blog') }}">Blogs</a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </nav>
                                     <!-- for wp -->

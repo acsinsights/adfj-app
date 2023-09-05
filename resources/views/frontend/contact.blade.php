@@ -8,7 +8,7 @@
     <main>
         <!-- contact area start -->
         <section class="tp-section-area p-relative z-index-1 tp-section-spacing">
-            <div class="tp-section-bg include-bg" data-background="{{ asset('user-assets//img/contact/contact-bg.png') }}">
+            <div class="tp-section-bg include-bg" data-background="{{ asset('user-assets/img/contact/contact-bg.png') }}">
             </div>
             <div class="container">
                 <div class="row justify-content-center">
