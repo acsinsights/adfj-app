@@ -27,7 +27,9 @@ class AdminLoginController extends Controller
 
             if (
                 Auth::guard('admin')->attempt(
-                    ['username' => $request->username, 'password' => $request->password],
+
+                    // ['username' =>'username'],
+                    // ['username' => $request->username, 'password' => $request->password],
                     ['email' => $request->email, 'password' => $request->password],
                     $request->get('remember')
                 )
