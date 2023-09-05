@@ -40,7 +40,7 @@ class ClientleleController extends Controller
         return redirect("/admin/our-clientlele")->with('success', 'Added Successfully');
     }
 
-    // ?Edit function for posts
+    // ?Edit function for clientleles
     public function edit($id)
     {
         $clientleles = Clientlele::findOrFail($id);

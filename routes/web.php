@@ -13,6 +13,7 @@ use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 use App\Http\Controllers\admin\TestimonialController;
 use App\Http\Controllers\admin\ClientleleController;
+use App\Http\Controllers\admin\OfferController;
 
 
 
@@ -114,6 +115,20 @@ Route::group(['prefix' => 'admin'], function () {
         Route::any('/updateclientlele/{id}', [ClientleleController::class, 'update']);
 
 
+
+
+
+
+        Route::get('/alloffer', [OfferController::class, 'index'])->name('admin.alloffer');
+        // Route::post('/add-clientlele', [ClientleleController::class, 'addclientele'])->name('admin.add-clientlele');
+        // Route::get('/edit-ourclientlele', [ClientleleController::class, 'editclientele'])->name('admin.edit-ourclientlele');
+        Route::get('/add-offer', [OfferController::class, 'create'])->name('admin.add-offer');
+        Route::post('/addoffer', [OfferController::class, 'store'])->name('admin.addoffer');
+
+        Route::delete('/deleteoffer/{id}', [OfferController::class, 'destroy']);
+        Route::get('/editoffer/{id}', [OfferController::class, 'edit']);
+        Route::delete('/delete-offer-image/{id}', [OfferController::class, 'deletecover']);
+        Route::any('/updateoffer/{id}', [OfferController::class, 'update']);
 
 
 

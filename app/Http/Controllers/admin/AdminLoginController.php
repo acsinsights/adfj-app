@@ -14,11 +14,13 @@ class AdminLoginController extends Controller
         return view('admin.login');
     }
 
+
+
     public function authenticate(Request $request)
     {
         $validator = Validator::make($request->all(), [
 
-            'username' => 'username',
+            // 'username' => 'username',
             'email' => 'email',
             'password' => 'required'
         ]);
@@ -29,8 +31,8 @@ class AdminLoginController extends Controller
                 Auth::guard('admin')->attempt(
 
                     // ['username' =>'username'],
-                    // ['username' => $request->username, 'password' => $request->password],
-                    ['email' => $request->email, 'password' => $request->password],
+                      ['username' => $request->username, 'password' => $request->password],
+                    // ['email' => $request->email, 'password' => $request->password],
                     $request->get('remember')
                 )
             ) {

@@ -125,7 +125,7 @@
                                             </div>
                                             <div class="col-sm-6 col-md-12">
                                                 <label class="form-label small text-muted">Username</label>
-                                                <input type="text" name="username" class="form-control"
+                                                <input type="text" name="username" class="form-control" disabled=""
                                                     placeholder="username" value="{{ Auth::guard('admin')->user()->username }}">
                                                     {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                             </div>

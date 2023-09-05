@@ -10,6 +10,7 @@ use App\Models\Pservices;
 use App\Models\Stypes;
 use App\Models\Testimonial;
 use App\Models\Clientlele;
+use App\Models\Offer;
 
 use Illuminate\Support\Facades\File;
 
@@ -23,7 +24,8 @@ class HomeController extends Controller
         $posts = Post::latest()->take(10)->get();
         $testimonials = Testimonial::all();
         $clientleles = Clientlele::all();
-        return view('frontend.index' ,compact('posts','testimonials','clientleles'));
+        $offers = Offer::all();
+        return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
     }
 
     public function about()
