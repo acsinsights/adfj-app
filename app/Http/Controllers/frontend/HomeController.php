@@ -20,13 +20,22 @@ class HomeController extends Controller
 
 
     public function index()
+
     {
-        $posts = Post::latest()->take(10)->get();
+        $posts = Post::latest()->get();
         $testimonials = Testimonial::all();
         $clientleles = Clientlele::all();
-        $offers = Offer::all();
-        return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
+        return view('frontend.index' ,compact('posts','testimonials','clientleles'));
     }
+
+
+    // {
+    //     $posts = Post::latest()->take(10)->get();
+    //     $testimonials = Testimonial::all();
+    //     $clientleles = Clientlele::all();
+    //     $offers = Offer::all();
+    //     return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
+    // }
 
     public function about()
     {
