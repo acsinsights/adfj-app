@@ -16,18 +16,19 @@
                         <div class="card">
 
                             <div class="card-body">
-                                <div style="column-gap: 30px;" class="d-flex align-items-md-start align-items-center flex-column flex-md-row">
+                                <div style="column-gap: 30px;"
+                                    class="d-flex align-items-md-start align-items-center flex-column flex-md-row">
                                     <img src="/profile/{{ Auth::guard('admin')->user()->profile_img }}" alt="profile_img"
                                         class="rounded-4" height="160px" width="160px">
-                                    <div  class=" ms-md-5 m-0 text-md-start text-left">
+                                    <div class=" ms-md-5 m-0 text-md-start text-left">
                                         <small style="margin: 0 0 10px 10px" class="text-muted">Full name</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
                                             {{ Auth::guard('admin')->user()->name }}</h4>
 
-                                            <small style="margin: 0 0 10px 10px" class="text-muted">Phone No.</small>
+                                        <small style="margin: 0 0 10px 10px" class="text-muted">Phone No.</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
                                             {{ Auth::guard('admin')->user()->phone }}</h4>
-                                        </div>
+                                    </div>
                                     <div class="">
 
 
@@ -62,84 +63,88 @@
                                         </div>
 
                                     </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
 
 
-                        <div class="card-header">
-                            <h4 class="card-title mb-0">Edit Profile</h4>
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">Edit Profile</h4>
 
-                        </div>
+                    </div>
 
-                        @include('admin.message')
-                        @if (session('message'))
-                            <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
-                        @endif
+                    @include('admin.message')
+                    @if (session('message'))
+                        <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
+                    @endif
 
-                        @if ($errors->any())
-                            <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
-                                @foreach ($errors->all() as $error)
-                                    <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">
-                                        {{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        @endif
+                    @if ($errors->any())
+                        <ul style="color: rgb(255, 255, 255)!important" class="alert alert-danger">
+                            @foreach ($errors->all() as $error)
+                                <li style="color: rgb(255, 255, 255)!important" class=" alert-danger">
+                                    {{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    @endif
 
-                        <div class="col-xl-12 p-card card mt-3">
+                    <div class="col-xl-12 p-card card mt-3">
 
 
-                            <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
-                                <form action="/admin/update-profile/{{ Auth::guard('admin')->user()->id }}" method="POST"
-                                    enctype="multipart/form-data">
-                                    @csrf
-                                    @method('put')
-                                    <div class="card-body">
-                                        <div class="row g-3">
-                                            <div class="col-sm-6 col-md-6">
-                                                <label class="form-label small text-muted">Full Name</label>
-                                                <input type="text" name="name" class="form-control"
-                                                    placeholder="Username" value="{{ Auth::guard('admin')->user()->name }}">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label small text-muted">Company</label>
-                                                <input type="text" class="form-control" disabled=""
-                                                    placeholder="Company" value="AdFj Studios">
-                                            </div>
+                        <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
+                            <form action="/admin/update-profile/{{ Auth::guard('admin')->user()->id }}" method="POST"
+                                enctype="multipart/form-data">
+                                @csrf
+                                @method('put')
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-sm-6 col-md-6">
+                                            <label class="form-label small text-muted">Full Name</label>
+                                            <input type="text" name="name" class="form-control" placeholder="Username"
+                                                value="{{ Auth::guard('admin')->user()->name }}">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label small text-muted">Company</label>
+                                            <input type="text" class="form-control" disabled="" placeholder="Company"
+                                                value="AdFj Studios">
+                                        </div>
 
-                                            <br>
-                                            <div class="col-sm-6 col-md-6">
-                                                <label class="form-label small text-muted">Email Address</label>
-                                                <input type="email" name="email" class="form-control"
-                                                    placeholder="Enter Your Email Address" value=" {{ Auth::guard('admin')->user()->email }}">
-                                                    {{-- {{ Auth::guard('admin')->user()->email }} --}}
-                                            </div>
-                                            <div class="col-sm-6 col-md-6">
-                                                <label class="form-label small text-muted">Phone No.</label>
-                                                <input type="text" name="phone" class="form-control"
-                                                    placeholder="Enter Your Phone No." value=" {{ Auth::guard('admin')->user()->phone }}">
-                                                    {{-- {{ Auth::guard('admin')->user()->email }} --}}
-                                            </div>
-                                            <div class="col-sm-6 col-md-12">
-                                                <label class="form-label small text-muted">Username</label>
-                                                <input type="text" name="username" class="form-control" disabled=""
-                                                    placeholder="username" value="{{ Auth::guard('admin')->user()->username }}">
-                                                    {{-- {{ Auth::guard('admin')->user()->email }} --}}
-                                            </div>
-                                            <div class="col-md-12">
-                                                <label class="form-label small text-muted">Profile Image <span>(160 x 160)</span></label>
-                                                <input type="file" name="cover" class="form-control">
-                                            </div>
-                                            {{-- <div class="col-sm-6 col-md-4">
+                                        <br>
+                                        <div class="col-sm-6 col-md-6">
+                                            <label class="form-label small text-muted">Email Address</label>
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Enter Your Email Address"
+                                                value=" {{ Auth::guard('admin')->user()->email }}">
+                                            {{-- {{ Auth::guard('admin')->user()->email }} --}}
+                                        </div>
+                                        <div class="col-sm-6 col-md-6">
+                                            <label class="form-label small text-muted">Phone No.</label>
+                                            <input type="text" name="phone" class="form-control" minlength="10" maxlength="10"
+                                                placeholder="Enter Your Phone No."
+                                                value=" {{ Auth::guard('admin')->user()->phone }}">
+                                            {{-- {{ Auth::guard('admin')->user()->email }} --}}
+                                        </div>
+                                        <div class="col-sm-6 col-md-12">
+                                            <label class="form-label small text-muted">Username</label>
+                                            <input type="username" name="username" class="form-control" disabled=""
+                                                placeholder="username"
+                                                value="{{ Auth::guard('admin')->user()->username }}">
+                                            {{-- {{ Auth::guard('admin')->user()->email }} --}}
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label small text-muted">Profile Image <span>(160 x
+                                                    160)</span></label>
+                                            <input type="file" name="cover" class="form-control">
+                                        </div>
+                                        {{-- <div class="col-sm-6 col-md-4">
                                             <label class="form-label small text-muted">Current Password</label>
                                             <input type="text" name="password" class="form-control"
                                                 placeholder="Password" value="{{ Auth::guard('admin')->user()->password }}">
                                         </div> --}}
 
-                                            {{--
+                                        {{--
                                     @include('admin.message')
                                         @if (session('message'))
                                         <h5 class="alert alert-success mb-2">{{ session('message') }}</h5>
@@ -176,7 +181,7 @@
 
 
 
-                                            {{-- <div class="col-sm-6 col-md-3">
+                                        {{-- <div class="col-sm-6 col-md-3">
                                             <label class="form-label small text-muted">Postal Code</label>
                                             <input type="number" class="form-control" placeholder="ZIP Code">
                                         </div>
@@ -186,63 +191,63 @@
                                                 <option value="">India</option>
                                             </select>
                                         </div> --}}
-                                        </div>
-
                                     </div>
-                                    <div class="card-footer text-start">
-                                        <button type="submit" class="btn btn-primary">Update Profile</button>
-                                    </div>
-                                </form>
-                            </div>
+
+                                </div>
+                                <div class="card-footer text-start">
+                                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                                </div>
+                            </form>
+                        </div>
 
 
 
 
 
 
-                            <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
-                                {{-- <div class="card-header">
+                        <div style="background-color: #2a2e3f;" class="card-body col-lg-6">
+                            {{-- <div class="card-header">
                                     <h2 class="card-title mb-0">Update Password</h2>
                                 </div> --}}
-                                <form action="/admin/update-pass/{{ Auth::guard('admin')->user()->id }}" method="POST"
-                                    enctype="multipart/form-data">
-                                    @csrf
-                                    @method('put')
-                                    <div class="card-body">
-                                        <div style="flex-direction: column;align-items: center;" class="row g-3">
+                            <form action="/admin/update-pass/{{ Auth::guard('admin')->user()->id }}" method="POST"
+                                enctype="multipart/form-data">
+                                @csrf
+                                @method('put')
+                                <div class="card-body">
+                                    <div style="flex-direction: column;align-items: center;" class="row g-3">
 
-                                            {{-- <div class="col-sm-6 col-md-4">
+                                        {{-- <div class="col-sm-6 col-md-4">
                                             <label class="form-label small text-muted">Current Password</label>
                                             <input type="text" name="password" class="form-control"
                                                 placeholder="Password" value="{{ Auth::guard('admin')->user()->password }}">
                                         </div> --}}
 
 
-                                            <div class="col-sm-6 col-md-12">
-                                                <label class="form-label small text-muted">Current Password</label>
-                                                <input type="text" name="current_password" class="form-control"
-                                                    placeholder="current Password">
+                                        <div class="col-sm-6 col-md-12">
+                                            <label class="form-label small text-muted">Current Password</label>
+                                            <input type="text" name="current_password" class="form-control"
+                                                placeholder="current Password">
 
-                                            </div>
-                                            <div class="col-sm-6 col-md-12">
-                                                <label class="form-label small text-muted">New Password</label>
-                                                <input type="text" name="password" class="form-control"
-                                                    placeholder="Password">
+                                        </div>
+                                        <div class="col-sm-6 col-md-12">
+                                            <label class="form-label small text-muted">New Password</label>
+                                            <input type="text" name="password" class="form-control"
+                                                placeholder="Password">
 
-                                            </div>
-                                            <div class="col-sm-6 col-md-12">
-                                                <label class="form-label small text-muted">Confirm Password</label>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12">
+                                            <label class="form-label small text-muted">Confirm Password</label>
 
-                                                <input type="text" name="password_confirmation" class="form-control"
-                                                    placeholder="Confirm Password">
-                                            </div>
-
-
+                                            <input type="text" name="password_confirmation" class="form-control"
+                                                placeholder="Confirm Password">
+                                        </div>
 
 
 
 
-                                            {{-- <div class="col-sm-6 col-md-3">
+
+
+                                        {{-- <div class="col-sm-6 col-md-3">
                                             <label class="form-label small text-muted">Postal Code</label>
                                             <input type="number" class="form-control" placeholder="ZIP Code">
                                         </div>
@@ -252,20 +257,20 @@
                                                 <option value="">India</option>
                                             </select>
                                         </div> --}}
-                                        </div>
+                                    </div>
 
-                                    </div>
-                                    <div class="card-footer text-start">
-                                        <button type="submit" class="btn btn-primary">Update Password</button>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                                <div class="card-footer text-start">
+                                    <button type="submit" class="btn btn-primary">Update Password</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                </div>
 
-                </div> <!--[ .row end ]-->
-            </div>
-        </main>
+            </div> <!--[ .row end ]-->
+    </div>
+    </main>
     </div>
 @endsection
 

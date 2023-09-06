@@ -27,8 +27,7 @@
                         <label class="m-2">Date</label>
                         <input type="date" name="date" class="form-control m-2"> --}}
 
-                        <label class="m-2">Offer Image <span class="text-danger">(44 ×
-                                44px)</span></label>
+                        <label class="m-2">Offer Image <span class="text-danger">(870 × 500px)</span></label>
                         <input type="file" id="input-file-now-custom-3" class="form-control m-2"
                             name="offerimage" required>
 
