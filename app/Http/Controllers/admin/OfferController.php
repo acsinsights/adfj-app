@@ -44,24 +44,28 @@ class OfferController extends Controller
         public function edit($id)
         {
             $offers = Offer::findOrFail($id);
-            return view('admin.edit-offer')->with('offers', $offers);
+            return view('admin.editoffer')->with('offers', $offers);
         }
     // ?Update function for offers
     public function update(Request $request, $id)
     {
         $post = Offer::findOrFail($id);
+
         if ($request->hasFile("offerimage")) {
             if (file::exists("offerimg/" . $post->offerimage)) {
                 File::delete("offerimg/" . $post->offerimage);
             }
-            $file = $request->file("clientimg");
-            $imageName = time() . '_' . $file->getClientOriginalName();
-            $file->move(\public_path("offerimg/"), $imageName);
-            // $request['clientimg'] = $imageName;
+            $file = $request->file("offerimage");
+            $post->offerimage = time() . "_" . $file->getClientOriginalName();
+            $file->move(\public_path("/offerimg"), $post->offerimage);
+            $request['offerimage'] = $post->offerimage;
         }
+
+
+
         $post->update([
             "offername" => $request->offername,
-            "offerimage" => $offerimage,
+            "offerimage" =>$post->offerimage,
         ]);
         return redirect("/admin/alloffer")->with('success', 'Updated Successfully');
     }

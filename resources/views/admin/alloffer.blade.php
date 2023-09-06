@@ -55,7 +55,7 @@
                                     {{-- <th>Logo</th> --}}
                                     <th>Client Name</th>
                                     {{-- <th>Date</th> --}}
-                                    {{-- <th>Edit</th> --}}
+                                    <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
@@ -74,10 +74,10 @@
 
 
                                         {{-- <td>{{ $client->date }}</td> --}}
-{{--
-                                        <td><a href="/admin/editclientlele/{{ $client->id }}"
+
+                                        <td><a href="/admin/editoffer/{{ $offer->id }}"
                                                 class="btn btn-outline-primary">Edit</a>
-                                        </td> --}}
+                                        </td>
                                         <td>
                                             <form action="/admin/deleteoffer/{{ $offer->id }}" method="post">
                                                 <button class="btn btn-outline-danger"

@@ -71,7 +71,7 @@
 
 
 
-                                       <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="cover">
+                                       <input type="file" id="input-file-now-custom-3" class="form-control m-2" name="offerimage">
                                         <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                                     </form><br>
                                     {{-- <form action="/delete-clientlele-image/{{ $clientleles->id }}" method="post">

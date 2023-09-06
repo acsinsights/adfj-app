@@ -120,8 +120,8 @@ Route::group(['prefix' => 'admin'], function () {
 
 
         Route::get('/alloffer', [OfferController::class, 'index'])->name('admin.alloffer');
-        // Route::post('/add-clientlele', [ClientleleController::class, 'addclientele'])->name('admin.add-clientlele');
-        // Route::get('/edit-ourclientlele', [ClientleleController::class, 'editclientele'])->name('admin.edit-ourclientlele');
+       Route::post('/add-offer', [OfferController::class, 'addoffer'])->name('admin.add-offer');
+       Route::get('/editoffer', [OfferController::class, 'editoffer'])->name('admin.editooffer');
         Route::get('/add-offer', [OfferController::class, 'create'])->name('admin.add-offer');
         Route::post('/addoffer', [OfferController::class, 'store'])->name('admin.addoffer');
 
