@@ -42,11 +42,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-6 my-auto mx-auto">
-                            <div class="mx-auto text-right">
-                                <div id="spark1"></div>
-                            </div>
-                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -64,11 +60,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-6 my-auto mx-auto">
-                            <div class="mx-auto text-right">
-                                <div id="spark2"></div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -28,10 +28,21 @@
                             <input type="text" name="author" class="form-control m-2" placeholder="Title of post"
                                 value="{{ $posts->author }}"> --}}
 
-                            <label>Portfolio Service</label>
-                            <input type="text" class="form-control m-2" value="{{ $posts->stypes->slug }}" readonly>
+                                <label>Portfolio Service</label>
+                                <select name="service" class="form-control custom-select m-2" id="inlineFormCustomSelect">
 
+                                    <option value="{{ $posts->pservices }}" selected>Choose Type...</option>
+                                    @foreach ($pservices as $st)
+                                        {{-- @if ($st->pservices_id == $posts->serviceid)
+                                        @endif --}}
+                                        <option value="{{ $st->id }}">{{ $st->service_name }}</option>
+                                    @endforeach
+                                </select>
+
+
+                                <label>Portfolio Types</label>
                             <select name="type" class="form-control custom-select m-2" id="inlineFormCustomSelect">
+
                                 <option value="{{ $posts->stypeid }}" selected>Choose Type...</option>
                                 @foreach ($stypes as $st)
                                     @if ($st->pservices_id == $posts->serviceid)
@@ -45,7 +56,7 @@
                             <input type="text" name="location" class="form-control m-2" placeholder="location"
                                 value="{{ $posts->location }}">
 
-                            <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}">
+                            {{-- <input type="hidden" name="service" id="service" value="{{ $posts->serviceid }}"> --}}
 
                             <label>Hyperlink</label>
                             <input type="text" name="hypelinks" id="hypelinks" class="form-control m-2"
@@ -67,16 +78,16 @@
                             <button type="submit" class="btn btn-success mt-3 ">Submit</button>
                         </form>
 
-                        <label class="m-2">Cover Image</label>
+                        {{-- <label class="m-2">Cover Image</label>
                         <form action="/deletecover/{{ $posts->id }}" method="post">
 
                             <img src="/posts/{{ $posts->media }}" class="img-responsive"
                             style="max-height: 100px; max-width: 100px;" alt="" srcset="">
                             <br>
-                            {{-- <button class="btn text-danger">X</button> --}}
+
                             @csrf
                             @method('delete')
-                        </form>
+                        </form> --}}
 
                         <br>
                     </div>

@@ -49,6 +49,7 @@ class DashboardController extends Controller
             "name" => $request->name,
             // "username" => $request->username,
             "phone" => $request->phone,
+            //   "phone" => $request->code.$request->phone,
             "email" => $request->email,
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
@@ -63,7 +64,7 @@ class DashboardController extends Controller
             $request->validate([
                 'current_password',
                 'password' => ['confirmed']
-                
+
             ]);
 
             $currentPasswordStatus = Hash::check($request->current_password, auth()->user()->password);

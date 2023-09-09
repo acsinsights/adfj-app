@@ -60,7 +60,7 @@
                                     <th>Location</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
-                                    <th class="text-center">Featured Post </th>
+                                    <th>Featured Post </th>
                                 </tr>
                             </thead>
 

@@ -163,25 +163,7 @@
                 <span class="side-menu__label">Testimonials</span>
             </a>
         </li>
-        <li class="slide">
-            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.alloffer') }}">
-                {{-- <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
-                    viewBox="0 0 24 24" width="24">
-                    <path d="M0 0h24v24H0V0z" fill="none"></path>
-                    <path d="M20 4H4v13.17L5.17 16H20V4zm-6 10H6v-2h8v2zm4-3H6V9h12v2zm0-3H6V6h12v2z" opacity=".3">
-                    </path>
-                    <path
-                        d="M20 18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14zm-16-.83V4h16v12H5.17L4 17.17zM6 12h8v2H6zm0-3h12v2H6zm0-3h12v2H6z">
-                    </path>
-                </svg> --}}
-                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
-                    viewBox="0 -960 960 960" width="24">
-                    <path
-                        d="m354-247 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-80l65-281L80-550l288-25 112-265 112 265 288 25-218 189 65 281-247-149L233-80Zm247-350Z" />
-                </svg>
-                <span class="side-menu__label">Offers</span>
-            </a>
-        </li>
+
         {{-- <li class="slide">
             <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.addtestimonial') }}">
                 <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
@@ -195,7 +177,24 @@
             </a>
         </li> --}}
 
+        <li class="side-item side-item-category">Exciting Offers</li>
 
+
+        <li class="slide">
+            <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('admin.alloffer') }}">
+                {{-- <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 0 24 24" width="24">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M20 4H4v13.17L5.17 16H20V4zm-6 10H6v-2h8v2zm4-3H6V9h12v2zm0-3H6V6h12v2z" opacity=".3">
+                    </path>
+                    <path
+                        d="M20 18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14zm-16-.83V4h16v12H5.17L4 17.17zM6 12h8v2H6zm0-3h12v2H6zm0-3h12v2H6z">
+                    </path>
+                </svg> --}}
+                <svg class="svg-icon side-menu__icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
+                <span class="side-menu__label">Offers</span>
+            </a>
+        </li>
 
         {{-- <li class="side-item side-item-category">Messages</li>
          <li class="slide">

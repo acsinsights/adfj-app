@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
     <!-- Title -->
-    <title>AdFj Studios | @yield('title')</title>
+    <title>AdFJ Studios | @yield('title')</title>
 
     <!--Favicon -->
     <link rel="icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
