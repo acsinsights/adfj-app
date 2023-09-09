@@ -29,9 +29,10 @@
                                         <h4 style="margin-left: 10px;" class="mb-100">
                                             {{ Auth::guard('admin')->user()->phone }}</h4>
 
-                                            <small style="margin: 0 0 10px 10px" class="text-muted">Email (for contact and smtp purpose)</small>
-                                            <h4 style="margin-left: 10px;" class="mb-100">
-                                                {{ Auth::guard('admin')->user()->email }}</h4>
+                                        <small style="margin: 0 0 10px 10px" class="text-muted">Email (for contact and smtp
+                                            purpose)</small>
+                                        <h4 style="margin-left: 10px;" class="mb-100">
+                                            {{ Auth::guard('admin')->user()->email }}</h4>
                                     </div>
                                     <div class="">
 
@@ -39,7 +40,7 @@
 
                                         <small style="margin: 0 0 10px 10px" class="text-muted">Company Name</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
-                                            ADFJ Studios</h4>
+                                            {{ Auth::guard('admin')->user()->company_name }}</h4>
 
                                         <small style="margin: 0 0 10px 10px" class="text-muted">Username</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
@@ -118,24 +119,32 @@
                                             <input type="text" name="name" class="form-control" placeholder="Username"
                                                 value="{{ Auth::guard('admin')->user()->name }}">
                                         </div>
+
                                         <div class="col-md-6">
                                             <label class="form-label small text-muted">Company</label>
-                                            <input type="text" class="form-control" disabled="" placeholder="Company"
-                                                value="AdFJ Studios">
+                                            <input type="text" class="form-control" placeholder="Company"
+                                                name="company_name"
+                                                value="{{ Auth::guard('admin')->user()->company_name }}">
                                         </div>
 
                                         <br>
                                         <div class="col-sm-6 col-md-6">
-                                            <label class="form-label small text-muted">Email (for contact and smtp purpose)</label>
+                                            <label class="form-label small text-muted">Email (for contact and smtp
+                                                purpose)</label>
                                             <input type="email" name="email" class="form-control"
                                                 placeholder="Enter Your Email Address"
                                                 value=" {{ Auth::guard('admin')->user()->email }}">
                                             {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                         </div>
                                         <div class="col-sm-6 col-md-6">
+
+
+
+
+
                                             <label class="form-label small text-muted">Phone No.</label>
-                                            <input type="text" name="phone" class="form-control" minlength="10" maxlength="10"
-                                                placeholder="Enter Your Phone No."
+                                            <input type="text" name="phone" class="form-control" minlength="10"
+                                                maxlength="10" placeholder="Enter Your Phone No."
                                                 value=" {{ Auth::guard('admin')->user()->phone }}">
                                             {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                         </div>
@@ -288,4 +297,9 @@
 @endsection
 
 @section('customJs')
+
+
+
+
+
 @endsection

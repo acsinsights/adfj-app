@@ -49,6 +49,7 @@ class DashboardController extends Controller
             "name" => $request->name,
             // "username" => $request->username,
             "phone" => $request->phone,
+            "company_name" => $request->company_name,
             //   "phone" => $request->code.$request->phone,
             "email" => $request->email,
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
