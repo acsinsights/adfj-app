@@ -28,12 +28,25 @@
                                         <small style="margin: 0 0 10px 10px" class="text-muted">Phone No.</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
                                             {{ Auth::guard('admin')->user()->phone }}</h4>
+
+                                            <small style="margin: 0 0 10px 10px" class="text-muted">Email (for contact and smtp purpose)</small>
+                                            <h4 style="margin-left: 10px;" class="mb-100">
+                                                {{ Auth::guard('admin')->user()->email }}</h4>
                                     </div>
                                     <div class="">
 
 
 
+                                        <small style="margin: 0 0 10px 10px" class="text-muted">Company Name</small>
+                                        <h4 style="margin-left: 10px;" class="mb-100">
+                                            ADFJ Studios</h4>
 
+                                        <small style="margin: 0 0 10px 10px" class="text-muted">Username</small>
+                                        <h4 style="margin-left: 10px;" class="mb-100">
+                                            {{ Auth::guard('admin')->user()->username }}</h4>
+                                        <small style="margin: 0 0 10px 10px" class="text-muted">Location</small>
+                                        <h4 style="margin-left: 10px;" class="mb-100">
+                                            Mumbai</h4>
 
                                         {{-- <span class="text-muted">It is a long established fact that a reader will be
                                             distracted by the readable content of a page when looking at its layout.</span>
@@ -41,10 +54,10 @@
                                             <button class="btn btn-primary">Follow</button>
                                             <button class="btn btn-dark">Message</button>
                                         </div> --}}
-                                        <small style="margin: 0 0 10px 10px" class="text-muted">Email Address</small>
+                                        {{-- <small style="margin: 0 0 10px 10px" class="text-muted">Email (for contact and smtp purpose)</small>
                                         <h4 style="margin-left: 10px;" class="mb-100">
-                                            {{ Auth::guard('admin')->user()->email }}</h4>
-                                        <div
+                                            {{ Auth::guard('admin')->user()->email }}</h4> --}}
+                                        {{-- <div
                                             class="d-flex flex-row flex-wrap align-items-center justify-content-left justify-content-md-start">
                                             <div class=" px-3 me-1 ">
                                                 <small class="text-muted">City</small>
@@ -60,7 +73,7 @@
                                             </div>
 
 
-                                        </div>
+                                        </div> --}}
 
                                     </div>
                                 </div>
@@ -108,12 +121,12 @@
                                         <div class="col-md-6">
                                             <label class="form-label small text-muted">Company</label>
                                             <input type="text" class="form-control" disabled="" placeholder="Company"
-                                                value="AdFj Studios">
+                                                value="AdFJ Studios">
                                         </div>
 
                                         <br>
                                         <div class="col-sm-6 col-md-6">
-                                            <label class="form-label small text-muted">Email Address</label>
+                                            <label class="form-label small text-muted">Email (for contact and smtp purpose)</label>
                                             <input type="email" name="email" class="form-control"
                                                 placeholder="Enter Your Email Address"
                                                 value=" {{ Auth::guard('admin')->user()->email }}">
@@ -126,13 +139,13 @@
                                                 value=" {{ Auth::guard('admin')->user()->phone }}">
                                             {{-- {{ Auth::guard('admin')->user()->email }} --}}
                                         </div>
-                                        <div class="col-sm-6 col-md-12">
+                                        {{-- <div class="col-sm-6 col-md-12">
                                             <label class="form-label small text-muted">Username</label>
                                             <input type="username" name="username" class="form-control" disabled=""
                                                 placeholder="username"
                                                 value="{{ Auth::guard('admin')->user()->username }}">
-                                            {{-- {{ Auth::guard('admin')->user()->email }} --}}
-                                        </div>
+
+                                        </div> --}}
                                         <div class="col-md-12">
                                             <label class="form-label small text-muted">Profile Image <span>(160 x
                                                     160)</span></label>
