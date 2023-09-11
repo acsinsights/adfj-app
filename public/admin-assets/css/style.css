@@ -52426,6 +52426,42 @@ Dimmer
     margin-top: 0.3rem;
 }
 
+
+
+/* testi edit form start */
+
+.formrow{
+    display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+}
+.formcol{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* testi edit form end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---End profile---*/
 /* ######  sidemenu ###### */
 /*# sourceMappingURL=style.css.map */
