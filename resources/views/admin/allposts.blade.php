@@ -32,8 +32,8 @@
                         <form style="margin-right: 67px;" action="" method="post">
                             @csrf
                             @method('put')
-
-                            <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
+                         
+                            <a href="{{ route('admin.addposts') }}" class="btn btn-primary mr-1">Add Post</a>
                     </div>
 
 

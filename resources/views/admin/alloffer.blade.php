@@ -26,9 +26,19 @@
                     {{-- <div class="col-md-5 alert-message">
                         @include('admin.message')
                     </div> --}}
-                    
-                </div>
 
+                </div>
+                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                    <div class="card-options">
+                        <form style="margin-right: 67px;" action="" method="post">
+                            @csrf
+                            @method('put')
+
+                            <a href="{{ route('admin.add-offer') }}" class="btn btn-primary mr-1">Add Offer</a>
+                    </div>
+
+
+                </div>
             </div>
             <div class="content-body">
                 <!-- Basic Tables start -->

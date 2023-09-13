@@ -288,6 +288,17 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
+.client-table{
+    background-color: #f3f2f7;border-top-left-radius: 1rem; border-top-right-radius: 1rem;vertical-align: top;
+    text-transform: uppercase;
+    font-size: 0.857rem;
+    letter-spacing: 0.5px;
+    color: #323234;
+    font-weight: bold;
+
+}
+
+
 /* Rounded sliders */
 .slider.round {
     border-radius: 34px;
