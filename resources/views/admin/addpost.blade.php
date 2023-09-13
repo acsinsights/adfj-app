@@ -99,7 +99,7 @@
                                             </div>
                                             <div class="col-md-6 d-flex col-12">
                                                 <div style="margin-right: 30px" class="custom-control custom-switch custom-switch-primary">
-                                                    <p class="mb-50">Play Button</p>
+                                                    <p style="color: #5e5873;font-size: 0.857rem;" class="company-column">Play Button</p>
                                                     <input type="checkbox"  value="1" name="playbtn" class="custom-control-input" id="customSwitch10">
                                                     <label class="custom-control-label" for="customSwitch10">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>
@@ -107,7 +107,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="custom-control custom-switch custom-switch-primary">
-                                                    <p class="mb-50">Featured Post</p>
+                                                    <p style="color: #5e5873;font-size: 0.857rem;" ">Featured Post</p>
                                                     <input type="checkbox"  value="1" name="featured" class="custom-control-input" id="customSwitch11">
                                                     <label class="custom-control-label" for="customSwitch11">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>

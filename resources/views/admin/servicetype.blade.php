@@ -44,7 +44,7 @@
                 <div class="row" id="basic-table">
                     <div class="col-12">
                         <div class="card">
-                            <select name="service" id="service" value="" class="form-control m-1" required>
+                            <select style="width: 93%" name="service" id="service" value="" class="form-control m-1" required>
                                 <option value=""><- Select Main Service -></option>
                                 @foreach ($pservices as $item)
                                     <option value="{{ $item->id }}">
@@ -52,7 +52,7 @@
                                     </option>
                                 @endforeach
                             </select>
-                            <input type="text" name="type" id="name" class="form-control m-1"
+                            <input style="width: 93%" type="text" name="type" id="name" class="form-control m-1"
                             placeholder="Enter New Sub-Service" required>
 
                             <button style="    width: 100px;

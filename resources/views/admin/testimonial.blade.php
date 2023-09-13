@@ -12,12 +12,12 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Music Portfolio</h2>
+                            <h2 class="content-header-title float-left mb-0">Testimonial</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Music Portfolio
+                                    <li class="breadcrumb-item active">Testimonial
                                     </li>
                                 </ol>
                             </div>
@@ -26,6 +26,18 @@
                     {{-- <div class="col-md-5 alert-message">
                         @include('admin.message')
                     </div> --}}
+                </div>
+
+                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                    <div class="card-options">
+                        <form style="margin-right: 67px;" action="" method="post">
+                            @csrf
+                            @method('put')
+
+                            <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
+                    </div>
+
+
                 </div>
 
             </div>
