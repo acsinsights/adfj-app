@@ -62,7 +62,7 @@
                                     <th>Sub-Service</th>
                                     <th>Date</th>
                                     <th>Location</th>
-                                    <th>Status</th>
+                                    {{-- <th>Status</th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -79,7 +79,7 @@
                                                         <td>{{ $post->stypes->slug }}</td>
                                                         <td>{{ $post->date }}</td>
                                                         <td>{{ $post->location }}</td>
-                                                        <td class="text-left vertical-center">
+                                                        {{-- <td class="text-left vertical-center">
                                                             @if ($post->fstatus == 1)
                                                                 <p class="text-success">Added</p>
                                                             @else
@@ -100,7 +100,7 @@
                                                                 <button class="btn btn-sm btn-outline-secondary mt-2" type="submit"
                                                                     id="fsubmit">Submit</button>
                                                             </form>
-                                                        </td>
+                                                        </td> --}}
                                                     </tr>
                                                 @endif
                                             @endforeach

@@ -27,9 +27,9 @@
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <h1 class="mb-1 text-white">Congratulations {{ Auth::guard('admin')->user()->name }}</h1>
+                                        <h1 class="mb-1 text-white">Welcome {{ Auth::guard('admin')->user()->name }}</h1>
                                         <p class="card-text m-auto w-75">
-                                            You have done <strong>57.6%</strong> more sales today. Check your new badge in your profile.
+                                            You Can Now Manage Your Portfolio From Here.
                                         </p>
                                     </div>
                                 </div>
@@ -184,6 +184,6 @@
             </div>
         </div>
     </div>
-    
+
     <!-- END: Content-->
 @endsection

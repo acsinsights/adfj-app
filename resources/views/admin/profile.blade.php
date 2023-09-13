@@ -99,7 +99,7 @@
                                                 @csrf
                                                 @method('put')
                                             <!-- header media -->
-                                            <div class="media">
+                                            <div class="mb-20 media">
                                                 <a href="javascript:void(0);" class="mr-25">
                                                     <img src="/profile/{{ Auth::guard('admin')->user()->profile_img }}" id="account-upload-img" class="rounded mr-50" alt="profile image" height="80" width="80">
                                                 </a>
@@ -110,7 +110,7 @@
 
                                                     <input type="file" name="cover" id="account-upload" hidden="" accept="image/*">
                                                     {{-- <button class="btn btn-sm btn-outline-secondary mb-75">Reset</button> --}}
-                                                    <p>Allowed JPG, GIF or PNG. Max size of 800kB</p>
+                                                    <p>Dimensions 85x85 px</p>
                                                 </div>
                                                 <!--/ upload and reset button -->
                                             </div>
@@ -118,7 +118,7 @@
 
                                             <!-- form -->
                                             <form class="validate-form mt-2">
-                                                <div class="row">
+                                                <div style="margin-top: 15px;" class="row">
                                                     <div class="col-12 col-sm-6">
                                                         <div class="form-group">
                                                             <label for="account-username">Full Name</label>
@@ -156,7 +156,7 @@
                                                     </div> --}}
                                                     <div class="col-12">
                                                         <button type="submit" class="btn btn-primary mt-2 mr-1">Save changes</button>
-                                                        <button type="reset" class="btn btn-outline-secondary mt-2">Cancel</button>
+                                                        {{-- <button type="reset" class="btn btn-outline-secondary mt-2">Cancel</button> --}}
                                                     </div>
                                                 </div>
                                             </form>
@@ -218,7 +218,7 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <button type="submit" class="btn btn-primary mr-1 mt-1">Save changes</button>
-                                                        <button type="reset" class="btn btn-outline-secondary mt-1">Cancel</button>
+                                                        {{-- <button type="reset" class="btn btn-outline-secondary mt-1">Cancel</button> --}}
                                                     </div>
 
                                             </form>
