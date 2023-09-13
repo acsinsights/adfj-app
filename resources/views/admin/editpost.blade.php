@@ -122,7 +122,8 @@
                                             <div class="col-md-6 d-flex col-12">
                                                 <div style="margin-right: 30px" class="custom-control custom-switch custom-switch-primary">
                                                     <p class="mb-50">Play Button</p>
-                                                    <input type="checkbox"  {{ $posts->status == 1 ? 'checked' : '' }} value="1" name="status" class="custom-control-input" id="customSwitch10">
+                                                    <input type="checkbox"  {{ $posts->status == 1 ? 'checked' : '' }} value="1"
+                                                    name="status" class="custom-control-input" id="customSwitch10">
                                                     <label class="custom-control-label" for="customSwitch10">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>
                                                         <span class="switch-icon-right"><i data-feather="x"></i></span>
@@ -130,7 +131,8 @@
                                                 </div>
                                                 <div class="custom-control custom-switch custom-switch-primary">
                                                     <p class="mb-50">Featured Post</p>
-                                                    <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}  value="1" name="featured" class="custom-control-input" id="customSwitch11">
+                                                    <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}  value="1"
+                                                    name="featured" class="custom-control-input" id="customSwitch11">
                                                     <label class="custom-control-label" for="customSwitch11">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>
                                                         <span class="switch-icon-right"><i data-feather="x"></i></span>
