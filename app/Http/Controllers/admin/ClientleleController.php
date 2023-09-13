@@ -57,12 +57,12 @@ class ClientleleController extends Controller
             }
             $file = $request->file("clientimg");
             $imageName = time() . '_' . $file->getClientOriginalName();
-            $file->move(\public_path("clientleleimg/"), $imageName);
-            // $request['clientimg'] = $imageName;
+            $file->move(\public_path("clientleleimg/"), $post->clientimg);
+            $request['clientimg'] =  $post->clientimg;
         }
         $post->update([
             "clientname" => $request->clientelename,
-            "clientimg" => $clientimg,
+            "clientimg" => $post->clientimg,
         ]);
         return redirect("/admin/our-clientlele")->with('success', 'Updated Successfully');
     }
@@ -80,9 +80,9 @@ class ClientleleController extends Controller
 
     public function deletecover($id)
     {
-        $custimg = Clientlele::findOrFail($id)->custimg;
-        if (File::exists("clientleleimg/" . $custimg)) {
-            File::delete("clientleleimg/" . $custimg);
+        $clientimg = Clientlele::findOrFail($id)->clientimg;
+        if (File::exists("clientleleimg/" . $clientimg)) {
+            File::delete("clientleleimg/" . $clientimg);
         }
         return back();
     }
