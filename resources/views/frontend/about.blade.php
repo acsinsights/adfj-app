@@ -7,7 +7,7 @@
     <main>
         <!-- about top area start -->
         <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
-            data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
+            data-background="{{ asset('user-assets/img/about/about-us-banner.jpg') }}">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">

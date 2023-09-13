@@ -8,8 +8,8 @@
 
 
         <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
-            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
-            style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
+            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/graphics-portfolio-banner.jpg') }}"
+            style="background-image: url(&quot;assets/img/portfolio/breadcrumb/graphics-portfolio-banner.jpg&quot;);">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-xl-7 col-lg-9">
@@ -24,7 +24,7 @@
                             </a>
                         </div> --}}
 
-                            <h3 style="font-size: 4.5rem" class="breadcrumb__title">
+                            <h3 style="font-size: 4.5rem;color:#fff;" class="breadcrumb__title">
                                 Artistic Mastery
                             </h3>
                             {{-- <span style="color: black" class="about__heading-subtitle">Artistic Mastery</span> --}}

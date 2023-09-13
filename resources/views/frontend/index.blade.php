@@ -198,7 +198,7 @@
                                 </div>
                             </div>
                             <div class="about__video-thumb">
-                                <img src="{{ asset('user-assets/img/about/6/about-1.jpg') }}" alt="" />
+                                <img src="{{ asset('user-assets/img/about/6/who-we-are.jpg') }}" alt="" />
                                 <div class="about__play">
                                     <a href="https://www.youtube.com/watch?v=3dXzH-quoTE"
                                         class="about__play-btn popup-video tp-pulse-border">

@@ -6,7 +6,7 @@
     <main>
         <!-- about top area start -->
         <section class="breadcrumb__area breadcrumb__style-4 breadcrumb__spacing include-bg grey-bg-4"
-            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg') }}"
+            data-background="{{ asset('user-assets/img/portfolio/breadcrumb/music-portfolio-banner.jpg') }}"
             style="background-image: url(&quot;assets/img/portfolio/breadcrumb/portfolio-breadcrumb-2.jpg&quot;);">
             <div class="container">
                 <div class="row justify-content-end">
@@ -22,7 +22,7 @@
                             </a>
                         </div> --}}
 
-                            <h3 style="font-size: 5rem" class="breadcrumb__title">
+                            <h3 style="font-size: 5rem;color:#fff;" class="breadcrumb__title">
                                 Melody Showcase
                             </h3>
 
