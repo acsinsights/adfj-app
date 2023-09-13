@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Dashboard ecommerce - Vuexy - Bootstrap HTML admin template</title>
+    <title>ADFJ Studios</title>
     <link rel="apple-touch-icon" href="{{ asset('admin-assetsimages/ico/apple-icon-120.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}">
 
@@ -74,7 +74,7 @@
             <div class="drag-target"></div>
 
             <!-- BEGIN: Footer-->
-      
+
             <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
             <!-- END: Footer-->
 

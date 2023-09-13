@@ -32,7 +32,7 @@
                         <form style="margin-right: 67px;" action="" method="post">
                             @csrf
                             @method('put')
-                 
+
                             <a href="{{ route('admin.addposts') }}" class="btn btn-sm btn-primary">Add Post</a>
                     </div>
 
@@ -114,7 +114,7 @@
                                                     <td>
 
 
-                                                        <div class="custom-control custom-switch custom-switch-primary">
+                                                        {{-- <div class="custom-control custom-switch custom-switch-primary">
                                                             <form action="/admin/status/{{ $post->id }}"
                                                                 method="post">
                                                             <input type="checkbox" class="custom-control-input" value="{{ $post->id }}" id="customSwitch10" checked="">
@@ -136,8 +136,26 @@
 
                                                                 <span class="switch-icon-right"><i data-feather="x"></i></span>
                                                             </label>
-                                                        </div>
+                                                        </div> --}}
 
+
+
+                                                        <div class="toggle-button-cover" id="margin-zero">
+                                                            <div class="button-cover" id="button-cover">
+                                                                <div class="button r" id="button-3">
+                                                                    <form action="/admin/status/{{ $post->id }}"
+                                                                        method="post">
+                                                                        <input type="hidden" value="{{ $post->id }}"
+                                                                            id="id">
+                                                                        <label class="switch">
+                                                                            <input type="checkbox"
+                                                                                {{ $post->featured_post == 1 ? 'checked' : '' }}>
+                                                                            <span class="slider round"></span>
+                                                                        </label>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
                                                         {{-- <div class="toggle-button-cover" id="margin-zero">
                                                             <div class="button-cover" id="button-cover">

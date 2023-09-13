@@ -52,14 +52,14 @@
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="first-name-column">Title</label>
-                                                    <input type="text" id="first-name-column" class="form-control" placeholder="write your project title here" name="author">
+                                                    <input type="text" id="first-name-column" class="form-control" placeholder="write your project title here" name="author" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="last-name-column">Service</label>
                                                     <select name="service" id="" value="" class="form-control" required>
-                                                        <option value="service"><- Select Service -></option>
+                                                        <option value=""><- Select Service -></option>
                                                         @foreach ($pservices as $item)
                                                             <option value="{{ $item->id }}">{{ $item->service_name }}
                                                             </option>
@@ -82,13 +82,13 @@
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="country-floating">Location</label>
-                                                    <input type="text" id="country-floating" class="form-control" name="location" placeholder="Location">
+                                                    <input type="text" id="country-floating" class="form-control" name="location" placeholder="Location" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="company-column">Date</label>
-                                                    <input type="date" id="company-column" class="form-control" name="date" placeholder="Date">
+                                                    <input type="date" id="company-column" class="form-control" name="date" placeholder="Date" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-12">
@@ -116,7 +116,9 @@
                                                 </div>
 
                                             </div>
-{{--
+
+
+                                            {{--
                                             <label class="m-2">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
                                                 px)</span></label>
                                         <input type="file" id="input-file-now-custom-3" class="form-control" name="cover"

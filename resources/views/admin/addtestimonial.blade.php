@@ -2,6 +2,9 @@
 @section('title', 'Dashboard')
 @section('content')
 
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- BEGIN: Content-->
     <div class="app-content content ">
         <div class="content-overlay"></div>
@@ -176,5 +179,13 @@
         </div>
     </div>
     <!-- END: Content-->
-
+    <script type="text/javascript">
+        $('textarea').keyup(function() {
+            var characterCount = $(this).val().length,
+                current_count = $('#current_count'),
+                maximum_count = $('#maximum_count'),
+                count = $('#count');
+                current_count.text(characterCount);
+        });
+        </script>
 @endsection

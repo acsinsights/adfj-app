@@ -57,26 +57,21 @@
                                                 </div>
                                             </div>
 
-
-
-
-
-
-
-
-
-
-
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="country-floating">Location</label>
+                                                    <input type="text" id="country-floating" class="form-control"  value="{{ $posts->location }}" name="location" placeholder="Location">
+                                                </div>
+                                            </div>
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="last-name-column">Service</label>
-                                                    {{-- <input type="text" class="form-control"  value="{{ $posts->service_name }}" name="service" placeholder="service"> --}}
+
                                                     <select name="service" id=""  class="form-control">
 
-                                                        <option value="{{ $posts->pservices }}"><- Select Service -></option>
+                                                        <option value="{{ $posts->pservices->service_name }}">{{ $posts->pservices->service_name }}</option>
                                                         @foreach ($pservices as $st)
-                                                    {{-- @if ($st->pservices_id == $posts->serviceid)
-                                                    @endif --}}
+
                                                     <option value="{{ $st->id }}">{{ $st->service_name }}</option>
                                                 @endforeach
                                                     </select>
@@ -85,8 +80,9 @@
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="city-column">Sub-Service</label>
+
                                                     <select name="type" id=""  class="form-control">
-                                                        <option value=""><- Select Service Type -></option>
+                                                        <option value="{{ $posts->stypes->stype_name}}">{{ $posts->stypes->stype_name}}</option>
                                                         @foreach ($stypes as $item1)
                                                             <option value="{{ $item1->id }}">{{ $item1->stype_name }}
                                                             </option>
@@ -97,12 +93,6 @@
 
 
 
-                                            <div class="col-md-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="country-floating">Location</label>
-                                                    <input type="text" id="country-floating" class="form-control"  value="{{ $posts->location }}" name="location" placeholder="Location">
-                                                </div>
-                                            </div>
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="company-column">Date</label>
@@ -122,8 +112,7 @@
                                             <div class="col-md-6 d-flex col-12">
                                                 <div style="margin-right: 30px" class="custom-control custom-switch custom-switch-primary">
                                                     <p class="mb-50">Play Button</p>
-                                                    <input type="checkbox"  {{ $posts->status == 1 ? 'checked' : '' }} value="1"
-                                                    name="status" class="custom-control-input" id="customSwitch10">
+                                                    <input type="checkbox"  {{ $posts->status == 1 ? 'checked' : '' }} value="1" name="status" class="custom-control-input" id="customSwitch10">
                                                     <label class="custom-control-label" for="customSwitch10">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>
                                                         <span class="switch-icon-right"><i data-feather="x"></i></span>
@@ -131,8 +120,7 @@
                                                 </div>
                                                 <div class="custom-control custom-switch custom-switch-primary">
                                                     <p class="mb-50">Featured Post</p>
-                                                    <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}  value="1"
-                                                    name="featured" class="custom-control-input" id="customSwitch11">
+                                                    <input type="checkbox" {{ $posts->featured_post == 1 ? 'checked' : '' }}  value="1" name="featured" class="custom-control-input" id="customSwitch11">
                                                     <label class="custom-control-label" for="customSwitch11">
                                                         <span class="switch-icon-left"><i data-feather="check"></i></span>
                                                         <span class="switch-icon-right"><i data-feather="x"></i></span>

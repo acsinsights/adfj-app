@@ -2,6 +2,8 @@
 @section('title', 'Dashboard')
 @section('content')
 
+{{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> --}}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- BEGIN: Content-->
     <div class="app-content content ">
         <div class="content-overlay"></div>
@@ -62,7 +64,22 @@
                                                     <input type="text"  id="first-name-column" class="form-control" value="{{ $testimonials->custdesignation }}" placeholder="Customer Designation" name="custdesignation" >
                                                 </div>
                                             </div>
-
+                                            <div class="col-lg-6 col-md-12">
+                                                <div class="form-group">
+                                                    <label for="customFile">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
+                                                        px)</span></label>
+                                                    <div class="custom-file">
+                                                        <input type="file" name="cover" class="custom-file-input" id="customFile">
+                                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="first-name-column">Date</label>
+                                                    <input type="date"  id="first-name-column" class="form-control" value="{{ $testimonials->date }}" placeholder="Customer Designation" name="date" >
+                                                </div>
+                                            </div>
                                             <div class="col-md-6 col-12">
                                                 <label>Customer Rating</label>
                                                 <section class="section">
@@ -115,12 +132,7 @@
                                                 </section>
 
                                           </div>
-                                          <div class="col-md-6 col-12">
-                                            <div class="form-group">
-                                                <label for="first-name-column">Date</label>
-                                                <input type="date"  id="first-name-column" class="form-control" value="{{ $testimonials->date }}" placeholder="Customer Designation" name="date" >
-                                            </div>
-                                        </div>
+
                                           <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="first-name-column">Customer Review</label>

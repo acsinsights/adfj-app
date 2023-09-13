@@ -55,7 +55,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>#No</th>
+                                            {{-- <th>#No</th> --}}
                                             <th>Media</th>
                                     <th>Title</th>
                                     <th>Service</th>
@@ -70,8 +70,8 @@
                                             @foreach ($posts as $key=> $post)
                                                 @if ($post->featured_post == 1)
                                                     <tr style="vertical-align: middle;">
-                                                        <th scope="row">
-                                                            {{ $key+1 }}</th>
+                                                        {{-- <th scope="row">
+                                                            {{ $key+1 }}</th> --}}
                                                         <td><img src="/posts/{{ $post->media }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset="">
                                                         </td>
                                                         <td>{{ $post->title }}</td>
