@@ -111,14 +111,14 @@ class AllPosts extends Controller
 
         $post->update([
             "title" => $request->title,
-            "author" => $request->author,
+            "author" => $request->title,
             "location" => $request->location,
             "date" => $request->date,
             "media" => $post->media,
             "serviceid" => $request->service,
             "status" => $request->status == 1 ? "$request->status" : '0',
             "stypeid" => $request->type,
-            "hypelinks" => $request->hypelinks,
+            "hypelinks" => $request->hypelinks == 'javascript:void(0); '? 'javascript: void(0)' : "$request->hypelinks",
             "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 

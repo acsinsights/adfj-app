@@ -34,12 +34,12 @@
                             @csrf
                             @method('put')
 
-                            <a href="{{ route('admin.addtestimonial') }}" class="btn btn-sm btn-primary">Add Testimonial</a>
+                            <a href="{{ route('admin.addtestimonial') }}" class="btn btn-primary mr-1">Add Testimonial</a>
                     </div>
 
 
                 </div>
-
+        
             </div>
             <div class="content-body">
                 <!-- Basic Tables start -->

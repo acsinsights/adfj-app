@@ -69,7 +69,7 @@
 
                                                     <select name="service" id=""  class="form-control">
 
-                                                        <option value="{{ $posts->pservices->service_name }}">{{ $posts->pservices->service_name }}</option>
+                                                        <option value="{{ $posts->pservices->id }}">{{ $posts->pservices->service_name }}</option>
                                                         @foreach ($pservices as $st)
 
                                                     <option value="{{ $st->id }}">{{ $st->service_name }}</option>
@@ -82,7 +82,7 @@
                                                     <label for="city-column">Sub-Service</label>
 
                                                     <select name="type" id=""  class="form-control">
-                                                        <option value="{{ $posts->stypes->stype_name}}">{{ $posts->stypes->stype_name}}</option>
+                                                        <option value="{{ $posts->stypes->id}}">{{ $posts->stypes->stype_name}}</option>
                                                         @foreach ($stypes as $item1)
                                                             <option value="{{ $item1->id }}">{{ $item1->stype_name }}
                                                             </option>

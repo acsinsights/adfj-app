@@ -16,11 +16,7 @@ use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
 {
-
-
-
     public function index()
-
     {
         $posts = Post::latest()->get();
         $testimonials = Testimonial::all();
@@ -28,8 +24,6 @@ class HomeController extends Controller
         $offers = Offer::all();
         return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
     }
-
-
     // {
     //     $posts = Post::latest()->take(10)->get();
     //     $testimonials = Testimonial::all();
