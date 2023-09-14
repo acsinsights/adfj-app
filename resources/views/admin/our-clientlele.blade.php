@@ -132,12 +132,12 @@
                             <div class="col-lg-3">
                                 <th>Customer Name</th>
                             </div>
-                            <div class="col-lg-3">
+                            <div  style="text-align: center;" class="col-lg-3">
 
                                 <th>Edit</th>
                             </div>
 
-                           <div class="col-lg-3">
+                           <div  style="text-align: center;" class="col-lg-3">
                             <th>Delete</th>
                             </div>
                         </div>
@@ -165,16 +165,16 @@
                                 <div class="col-lg-3">
                                     <td>{{ $client->clientname }}</td>
                                 </div>
-                                <div class="col-lg-3">
+                                <div style="text-align: center;" class="col-lg-3">
                                     <td><a href="/admin/editclientlele/{{ $client->id }}"
-                                        class="btn btn-outline-primary">Edit</a>
+                                        class="btn btn-flat-primary border">Edit</a>
                                     </td>
                                 </div>
 
-                               <div class="col-lg-3">
+                               <div style="text-align: center;" class="col-lg-3">
                                     <td>
                                         <form action="/admin/deleteclientlele/{{ $client->id }}" method="post">
-                                            <button class="btn btn-outline-danger"
+                                            <button class="btn btn-flat-danger border"
                                                 onclick="return confirm('Are you sure?');"
                                                 type="submit">Delete</button>
                                             @csrf

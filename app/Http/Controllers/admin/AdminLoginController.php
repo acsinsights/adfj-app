@@ -46,7 +46,7 @@ class AdminLoginController extends Controller
                     return redirect()->route('admin.login')->with('error', 'You are not authorized to access admin panel!');
                 }
             } else {
-                return redirect()->route('admin.login')->with('error', 'Either email or password is incorrect!');
+                return redirect()->route('admin.login')->with('error', 'Invalid Username Or Password');
             }
         } else {
             return redirect()->route('admin.login')

@@ -39,7 +39,7 @@
 
 
                 </div>
-        
+
             </div>
             <div class="content-body">
                 <!-- Basic Tables start -->
@@ -67,8 +67,8 @@
                                             <th>Customer Review</th>
                                             <th>Customer Rating</th>
                                             <th>Date</th>
-                                            <th>Edit</th>
-                                            <th>Delete</th>
+                                            <th style="text-align: center;">Edit</th>
+                                            <th style="text-align: center;">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -173,13 +173,13 @@
                                                 </td>
                                                 <td>{{ $tsti->date }}</td>
 
-                                                <td><a href="/admin/edittestimonial/{{ $tsti->id }}"
-                                                        class="btn btn-outline-primary">Edit</a>
+                                                <td style="text-align: center;"><a href="/admin/edittestimonial/{{ $tsti->id }}"
+                                                        class="btn btn-flat-primary border">Edit</a>
                                                 </td>
-                                                <td>
+                                                <td  style="text-align: center;">
                                                     <form action="/admin/deletetestimonial/{{ $tsti->id }}"
                                                         method="post">
-                                                        <button class="btn btn-outline-danger"
+                                                        <button class="btn btn-flat-danger border"
                                                             onclick="return confirm('Are you sure?');"
                                                             type="submit">Delete</button>
                                                         @csrf

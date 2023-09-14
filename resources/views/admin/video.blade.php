@@ -47,12 +47,14 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Media</th>
+                                            <th>Media Preview</th>
                                             <th>Title</th>
+                                            <th>Sub-Service</th>
                                             {{-- <th>Post Type</th> --}}
                                             <th>Date</th>
                                             <th>Location</th>
-                                            <th>Edit</th>
+                                            <th style="text-align: center;">Edit</th>
+                                            <th style="text-align: center;">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -64,11 +66,16 @@
                                                             style="max-height:100px; max-width:100px" alt="" srcset="">
                                                     </td>
                                                     <td>{{ $post->title }}</td>
+                                                    <td>{{ $post->stypes->stype_name }}</td>
                                                     {{-- <td>{{ $post->stypes->slug }}</td> --}}
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
-                                                    <td><a href="/admin/edit/{{ $post->id }}"
-                                                            class="btn btn-outline-primary">Edit</a>
+                                                    <td style="text-align: center;"><a href="/admin/edit/{{ $post->id }}"
+                                                            class="btn btn-flat-primary border">Edit</a>
+                                                    </td>
+                                                    <td  style="text-align: center;">
+                                                        <a class="btn btn-flat-danger border" onclick="return confirm('Are you sure?');"
+                                                        href="/admin/delete/{{ $post->id }}">Delete</a>
                                                     </td>
                                                     {{-- <td>
                                                         <form action="/admin/delete/{{ $post->id }}" method="post">

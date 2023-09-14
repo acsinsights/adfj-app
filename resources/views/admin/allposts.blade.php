@@ -57,15 +57,15 @@
                                 <table style="width: 105%;" class="table">
                                     <thead>
                                         <tr>
-                                            <th>#No</th>
-                                            <th>Media</th>
+                                            <th style="text-align: right;">#No</th>
+                                            <th style="text-align: center;">Media</th>
                                             <th>Title</th>
                                             <th>Service</th>
                                             <th>Sub-Service</th>
                                             <th>Date</th>
                                             <th>Location</th>
-                                            <th>Edit</th>
-                                            <th>Delete</th>
+                                            <th style="text-align: center;">Edit</th>
+                                            <th style="text-align: center;">Delete</th>
                                             {{-- <th>Featured Post </th> --}}
                                         </tr>
                                     </thead>
@@ -73,9 +73,9 @@
                                         @if ($posts->isNotEmpty())
                                             @foreach ($posts as $key=> $post)
                                                 <tr style="vertical-align: middle;">
-                                                    <th scope="row">
+                                                    <th  style="text-align: center;" scope="row">
                                                         {{ $key+1 }}</th>
-                                                    <td><img src="/posts/{{ $post->media }}" class="img-responsive"
+                                                    <td style="text-align: center;"><img src="/posts/{{ $post->media }}" class="img-responsive"
                                                             style="max-height:100px; max-width:100px" alt="" srcset="">
                                                     </td>
                                                     <td>{{ $post->title }}</td>
@@ -83,12 +83,12 @@
                                                     <td>{{ $post->stypes->stype_name }}</td>
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
-                                                    <td><a href="/admin/edit/{{ $post->id }}"
-                                                            class="btn btn-outline-primary">Edit</a>
+                                                    <td style="text-align: center;"> <a href="/admin/edit/{{ $post->id }}"
+                                                            class="btn btn-flat-primary border">Edit</a>
                                                     </td>
-                                                    <td>
+                                                    <td style="text-align: center;">
 
-                                                        <a class="btn btn-outline-danger" onclick="return confirm('Are you sure?');"
+                                                        <a class="btn btn-flat-danger border" onclick="return confirm('Are you sure?');"
                                                             href="/admin/delete/{{ $post->id }}">Delete</a>
 
                                                     </td>

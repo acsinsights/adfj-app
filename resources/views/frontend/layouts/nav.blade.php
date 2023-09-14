@@ -24,7 +24,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div style="padding-left: 64px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
+                            <div style="padding-left: 182px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
                                 <div class="main-menu main-menu-9 main-menu-ff-space">
                                     <nav id="mobile-menu">
                                         <ul>
@@ -54,7 +54,7 @@
                                             </li>
                                             <li class="">
                                                 <a class="nav-link {{ URL::current() == url('pricing-plan') ? 'active-pg' : '' }}"
-                                                    href="{{ url('pricing-plan') }}">Pricing Plans</a>
+                                                    href="{{ url('pricing-plan') }}">Pricings</a>
                                             </li>
 
                                             <li class="">

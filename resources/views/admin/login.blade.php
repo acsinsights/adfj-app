@@ -53,7 +53,11 @@
             </div>
             <div class="content-body">
                 <div class="auth-wrapper auth-v1 px-2">
+
+
+
                     <div class="auth-inner py-2">
+
                         <!-- Login v1 -->
                         <div class="card mb-0">
                             <div class="card-body">
@@ -149,7 +153,7 @@
                                     @csrf
                                     <div class="form-group">
                                         <label class="form-label">Username</label>
-                                        <input type="text" class="form-control" name="username" placeholder="Username"autofocus="">
+                                        <input type="text" class="form-control" name="username" placeholder="Username"autofocus="" required>
                                     </div>
 
                                     <div class="form-group">
@@ -158,13 +162,13 @@
 
                                         </div>
                                         <div class="input-group input-group-merge form-password-toggle">
-                                            <input type="password" class="form-control form-control-merge" name="password" placeholder="Password" >
+                                            <input type="password" class="form-control form-control-merge" name="password" placeholder="Password" required>
                                             <div class="input-group-append">
                                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                             </div>
                                         </div>
                                     </div>
-
+                                    @include('admin.message')
                                     <button class="btn btn-primary btn-block" tabindex="4">Sign in</button>
                                 </form>
 

@@ -63,17 +63,17 @@
                                          {{-- <th>Logo</th> --}}
                                          <th>Offer Name</th>
                                          {{-- <th>Date</th> --}}
-                                         <th>Edit</th>
-                                         <th>Delete</th>
+                                         <th style="text-align: center;">Edit</th>
+                                         <th style="text-align: center;">Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($offers as $offer)
-                                            <tr style="vertical-align: middle;">
+                                            <tr style="vertical-align: middle;height: 100px;!important">
                                                        {{--  <th scope="row">
                                             {{ $tsti->id }}</th> --}}
                                                 <td><img src="/offerimg/{{ $offer->offerimage }}" class="img-responsive"
-                                                        style="max-height:120px; max-width:120px" alt="" srcset="">
+                                                        style="max-height:100px; max-width:100px" alt="" srcset="">
                                                     </td>
                                                     {{-- <td><img src="/testilogos/{{ $tsti->custlogo }}" class="img-responsive"
                                                         style="max-height:80px; max-width:50px" alt="" srcset=""></td> --}}
@@ -83,12 +83,12 @@
 
                                                 {{-- <td>{{ $client->date }}</td> --}}
 
-                                                <td><a href="/admin/editoffer/{{ $offer->id }}"
-                                                        class="btn btn-outline-primary">Edit</a>
+                                                <td style="text-align: center;"><a href="/admin/editoffer/{{ $offer->id }}"
+                                                        class="btn btn-flat-primary border">Edit</a>
                                                 </td>
-                                                <td>
+                                                <td style="text-align: center;">
                                                     <form action="/admin/deleteoffer/{{ $offer->id }}" method="post">
-                                                        <button class="btn btn-outline-danger"
+                                                        <button class="btn btn-flat-danger border"
                                                             onclick="return confirm('Are you sure?');"
                                                             type="submit">Delete</button>
                                                         @csrf
