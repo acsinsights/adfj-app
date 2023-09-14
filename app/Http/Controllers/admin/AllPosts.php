@@ -14,8 +14,8 @@ class AllPosts extends Controller
     public function index(Request $request)
     {
         $posts = Post::latest();
-        if (!empty($request->get('keyword'))) {
-            $posts = $posts->where('title', 'like', '%' . $request->get('keyword') . '%');
+        if (!empty($request->get('search'))) {
+            $posts = $posts->where('title', 'like', '%' . $request->get('search') . '%');
         }
 
         $posts = $posts->paginate(10);

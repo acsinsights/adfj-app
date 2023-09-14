@@ -20,10 +20,8 @@
                         @csrf
                         <input type="text" name="pservices" id="pservices" class="form-control m-2" placeholder="Service"
                             value="{{ $stypes->pservices->service_name }}" readonly>
-
                         <input type="text" name="type" id="name" class="form-control m-2"
                             placeholder="Enter Type Name" value="{{ $stypes->stype_name }}" required>
-
                         <button type="submit" class="btn btn-success mt-3">Submit</button>
                     </form>
                 </div>

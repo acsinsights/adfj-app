@@ -11,16 +11,30 @@
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href="calendar.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon" data-feather="calendar"></i></a></li>
                     <li class="nav-item d-none d-lg-block"><a class="nav-link" href="todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon" data-feather="check-square"></i></a></li>
                 </ul> --}}
+
+                <form action="" method="get">
+
                 <ul class="nav navbar-nav">
                     <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
                         <div class="search-input">
                             <div class="search-input-icon"><i data-feather="search"></i></div>
-                            <input class="form-control input" type="text" placeholder="Explore ADFJ..." tabindex="-1" data-search="search">
+                            <input name="search" value="{{ Request::get('search')}}" class="form-control input" type="text" placeholder="Explore ADFJ..." tabindex="-1" data-search="search">
                             <div class="search-input-close"><i data-feather="x"></i></div>
-                            <ul class="search-list search-list-main"></ul>
+
                         </div>
                     </li>
                 </ul>
+                {{-- <ul class="nav navbar-nav">
+                    <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                        <div class="search-input">
+                            <div class="search-input-icon"><i data-feather="search"></i></div>
+                            <input name="search" value="{{ Request::get('search')}}" class="form-control input" type="text" placeholder="Explore ADFJ..." tabindex="-1" data-search="search">
+                            <div class="search-input-close"><i data-feather="x"></i></div>
+
+                        </div>
+                    </li>
+                </ul> --}}
+            </form>
             </div>
             <ul class="nav navbar-nav align-items-center ml-auto">
                 {{-- <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
