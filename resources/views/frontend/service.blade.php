@@ -4,8 +4,8 @@
 
 
     <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
-        data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}"
-        style="background-image: url(http://127.0.0.1:8000/user-assets/img/about/about-breadcrumb.jpg);">
+        data-background="{{ asset('user-assets/img/about/our-service-banner.jpg') }}"
+        style="background-image: url(http://127.0.0.1:8000/user-assets/img/about/our-service-banner.jpg);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10">

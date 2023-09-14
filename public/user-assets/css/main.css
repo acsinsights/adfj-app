@@ -48172,7 +48172,7 @@ div.team__details-shape-4 img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 63px;
     background-color: white;
 }
 
@@ -48180,7 +48180,7 @@ div.team__details-shape-4 img {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 80px;
+    height: 63px;
     background-color: white;
 }
 
@@ -66050,6 +66050,15 @@ blockquote cite::before {
     .getstarted-btn {
         display: none;
     }
+
+    .include-bg {
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: grey;
+    background-blend-mode: multiply;
+    }
+
     .section__title-highlight-8 svg {
         position: absolute;
         bottom: -33%;

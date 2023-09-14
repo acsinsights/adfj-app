@@ -106,7 +106,7 @@
                                                 <!-- upload and reset button -->
                                                 <div class="media-body mt-75 ml-1">
 
-                                                    <label for="account-upload" class="btn btn-sm btn-primary mb-75 mr-75">Upload</label>
+                                                    <label for="account-upload" class="btn btn-sm btn-primary mb-75 mr-75">Change Profile Picture</label>
 
                                                     <input type="file" name="cover" id="account-upload" hidden="" accept="image/*">
                                                     {{-- <button class="btn btn-sm btn-outline-secondary mb-75">Reset</button> --}}

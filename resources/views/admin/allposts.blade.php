@@ -54,7 +54,7 @@
                                 </p>
                             </div> --}}
                             <div class="table-responsive">
-                                <table class="table">
+                                <table style="width: 105%;" class="table">
                                     <thead>
                                         <tr>
                                             <th>#No</th>
@@ -66,7 +66,7 @@
                                             <th>Location</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
-                                            <th>Featured Post </th>
+                                            {{-- <th>Featured Post </th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -138,9 +138,9 @@
                                                             </label>
                                                         </div> --}}
 
+                                                        {{-- featured post column --}}
 
-
-                                                        <div class="toggle-button-cover" id="margin-zero">
+                                                        {{-- <div class="toggle-button-cover" id="margin-zero">
                                                             <div class="button-cover" id="button-cover">
                                                                 <div class="button r" id="button-3">
                                                                     <form action="/admin/status/{{ $post->id }}"
@@ -155,7 +155,7 @@
                                                                     </form>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
 
                                                         {{-- <div class="toggle-button-cover" id="margin-zero">
                                                             <div class="button-cover" id="button-cover">
