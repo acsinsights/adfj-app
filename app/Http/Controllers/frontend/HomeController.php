@@ -78,7 +78,8 @@ class HomeController extends Controller
 
     public function pricing()
     {
-        return view('frontend.pricing-plan');
+        $offers = Offer::all();
+        return view('frontend.pricing-plan')->with('offers', $offers);
     }
 
     public function privacy()
