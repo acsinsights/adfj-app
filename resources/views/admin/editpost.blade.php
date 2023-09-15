@@ -90,9 +90,6 @@
                                                     </select>
                                                 </div>
                                             </div>
-
-
-
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="company-column">Date</label>
@@ -105,10 +102,6 @@
                                                     <input type="url" id="country-floating" class="form-control"  value="{{ $posts->hypelinks }}" name="videolink" placeholder="put hyperlink here">
                                                 </div>
                                             </div>
-
-
-
-
                                             <div class="col-md-6 d-flex col-12">
                                                 <div style="margin-right: 30px" class="custom-control custom-switch custom-switch-primary">
                                                     <p class="mb-50">Play Button</p>
@@ -126,15 +119,11 @@
                                                         <span class="switch-icon-right"><i data-feather="x"></i></span>
                                                     </label>
                                                 </div>
-
                                             </div>
-{{--
-                                            <label class="m-2">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
+                                            {{--<label class="m-2">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
                                                 px)</span></label>
                                         <input type="file" id="input-file-now-custom-3" class="form-control" name="cover"
                                             required> --}}
-
-
                                             <div class="col-lg-6 col-md-12">
                                                 <div class="form-group">
                                                     <label for="customFile">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
