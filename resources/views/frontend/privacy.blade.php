@@ -5,7 +5,9 @@
     <main>
         <!-- contact area start -->
         <section class="tp-section-area p-relative z-index-1 tp-section-spacing">
-            <div class="tp-section-bg include-bg"
+            <div style="background-position: center!important;background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;" class="tp-section-bg include-bg"
                 data-background="{{ asset('user-assets/img/contact/contact-bg.png') }}"style="background-image: url(&quot;assets/img/contact/contact-bg.png&quot;);">
             </div>
             <div class="container">
