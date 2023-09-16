@@ -198,7 +198,8 @@
                                 </div>
                             </div>
                             <div class="about__video-thumb">
-                                <img src="{{ asset('user-assets/img/about/6/about-1.jpg') }}" alt="" />
+                                <img style="-webkit-transform: scaleX(-1);
+                                transform: scaleX(-1);" src="{{ asset('user-assets/img/about/6/who-we-are.jpg') }}" alt="" />
                                 <div class="about__play">
                                     <a href="https://www.youtube.com/watch?v=3dXzH-quoTE"
                                         class="about__play-btn popup-video tp-pulse-border">
@@ -611,7 +612,16 @@
                     <div class="col-xl-10 col-lg-10">
                         <div class="about__gallery-slider pl-50 pr-50 p-relative">
                             <div class="about__gallery-slider-active">
+
+                                @foreach ($offers as $offe)
                                 <div class="about__gallery-item">
+                                    <div class="about__gallery-thumb m-img">
+                                        <img src="/offerimg/{{ $offe->offerimage }}"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                @endforeach
+                                {{-- <div class="about__gallery-item">
                                     <div class="about__gallery-thumb m-img">
                                         <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
                                             alt="" />
@@ -640,13 +650,7 @@
                                         <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
                                             alt="" />
                                     </div>
-                                </div>
-                                <div class="about__gallery-item">
-                                    <div class="about__gallery-thumb m-img">
-                                        <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
-                                            alt="" />
-                                    </div>
-                                </div>
+                                </div> --}}
                             </div>
 
                             <div class="about__gallery-arrow d-none d-sm-block"></div>

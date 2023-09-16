@@ -5,7 +5,7 @@
 
     <main>
         <!-- about top area start -->
-        <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
+        {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
             data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
             <div class="container">
                 <div class="row justify-content-center">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-        <section class="contact__area pt-150 p-relative z-index-1">
+        <section class="contact__area pt-50 p-relative z-index-1">
             <div class="contact__shape">
                 <span class="contact__shape-1"></span>
             </div>

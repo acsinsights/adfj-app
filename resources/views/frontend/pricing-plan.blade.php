@@ -73,11 +73,11 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
                     data-wow-delay=".3s" data-wow-duration="1s">
                     <span class="services-border-2"></span>
                     <div class="services__shape">
-                        <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
+                        <img class="services__shape-11" src="assets/img/services/8/dedicated-pm.png" alt="">
                     </div>
                     <div class="services__icon-8 mt-40 mr-30">
                         <span>
-                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                            <img style="height: 70px; width:70px;" src="{{ asset('user-assets/img/icon/services/8/dedicated-pm.png') }}" alt="">
                         </span>
                     </div>
                     <div class="services__content-8">
@@ -96,11 +96,11 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
                     <span class="services-border-2"></span>
                     <div class="services__shape">
                         <img class="services__shape-11"
-                            src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
+                            src="" alt="">
                     </div>
                     <div class="services__icon-8 mr-30 mt-40">
                         <span>
-                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                            <img style="height: 70px; width:70px;" src="{{ asset('user-assets/img/icon/services/8/financial-ease.png') }}" alt="">
                         </span>
                     </div>
                     <div class="services__content-8">
@@ -118,11 +118,11 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
                     data-wow-delay=".7s" data-wow-duration="1s">
                     <span class="services-border-2"></span>
                     <div class="services__shape">
-                        <img class="services__shape-11" src="assets/img/services/8/services-shape-1.png" alt="">
+                        <img class="services__shape-11" src="" alt="">
                     </div>
                     <div class="services__icon-8 mr-30 mt-40">
                         <span>
-                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                            <img style="height: 70px; width:70px;" src="{{ asset('user-assets/img/icon/services/8/content-consistency.png') }}" alt="">
                         </span>
                     </div>
                     <div class="services__content-8">
@@ -141,11 +141,11 @@ data-background="{{ asset('user-assets/img/about/about-breadcrumb.jpg') }}">
                     <span class="services-border-2"></span>
                     <div class="services__shape">
                         <img class="services__shape-11"
-                            src="{{ asset('user-assets/img/services/8/services-shape-1.png') }}" alt="">
+                            src="" alt="">
                     </div>
                     <div class="services__icon-8 mr-30 mt-40">
                         <span>
-                            <img src="{{ asset('user-assets/img/icon/services/8/services-1.svg') }}" alt="">
+                            <img style="height: 70px; width:70px;" src="{{ asset('user-assets/img/icon/services/8/comprehensive-solution.png') }}" alt="">
                         </span>
                     </div>
                     <div class="services__content-8">
@@ -318,7 +318,6 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
 </section>
 
 
-
 <section class="about__gallery-area fix p-spacing pt-120 pb-80">
     <div class="container">
         <div class="row">
@@ -332,68 +331,54 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
         <div class="row justify-content-center">
             <div class="col-xl-10 col-lg-10">
                 <div class="about__gallery-slider pl-50 pr-50 p-relative">
-                    <div class="about__gallery-slider-active slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 12428px; transform: translate3d(-956px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 956px;"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 956px;" tabindex="-1"><div><div class="about__gallery-item" style="width: 100%; display: inline-block;">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="http://127.0.0.1:8000/user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg" alt="">
-                            </div>
-                        </div></div></div></div></div></div>
+                    <div class="about__gallery-slider-active">
 
-                    <div class="about__gallery-arrow d-none d-sm-block"><button type="button" class="about-button-prev slick-prev slick-arrow" style=""><span><i class="fa-regular fa-arrow-left"></i></span></button><button type="button" class="about-button-next slick-next slick-arrow" style=""><span><i class="fa-regular fa-arrow-right"></i></span></button></div>
+                        @foreach ($offers as $offe)
+                        <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="/offerimg/{{ $offe->offerimage }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                        @endforeach
+                        {{-- <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                        </div>
+                        <div class="about__gallery-item">
+                            <div class="about__gallery-thumb m-img">
+                                <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                    alt="" />
+                            </div>
+                        </div> --}}
+                    </div>
+
+                    <div class="about__gallery-arrow d-none d-sm-block"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 
 <section class="faq__area faq__style-3 p-relative z-index-1 p-spacing pt-80 pb-40 tp-el-section">
     <div class="container">

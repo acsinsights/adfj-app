@@ -45,20 +45,13 @@ class DashboardController extends Controller
             $request['cover'] = $users->profile_img;
         }
 
-    //    $users->update([
-    //        "name" => $request->name,
-    //        "email" => $request->email,
-    //        "password" => Hash::make($request->password),
-    //        "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
-    //    ]);
-
-
         $users->update([
             "name" => $request->name,
-             "username" => $request->username,
+            // "username" => $request->username,
             "phone" => $request->phone,
+            "company_name" => $request->company_name,
+            //   "phone" => $request->code.$request->phone,
             "email" => $request->email,
-            // "password" => Hash::make($request->password),
             "profile_img" => $users->profile_img != null ? "$users->profile_img" : 'profile_av.png',
         ]);
 
@@ -72,6 +65,7 @@ class DashboardController extends Controller
             $request->validate([
                 'current_password',
                 'password' => ['confirmed']
+
             ]);
 
             $currentPasswordStatus = Hash::check($request->current_password, auth()->user()->password);

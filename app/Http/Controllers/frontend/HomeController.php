@@ -10,21 +10,27 @@ use App\Models\Pservices;
 use App\Models\Stypes;
 use App\Models\Testimonial;
 use App\Models\Clientlele;
+use App\Models\Offer;
 
 use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
 {
-
-
-
     public function index()
     {
-        $posts = Post::latest()->take(10)->get();
+        $posts = Post::latest()->get();
         $testimonials = Testimonial::all();
         $clientleles = Clientlele::all();
-        return view('frontend.index' ,compact('posts','testimonials','clientleles'));
+        $offers = Offer::all();
+        return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
     }
+    // {
+    //     $posts = Post::latest()->take(10)->get();
+    //     $testimonials = Testimonial::all();
+    //     $clientleles = Clientlele::all();
+    //     $offers = Offer::all();
+    //     return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
+    // }
 
     public function about()
     {
@@ -72,7 +78,8 @@ class HomeController extends Controller
 
     public function pricing()
     {
-        return view('frontend.pricing-plan');
+        $offers = Offer::all();
+        return view('frontend.pricing-plan')->with('offers', $offers);
     }
 
     public function privacy()

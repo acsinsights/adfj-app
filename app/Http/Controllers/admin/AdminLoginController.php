@@ -14,11 +14,13 @@ class AdminLoginController extends Controller
         return view('admin.login');
     }
 
+
+
     public function authenticate(Request $request)
     {
         $validator = Validator::make($request->all(), [
 
-            'name' => 'name',
+            // 'username' => 'username',
             'email' => 'email',
             'password' => 'required'
         ]);
@@ -27,7 +29,10 @@ class AdminLoginController extends Controller
 
             if (
                 Auth::guard('admin')->attempt(
-                    ['email' => $request->email, 'name' => $request->email, 'password' => $request->password],
+
+                    // ['username' =>'username'],
+                      ['username' => $request->username, 'password' => $request->password],
+                    // ['email' => $request->email, 'password' => $request->password],
                     $request->get('remember')
                 )
             ) {
@@ -41,7 +46,7 @@ class AdminLoginController extends Controller
                     return redirect()->route('admin.login')->with('error', 'You are not authorized to access admin panel!');
                 }
             } else {
-                return redirect()->route('admin.login')->with('error', 'Either email or password is incorrect!');
+                return redirect()->route('admin.login')->with('error', 'Invalid Username Or Password');
             }
         } else {
             return redirect()->route('admin.login')

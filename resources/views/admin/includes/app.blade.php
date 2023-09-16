@@ -1,77 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>ADFJ Studios</title>
+    <link rel="apple-touch-icon" href="{{ asset('admin-assetsimages/ico/apple-icon-120.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}">
 
-    <!-- Meta data -->
-    <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-    <!-- Title -->
-    <title>AdFj Studios | @yield('title')</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
-    <!--Favicon -->
-    <link rel="icon" href="{{ asset('user-assets/img/logo/favicon.ico') }}" type="image/x-icon">
-
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!--Bootstrap css -->
-    <link id="style" href="{{ asset('admin-assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Style css -->
-    <link href="{{ asset('admin-assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin-assets/css/dark.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin-assets/css/skin-modes.css') }}" rel="stylesheet">
-
-    <!-- Animate css -->
-    <link href="{{ asset('admin-assets/css/animated.css') }}" rel="stylesheet">
-
-
-    <!-- P-scroll bar css-->
-    <link href="{{ asset('admin-assets/plugins/p-scrollbar/p-scrollbar.css') }}" rel="stylesheet">
-
-    <!---Icons css-->
-    <link href="{{ asset('admin-assets/css/icons.css') }}" rel="stylesheet">
-
-    <!-- Color Skin css -->
-    <link id="theme" href="{{ asset('admin-assets/colors/color1.css') }}" rel="stylesheet" type="text/css">
-
-    <!-- INTERNAL Switcher css -->
-    <link href="{{ asset('admin-assets/switcher/css/switcher.css') }}" rel="stylesheet">
-    <link href="{{ asset('admin-assets/switcher/demo.css') }}" rel="stylesheet">
-    <!-- INTERNAL Morris Charts css -->
-    <link href="{{ asset('admin-assets/plugins/morris/morris.css?v=1692175007') }}" rel="stylesheet">
-
-    <!-- INTERNAL Select2 css -->
-    <link href="{{ asset('admin-assets/plugins/select2/select2.min.css?v=1692175007') }}" rel="stylesheet">
-
-    <!-- Data table css -->
-    <link href="{{ asset('admin-assets/plugins/datatables/DataTables/css/dataTables.bootstrap5.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('admin-assets/plugins/datatables/Buttons/css/buttons.bootstrap5.min.css') }}"
-        rel="stylesheet">
-    <link href="{{ asset('admin-assets/plugins/datatables/Responsive/css/responsive.bootstrap5.min.css') }}"
-        rel="stylesheet">
-
-    <!-- Color Skin css -->
-    <link id="theme" href="{{ asset('admin-assets/colors/color1-1.css?v=1692175007') }}" rel="stylesheet"
-        type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/vendors/css/vendors.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/vendors/css/charts/apexcharts.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/vendors/css/extensions/toastr.min.css') }}">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/bootstrap-extended.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/colors.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/components.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/themes/dark-layout.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/themes/bordered-layout.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/themes/semi-dark-layout.css') }}">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/core/menu/menu-types/vertical-menu.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/pages/dashboard-ecommerce.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/plugins/charts/chart-apex.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/plugins/extensions/ext-component-toastr.css') }}">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin-assets/css/style.css') }}">
+    <!-- END: Custom CSS-->
 
 </head>
+<!-- END: Head-->
 
-<body class="dark-mode app sidebar-mini">
+<!-- BEGIN: Body-->
 
-    <!-- GLOBAL-LOADER -->
-    <div id="global-loader">
-        <img src="{{ asset('admin-assets/images/svgs/loader.svg') }}" class="loader-img" alt="Loader">
-    </div>
-    <!-- /GLOBAL-LOADER -->
-
-    <!-- Page -->
-    <div class="page">
-        <div class="page-main">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="">
 
             @include('admin.includes.sidebar')
             <!-- App-Content -->
@@ -84,86 +63,90 @@
             </div>
             <!-- End app-content-->
 
-            @include('admin.includes.footer')
-        </div>
-    </div>
 
-    <!-- End Page -->
-    <!-- Back to top -->
-    <a href="#top" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script type="text/javascript">
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
+
+
+
+
+            <div class="sidenav-overlay"></div>
+            <div class="drag-target"></div>
+
+            <!-- BEGIN: Footer-->
+
+            <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+            <!-- END: Footer-->
+
+
+
+
+     
+
+
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="{{ asset('admin-assets/vendors/js/vendors.min.js')}}""></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="{{ asset('admin-assets/vendors/js/charts/apexcharts.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/extensions/toastr.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/extensions/moment.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/tables/datatable/datatables.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/tables/datatable/datatables.buttons.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/tables/datatable/dataTables.responsive.min.js')}}""></script>
+    <script src="{{ asset('admin-assets/vendors/js/tables/datatable/responsive.bootstrap.min.js')}}""></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="{{ asset('admin-assets/js/core/app-menu.js')}}""></script>
+    <script src="{{ asset('admin-assets/js/core/app.js')}}""></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="{{ asset('admin-assets/js/scripts/pages/dashboard-analytics.js')}}""></script>
+    <script src="{{ asset('admin-assets/js/scripts/pages/app-invoice-list.js')}}""></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
             }
-        });
+        })
     </script>
 
 
-    <!-- Jquery js-->
-    <script src="{{ asset('admin-assets/js/jquery.min.js') }}"></script>
 
 
-    <!-- Bootstrap5 js-->
-    <script src="{{ asset('admin-assets/plugins/bootstrap/popper.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
 
-    <!--Othercharts js-->
-    <script src="{{ asset('admin-assets/plugins/othercharts/jquery.sparkline.min.js') }}"></script>
 
-    <!-- Circle-progress js-->
-    <script src="{{ asset('admin-assets/js/circle-progress.min.js') }}"></script>
 
-    <!-- Jquery-rating js-->
-    <script src="{{ asset('admin-assets/plugins/rating/jquery.rating-stars.js') }}"></script>
 
-    <!--Sidemenu js-->
-    <script src="{{ asset('admin-assets/plugins/sidemenu/sidemenu.js') }}"></script>
 
-    <!-- P-scroll js-->
-    <script src="{{ asset('admin-assets/plugins/p-scrollbar/p-scrollbar.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/p-scrollbar/p-scroll1.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/p-scrollbar/p-scroll.js') }}"></script>
 
-    <!-- Custom js-->
-    <script src="{{ asset('admin-assets/js/custom.js') }}"></script>
 
-    <!-- Switcher js -->
-    <script src="{{ asset('admin-assets/switcher/js/switcher.js') }}"></script>
-    <!--INTERNAL Flot Charts js-->
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.fillbetween.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/flot/jquery.flot.pie.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/dashboard.sampledata.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/chart.flot.sampledata.js') }}"></script>
 
-    <!-- INTERNAL Chart js -->
-    <script src="{{ asset('admin-assets/plugins/chart/chart.bundle.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/chart/utils.js') }}"></script>
 
-    <!-- INTERNAL Apexchart js -->
-    <script src="{{ asset('admin-assets/js/apexcharts.js') }}"></script>
 
-    <!--INTERNAL Moment js-->
-    <script src="{{ asset('admin-assets/plugins/moment/moment.js') }}"></script>
 
-    <!--INTERNAL Index js-->
-    <script src="{{ asset('admin-assets/js/index1.js') }}"></script>
 
-    <!-- INTERNAL Data tables -->
-    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/jquery.dataTables.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/datatables/DataTables/js/dataTables.bootstrap5.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/dataTables.responsive.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/datatables/Responsive/js/responsive.bootstrap5.min.js') }}"></script>
 
-    <!-- INTERNAL Select2 js -->
-    <script src="{{ asset('admin-assets/plugins/select2/select2.full.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/js/select2.js') }}"></script>
 
-    <!-- Rounded bar chart js-->
-    <script src="{{ asset('admin-assets/js/rounded-barchart.js') }}"></script>
-    @yield('customJs')
-</body>
 
-</html>
+
+
+
+
+
+        </body>
+        <!-- END: Body-->
+
+        </html>

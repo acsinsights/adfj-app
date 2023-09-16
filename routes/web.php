@@ -13,6 +13,7 @@ use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 use App\Http\Controllers\admin\TestimonialController;
 use App\Http\Controllers\admin\ClientleleController;
+use App\Http\Controllers\admin\OfferController;
 
 
 
@@ -55,7 +56,7 @@ Route::get('/newsletter', [HomeController::class, 'newsletter']);
 //     return view( 'admin.create' ) ;
 //     });
 
-Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
+// Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
 
 Route::get('/forgetpassword',[ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forgetpassword');
 Route::get('/forgetPasswordLink',[ForgotPasswordController::class, 'showResetPasswordForm'])->name('forgetPasswordLink');
@@ -87,7 +88,7 @@ Route::post('resetpassword', [ForgotPasswordController::class, 'submitResetPassw
 Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => 'admin.guest'], function () {
         Route::get('/', [AdminLoginController::class, 'index'])->name('admin.login');
-        Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
+        Route::get('/login', [AdminLoginController::class, 'index']);
         Route::post('/authenticate', [AdminLoginController::class, 'authenticate'])->name('admin.authenticate');
     });
 
@@ -118,6 +119,20 @@ Route::group(['prefix' => 'admin'], function () {
 
 
 
+        Route::get('/alloffer', [OfferController::class, 'index'])->name('admin.alloffer');
+       Route::post('/add-offer', [OfferController::class, 'addoffer']);
+       Route::get('/editoffer', [OfferController::class, 'editoffer'])->name('admin.editooffer');
+        Route::get('/add-offer', [OfferController::class, 'create'])->name('admin.add-offer');
+        Route::post('/addoffer', [OfferController::class, 'store'])->name('admin.addoffer');
+
+        Route::delete('/deleteoffer/{id}', [OfferController::class, 'destroy']);
+        Route::get('/editoffer/{id}', [OfferController::class, 'edit']);
+        Route::delete('/delete-offer-image/{id}', [OfferController::class, 'deletecover']);
+        Route::any('/updateoffer/{id}', [OfferController::class, 'update']);
+
+
+
+
 
 
 
@@ -130,8 +145,8 @@ Route::group(['prefix' => 'admin'], function () {
 
         Route::delete('/deletetestimonial/{id}', [TestimonialController::class, 'destroy']);
         Route::get('/edittestimonial/{id}', [TestimonialController::class, 'edit']);
-        // Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
-        // Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
+        Route::get('/profile', [DashboardController::class, 'profile'])->name('admin.profile');
+        Route::put('/update-profile/{id}', [DashboardController::class, 'update']);
         Route::delete('/delete-testimonial-image/{id}', [TestimonialController::class, 'deletecover']);
         Route::any('/updatetestimonial/{id}', [TestimonialController::class, 'update']);
 

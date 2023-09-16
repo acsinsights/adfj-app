@@ -14,8 +14,8 @@ class AllPosts extends Controller
     public function index(Request $request)
     {
         $posts = Post::latest();
-        if (!empty($request->get('keyword'))) {
-            $posts = $posts->where('title', 'like', '%' . $request->get('keyword') . '%');
+        if (!empty($request->get('search'))) {
+            $posts = $posts->where('title', 'like', '%' . $request->get('search') . '%');
         }
 
         $posts = $posts->paginate(10);
@@ -24,7 +24,7 @@ class AllPosts extends Controller
 
     public function featured()
     {
-        $posts = Post::latest()->take(100)->get();
+        $posts = Post::latest()->get();
         return view('admin.featuredpost')->with('posts', $posts);
     }
 
@@ -111,14 +111,14 @@ class AllPosts extends Controller
 
         $post->update([
             "title" => $request->title,
-            "author" => $request->author,
+            "author" => $request->title,
             "location" => $request->location,
             "date" => $request->date,
             "media" => $post->media,
             "serviceid" => $request->service,
             "status" => $request->status == 1 ? "$request->status" : '0',
             "stypeid" => $request->type,
-            "hypelinks" => $request->hypelinks,
+            "hypelinks" => $request->hypelinks!= "javascript:void(0);" ?  "$request->hypelinks" :'javascript: void(0)',
             "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 
