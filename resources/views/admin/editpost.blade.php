@@ -99,7 +99,7 @@
                                             <div class="col-md-6 col-12">
                                                 <div class="form-group">
                                                     <label for="country-floating">Hyperlink(optional)</label>
-                                                    <input type="url" id="country-floating" class="form-control"  value="{{ $posts->hypelinks }}" name="videolink" placeholder="put hyperlink here">
+                                                    <input type="url" id="country-floating" class="form-control"  value="{{ $posts->hypelinks }}" name="hypelinks" placeholder="put hyperlink here">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 d-flex col-12">

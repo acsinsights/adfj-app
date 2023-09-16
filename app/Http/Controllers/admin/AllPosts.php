@@ -118,7 +118,7 @@ class AllPosts extends Controller
             "serviceid" => $request->service,
             "status" => $request->status == 1 ? "$request->status" : '0',
             "stypeid" => $request->type,
-            "hypelinks" => $request->hypelinks == 'javascript:void(0); '? 'javascript: void(0)' : "$request->hypelinks",
+            "hypelinks" => $request->hypelinks!= "javascript:void(0);" ?  "$request->hypelinks" :'javascript: void(0)',
             "featured_post" => $request->featured == 1 ? "$request->featured" : '0',
         ]);
 
