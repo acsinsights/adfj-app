@@ -11,11 +11,10 @@ class Offer extends Model
     protected $fillable = [
         'offername',
         'offerimage',
+        'offerlink',
         'date',
         'created_at',
 ];
-
-
 public function images()
 {
     return $this->hasMany(Image::class);

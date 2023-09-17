@@ -57,6 +57,12 @@
                                                     <input type="text"  id="first-name-column" class="form-control"  value="{{ $offers->offername }}" placeholder="write your project title here" name="offername">
                                                 </div>
                                             </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="first-name-column">Offer Link</label>
+                                                    <input type="url"  id="first-name-column" class="form-control"  value="{{ $offers->offerlink }}" placeholder="write your project title here" name="offerlink">
+                                                </div>
+                                            </div>
 
                                             {{--<label class="m-2">Media (Cover Image) &nbsp;<span class="text-danger">(570 × 600
                                                 px)</span></label>

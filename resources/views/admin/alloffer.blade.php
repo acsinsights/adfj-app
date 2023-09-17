@@ -62,6 +62,7 @@
                                          <th>Offer Image</th>
                                          {{-- <th>Logo</th> --}}
                                          <th>Offer Name</th>
+                                         <th>Offer Link</th>
                                          {{-- <th>Date</th> --}}
                                          <th style="text-align: center;">Edit</th>
                                          <th style="text-align: center;">Delete</th>
@@ -78,6 +79,7 @@
                                                     {{-- <td><img src="/testilogos/{{ $tsti->custlogo }}" class="img-responsive"
                                                         style="max-height:80px; max-width:50px" alt="" srcset=""></td> --}}
                                                        <td>{{ $offer->offername }}</td>
+                                                       <td>{{ $offer->offerlink }}</td>
 
 
 

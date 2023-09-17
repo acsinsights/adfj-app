@@ -362,7 +362,7 @@
 
                                                     @if ($post->status == 1)
                                                         <div class="portfolio__grid-video">
-                                                            <a href="https://www.youtube.com/watch?v=HGN8mufDavg"
+                                                            <a href="{{ $post->status == 1 ? "$post->hypelinks" : 'javascript: void(0);' }}"
                                                                 class="portfolio-play-btn popup-video tp-el-video-btn">
                                                                 <svg width="18" height="22" viewBox="0 0 18 22"
                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -616,8 +616,9 @@
                                 @foreach ($offers as $offe)
                                 <div class="about__gallery-item">
                                     <div class="about__gallery-thumb m-img">
-                                        <img src="/offerimg/{{ $offe->offerimage }}"
-                                            alt="" />
+                                        <a href="{{ $offe->offerlink }}">
+                                            <img src="/offerimg/{{ $offe->offerimage }}"alt="" />
+                                        </a>
                                     </div>
                                 </div>
                                 @endforeach

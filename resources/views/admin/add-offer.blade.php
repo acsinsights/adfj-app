@@ -59,9 +59,15 @@
                                                     <input type="text" id="first-name-column" class="form-control" placeholder="Client Name Goes Here" name="offername">
                                                 </div>
                                             </div>
+                                            <div class="col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <label for="first-name-column">Offer Link</label>
+                                                    <input type="url" id="first-name-column" class="form-control" placeholder="Client Name Goes Here" name="offerlink">
+                                                </div>
+                                            </div>
 
 
-                                            <div class="col-lg-6 col-md-12">
+                                            <div class="col-lg-12 col-md-12">
                                                 <div class="form-group">
                                                     <label for="customFile">Offer Image  &nbsp;<span class="text-danger">(870 × 500px)</span></label>
                                                     <div class="custom-file">

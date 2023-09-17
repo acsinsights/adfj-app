@@ -334,13 +334,14 @@ publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdr
                     <div class="about__gallery-slider-active">
 
                         @foreach ($offers as $offe)
-                        <div class="about__gallery-item">
-                            <div class="about__gallery-thumb m-img">
-                                <img src="/offerimg/{{ $offe->offerimage }}"
-                                    alt="" />
-                            </div>
-                        </div>
-                        @endforeach
+                                <div class="about__gallery-item">
+                                    <div class="about__gallery-thumb m-img">
+                                        <a href="{{ $offe->offerlink }}">
+                                            <img src="/offerimg/{{ $offe->offerimage }}"alt="" />
+                                        </a>
+                                    </div>
+                                </div>
+                                @endforeach
                         {{-- <div class="about__gallery-item">
                             <div class="about__gallery-thumb m-img">
                                 <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"

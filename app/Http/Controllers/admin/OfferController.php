@@ -31,6 +31,7 @@ class OfferController extends Controller
 
             $offers = new Offer([
                 "offername" => $request->offername,
+                "offerlink" => $request->offerlink,
                 "offerimage" => $imageName,
 
             ]);
@@ -65,6 +66,7 @@ class OfferController extends Controller
 
         $post->update([
             "offername" => $request->offername,
+            "offerlink" => $request->offerlink,
             "offerimage" =>$post->offerimage,
         ]);
         return redirect("/admin/alloffer")->with('success', 'Updated Successfully');
