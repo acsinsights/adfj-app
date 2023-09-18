@@ -39,13 +39,13 @@
                 <div class="row align-items-end">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                         <div class="section__title-wrapper-4 mb-60">
-                            <span class="section__title-pre-4">Explore AdFJ Studios Pricing Plans</span>
-                            <h3 class="section__title-4"> Empowering Creators and Artists</h3>
+                            <span class="section__title-pre-4">Harmonize Your Creativity With ADFJ Studios</span>
+                            <h3 class="section__title-4">Elevate Your Sound With ADFJ Studios</h3>
                         </div>
                     </div>
                     <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                         <div class="services__more-4 mb-65">
-                            <p>  Discover pricing plans meticulously crafted to empower creators and artists, fostering content consistency, addressing financial hurdles, and providing a holistic creative solution at AdFJ Studios.</p>
+                            <p> Explore our music production services and unlock a world of sonic possibilities. From recording to mixing and mastering, we're here to help you craft exceptional music that resonates with your audience and leaves a lasting impression.</p>
                         </div>
                     </div>
                 </div>

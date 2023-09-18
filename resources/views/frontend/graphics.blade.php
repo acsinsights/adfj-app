@@ -40,13 +40,13 @@
                 <div class="row align-items-end">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                         <div class="section__title-wrapper-4 mb-60">
-                            <span class="section__title-pre-4">Explore AdFJ Studios Pricing Plans</span>
-                            <h3 class="section__title-4"> Empowering Creators and Artists</h3>
+                            <span class="section__title-pre-4">Elevate Your Visuals with AdFJ Studios</span>
+                            <h3 class="section__title-4">Graphic Production Services</h3>
                         </div>
                     </div>
                     <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                         <div class="services__more-4 mb-65">
-                            <p>  Discover pricing plans meticulously crafted to empower creators and artists, fostering content consistency, addressing financial hurdles, and providing a holistic creative solution at AdFJ Studios.</p>
+                            <p> Unlock the potential of your creative vision with our Graphic Production services. Explore our portfolio of meticulously crafted visuals, designed to enhance your brand identity and captivate your audience.</p>
                         </div>
                     </div>
                 </div>

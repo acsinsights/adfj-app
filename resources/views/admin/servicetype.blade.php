@@ -56,7 +56,7 @@
                             placeholder="Enter New Sub-Service" required>
 
                             <button style="    width: 100px;
-                            " type="submit" class="btn btn-success m-1">Submit</button>
+                            " type="submit" class="btn btn-primary mr-1">Submit</button>
                             {{-- <select name="typeid" id="typeid" value="" class="form-control">
                                 <option class="form-control">All Service Types</option>
                                 @foreach ($pservices as $ps)

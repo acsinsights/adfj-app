@@ -38,13 +38,13 @@
                 <div class="row align-items-end">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                         <div class="section__title-wrapper-4 mb-60">
-                            <span class="section__title-pre-4">Explore AdFJ Studios Pricing Plans</span>
-                            <h3 class="section__title-4"> Empowering Creators and Artists</h3>
+                            <span class="section__title-pre-4">Unlock Your Visual Potential with AdFJ Studios</span>
+                            <h3 class="section__title-4">Video Production Services</h3>
                         </div>
                     </div>
                     <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                         <div class="services__more-4 mb-65">
-                            <p>  Discover pricing plans meticulously crafted to empower creators and artists, fostering content consistency, addressing financial hurdles, and providing a holistic creative solution at AdFJ Studios.</p>
+                            <p>Explore our comprehensive video production services that bring your creative vision to life. From concept to final edit, we are your partners in storytelling, offering top-tier quality and innovation to showcase your unique talent and vision. Explore our diverse portfolio and let's create magic together.</p>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
             <div class="container-fluid tp-gx-20">
                 <div class="row">
                     <div class="col-xl-12">
-                   
+
                     </div>
                 </div>
 
