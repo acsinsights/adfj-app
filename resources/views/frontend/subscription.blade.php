@@ -9,7 +9,7 @@
                 <div class="col-xl-8 col-lg-10">
                     <div class="about__heading-content text-center p-relative z-index-1">
                         <span class="about__heading-subtitle">Subscription</span>
-                        <h3 class="about__heading-title">Unlock Exclusive Benefits</h3>
+                        <h3 class="about__heading-title">Unlock Benefits</h3>
                     </div>
                 </div>
             </div>
@@ -408,7 +408,68 @@
         </div>
     </section>
 
+    <section class="about__gallery-area fix p-spacing pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12">
+                    <div class="tp-section-wrapper-3 mb-60 text-center">
+                        <span class="tp-section-subtitle-3">Ongoing Offers</span>
+                        <h3 class="tp-section-title-3">Exciting Offers</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10">
+                    <div class="about__gallery-slider pl-50 pr-50 p-relative">
+                        <div class="about__gallery-slider-active">
 
+                            @foreach ($offers as $offe)
+                                    <div class="about__gallery-item">
+                                        <div class="about__gallery-thumb m-img">
+                                            <a href="{{ $offe->offerlink }}">
+                                                <img src="/offerimg/{{ $offe->offerimage }}"alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                            {{-- <div class="about__gallery-item">
+                                <div class="about__gallery-thumb m-img">
+                                    <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="about__gallery-item">
+                                <div class="about__gallery-thumb m-img">
+                                    <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="about__gallery-item">
+                                <div class="about__gallery-thumb m-img">
+                                    <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="about__gallery-item">
+                                <div class="about__gallery-thumb m-img">
+                                    <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                        alt="" />
+                                </div>
+                            </div>
+                            <div class="about__gallery-item">
+                                <div class="about__gallery-thumb m-img">
+                                    <img src="{{ asset('user-assets/img/portfolio/details/slider/portfolio-details-slider-3.jpg') }}"
+                                        alt="" />
+                                </div>
+                            </div> --}}
+                        </div>
+
+                        <div class="about__gallery-arrow d-none d-sm-block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="faq__area faq__style-3 p-relative z-index-1 pt-80 pb-40 tp-el-section">
         <div class="container">

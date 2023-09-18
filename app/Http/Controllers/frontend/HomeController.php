@@ -96,7 +96,8 @@ class HomeController extends Controller
     public function subscription()
     {
         $posts = Post::all();
-        return view('frontend.subscription')->with('posts', $posts);
+        $offers = Offer::all();
+        return view('frontend.subscription',compact('posts','offers'));
     }
 
     public function terms()
