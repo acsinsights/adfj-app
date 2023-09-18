@@ -65992,7 +65992,10 @@ blockquote cite::before {
     .mobile-foot {
         display: none;
     }
-
+    .contact-hub-cover{
+        width: 507px;
+        bottom: 63px;
+    }
     .mobile-canvasmenu {
         display: none;
     }
@@ -66020,6 +66023,10 @@ blockquote cite::before {
     }
     .txt-align {
         text-align: center;
+    }
+    .contact-hub-cover{
+        width: 507px;
+        bottom: 0px;
     }
     .deskfoot-row {
         display: none;
@@ -66112,6 +66119,7 @@ blockquote cite::before {
     .timeline-component {
         width: 335px;
     }
+
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1399px) {

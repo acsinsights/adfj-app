@@ -277,6 +277,24 @@
         </section>
 
 
+        <div style="margin-bottom: 100px" class="row">
+            <div class="col-xl-12">
+                <div class="portfolio__section-title-wrapper p-spacing text-center tp-el-content">
+                    <span class="portfolio__section-title-pre tp-el-subtitle">Tune Your Dreams</span>
+
+
+                    <h2 class="portfolio__section-title tp-el-title pb-50">Music Production Pricing</h2>
+                </div>
+            </div>
+
+
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1NZJUASCz6pJIP37CIdUFegK"
+        publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
+        </stripe-pricing-table>
+        </div>
+
+
 
         <!-- cta area start -->
         <section class="cta__area cta__style-3 p-relative z-index-1 p-spacing pt-85 pb-60 grey-bg-7">

@@ -161,6 +161,27 @@
                 </div>
             </div>
         <!-- cta area start -->
+
+        <div style="margin-botton:100px;" class="p-spacing row pt-100">
+            <div class="col-xl-12">
+                <div class="portfolio__section-title-wrapper text-center p-spacing tp-el-content">
+                    <span class="portfolio__section-title-pre tp-el-subtitle"> Design Magic Unleashed</span>
+
+
+                    <h2 class="portfolio__section-title tp-el-title">Design Pricing Options</h2>
+                </div>
+            </div>
+
+        <div style="margin-top: 50px;" class="p-spacing">
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1NZJq1SCz6pJIP37rjTTmqYw"
+        publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
+        </stripe-pricing-table>
+    </div>
+    </div>
+
+
+
         <section class="cta__area cta__style-3 p-relative z-index-1 p-spacing pt-85 pb-60 grey-bg-7">
             <div class="cta__shape">
                 <img class="cta__shape-17" src="assets/img/cta/7/cta-shape-1.png" alt="" />

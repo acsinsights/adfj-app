@@ -99,7 +99,8 @@
                                 });
                             </script>
                             <p class="ajax-response"></p>
-                            <div class="hub-cover"></div>
+                            <div class="contact-hub-cover hub-cover">
+                            </div>
                         </div>
                     </div>
                 </div>
