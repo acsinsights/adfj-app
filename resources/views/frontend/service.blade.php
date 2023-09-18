@@ -136,10 +136,10 @@
                     animation-delay: 0.3s;
                     animation-name: fadeInUp;
                   ">
-                        <div class="services__icon-15 mr-45 tp-el-box-icon">
-                            <div class="features__icon">
-                                <span>
-                                    <video autoplay="" loop="" muted="" plays-inline="">
+                         <div class="services__icon-15  tp-el-box-icon">
+                            <div style="margin-right: 40px;" class="features__icon">
+                                <span style="left: -38px;bottom: 25px;">
+                                    <video autoplay="" loop="" muted="" plays-inline="" style="width: 198px;">
                                         <source src="{{ asset('user-assets/img/features/audio-production.mp4') }}"
                                             type="video/mp4" />
                                     </video>
