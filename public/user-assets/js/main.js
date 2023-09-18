@@ -2448,7 +2448,7 @@
 
     if ($(".about__gallery-slider-active").length > 0) {
         $(".about__gallery-slider-active").slick({
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 4000,
             dots: false,
             fade: false,
