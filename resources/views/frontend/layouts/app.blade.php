@@ -4,7 +4,6 @@
 <head>
     <title>   AdFJ Studios | @yield('title') </title>
     @include('frontend.layouts.header')
-
 </head>
 
 <body>
@@ -14,9 +13,6 @@
     @yield('page')
 
     @include('frontend.layouts.footer')
-
-
-
 
 </body>
 

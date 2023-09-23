@@ -49,7 +49,7 @@ class OfferController extends Controller
         }
     // ?Update function for offers
     public function update(Request $request, $id)
-    {
+    {   
         $post = Offer::findOrFail($id);
 
         if ($request->hasFile("offerimage")) {

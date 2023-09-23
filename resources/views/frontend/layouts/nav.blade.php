@@ -24,7 +24,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div style="padding-left: 182px;" class="col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
+                            <div style="padding-left: 182px;" class="navspacing col-xxl-9 col-xl-8 col-lg-8 d-none d-lg-block">
                                 <div class="main-menu main-menu-9 main-menu-ff-space">
                                     <nav id="mobile-menu">
                                         <ul>

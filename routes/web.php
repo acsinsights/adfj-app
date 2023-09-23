@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\admin\AdminFeaturedPostController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\admin\AdminFeaturedPostController;
 
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\admin\AdminLoginController;

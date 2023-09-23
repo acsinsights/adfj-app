@@ -476,8 +476,11 @@ body {
     color: var(--tp-text-body);
     line-height: 26px;
     scroll-behavior: smooth;
+    overflow-x: hidden!important;
 }
-
+html{
+    overflow-x: hidden!important;
+}
 a {
     text-decoration: none;
 }
@@ -755,6 +758,7 @@ input[type="color"] {
     opacity: 0.7;
     visibility: visible;
 }
+
 
 /*----------------------------------------
     Progress Wrap
@@ -14285,6 +14289,14 @@ input[type="color"] {
 .header__sticky.header-sticky .main-menu-7 ul li .submenu li:hover > a {
     padding-left: 43px;
 }
+
+
+
+
+
+
+
+
 
 [dir="rtl"]
     .header__sticky.header-sticky
@@ -48263,6 +48275,15 @@ div.team__details-shape-4 img {
         padding: 35px 30px 37px;
     }
 }
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .navspacing {
+        padding-left: 25px!important;
+
+    }
+    .main-menu-9 ul li{
+        margin-right: 15px!important;
+    }
+}
 
 .features__item-10:hover {
     border-color: #fc3839;
@@ -66024,6 +66045,11 @@ blockquote cite::before {
     .txt-align {
         text-align: center;
     }
+
+    .about__spacing {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     .contact-hub-cover{
         width: 507px;
         bottom: 0px;
@@ -66054,6 +66080,27 @@ blockquote cite::before {
         height: 700px;
     }
 }
+
+.prisingitem{
+    position: absolute;
+    left: -76px!important;
+    top: 0px;
+    width: 112%!important;
+    max-width: 112%!important;
+}
+
+
+
+.prisingitem2{
+    position: absolute;
+    left: -81px!important;
+    top: 0px;
+    width: 112%!important;
+    max-width: 112%!important;
+}
+
+
+
 @media only screen and (min-width: 200px) and (max-width: 978px) {
     .getstarted-btn {
         display: none;
