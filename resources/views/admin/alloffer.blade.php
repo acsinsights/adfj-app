@@ -26,7 +26,7 @@
                     {{-- <div class="col-md-5 alert-message">
                         @include('admin.message')
                     </div> --}}
-
+            
                 </div>
                 <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
                     <div class="card-options">

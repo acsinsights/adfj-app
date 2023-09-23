@@ -991,7 +991,10 @@
                                                 @endif
                                             </div>
                                             <div style="height: 100px;" class="testimonial__content-6">
-                                                <p>
+                                                <p style="    overflow: hidden;
+                                                display: -webkit-box;
+                                                -webkit-line-clamp: 3;
+                                                -webkit-box-orient: vertical;">
                                                     {{ $tt->custreview }}
                                                 </p>
                                             </div>

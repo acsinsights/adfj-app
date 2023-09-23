@@ -26,6 +26,7 @@
                         </div>
                     </div>
                 </div>
+                
                 {{-- <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
                     <div class="form-group breadcrumb-right">
                         <div class="dropdown">
@@ -136,10 +137,10 @@
                                           <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="first-name-column">Customer Review</label>
-                                                <textarea class="form-control" name="review" maxlength="300" id="" cols="30" rows="3">{{ $testimonials->custreview }}</textarea>
+                                                <textarea class="form-control" name="review" maxlength="120" id="" cols="30" rows="3">{{ $testimonials->custreview }}</textarea>
                                                 <div class="text-right" id="count">
                                                     <span id="current_count">0</span>
-                                                    <span id="maximum_count">/ 300</span>
+                                                    <span id="maximum_count">/ 120</span>
                                                 </div>
                                             </div>
                                         </div>
