@@ -10,7 +10,7 @@ class ContactFormController extends Controller
 {
     public function index()
     {
-        $entries = Form::latest()->paginate(10);
+        $entries = Form::latest()->contact()->paginate(10);
         return view('admin.form-entries', compact('entries'));
     }
 }

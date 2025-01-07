@@ -84,11 +84,21 @@
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 mb-50">
-                        <div class=" contact__form-9 pt-20 pl-70 ">
+                        <div class="contact__form-9 pt-20 pl-70">
                             <h4 class="contact__form-9-title">
                                 Get In Touch Today
                             </h4>
                             <div class="contact__form-9-inner">
+                                @session('success')
+                                    <div class="alert-message">
+                                        <div class="alert alert-success d-flex align-items-center gap-3" role="alert">
+                                            <i class="fa-solid fa-circle-check fa-xl"></i>
+                                            <div>
+                                                {{ Session::get('success') }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endsession
                                 <form action="{{ route('consultation.store') }}" method="post">
                                     @csrf
                                     <div class="row ">
@@ -188,7 +198,7 @@
                                                 </label>
 
                                                 <input type="text" name="reference" id="reference"
-                                                    class="form-control form-input"
+                                                    class="form-control form-input" value="{{ old('reference') }}"
                                                     placeholder="Put Reference Link Here...">
                                                 @error('reference')
                                                     <span class="text-danger">{{ $message }}</span>
@@ -211,13 +221,13 @@
                                         </div>
 
                                         <div class="col-lg-12 mt-2">
-                                            <div class="form-group">
+                                            <div class="form-group align-items-center">
                                                 <label for="consultation">
                                                     Need Consultation?
                                                 </label>
 
                                                 <input type="checkbox" name="consultation" id="consultation"
-                                                    class="form-checkbox">
+                                                    class="form-checkbox" value="1">
 
                                                 @error('consultation')
                                                     <span class="text-danger">{{ $message }}</span>

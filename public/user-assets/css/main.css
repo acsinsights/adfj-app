@@ -65154,3 +65154,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 #message {
     height: 80px !important;
 }
+
+.form-checkbox {
+    height: 16px;
+    width: 16px;
+}

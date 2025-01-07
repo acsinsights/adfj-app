@@ -141,8 +141,9 @@ class HomeController extends Controller
             'city' => 'required',
             'company_name' => 'nullable|sometimes',
             'service' => 'required',
-            'refernce' => 'required',
-            'attach_file' => 'nullable|sometimes|max:5100'
+            'reference' => 'required',
+            'attach_file' => 'nullable|sometimes|max:5100',
+            'consultation' => 'nullable|sometimes'
         ]);
 
         $form  = new Form();
@@ -152,15 +153,18 @@ class HomeController extends Controller
         $form->city = $request->city;
         $form->company_name = $request->company_name;
         $form->service = $request->service;
-        $form->refernce = $request->refernce;
+        $form->reference = $request->reference;
+        $form->consultation = $request->consultation;
+
         if ($request->hasFile('attach_file')) {
             $file = $request->file('attach_file');
             $filename = time() . '.' . $file->getClientOriginalExtension();
             $file->storeAs('public/consultation', $filename);
             $form->attach_file = $filename;
         }
+        $form->form_type = 'consultation';
         $form->save();
 
-        return redirect()->back()->with('success', 'Your Form has been submitted successfully');
+        return redirect()->back()->with('success', 'Your form has been submitted successfully');
     }
 }

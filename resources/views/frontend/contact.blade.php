@@ -1,9 +1,6 @@
 @extends('frontend.layouts.app')
-@section('title', 'Contact PAge')
+@section('title', 'Contact Page')
 @section('page')
-
-
-
 
     <main>
         <!-- contact area start -->
@@ -91,6 +88,16 @@
                     <div class="col-xl-12">
                         <div class="contact__form-2">
                             <h3 class="contact__form-2-title">Send a message</h3>
+                            @session('success')
+                                <div class="alert-message">
+                                    <div class="alert alert-success d-flex align-items-center gap-3" role="alert">
+                                        <i class="fa-solid fa-circle-check fa-xl"></i>
+                                        <div>
+                                            {{ Session::get('success') }}
+                                        </div>
+                                    </div>
+                                </div>
+                            @endsession
                             <div>
                                 <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
                                     @csrf

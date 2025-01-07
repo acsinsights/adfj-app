@@ -20,4 +20,14 @@ class Form extends Model
         'consultation',
         'form_type',
     ];
+
+    public function scopeContact($query)
+    {
+        $query->where('form_type', 'contact');
+    }
+
+    public function scopeConsultation($query)
+    {
+        $query->where('form_type', 'consultation');
+    }
 }
