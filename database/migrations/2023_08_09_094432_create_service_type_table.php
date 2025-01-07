@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('stypes', function (Blueprint $table) {
             $table->id();
             $table->string('stype_name', 100);
+            $table->string('slug', 100);
+            $table->integer('pservices_id');
             $table->timestamps();
         });
     }

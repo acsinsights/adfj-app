@@ -16,6 +16,14 @@ return new class extends Migration
             $table->string("author");
             $table->string("title");
             $table->text("cover");
+            $table->string('location', 100);
+            $table->string('date', 100);
+            $table->integer('serviceid');
+            $table->integer('stypeid');
+            $table->bigInteger('status')->default(0);
+            $table->integer('fstatus')->default('1');
+            $table->string('hypelinks', 300)->nullable();
+            $table->integer('featured_post')->default(0);
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\admin\AdminFeaturedPostController;
 
@@ -46,9 +47,6 @@ Route::get('/terms', [HomeController::class, 'terms']);
 Route::get('/newsletter', [HomeController::class, 'newsletter']);
 
 
-
-
-
 // image  module
 
 
@@ -58,31 +56,14 @@ Route::get('/newsletter', [HomeController::class, 'newsletter']);
 
 // Route::get('/login', [AdminLoginController::class, 'index'])->name('admin.login');
 
-Route::get('/forgetpassword',[ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forgetpassword');
-Route::get('/forgetPasswordLink',[ForgotPasswordController::class, 'showResetPasswordForm'])->name('forgetPasswordLink');
-
-
-
-
-
+Route::get('/forgetpassword', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forgetpassword');
+Route::get('/forgetPasswordLink', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('forgetPasswordLink');
 
 
 Route::get('forgetpassword', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forgetpassword', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
 Route::get('resetpassword/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('resetpassword', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Route::group(['prefix' => 'admin'], function () {
@@ -93,8 +74,6 @@ Route::group(['prefix' => 'admin'], function () {
     });
 
     Route::group(['middleware' => 'admin.auth'], function () {
-
-
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
         // Route::get('/dashboard-layout', [DashboardController::class, 'index']);
         Route::any('/allposts', [AllPosts::class, 'index'])->name('admin.allposts');
@@ -114,14 +93,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/delete-clientlele-image/{id}', [ClientleleController::class, 'deletecover']);
         Route::any('/updateclientlele/{id}', [ClientleleController::class, 'update']);
 
-
-
-
-
-
         Route::get('/alloffer', [OfferController::class, 'index'])->name('admin.alloffer');
-       Route::post('/add-offer', [OfferController::class, 'addoffer']);
-       Route::get('/editoffer', [OfferController::class, 'editoffer'])->name('admin.editooffer');
+        Route::post('/add-offer', [OfferController::class, 'addoffer']);
+        Route::get('/editoffer', [OfferController::class, 'editoffer'])->name('admin.editooffer');
         Route::get('/add-offer', [OfferController::class, 'create'])->name('admin.add-offer');
         Route::post('/addoffer', [OfferController::class, 'store'])->name('admin.addoffer');
 
@@ -130,18 +104,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/delete-offer-image/{id}', [OfferController::class, 'deletecover']);
         Route::any('/updateoffer/{id}', [OfferController::class, 'update']);
 
-
-
-
-
-
-
         Route::get('/testimonial', [TestimonialController::class, 'index'])->name('admin.testimonial');
         Route::get('/addtestimonial', [TestimonialController::class, 'create'])->name('admin.addtestimonial');
         Route::post('/add-testimonial', [TestimonialController::class, 'store'])->name('admin.add-testimonial');
-
-
-
 
         Route::delete('/deletetestimonial/{id}', [TestimonialController::class, 'destroy']);
         Route::get('/edittestimonial/{id}', [TestimonialController::class, 'edit']);
@@ -154,7 +119,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         //* categories
         // Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
-        Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
+        // Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
         Route::get('/add-posts', [AllPosts::class, 'create'])->name('admin.addposts');
         Route::get('/add-type', [AllPosts::class, 'type'])->name('admin.type');
         Route::post('/add-service-type', [AllPosts::class, 'addtype']);

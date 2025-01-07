@@ -10,6 +10,7 @@ use App\Models\Pservices;
 use App\Models\Stypes;
 use App\Models\Testimonial;
 use App\Models\Clientlele;
+use App\Models\Form;
 use App\Models\Offer;
 
 use Illuminate\Support\Facades\File;
@@ -22,7 +23,7 @@ class HomeController extends Controller
         $testimonials = Testimonial::all();
         $clientleles = Clientlele::all();
         $offers = Offer::all();
-        return view('frontend.index' ,compact('posts','testimonials','clientleles','offers'));
+        return view('frontend.index', compact('posts', 'testimonials', 'clientleles', 'offers'));
     }
     // {
     //     $posts = Post::latest()->take(10)->get();
@@ -97,7 +98,7 @@ class HomeController extends Controller
     {
         $posts = Post::all();
         $offers = Offer::all();
-        return view('frontend.subscription',compact('posts','offers'));
+        return view('frontend.subscription', compact('posts', 'offers'));
     }
 
     public function terms()
@@ -110,5 +111,24 @@ class HomeController extends Controller
         $posts = Post::all();
         $stypes = Stypes::all();
         return view('frontend.video')->with('posts', $posts)->with('stypes', $stypes);
+    }
+
+    public function form_submit(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'email' => 'required|email',
+            'message' => 'required|max:200',
+        ]);
+
+        $form = new Form();
+        $form->name = $request->name;
+        $form->phone = $request->phone;
+        $form->email = $request->email;
+        $form->message = $request->message;
+        $form->save();
+
+        return redirect()->with('success', 'Your form has been submitted successfully');
     }
 }
