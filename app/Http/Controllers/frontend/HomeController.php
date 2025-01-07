@@ -156,10 +156,9 @@ class HomeController extends Controller
         $form->reference = $request->reference;
         $form->consultation = $request->consultation;
 
-        if ($request->hasFile('attach_file')) {
-            $file = $request->file('attach_file');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
-            $file->storeAs('public/consultation', $filename);
+        if ($request->attach_file) {
+            $file = $request->attach_file->store('consultation', 'public');
+            $filename = 'storage/' . $file;
             $form->attach_file = $filename;
         }
         $form->form_type = 'consultation';

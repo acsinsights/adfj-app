@@ -53,14 +53,13 @@
                                                 <td>{{ $entry->phone }}</td>
                                                 <td>{{ $entry->email }}</td>
                                                 <td style="text-align: center;">
-                                                    <a class="btn btn-flat-primary border"
-                                                        href="/admin/form/{{ $entry->id }}">
+                                                    <a class="btn btn-flat-primary border" href="/admin/form/{{ $entry->id }}">
                                                         View
                                                     </a>
 
                                                     <a class="btn btn-flat-danger border"
                                                         onclick="return confirm('Are you sure?');"
-                                                        href="/admin/form/delete/{{ $entry->id }}">
+                                                        href="/admin/delete/{{ $entry->id }}">
                                                         Delete
                                                     </a>
                                                 </td>

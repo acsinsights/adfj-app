@@ -99,7 +99,8 @@
                                         </div>
                                     </div>
                                 @endsession
-                                <form action="{{ route('consultation.store') }}" method="post">
+                                <form action="{{ route('consultation.store') }}" method="post"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <div class="row ">
                                         <div class="col-lg-6">
@@ -208,13 +209,13 @@
 
                                         <div class="col-lg-12 mt-2">
                                             <div class="form-group">
-                                                <label for="attach-file">
+                                                <label for="attach_file">
                                                     Attch File
                                                 </label>
 
-                                                <input type="file" name="attach-file" id="attach-file"
+                                                <input type="file" name="attach_file" id="attach_file"
                                                     class="form-control">
-                                                @error('attach-file')
+                                                @error('attach_file')
                                                     <span class="text-danger">{{ $message }}</span>
                                                 @enderror
                                             </div>

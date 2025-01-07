@@ -166,5 +166,7 @@ Route::group(['prefix' => 'admin'], function () {
 
         // ? Contact Form Entries
         Route::get('/form-entries', [ContactFormController::class, 'index'])->name('contact.entries');
+        Route::get('/form/{id}', [ContactFormController::class, 'show'])->name('contact.show');
+        Route::get('/consultations', [ContactFormController::class, 'consultation'])->name('consultation.entries');
     });
 });

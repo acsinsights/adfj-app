@@ -99,7 +99,8 @@
                                 </div>
                             @endsession
                             <div>
-                                <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
+                                <form id="contact-form" method="POST" action="{{ route('contact.store') }}"
+                                    enctype="multipart/form-data">
                                     @csrf
                                     <div class="row">
                                         <div class="col-md-6">

@@ -219,6 +219,13 @@
                         <span class="menu-title text-truncate" data-i18n="CONTACT_FORMS">Form Entries</span>
                     </a>
                 </li>
+
+                <li class="nav-item {{ URL::current() == route('consultation.entries') ? 'active' : '' }} mb-3">
+                    <a class="d-flex align-items-center" href="{{ route('consultation.entries') }}">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span class="menu-title text-truncate" data-i18n="CONTACT_FORMS">Consultations</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
