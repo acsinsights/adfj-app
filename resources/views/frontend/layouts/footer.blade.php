@@ -554,7 +554,7 @@
   <script src="{{asset('user-assets/js/magnific-popup.js')}}"></script>
   <script src="{{asset('user-assets/js/parallax.js')}}"></script>
   <script src="{{asset('user-assets/js/backtotop.js')}}"></script>
-  <script src="{{asset('user-assets/js/nice-select.js')}}"></script>
+  {{-- <script src="{{asset('user-assets/js/nice-select.js')}}"></script> --}}
   <script src="{{asset('user-assets/js/purecounter.js')}}"></script>
   <script src="{{asset('user-assets/js/wow.js')}}"></script>
   <script src="{{asset('user-assets/js/isotope-pkgd.js')}}"></script>

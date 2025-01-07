@@ -129,6 +129,38 @@ class HomeController extends Controller
         $form->message = $request->message;
         $form->save();
 
-        return redirect()->with('success', 'Your form has been submitted successfully');
+        return redirect()->back()->with('success', 'Your form has been submitted successfully');
+    }
+
+    public function consultation(Request $request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required|numeric',
+            'email' => 'required|email',
+            'city' => 'required',
+            'company_name' => 'nullable|sometimes',
+            'service' => 'required',
+            'refernce' => 'required',
+            'attach_file' => 'nullable|sometimes|max:5100'
+        ]);
+
+        $form  = new Form();
+        $form->name = $request->name;
+        $form->phone = $request->phone;
+        $form->email = $request->email;
+        $form->city = $request->city;
+        $form->company_name = $request->company_name;
+        $form->service = $request->service;
+        $form->refernce = $request->refernce;
+        if ($request->hasFile('attach_file')) {
+            $file = $request->file('attach_file');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->storeAs('public/consultation', $filename);
+            $form->attach_file = $filename;
+        }
+        $form->save();
+
+        return redirect()->back()->with('success', 'Your Form has been submitted successfully');
     }
 }

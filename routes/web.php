@@ -14,13 +14,15 @@ use App\Http\Controllers\admin\CreateController;
 use App\Http\Controllers\admin\CreateCategoryController;
 use App\Http\Controllers\admin\TestimonialController;
 use App\Http\Controllers\admin\ClientleleController;
+use App\Http\Controllers\admin\ContactFormController;
 use App\Http\Controllers\admin\OfferController;
 
 
 
 
 /*
-|--------------------------------------------------------------------------
+|------------------------------------------------------------
+--------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -45,6 +47,8 @@ Route::get('/pricing-plan', [HomeController::class, 'pricing']);
 Route::get('/subscription', [HomeController::class, 'subscription']);
 Route::get('/terms', [HomeController::class, 'terms']);
 Route::get('/newsletter', [HomeController::class, 'newsletter']);
+Route::post('/contact/store', [HomeController::class, 'form_submit'])->name('contact.store');
+Route::post('/consultation/store', [HomeController::class, 'consultation'])->name('consultation.store');
 
 
 // image  module
@@ -115,8 +119,6 @@ Route::group(['prefix' => 'admin'], function () {
         Route::delete('/delete-testimonial-image/{id}', [TestimonialController::class, 'deletecover']);
         Route::any('/updatetestimonial/{id}', [TestimonialController::class, 'update']);
 
-
-
         //* categories
         // Route::get('/create', [CreateController::class, 'create'])->name('admin.create');
         // Route::get('/create-category', [CreateCategoryController::class, 'index'])->name('admin.createcategory');
@@ -161,5 +163,8 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/logout', [DashboardController::class, 'logout'])->name('admin.logout');
 
         Route::put('/featured/{id}', [AdminFeaturedPostController::class, 'featured']);
+
+        // ? Contact Form Entries
+        Route::get('/form-entries', [ContactFormController::class, 'index'])->name('contact.entries');
     });
 });

@@ -10,7 +10,8 @@
         <section class="tp-section-area p-relative z-index-1 tp-section-spacing">
             <div style="background-position: center!important;background-color: transparent;
             background-size: cover;
-            background-repeat: no-repeat;" class="tp-section-bg include-bg" data-background="{{ asset('user-assets/img/contact/contact-bg.png') }}">
+            background-repeat: no-repeat;"
+                class="tp-section-bg include-bg" data-background="{{ asset('user-assets/img/contact/contact-bg.png') }}">
             </div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -90,7 +91,73 @@
                     <div class="col-xl-12">
                         <div class="contact__form-2">
                             <h3 class="contact__form-2-title">Send a message</h3>
-                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                            <div>
+                                <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    Name<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="text" id="name" name="name"
+                                                    class="form-control form-input" placeholder="Your Name"
+                                                    value="{{ old('name') }}" required>
+                                                @error('name')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="phone">
+                                                    Mobile phone number<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="text" id="phone" name="phone"
+                                                    class="form-control form-input" placeholder="Your phone"
+                                                    value="{{ old('phone') }}" required>
+                                                @error('phone')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mt-2">
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    Email<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="email" id="email" name="email"
+                                                    class="form-control form-input" placeholder="Your Email"
+                                                    value="{{ old('email') }}" required>
+                                                @error('email')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mt-2">
+                                            <div class="form-group">
+                                                <label for="message">
+                                                    Message<span class="text-danger">*</span>
+                                                </label>
+                                                <textarea id="message" name="message" rows="3" class="form-control" placeholder="Your Message" required>{{ old('message') }}</textarea>
+                                                @error('message')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mt-3">
+                                            <div class="book-btn header__hamburger">
+                                                <button type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            {{-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                             <script>
                                 hbspt.forms.create({
                                     region: "na1",
@@ -100,7 +167,7 @@
                             </script>
                             <p class="ajax-response"></p>
                             <div class="contact-hub-cover hub-cover">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

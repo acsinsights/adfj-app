@@ -17,7 +17,14 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone');
             $table->string('email');
-            $table->text('message');
+            $table->string('city')->nullable();
+            $table->string('company_name')->nullable();
+            $table->text('message')->nullable();
+            $table->string('service')->nullable();
+            $table->string('reference')->nullable();
+            $table->text('attach_file')->nullable();
+            $table->boolean('consultation')->default(false);
+            $table->string('form_type')->default('contact');
 
             $table->timestamps();
         });

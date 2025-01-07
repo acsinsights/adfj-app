@@ -2,7 +2,6 @@
 @section('title', 'Start Project')
 @section('page')
 
-
     <main>
         <!-- about top area start -->
         {{-- <section class="about__heading about__heading-overlay about__spacing include-bg jarallax"
@@ -18,18 +17,6 @@
                 </div>
             </div>
         </section> --}}
-
-
-
-
-
-
-
-
-
-
-
-
 
         <section class="contact__area pt-50 p-relative z-index-1">
             <div class="contact__shape">
@@ -96,13 +83,157 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 mb-50">
                         <div class=" contact__form-9 pt-20 pl-70 ">
                             <h4 class="contact__form-9-title">
                                 Get In Touch Today
                             </h4>
                             <div class="contact__form-9-inner">
-                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                                <form action="{{ route('consultation.store') }}" method="post">
+                                    @csrf
+                                    <div class="row ">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="name">
+                                                    Name<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="text" id="name" name="name"
+                                                    class="form-control form-input" placeholder="Your Name"
+                                                    value="{{ old('name') }}" required>
+                                                @error('name')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="company_name">
+                                                    Company Name
+                                                </label>
+                                                <input type="text" id="company_name" name="company_name"
+                                                    class="form-control form-input" placeholder="Your company name"
+                                                    value="{{ old('company_name') }}">
+                                                @error('company_name')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 mt-2">
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    Email<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="email" id="email" name="email"
+                                                    class="form-control form-input" placeholder="Your email"
+                                                    value="{{ old('email') }}" required>
+                                                @error('email')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 mt-2">
+                                            <div class="form-group">
+                                                <label for="phone">
+                                                    Mobile Number<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="text" id="phone" name="phone"
+                                                    class="form-control form-input" placeholder="Your phone"
+                                                    value="{{ old('phone') }}" required>
+                                                @error('phone')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 mt-2">
+                                            <div class="form-group">
+                                                <label for="city">
+                                                    City<span class="text-danger">*</span>
+                                                </label>
+                                                <input type="text" id="city" name="city"
+                                                    class="form-control form-input" placeholder="Your city"
+                                                    value="{{ old('city') }}" required>
+                                                @error('city')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mt-2">
+                                            <div class="">
+                                                <label for="phone">
+                                                    Choose Service<span class="text-danger">*</span>
+                                                </label>
+
+                                                <select name="service" id="service" class="form-control w-100">
+                                                    <option selected disabled>Please Select</option>
+                                                    <opp0tion value="Audio Engineering">Audio Engineering</opp0tion>
+                                                    <option value="Graphic Design">Graphic Design</option>
+                                                    <option value="Music Production">Music Production</option>
+                                                    <option value="Video Production">Video Production</option>
+                                                </select>
+                                                @error('phone')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mt-2">
+                                            <div class="form-group">
+                                                <label for="reference">
+                                                    Project Reference<span class="text-danger">*</span>
+                                                </label>
+
+                                                <input type="text" name="reference" id="reference"
+                                                    class="form-control form-input"
+                                                    placeholder="Put Reference Link Here...">
+                                                @error('reference')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mt-2">
+                                            <div class="form-group">
+                                                <label for="attach-file">
+                                                    Attch File
+                                                </label>
+
+                                                <input type="file" name="attach-file" id="attach-file"
+                                                    class="form-control">
+                                                @error('attach-file')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 mt-2">
+                                            <div class="form-group">
+                                                <label for="consultation">
+                                                    Need Consultation?
+                                                </label>
+
+                                                <input type="checkbox" name="consultation" id="consultation"
+                                                    class="form-checkbox">
+
+                                                @error('consultation')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mt-3">
+                                            <div class="book-btn header__hamburger">
+                                                <button type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                {{-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                                 <script data-hubspot-rendered="true">
                                     hbspt.forms.create({
                                         region: "na1",
@@ -111,9 +242,8 @@
                                     });
                                 </script>
 
-                                <p class="ajax-response"></p>
+                                <p class="ajax-response"></p> --}}
                             </div>
-                            <div class="cover-hubspot"></div>
                         </div>
                     </div>
                 </div>

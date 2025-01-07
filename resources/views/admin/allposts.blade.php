@@ -2,8 +2,6 @@
 @section('title', 'Dashboard')
 @section('content')
 
-
-    <!-- BEGIN: Content-->
     <div class="app-content content ">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
@@ -71,24 +69,27 @@
                                     </thead>
                                     <tbody>
                                         @if ($posts->isNotEmpty())
-                                            @foreach ($posts as $key=> $post)
+                                            @foreach ($posts as $key => $post)
                                                 <tr style="vertical-align: middle;">
-                                                    <th  style="text-align: center;" scope="row">
-                                                        {{ $key+1 }}</th>
-                                                    <td style="text-align: center;"><img src="/posts/{{ $post->media }}" class="img-responsive"
-                                                            style="max-height:100px; max-width:100px" alt="" srcset="">
+                                                    <th style="text-align: center;" scope="row">
+                                                        {{ $key + 1 }}</th>
+                                                    <td style="text-align: center;"><img src="/posts/{{ $post->media }}"
+                                                            class="img-responsive" style="max-height:100px; max-width:100px"
+                                                            alt="" srcset="">
                                                     </td>
                                                     <td>{{ $post->title }}</td>
                                                     <td>{{ $post->pservices->service_name }}</td>
                                                     <td>{{ $post->stypes->stype_name }}</td>
                                                     <td>{{ $post->date }}</td>
                                                     <td>{{ $post->location }}</td>
-                                                    <td style="text-align: center;"> <a href="/admin/edit/{{ $post->id }}"
+                                                    <td style="text-align: center;"> <a
+                                                            href="/admin/edit/{{ $post->id }}"
                                                             class="btn btn-flat-primary border">Edit</a>
                                                     </td>
                                                     <td style="text-align: center;">
 
-                                                        <a class="btn btn-flat-danger border" onclick="return confirm('Are you sure?');"
+                                                        <a class="btn btn-flat-danger border"
+                                                            onclick="return confirm('Are you sure?');"
                                                             href="/admin/delete/{{ $post->id }}">Delete</a>
 
                                                     </td>
@@ -209,6 +210,5 @@
             </div>
         </div>
     </div>
-    <!-- END: Content-->
 
 @endsection
