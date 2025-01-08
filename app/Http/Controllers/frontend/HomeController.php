@@ -16,6 +16,7 @@ use App\Models\Offer;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -139,10 +140,11 @@ class HomeController extends Controller
                 'subject' => $subject,
             ]
         );
+        $filePath = $form->attach_file;
 
         Mail::to(config('app.mail.to.address'))
             ->cc(config('app.mail.backup.address'))
-            ->send(new NotificationMail($subject, $body));
+            ->send(new NotificationMail($subject, $body, $filePath));
 
         return redirect()->back()->with('success', 'Your form has been submitted successfully');
     }
@@ -169,17 +171,17 @@ class HomeController extends Controller
         $form->company_name = $request->company_name;
         $form->service = $request->service;
         $form->reference = $request->reference;
-        $form->consultation = $request->consultation;
+        $form->consultation = $request->consultation ?? false;
 
         if ($request->attach_file) {
             $file = $request->attach_file->store('consultation', 'public');
-            $filename = 'storage/' . $file;
-            $form->attach_file = $filename;
+            $form->attach_file = $file;
         }
+
         $form->form_type = 'consultation';
         $form->save();
 
-        $subject = 'Consultation Form Submitted';
+        $subject = 'Consultation Form Submission';
         $body =  view(
             'mail.notification.form.consultation',
             [
@@ -190,7 +192,7 @@ class HomeController extends Controller
 
         Mail::to(config('app.mail.to.address'))
             ->cc(config('app.mail.backup.address'))
-            ->send(new NotificationMail($subject, $body));
+            ->send(new NotificationMail($subject, $body, $form->attach_file));
 
         return redirect()->back()->with('success', 'Your form has been submitted successfully');
     }
