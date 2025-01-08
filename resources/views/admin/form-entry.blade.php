@@ -70,7 +70,7 @@
                                     </p>
                                     @isset($form->attach_file)
                                         <div>
-                                            Attach File: <a href="{{ $form->attach_file }}" download>Download</a>
+                                            Attach File: <a href="{{ asset($form->attach_file) }}" download>Download</a>
                                         </div>
                                     @endisset
                                 </div>
