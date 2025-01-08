@@ -170,6 +170,15 @@ return [
         App\Providers\RouteServiceProvider::class,
     ])->toArray(),
 
+    'mail' => [
+        'to' => [
+            'address' => env('APP_MAIL_TO_ADDRESS', 'hello@adfjstudios.com'),
+        ],
+        'backup' => [
+            'address' => env('APP_MAIL_BACKUP_ADDRESS', 'adarsh@adfjstudios.com'),
+        ],
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Class Aliases

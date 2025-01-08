@@ -44,10 +44,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $i = $entries->perPage() * ($entries->currentPage() - 1);
+                                        @endphp
                                         @forelse ($entries as $key => $entry)
                                             <tr style="vertical-align: middle;">
                                                 <td>
-                                                    {{ $key + 1 }}
+                                                    {{ ++$i }}
                                                 </td>
                                                 <td>{{ $entry->name }}</td>
                                                 <td>{{ $entry->phone }}</td>

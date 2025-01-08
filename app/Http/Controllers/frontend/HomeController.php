@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Mail\NotificationMail;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Image;
@@ -14,6 +15,7 @@ use App\Models\Form;
 use App\Models\Offer;
 
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -129,6 +131,19 @@ class HomeController extends Controller
         $form->message = $request->message;
         $form->save();
 
+        $subject = 'Contact Form Submitted';
+        $body =  view(
+            'mail.notification.form.contact',
+            [
+                'form' => $form,
+                'subject' => $subject,
+            ]
+        );
+
+        Mail::to(config('app.mail.to.address'))
+            ->cc(config('app.mail.backup.address'))
+            ->send(new NotificationMail($subject, $body));
+
         return redirect()->back()->with('success', 'Your form has been submitted successfully');
     }
 
@@ -163,6 +178,19 @@ class HomeController extends Controller
         }
         $form->form_type = 'consultation';
         $form->save();
+
+        $subject = 'Consultation Form Submitted';
+        $body =  view(
+            'mail.notification.form.consultation',
+            [
+                'form' => $form,
+                'subject' => $subject,
+            ]
+        );
+
+        Mail::to(config('app.mail.to.address'))
+            ->cc(config('app.mail.backup.address'))
+            ->send(new NotificationMail($subject, $body));
 
         return redirect()->back()->with('success', 'Your form has been submitted successfully');
     }

@@ -44,16 +44,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @php
+                                            $i = $entries->perPage() * ($entries->currentPage() - 1);
+                                        @endphp
                                         @forelse ($entries as $key => $entry)
                                             <tr style="vertical-align: middle;">
                                                 <td>
-                                                    {{ $key + 1 }}
+                                                    {{ ++$i }}
                                                 </td>
                                                 <td>{{ $entry->name }}</td>
                                                 <td>{{ $entry->phone }}</td>
                                                 <td>{{ $entry->email }}</td>
                                                 <td style="text-align: center;">
-                                                    <a class="btn btn-flat-primary border" href="/admin/form/{{ $entry->id }}">
+                                                    <a class="btn btn-flat-primary border"
+                                                        href="/admin/form/{{ $entry->id }}">
                                                         View
                                                     </a>
 
