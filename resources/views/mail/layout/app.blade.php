@@ -212,7 +212,7 @@
 <body>
     <div class="mail">
         <div class="header">
-            <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="logo" width="250"
+            <img src="{{ asset('user-assets/img/logo/adfj_light.png.png') }}" class="logo" width="250"
                 alt="AdFJ Studios">
         </div>
         <div class="main">
@@ -221,7 +221,7 @@
 
         </div>
         <div class="footer" style="font-size:11px;color:#bababa;">
-            <img src="{{ asset('user-assets/img/logo/adfjlight.svg') }}" class="logo" width="150"
+            <img src="{{ asset('user-assets/img/logo/adfj_light.png') }}" class="logo" width="150"
                 alt="AdFJ Studios">
             <p>
                 © {{ date('Y') }}
