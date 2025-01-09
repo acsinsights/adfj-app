@@ -1,4 +1,4 @@
-<footer class="desktop-foot">
+<footer class="">
     <div class="footer__area p-relative z-index-1" data-bg-color="footer-bg-black-2">
         <div class="footer__bg" data-background="{{ asset('user-assets/img/footer/footer-shape-2.jpg') }}"></div>
         <div class="footer__top-6">
@@ -20,17 +20,12 @@
                                         Studios is your destination for excellence in music,
                                         audio, and video visuals.
                                     </p>
-                                    {{-- <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
-                                        Subscribe
-                                        <span>
-                                            <i class="fa-regular fa-arrow-right"></i>
-                                        </span>
-                                    </a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-6 d-flex justify-content-between justify-content-lg-around pe-3 pe-lg-0">
+                    <div>
                         <div class="footer__widget-6 mb-50 footer-col-6-2">
                             <h3 class="footer__widget-title-6">Quick Links</h3>
 
@@ -42,18 +37,14 @@
                                     <li><a href="{{ url('pricing-plan') }}">Pricing Plans</a></li>
                                     <li>
                                         <a href="{{ url('subscription') }}">Subscription</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Blogs</a>
-                                    </li>
+                                    </li> 
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div>
                         <div class="footer__widget-6 mb-50 footer-col-6-2">
                             <h3 class="footer__widget-title-6">Useful Links</h3>
-
                             <div class="footer__widget-content">
                                 <ul>
                                     <li><a href="javascript:void(0)">Career
@@ -61,15 +52,14 @@
                                         </a></li>
                                     <li><a href="{{ url('privacy') }}">Privacy Policy</a></li>
                                     <li><a href="{{ url('terms') }}">Terms & Conditions</a></li>
-
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    </div>
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__widget-6 mb-50 footer-col-6-4">
                             <h3 class="footer__widget-title-6">Contact Us</h3>
-
                             <div class="footer__widget-content">
                                 <div class="footer__info">
                                     <div class="footer__info-item-6 d-flex align-items-start">
@@ -150,35 +140,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="footer__widget footer__widget-7 mb-50 footer-col-7-4"
-              >
-              <h3 class="footer__widget-title-6">Newsletter</h3>
-
-                <div class="footer__widget-content">
-                  <div class="footer__subscribe-7">
-                    <p>
-                      Subscribe our newsletter to get the latest news &
-                      updates.
-                    </p>
-                    <form action="#">
-                      <div class="footer__subscribe-input-7">
-                        <input
-                          type="email"
-                          placeholder="email@example.com..."
-                        />
-                        <button type="submit">
-                          <i class="fa-regular fa-arrow-up-right"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div> --}}
                 </div>
             </div>
         </div>
@@ -194,12 +155,6 @@
                                 </p>
                             </div>
                         </div>
-                        {{-- <div class="col-sm-6">
-                            <div class="txt-align footer__link-6 text-sm-end">
-                                <a href="javascript:void(0)">SiteMap</a>
-
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -208,10 +163,10 @@
 </footer>
 {{-- desktop footer end --}}
 
- 
+
 
 {{-- mobile footer start --}}
-<footer class="mobile-foot">
+{{-- <footer class="mobile-foot">
     <div class="footer__area p-relative z-index-1" data-bg-color="footer-bg-black-2">
         <div class="footer__bg" data-background="{{ asset('user-assets/img/footer/footer-shape-2.jpg') }}"></div>
         <div class="footer__top-6">
@@ -232,12 +187,6 @@
                                         Studios is your destination for excellence in music,
                                         audio, and video visuals.
                                     </p>
-                                    {{-- <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
-                                        Subscribe
-                                        <span>
-                                            <i class="fa-regular fa-arrow-right"></i>
-                                        </span>
-                                    </a> --}}
                                 </div>
                             </div>
                         </div>
@@ -374,17 +323,12 @@
                                 </p>
                             </div>
                         </div>
-                        {{-- <div class="col-sm-6">
-                            <div class="txt-align footer__link-6 text-sm-end">
-                                <a href="javascript:void(0)">SiteMap</a>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+</footer> --}}
 <!-- footer area end -->
 
 <a href="https://api.whatsapp.com/send/?phone=918390194975&amp;text&amp;type=phone_number&amp;app_absent=0"
