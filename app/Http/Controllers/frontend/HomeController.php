@@ -13,7 +13,7 @@ use App\Models\Testimonial;
 use App\Models\Clientlele;
 use App\Models\Form;
 use App\Models\Offer;
-
+use App\Rules\TurnstileRule;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -123,6 +123,7 @@ class HomeController extends Controller
             'phone' => 'required|numeric',
             'email' => 'required|email',
             'message' => 'required|max:200',
+            "cf-turnstile-response" => ["required", new TurnstileRule],
         ]);
 
         $form = new Form();
@@ -160,7 +161,8 @@ class HomeController extends Controller
             'service' => 'required',
             'reference' => 'required',
             'attach_file' => 'nullable|sometimes|max:5100',
-            'consultation' => 'nullable|sometimes'
+            'consultation' => 'nullable|sometimes',
+            "cf-turnstile-response" => ["required", new TurnstileRule],
         ]);
 
         $form  = new Form();

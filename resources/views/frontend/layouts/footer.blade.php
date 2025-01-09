@@ -188,7 +188,7 @@
 <script src="{{ asset('user-assets/js/tween-max.js') }}"></script>
 <script src="{{ asset('user-assets/js/ajax-form.js') }}"></script>
 <script src="{{ asset('user-assets/js/main.js') }}"></script>
-
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
 <script>
     $('select#service').niceSelect('destroy');
 </script>
