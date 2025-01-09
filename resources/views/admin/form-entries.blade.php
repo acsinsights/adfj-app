@@ -16,7 +16,7 @@
                                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a>
                                     </li>
                                     <li class="breadcrumb-item active">
-                                        All Form Entries
+                                        Form Entries
                                     </li>
                                 </ol>
                             </div>
