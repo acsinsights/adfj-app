@@ -146,7 +146,7 @@ class HomeController extends Controller
             ->cc(config('app.mail.backup.address'))
             ->send(new NotificationMail($subject, $body, $filePath));
 
-        return redirect()->back()->with('success', 'Your form has been submitted successfully');
+        return redirect()->to(url()->previous())->with('success', 'Your form has been submitted successfully');
     }
 
     public function consultation(Request $request)

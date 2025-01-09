@@ -199,7 +199,8 @@
                             </div>
                             <div class="about__video-thumb">
                                 <img style="-webkit-transform: scaleX(-1);
-                                transform: scaleX(-1);" src="{{ asset('user-assets/img/about/6/who-we-are.jpg') }}" alt="" />
+                                transform: scaleX(-1);"
+                                    src="{{ asset('user-assets/img/about/6/who-we-are.jpg') }}" alt="" />
                                 <div class="about__play">
                                     <a href="https://www.youtube.com/watch?v=3dXzH-quoTE"
                                         class="about__play-btn popup-video tp-pulse-border">
@@ -401,9 +402,9 @@
                                                             <span>
                                                                 <svg width="13" height="15" viewBox="0 0 13 15"
                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M4 1.5V3.3" stroke="white"
-                                                                        stroke-width="1.5" stroke-miterlimit="10"
-                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                    <path d="M4 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                                        stroke-linejoin="round" />
                                                                     <path d="M8.80029 1.5V3.3" stroke="white"
                                                                         stroke-width="1.5" stroke-miterlimit="10"
                                                                         stroke-linecap="round" stroke-linejoin="round" />
@@ -496,13 +497,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                                                                                  >(<span
-                                                                                                                                                                                                    data-purecounter-duration="1"
-                                                                                                                                                                                                    data-purecounter-end="66"
-                                                                                                                                                                                                    class="purecounter"
-                                                                                                                                                                                                    >0</span
-                                                                                                                                                                                                  >%)</span
-                                                                                                                                                                                                > -->
+                                                                                                                                                                                                                                      >(<span
+                                                                                                                                                                                                                                        data-purecounter-duration="1"
+                                                                                                                                                                                                                                        data-purecounter-end="66"
+                                                                                                                                                                                                                                        class="purecounter"
+                                                                                                                                                                                                                                        >0</span
+                                                                                                                                                                                                                                      >%)</span
+                                                                                                                                                                                                                                    > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -551,13 +552,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                                                                                  >(<span
-                                                                                                                                                                                                    data-purecounter-duration="1"
-                                                                                                                                                                                                    data-purecounter-end="80"
-                                                                                                                                                                                                    class="purecounter"
-                                                                                                                                                                                                    >0</span
-                                                                                                                                                                                                  >%)</span
-                                                                                                                                                                                                > -->
+                                                                                                                                                                                                                                      >(<span
+                                                                                                                                                                                                                                        data-purecounter-duration="1"
+                                                                                                                                                                                                                                        data-purecounter-end="80"
+                                                                                                                                                                                                                                        class="purecounter"
+                                                                                                                                                                                                                                        >0</span
+                                                                                                                                                                                                                                      >%)</span
+                                                                                                                                                                                                                                    > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -614,13 +615,13 @@
                             <div class="about__gallery-slider-active">
 
                                 @foreach ($offers as $offe)
-                                <div class="about__gallery-item">
-                                    <div class="about__gallery-thumb m-img">
-                                        <a href="{{ $offe->offerlink }}">
-                                            <img src="/offerimg/{{ $offe->offerimage }}"alt="" />
-                                        </a>
+                                    <div class="about__gallery-item">
+                                        <div class="about__gallery-thumb m-img">
+                                            <a href="{{ $offe->offerlink }}">
+                                                <img src="/offerimg/{{ $offe->offerimage }}"alt="" />
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
                                 @endforeach
                                 {{-- <div class="about__gallery-item">
                                     <div class="about__gallery-thumb m-img">
@@ -936,7 +937,8 @@
                             <div class="testimonial__slider-active-6 swiper-container">
                                 <div class="swiper-wrapper">
                                     @foreach ($testimonials as $tt)
-                                        <div style="height: 250px!important;" class="testimonial__item-6 transition-3 mb-75 swiper-slide">
+                                        <div style="height: 250px!important;"
+                                            class="testimonial__item-6 transition-3 mb-75 swiper-slide">
                                             <div class="testimonial__rating testimonial__rating-6">
                                                 @if ($tt->custstar == 1)
                                                     <a href="#">
@@ -991,7 +993,8 @@
                                                 @endif
                                             </div>
                                             <div style="height: 100px;" class="testimonial__content-6">
-                                                <p style="    overflow: hidden;
+                                                <p
+                                                    style="    overflow: hidden;
                                                 display: -webkit-box;
                                                 -webkit-line-clamp: 3;
                                                 -webkit-box-orient: vertical;">
@@ -1031,7 +1034,7 @@
 
 
 
-{{--
+        {{--
         <section class=" pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
@@ -1108,7 +1111,7 @@
 
 
 
-     <section class="desktop-brandarea pb-50 brand__area grey-bg-7">
+        <section class="desktop-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-9 col-lg-9 col-md-9">
@@ -1241,7 +1244,7 @@
         </section>
 
         <!--mobile View brand area start -->
-      <section class="mobile-brandarea pb-50 brand__area grey-bg-7">
+        <section class="mobile-brandarea pb-50 brand__area grey-bg-7">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 txt-align col-xl-9 col-lg-9 col-md-9">
@@ -2213,28 +2216,89 @@
                         <div class="r-padding contact__form-9 pt-20 pl-70">
                             <h4 class="contact__form-9-title">Get In Touch Today</h4>
                             <div class="contact__form-9-inner">
-                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                                <script>
-                                    hbspt.forms.create({
-                                        region: "na1",
-                                        portalId: "40057864",
-                                        formId: "d6e00c8b-caac-4f4e-87db-14d3d0db672a",
-                                    });
-                                </script>
-                                <p class="ajax-response"></p>
+                                <div>
+                                    @session('success')
+                                        <div class="alert-message">
+                                            <div class="alert alert-success d-flex align-items-center gap-3" role="alert">
+                                                <i class="fa-solid fa-circle-check fa-xl"></i>
+                                                <div>
+                                                    {{ Session::get('success') }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endsession
+                                    <form id="contact-form" method="POST" action="{{ route('contact.store') }}"
+                                        enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">
+                                                        Name<span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" id="name" name="name"
+                                                        class="form-control form-input" placeholder="Your Name"
+                                                        value="{{ old('name') }}" required>
+                                                    @error('name')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phone">
+                                                        Mobile phone number<span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="text" id="phone" name="phone"
+                                                        class="form-control form-input" placeholder="Your phone"
+                                                        value="{{ old('phone') }}" required>
+                                                    @error('phone')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 mt-2">
+                                                <div class="form-group">
+                                                    <label for="email">
+                                                        Email<span class="text-danger">*</span>
+                                                    </label>
+                                                    <input type="email" id="email" name="email"
+                                                        class="form-control form-input" placeholder="Your Email"
+                                                        value="{{ old('email') }}" required>
+                                                    @error('email')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 mt-2">
+                                                <div class="form-group">
+                                                    <label for="message">
+                                                        Message<span class="text-danger">*</span>
+                                                    </label>
+                                                    <textarea id="message" name="message" rows="3" class="form-control" placeholder="Your Message"
+                                                        required>{{ old('message') }}</textarea>
+                                                    @error('message')
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 mt-3">
+                                                <div class="book-btn header__hamburger">
+                                                    <button type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="homepg-cover-hubspot "></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-        <!-- contact area start -->
-
-        <!-- contact area end -->
     </main>
 @endsection
