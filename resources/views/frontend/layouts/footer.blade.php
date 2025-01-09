@@ -20,13 +20,12 @@
                                         Studios is your destination for excellence in music,
                                         audio, and video visuals.
                                     </p>
-
-                                    <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
+                                    {{-- <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
                                         Subscribe
                                         <span>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </div>
@@ -195,12 +194,12 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        {{-- <div class="col-sm-6">
                             <div class="txt-align footer__link-6 text-sm-end">
                                 <a href="javascript:void(0)">SiteMap</a>
 
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -209,14 +208,7 @@
 </footer>
 {{-- desktop footer end --}}
 
-
-
-
-
-
-
-
-
+ 
 
 {{-- mobile footer start --}}
 <footer class="mobile-foot">
@@ -240,12 +232,12 @@
                                         Studios is your destination for excellence in music,
                                         audio, and video visuals.
                                     </p>
-                                    <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
+                                    {{-- <a href="{{ url('newsletter') }}" class="tp-link-btn-2 tp-link-btn-white">
                                         Subscribe
                                         <span>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </div>
@@ -367,35 +359,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    {{-- <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div
-                class="footer__widget footer__widget-7 mb-50 footer-col-7-4"
-              >
-              <h3 class="footer__widget-title-6">Newsletter</h3>
-
-                <div class="footer__widget-content">
-                  <div class="footer__subscribe-7">
-                    <p>
-                      Subscribe our newsletter to get the latest news &
-                      updates.
-                    </p>
-                    <form action="#">
-                      <div class="footer__subscribe-input-7">
-                        <input
-                          type="email"
-                          placeholder="email@example.com..."
-                        />
-                        <button type="submit">
-                          <i class="fa-regular fa-arrow-up-right"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div> --}}
                 </div>
             </div>
         </div>
@@ -405,18 +368,17 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="footer__copyright-6">
-                                <p>
-                                    <a href="javascript: void(0);">© 2023 AdFJ Studios</a> All
+                                <p class="text-center">
+                                    <a href="javascript: void(0);">© {{ date('Y') }} AdFJ Studios</a> All
                                     Rights Reserved.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        {{-- <div class="col-sm-6">
                             <div class="txt-align footer__link-6 text-sm-end">
                                 <a href="javascript:void(0)">SiteMap</a>
-
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
