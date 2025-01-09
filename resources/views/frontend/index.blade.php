@@ -497,13 +497,13 @@
                                                 <h4>
                                                     &nbsp;Protools
                                                     <!-- <span
-                                                                                                                                                                                                                                      >(<span
-                                                                                                                                                                                                                                        data-purecounter-duration="1"
-                                                                                                                                                                                                                                        data-purecounter-end="66"
-                                                                                                                                                                                                                                        class="purecounter"
-                                                                                                                                                                                                                                        >0</span
-                                                                                                                                                                                                                                      >%)</span
-                                                                                                                                                                                                                                    > -->
+                                                                                                                                                                                                                                                          >(<span
+                                                                                                                                                                                                                                                            data-purecounter-duration="1"
+                                                                                                                                                                                                                                                            data-purecounter-end="66"
+                                                                                                                                                                                                                                                            class="purecounter"
+                                                                                                                                                                                                                                                            >0</span
+                                                                                                                                                                                                                                                          >%)</span
+                                                                                                                                                                                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>
@@ -552,13 +552,13 @@
                                                 <h4>
                                                     Premiere Pro
                                                     <!-- <span
-                                                                                                                                                                                                                                      >(<span
-                                                                                                                                                                                                                                        data-purecounter-duration="1"
-                                                                                                                                                                                                                                        data-purecounter-end="80"
-                                                                                                                                                                                                                                        class="purecounter"
-                                                                                                                                                                                                                                        >0</span
-                                                                                                                                                                                                                                      >%)</span
-                                                                                                                                                                                                                                    > -->
+                                                                                                                                                                                                                                                          >(<span
+                                                                                                                                                                                                                                                            data-purecounter-duration="1"
+                                                                                                                                                                                                                                                            data-purecounter-end="80"
+                                                                                                                                                                                                                                                            class="purecounter"
+                                                                                                                                                                                                                                                            >0</span
+                                                                                                                                                                                                                                                          >%)</span
+                                                                                                                                                                                                                                                        > -->
                                                 </h4>
                                             </div>
                                         </div>

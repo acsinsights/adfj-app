@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <a class="btn btn-flat-danger border" onclick="return confirm('Are you sure?');"
-                                        href="/admin/form/delete/{{ $form->id }}">
+                                        href="/admin/form/delete/{{ $form->id }}/{{ $form->form_type }}">
                                         Delete
                                     </a>
                                 </div>
@@ -77,7 +77,7 @@
 
                                 <div class="card-footer">
                                     <a class="btn btn-flat-danger border" onclick="return confirm('Are you sure?');"
-                                        href="/admin/form/delete/{{ $form->id }}">
+                                        href="/admin/form/delete/{{ $entry->id }}/{{ $entry->form_type }}">
                                         Delete
                                     </a>
                                 </div>

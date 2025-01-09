@@ -50,7 +50,7 @@
                                         @forelse ($entries as $key => $entry)
                                             <tr style="vertical-align: middle;">
                                                 <td>
-                                                    {{ ++$i }}
+                                                    {{ $entry->id }}
                                                 </td>
                                                 <td>{{ $entry->name }}</td>
                                                 <td>{{ $entry->phone }}</td>
@@ -63,7 +63,7 @@
 
                                                     <a class="btn btn-flat-danger border"
                                                         onclick="return confirm('Are you sure?');"
-                                                        href="/admin/form/delete/{{ $entry->id }}">
+                                                        href="/admin/form/delete/{{ $entry->id }}/{{ $entry->form_type }}">
                                                         Delete
                                                     </a>
                                                 </td>
