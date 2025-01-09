@@ -7,7 +7,7 @@
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__widget-6 mb-50 footer-col-6-1">
                             <div class="footer__logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img id="footer_img" src="{{ asset('user-assets/img/logo/adfjlight.svg') }}"
                                         alt="" height="100px" width="150px" />
                                 </a>
@@ -228,7 +228,7 @@
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__widget-6 mb-50 footer-col-6-1">
                             <div class="footer__logo">
-                                <a href="index.html">
+                                <a href="/">
                                     <img id="footer_img" src="{{ asset('user-assets/img/logo/adfjlight.svg') }}"
                                         alt="" height="100px" width="150px" />
                                 </a>
