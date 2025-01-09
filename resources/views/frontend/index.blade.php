@@ -2145,7 +2145,7 @@
 
 
         <!-- brand area end -->
-        <section class="contact__area p-spacing mt-50 p-relative z-index-1">
+        <section class="contact__area p-spacing mt-50 mb-50 p-relative z-index-1">
             <div class="contact__shape">
                 <span class="contact__shape-1"></span>
             </div>
