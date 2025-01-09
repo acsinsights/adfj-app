@@ -425,6 +425,11 @@
 </footer>
 <!-- footer area end -->
 
+<a href="https://api.whatsapp.com/send/?phone=918390194975&amp;text&amp;type=phone_number&amp;app_absent=0"
+    class="float" target="_blank">
+    <i class="fab fa-whatsapp fa-xl" style="color: #fff"></i>
+</a>
+
 <!-- JS here -->
 <script src="{{ asset('user-assets/js/vendor/jquery.js') }}"></script>
 <script src="{{ asset('user-assets/js/vendor/waypoints.js') }}"></script>
