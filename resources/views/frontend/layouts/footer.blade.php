@@ -25,37 +25,37 @@
                         </div>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-between justify-content-lg-around pe-3 pe-lg-0">
-                    <div>
-                        <div class="footer__widget-6 mb-50 footer-col-6-2">
-                            <h3 class="footer__widget-title-6">Quick Links</h3>
+                        <div>
+                            <div class="footer__widget-6 mb-50 footer-col-6-2">
+                                <h3 class="footer__widget-title-6">Quick Links</h3>
 
-                            <div class="footer__widget-content">
-                                <ul>
-                                    <li><a href="{{ url('/') }}">Home</a></li>
-                                    <li><a href="{{ url('about') }}">About Us</a></li>
-                                    <li><a href="{{ url('service') }}">Services</a></li>
-                                    <li><a href="{{ url('pricing-plan') }}">Pricing Plans</a></li>
-                                    <li>
-                                        <a href="{{ url('subscription') }}">Subscription</a>
-                                    </li>
-                                </ul>
+                                <div class="footer__widget-content">
+                                    <ul>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
+                                        <li><a href="{{ url('about') }}">About Us</a></li>
+                                        <li><a href="{{ url('service') }}">Services</a></li>
+                                        {{-- <li><a href="{{ url('pricing-plan') }}">Pricing Plans</a></li>
+                                        <li>
+                                            <a href="{{ url('subscription') }}">Subscription</a>
+                                        </li> --}}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="footer__widget-6 mb-50 footer-col-6-2">
-                            <h3 class="footer__widget-title-6">Useful Links</h3>
-                            <div class="footer__widget-content">
-                                <ul>
-                                    <li><a href="javascript:void(0)">Career
+                        <div>
+                            <div class="footer__widget-6 mb-50 footer-col-6-2">
+                                <h3 class="footer__widget-title-6">Useful Links</h3>
+                                <div class="footer__widget-content">
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Career
 
-                                        </a></li>
-                                    <li><a href="{{ url('privacy') }}">Privacy Policy</a></li>
-                                    <li><a href="{{ url('terms') }}">Terms & Conditions</a></li>
-                                </ul>
+                                            </a></li>
+                                        <li><a href="{{ url('privacy') }}">Privacy Policy</a></li>
+                                        <li><a href="{{ url('terms') }}">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__widget-6 mb-50 footer-col-6-4">
