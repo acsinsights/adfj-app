@@ -167,7 +167,7 @@
                                 <ul>
                                     <li>
                                         Email:
-                                        <span><a href="mailto:adfj-studios.com">hello@adfjstudios.com</a></span>
+                                        <span><a href="mailto:hello@adfjstudios.com">hello@adfjstudios.com</a></span>
                                     </li>
                                 </ul>
 

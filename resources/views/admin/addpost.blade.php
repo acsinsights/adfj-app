@@ -14,11 +14,10 @@
                             <h2 class="content-header-title float-left mb-0">Add Post</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
+                                    <li class="breadcrumb-item"><a href="">Dashboard</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Add Post</a>
                                     </li>
-
                                 </ol>
                             </div>
                         </div>
