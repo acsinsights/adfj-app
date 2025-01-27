@@ -117,7 +117,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-6 mt-md-0 mt-2">
                                             <div class="form-group">
                                                 <label for="company_name">
                                                     Company Name
@@ -210,7 +210,7 @@
                                         <div class="col-lg-12 mt-2">
                                             <div class="form-group">
                                                 <label for="attach_file">
-                                                    Attch File
+                                                    Attach File
                                                 </label>
 
                                                 <input type="file" name="attach_file" id="attach_file"

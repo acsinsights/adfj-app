@@ -46,7 +46,9 @@
                     </div>
                     <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                         <div class="services__more-4 mb-65">
-                            <p> Unlock the potential of your creative vision with our Graphic Production services. Explore our portfolio of meticulously crafted visuals, designed to enhance your brand identity and captivate your audience.</p>
+                            <p> Unlock the potential of your creative vision with our Graphic Production services. Explore
+                                our portfolio of meticulously crafted visuals, designed to enhance your brand identity and
+                                captivate your audience.</p>
                         </div>
                     </div>
                 </div>
@@ -72,18 +74,13 @@
         <section class="portfolio__area pb-75 p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
-
-                    src="{{ asset('user-assets/img/portfolio/masonary/shape/circle-1.png') }}"
-                    alt="adfj-studios">
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/circle-1.png') }}" alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-21"
-                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-green.png') }}"
-                    alt="adfj-studios">
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-green.png') }}" alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-22"
-                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-pink.png') }}"
-                    alt="adfj-studios">
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-pink.png') }}" alt="adfj-studios">
                 <img decoding="async" class="portfolio__shape-23"
-                src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-yellow.png') }}"
-                    alt="adfj-studios">
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-yellow.png') }}" alt="adfj-studios">
             </div>
             <div class=" mt-50  container-fluid tp-gx-20">
 
@@ -160,9 +157,9 @@
                     @endforeach
                 </div>
             </div>
-        <!-- cta area start -->
+            <!-- cta area start -->
 
-        <div style="margin-botton:100px;" class="p-spacing row pt-100">
+            {{-- <div style="margin-botton:100px;" class="p-spacing row pt-100">
             <div class="col-xl-12">
                 <div class="portfolio__section-title-wrapper text-center p-spacing tp-el-content">
                     <span class="portfolio__section-title-pre tp-el-subtitle"> Design Magic Unleashed</span>
@@ -177,8 +174,9 @@
         <stripe-pricing-table pricing-table-id="prctbl_1NZJq1SCz6pJIP37rjTTmqYw"
         publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
         </stripe-pricing-table>
-    </div>
-    </div>
+            </div>
+            </div> --}}
+        </section>
 
 
 
@@ -202,12 +200,13 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-lg-6">
-                        <div class="cta__btn-wrapper-7 d-xl-flex align-items-center mb-40">
-                            <a href="{{ asset('pricing-plan') }}" class=" tp-cta-btn-yellow mr-20 mb-20">
-                               See Pricing <br> Plans
-                               <i class="fa-light fa-arrow-up-right"></i></a>
-                            <a href="{{ asset('get-started') }}" class="tp-cta-btn mb-20">Get Project <br /> Started Now
-                              <i class="fa-light fa-arrow-up-right"></i></a>
+                        <div class="cta__btn-wrapper-7 d-xl-flex align-items-center justify-content-end mb-40">
+                            {{-- <a href="{{ asset('pricing-plan') }}" class=" tp-cta-btn-yellow mr-20 mb-20">
+                                See Pricing <br> Plans
+                                <i class="fa-light fa-arrow-up-right"></i></a> --}}
+                            <a href="{{ asset('get-started') }}" class="tp-cta-btn mb-20">Get Project <br /> Started
+                                Now
+                                <i class="fa-light fa-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +256,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-a8b120e">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-a8b120e">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="headingOne-0">
@@ -268,8 +268,10 @@
                                                                                         data-bs-target="#collapseOne-0"
                                                                                         aria-expanded="true"
                                                                                         aria-controls="collapseOne-0">
-                                                                                        How does AdFJ Studios cater to the
-                                                                                        unique needs of the media production
+                                                                                        How does AdFJ Studios cater to
+                                                                                        the
+                                                                                        unique needs of the media
+                                                                                        production
                                                                                         industry?
                                                                                     </button>
                                                                                 </h2>
@@ -280,39 +282,69 @@
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
                                                                                             AdFJ Studios understands the
-                                                                                            specific requirements of the media
-                                                                                            production industry and offers
-                                                                                            tailor-made solutions to meet those
-                                                                                            needs. We have in-depth knowledge of
-                                                                                            industry standards and trends and
+                                                                                            specific requirements of the
+                                                                                            media
+                                                                                            production industry and
+                                                                                            offers
+                                                                                            tailor-made solutions to
+                                                                                            meet those
+                                                                                            needs. We have in-depth
+                                                                                            knowledge of
+                                                                                            industry standards and
+                                                                                            trends and
                                                                                             ensure our services fit the
-                                                                                            ever-changing landscape. Our team of
-                                                                                            skilled professionals combine their
-                                                                                            expertise with state-of-the-art
-                                                                                            technology to deliver exceptional
-                                                                                            media productions. Whether music,
-                                                                                            audio or video, AdFJ Studios is
-                                                                                            committed to providing top quality
-                                                                                            services tailored to the unique
-                                                                                            demands of the media production
-                                                                                            industry. (Original) AdFJ Studios
+                                                                                            ever-changing landscape. Our
+                                                                                            team of
+                                                                                            skilled professionals
+                                                                                            combine their
+                                                                                            expertise with
+                                                                                            state-of-the-art
+                                                                                            technology to deliver
+                                                                                            exceptional
+                                                                                            media productions. Whether
+                                                                                            music,
+                                                                                            audio or video, AdFJ Studios
+                                                                                            is
+                                                                                            committed to providing top
+                                                                                            quality
+                                                                                            services tailored to the
+                                                                                            unique
+                                                                                            demands of the media
+                                                                                            production
+                                                                                            industry. (Original) AdFJ
+                                                                                            Studios
                                                                                             understands the specific
-                                                                                            requirements of the media production
-                                                                                            industry and offers customized
-                                                                                            solutions to meet those needs. We
-                                                                                            have a deep understanding of the
-                                                                                            industry' s standards and trends,
-                                                                                            ensuring that our services align
-                                                                                            with the ever-changing landscape.
-                                                                                            Our team of skilled professionals
-                                                                                            combines their expertise with
-                                                                                            state-of-the-art technology to
+                                                                                            requirements of the media
+                                                                                            production
+                                                                                            industry and offers
+                                                                                            customized
+                                                                                            solutions to meet those
+                                                                                            needs. We
+                                                                                            have a deep understanding of
+                                                                                            the
+                                                                                            industry' s standards and
+                                                                                            trends,
+                                                                                            ensuring that our services
+                                                                                            align
+                                                                                            with the ever-changing
+                                                                                            landscape.
+                                                                                            Our team of skilled
+                                                                                            professionals
+                                                                                            combines their expertise
+                                                                                            with
+                                                                                            state-of-the-art technology
+                                                                                            to
                                                                                             deliver exceptional media
-                                                                                            productions. Whether it's music,
-                                                                                            audio, or video, AdFJ Studios is
-                                                                                            dedicated to providing top-quality
-                                                                                            services tailored to the unique
-                                                                                            demands of the media production
+                                                                                            productions. Whether it's
+                                                                                            music,
+                                                                                            audio, or video, AdFJ
+                                                                                            Studios is
+                                                                                            dedicated to providing
+                                                                                            top-quality
+                                                                                            services tailored to the
+                                                                                            unique
+                                                                                            demands of the media
+                                                                                            production
                                                                                             industry.
 
 
@@ -330,7 +362,8 @@
                                                                                         data-bs-target="#collapseOne-1"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="collapseOne-1">
-                                                                                        Can AdFJ Studios handle video production
+                                                                                        Can AdFJ Studios handle video
+                                                                                        production
                                                                                         for the entertainment industry?
                                                                                     </button>
                                                                                 </h2>
@@ -340,17 +373,25 @@
                                                                                     data-bs-parent="#general_accordion-a8b120e">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            Absolutely! AdFJ Studios specializes
-                                                                                            in video visuals production for the
-                                                                                            entertainment industry. We provide
+                                                                                            Absolutely! AdFJ Studios
+                                                                                            specializes
+                                                                                            in video visuals production
+                                                                                            for the
+                                                                                            entertainment industry. We
+                                                                                            provide
                                                                                             end-to-end video production
                                                                                             services, including concept
-                                                                                            development, scriptwriting, filming,
+                                                                                            development, scriptwriting,
+                                                                                            filming,
                                                                                             editing, visual effects, and
-                                                                                            post-production. Whether it's a
-                                                                                            music video, promotional content, or
-                                                                                            a short film, our team of experts
-                                                                                            will bring your vision to life.
+                                                                                            post-production. Whether
+                                                                                            it's a
+                                                                                            music video, promotional
+                                                                                            content, or
+                                                                                            a short film, our team of
+                                                                                            experts
+                                                                                            will bring your vision to
+                                                                                            life.
 
 
                                                                                         </p>
@@ -367,8 +408,10 @@
                                                                                         data-bs-target="#collapseOne-2"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="collapseOne-2">
-                                                                                        What types of music and audio production
-                                                                                        services does AdFJ Studios offer?
+                                                                                        What types of music and audio
+                                                                                        production
+                                                                                        services does AdFJ Studios
+                                                                                        offer?
                                                                                     </button>
                                                                                 </h2>
                                                                                 <div id="collapseOne-2"
@@ -377,16 +420,24 @@
                                                                                     data-bs-parent="#general_accordion-a8b120e">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            AdFJ Studios offers a wide range of
-                                                                                            music and audio production services,
+                                                                                            AdFJ Studios offers a wide
+                                                                                            range of
+                                                                                            music and audio production
+                                                                                            services,
                                                                                             including recording, mixing,
-                                                                                            mastering, sound design, voice-over
-                                                                                            production, and music composition.
-                                                                                            Whether you need a professional
-                                                                                            studio for your band's album or
+                                                                                            mastering, sound design,
+                                                                                            voice-over
+                                                                                            production, and music
+                                                                                            composition.
+                                                                                            Whether you need a
+                                                                                            professional
+                                                                                            studio for your band's album
+                                                                                            or
                                                                                             require high-quality audio
-                                                                                            production for your podcast or
-                                                                                            commercial, we've got you covered.
+                                                                                            production for your podcast
+                                                                                            or
+                                                                                            commercial, we've got you
+                                                                                            covered.
 
 
                                                                                         </p>
@@ -423,7 +474,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-d4c66cf">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-d4c66cf">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="ac-id-head-2-0">
@@ -434,7 +486,8 @@
                                                                                         data-bs-target="#ac-id-2-0"
                                                                                         aria-expanded="true"
                                                                                         aria-controls="ac-id-2-0">
-                                                                                        What kind of marketing efforts do
+                                                                                        What kind of marketing efforts
+                                                                                        do
                                                                                         you specialize in?
                                                                                     </button>
                                                                                 </h2>
@@ -444,11 +497,15 @@
                                                                                     data-bs-parent="#general_accordion-d4c66cf">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -465,7 +522,8 @@
                                                                                         data-bs-target="#ac-id-2-1"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="ac-id-2-1">
-                                                                                        What is video marketing and why do
+                                                                                        What is video marketing and why
+                                                                                        do
                                                                                         I need it?
                                                                                     </button>
                                                                                 </h2>
@@ -475,11 +533,15 @@
                                                                                     data-bs-parent="#general_accordion-d4c66cf">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -506,11 +568,15 @@
                                                                                     data-bs-parent="#general_accordion-d4c66cf">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -536,11 +602,15 @@
                                                                                     data-bs-parent="#general_accordion-d4c66cf">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -576,7 +646,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-9c31428">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-9c31428">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="ac-id-head-3-0">
@@ -587,7 +658,8 @@
                                                                                         data-bs-target="#ac-id-3-0"
                                                                                         aria-expanded="true"
                                                                                         aria-controls="ac-id-3-0">
-                                                                                        Who is the typical Curious client?
+                                                                                        Who is the typical Curious
+                                                                                        client?
                                                                                     </button>
                                                                                 </h2>
                                                                                 <div id="ac-id-3-0"
@@ -596,11 +668,15 @@
                                                                                     data-bs-parent="#general_accordion-9c31428">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -626,11 +702,15 @@
                                                                                     data-bs-parent="#general_accordion-9c31428">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -657,11 +737,15 @@
                                                                                     data-bs-parent="#general_accordion-9c31428">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>
@@ -678,7 +762,8 @@
                                                                                         data-bs-target="#ac-id-3-3"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="ac-id-3-3">
-                                                                                        Do you trade services for equity?
+                                                                                        Do you trade services for
+                                                                                        equity?
                                                                                     </button>
                                                                                 </h2>
                                                                                 <div id="ac-id-3-3"
@@ -687,11 +772,15 @@
                                                                                     data-bs-parent="#general_accordion-9c31428">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            A startup or start-up is started
+                                                                                            A startup or start-up is
+                                                                                            started
                                                                                             by individual founders or
-                                                                                            entrepreneurs to search for a
-                                                                                            repeatable and scalable business
-                                                                                            model. A startup or start-up is
+                                                                                            entrepreneurs to search for
+                                                                                            a
+                                                                                            repeatable and scalable
+                                                                                            business
+                                                                                            model. A startup or start-up
+                                                                                            is
                                                                                             started by individual
                                                                                             founders...
                                                                                         </p>

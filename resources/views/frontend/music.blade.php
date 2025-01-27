@@ -45,7 +45,9 @@
                     </div>
                     <div class="col-xxl-5 offset-xxl-1 col-xl-6 col-lg-6 col-md-6">
                         <div class="services__more-4 mb-65">
-                            <p> Explore our music production services and unlock a world of sonic possibilities. From recording to mixing and mastering, we're here to help you craft exceptional music that resonates with your audience and leaves a lasting impression.</p>
+                            <p> Explore our music production services and unlock a world of sonic possibilities. From
+                                recording to mixing and mastering, we're here to help you craft exceptional music that
+                                resonates with your audience and leaves a lasting impression.</p>
                         </div>
                     </div>
                 </div>
@@ -125,18 +127,13 @@
         <section class="portfolio__area pb-75  p-relative fix tp-el-section">
             <div class="portfolio__shape">
                 <img decoding="async" class="portfolio__shape-20"
-
-                src="{{ asset('user-assets/img/portfolio/masonary/shape/circle-1.png') }}"
-                alt="adfj-studios">
-            <img decoding="async" class="portfolio__shape-21"
-            src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-green.png') }}"
-                alt="adfj-studios">
-            <img decoding="async" class="portfolio__shape-22"
-            src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-pink.png') }}"
-                alt="adfj-studios">
-            <img decoding="async" class="portfolio__shape-23"
-            src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-yellow.png') }}"
-                alt="adfj-studios">
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/circle-1.png') }}" alt="adfj-studios">
+                <img decoding="async" class="portfolio__shape-21"
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-green.png') }}" alt="adfj-studios">
+                <img decoding="async" class="portfolio__shape-22"
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-pink.png') }}" alt="adfj-studios">
+                <img decoding="async" class="portfolio__shape-23"
+                    src="{{ asset('user-assets/img/portfolio/masonary/shape/polygon-yellow.png') }}" alt="adfj-studios">
             </div>
             <div class="mt-50 container-fluid tp-gx-20">
                 {{-- <div class="row">
@@ -182,93 +179,88 @@
                             <div class="col-xl-4 {{ $ms->stypes->slug }} col-lg-6 col-md-6 col-12 tp-portfolio grid-item u-tube-thumbnail"
                                 style="position: absolute; left: 0%; top: 537px;">
                                 <div class="portfolio__item-3 transition-3 wow fadeInUp" data-wow-delay=".3s"
-                                data-wow-duration="1s">
-                                <a
-                                    href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">
-                                    <div class="portfolio__thumb-3 w-img"
-                                        data-background="{{ $ms->media ? asset('posts/' . $ms->media) : '' }}">
-                                    </div>
-
-                                    @if ($ms->status == 1)
-                                        <div class="portfolio__grid-video">
-                                            <a href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}"
-                                                class="portfolio-play-btn popup-video tp-el-video-btn">
-                                                <svg width="18" height="22" viewBox="0 0 18 22"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M18 11L0 21.3923V0.607696L18 11Z"
-                                                        fill="currentColor"></path>
-                                                </svg>
-                                            </a>
+                                    data-wow-duration="1s">
+                                    <a href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">
+                                        <div class="portfolio__thumb-3 w-img"
+                                            data-background="{{ $ms->media ? asset('posts/' . $ms->media) : '' }}">
                                         </div>
-                                    @endif
 
-                                    <div class="portfolio__content-3 transition-3">
-                                        <div class="portfolio__tag-3">
-                                            <a
-                                                href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">{{ $ms->pservices->service_name }}</a>
-                                        </div>
-                                        <h3 class="portfolio__title-3">
-                                            <a
-                                                href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">{{ $ms->author }}</a>
-                                        </h3>
-                                        <div class="portfolio__meta-3 transition-3">
+                                        @if ($ms->status == 1)
+                                            <div class="portfolio__grid-video">
+                                                <a href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}"
+                                                    class="portfolio-play-btn popup-video tp-el-video-btn">
+                                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M18 11L0 21.3923V0.607696L18 11Z" fill="currentColor">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        @endif
 
-                                            <span>
-                                                <svg width="12" height="15" viewBox="0 0 12 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.4286 6.40909C10.4286 10.2273 5.71429 13.5 5.71429 13.5C5.71429 13.5 1 10.2273 1 6.40909C1 5.10712 1.49668 3.85847 2.38078 2.93784C3.26488 2.01721 4.46398 1.5 5.71429 1.5C6.96459 1.5 8.16369 2.01721 9.04779 2.93784C9.93189 3.85847 10.4286 5.10712 10.4286 6.40909Z"
-                                                        stroke="white" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path
-                                                        d="M5.71401 8.04568C6.58188 8.04568 7.28544 7.31305 7.28544 6.40931C7.28544 5.50557 6.58188 4.77295 5.71401 4.77295C4.84613 4.77295 4.14258 5.50557 4.14258 6.40931C4.14258 7.31305 4.84613 8.04568 5.71401 8.04568Z"
-                                                        stroke="white" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                {{ $ms->location }}
-                                            </span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M4 1.5V3.3" stroke="white"
-                                                        stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M8.80029 1.5V3.3" stroke="white"
-                                                        stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M1.30029 5.75415H11.5003" stroke="white"
-                                                        stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11.8 5.40015V10.5001C11.8 12.3001 10.9 13.5001 8.8 13.5001H4C1.9 13.5001 1 12.3001 1 10.5001V5.40015C1 3.60015 1.9 2.40015 4 2.40015H8.8C10.9 2.40015 11.8 3.60015 11.8 5.40015Z"
-                                                        stroke="white" stroke-width="1.2"
-                                                        stroke-miterlimit="10" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M8.61702 8.51997H8.62241" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M8.61653 10.32H8.62192" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M6.39729 8.51997H6.40268" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M6.39729 10.32H6.40268" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M4.17659 8.51997H4.18198" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M4.17659 10.32H4.18198" stroke="white"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                {{ $ms->date }}
-                                            </span>
+                                        <div class="portfolio__content-3 transition-3">
+                                            <div class="portfolio__tag-3">
+                                                <a
+                                                    href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">{{ $ms->pservices->service_name }}</a>
+                                            </div>
+                                            <h3 class="portfolio__title-3">
+                                                <a
+                                                    href="{{ $ms->status == 1 ? "$ms->hypelinks" : 'javascript: void(0);' }}">{{ $ms->author }}</a>
+                                            </h3>
+                                            <div class="portfolio__meta-3 transition-3">
+
+                                                <span>
+                                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.4286 6.40909C10.4286 10.2273 5.71429 13.5 5.71429 13.5C5.71429 13.5 1 10.2273 1 6.40909C1 5.10712 1.49668 3.85847 2.38078 2.93784C3.26488 2.01721 4.46398 1.5 5.71429 1.5C6.96459 1.5 8.16369 2.01721 9.04779 2.93784C9.93189 3.85847 10.4286 5.10712 10.4286 6.40909Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M5.71401 8.04568C6.58188 8.04568 7.28544 7.31305 7.28544 6.40931C7.28544 5.50557 6.58188 4.77295 5.71401 4.77295C4.84613 4.77295 4.14258 5.50557 4.14258 6.40931C4.14258 7.31305 4.84613 8.04568 5.71401 8.04568Z"
+                                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    {{ $ms->location }}
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M4 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.80029 1.5V3.3" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M1.30029 5.75415H11.5003" stroke="white" stroke-width="1.5"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path
+                                                            d="M11.8 5.40015V10.5001C11.8 12.3001 10.9 13.5001 8.8 13.5001H4C1.9 13.5001 1 12.3001 1 10.5001V5.40015C1 3.60015 1.9 2.40015 4 2.40015H8.8C10.9 2.40015 11.8 3.60015 11.8 5.40015Z"
+                                                            stroke="white" stroke-width="1.2" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M8.61702 8.51997H8.62241" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8.61653 10.32H8.62192" stroke="white" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M6.39729 8.51997H6.40268" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M6.39729 10.32H6.40268" stroke="white" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M4.17659 8.51997H4.18198" stroke="white"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M4.17659 10.32H4.18198" stroke="white" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    {{ $ms->date }}
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
+                                    </a>
+                                </div>
                             </div>
                         @endif
                     @endforeach
@@ -322,7 +314,7 @@
         </section>
 
 
-        <div style="margin-bottom: 100px" class="row">
+        {{-- <div style="margin-bottom: 100px" class="row">
             <div class="col-xl-12">
                 <div class="portfolio__section-title-wrapper p-spacing text-center tp-el-content">
                     <span class="portfolio__section-title-pre tp-el-subtitle">Tune Your Dreams</span>
@@ -337,7 +329,7 @@
         <stripe-pricing-table pricing-table-id="prctbl_1NZJUASCz6pJIP37CIdUFegK"
         publishable-key="pk_live_51NZIfkSCz6pJIP37VMRKhhKvMQNfEtlBIhMxrLjftxVFWB000xVxdrttpL3WwU2Ie8Z9staCEnWe6zvD0xhpfek600QwW3JQTh">
         </stripe-pricing-table>
-        </div>
+        </div> --}}
 
 
 
@@ -362,12 +354,12 @@
                         </div>
                     </div>
                     <div class="col-xxl-6 col-lg-6">
-                        <div class="cta__btn-wrapper-7 d-xl-flex align-items-center mb-40">
-                            <a href="{{ asset('pricing-plan') }}" class=" tp-cta-btn-yellow mr-20 mb-20">
-                               See Pricing <br> Plans
-                               <i class="fa-light fa-arrow-up-right"></i></a>
+                        <div class="cta__btn-wrapper-7 d-xl-flex align-items-center justify-content-end mb-40">
+                            {{-- <a href="{{ asset('pricing-plan') }}" class=" tp-cta-btn-yellow mr-20 mb-20">
+                                See Pricing <br> Plans
+                                <i class="fa-light fa-arrow-up-right"></i></a> --}}
                             <a href="{{ asset('get-started') }}" class="tp-cta-btn mb-20">Get Project <br /> Started Now
-                              <i class="fa-light fa-arrow-up-right"></i></a>
+                                <i class="fa-light fa-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -417,7 +409,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-a8b120e">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-a8b120e">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="headingOne-0">
@@ -440,37 +433,53 @@
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
                                                                                             AdFJ Studios understands the
-                                                                                            specific requirements of the media
+                                                                                            specific requirements of the
+                                                                                            media
                                                                                             production industry and offers
-                                                                                            tailor-made solutions to meet those
-                                                                                            needs. We have in-depth knowledge of
-                                                                                            industry standards and trends and
+                                                                                            tailor-made solutions to meet
+                                                                                            those
+                                                                                            needs. We have in-depth
+                                                                                            knowledge of
+                                                                                            industry standards and trends
+                                                                                            and
                                                                                             ensure our services fit the
-                                                                                            ever-changing landscape. Our team of
-                                                                                            skilled professionals combine their
+                                                                                            ever-changing landscape. Our
+                                                                                            team of
+                                                                                            skilled professionals combine
+                                                                                            their
                                                                                             expertise with state-of-the-art
-                                                                                            technology to deliver exceptional
-                                                                                            media productions. Whether music,
+                                                                                            technology to deliver
+                                                                                            exceptional
+                                                                                            media productions. Whether
+                                                                                            music,
                                                                                             audio or video, AdFJ Studios is
-                                                                                            committed to providing top quality
+                                                                                            committed to providing top
+                                                                                            quality
                                                                                             services tailored to the unique
                                                                                             demands of the media production
-                                                                                            industry. (Original) AdFJ Studios
+                                                                                            industry. (Original) AdFJ
+                                                                                            Studios
                                                                                             understands the specific
-                                                                                            requirements of the media production
+                                                                                            requirements of the media
+                                                                                            production
                                                                                             industry and offers customized
-                                                                                            solutions to meet those needs. We
+                                                                                            solutions to meet those needs.
+                                                                                            We
                                                                                             have a deep understanding of the
-                                                                                            industry' s standards and trends,
+                                                                                            industry' s standards and
+                                                                                            trends,
                                                                                             ensuring that our services align
-                                                                                            with the ever-changing landscape.
-                                                                                            Our team of skilled professionals
+                                                                                            with the ever-changing
+                                                                                            landscape.
+                                                                                            Our team of skilled
+                                                                                            professionals
                                                                                             combines their expertise with
                                                                                             state-of-the-art technology to
                                                                                             deliver exceptional media
                                                                                             productions. Whether it's music,
                                                                                             audio, or video, AdFJ Studios is
-                                                                                            dedicated to providing top-quality
+                                                                                            dedicated to providing
+                                                                                            top-quality
                                                                                             services tailored to the unique
                                                                                             demands of the media production
                                                                                             industry.
@@ -490,7 +499,8 @@
                                                                                         data-bs-target="#collapseOne-1"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="collapseOne-1">
-                                                                                        Can AdFJ Studios handle video production
+                                                                                        Can AdFJ Studios handle video
+                                                                                        production
                                                                                         for the entertainment industry?
                                                                                     </button>
                                                                                 </h2>
@@ -500,16 +510,22 @@
                                                                                     data-bs-parent="#general_accordion-a8b120e">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            Absolutely! AdFJ Studios specializes
-                                                                                            in video visuals production for the
-                                                                                            entertainment industry. We provide
+                                                                                            Absolutely! AdFJ Studios
+                                                                                            specializes
+                                                                                            in video visuals production for
+                                                                                            the
+                                                                                            entertainment industry. We
+                                                                                            provide
                                                                                             end-to-end video production
                                                                                             services, including concept
-                                                                                            development, scriptwriting, filming,
+                                                                                            development, scriptwriting,
+                                                                                            filming,
                                                                                             editing, visual effects, and
                                                                                             post-production. Whether it's a
-                                                                                            music video, promotional content, or
-                                                                                            a short film, our team of experts
+                                                                                            music video, promotional
+                                                                                            content, or
+                                                                                            a short film, our team of
+                                                                                            experts
                                                                                             will bring your vision to life.
 
 
@@ -527,7 +543,8 @@
                                                                                         data-bs-target="#collapseOne-2"
                                                                                         aria-expanded="false"
                                                                                         aria-controls="collapseOne-2">
-                                                                                        What types of music and audio production
+                                                                                        What types of music and audio
+                                                                                        production
                                                                                         services does AdFJ Studios offer?
                                                                                     </button>
                                                                                 </h2>
@@ -537,16 +554,21 @@
                                                                                     data-bs-parent="#general_accordion-a8b120e">
                                                                                     <div class="accordion-body">
                                                                                         <p class="tp-el-box-desc">
-                                                                                            AdFJ Studios offers a wide range of
-                                                                                            music and audio production services,
+                                                                                            AdFJ Studios offers a wide range
+                                                                                            of
+                                                                                            music and audio production
+                                                                                            services,
                                                                                             including recording, mixing,
-                                                                                            mastering, sound design, voice-over
-                                                                                            production, and music composition.
+                                                                                            mastering, sound design,
+                                                                                            voice-over
+                                                                                            production, and music
+                                                                                            composition.
                                                                                             Whether you need a professional
                                                                                             studio for your band's album or
                                                                                             require high-quality audio
                                                                                             production for your podcast or
-                                                                                            commercial, we've got you covered.
+                                                                                            commercial, we've got you
+                                                                                            covered.
 
 
                                                                                         </p>
@@ -583,7 +605,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-d4c66cf">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-d4c66cf">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="ac-id-head-2-0">
@@ -736,7 +759,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="tp-accordion-style tp-el-section">
                                                                     <div class="faq__tab-content tp-accordion">
-                                                                        <div class="accordion" id="general_accordion-9c31428">
+                                                                        <div class="accordion"
+                                                                            id="general_accordion-9c31428">
                                                                             <div class="accordion-item tp-el-box">
                                                                                 <h2 class="accordion-header"
                                                                                     id="ac-id-head-3-0">
