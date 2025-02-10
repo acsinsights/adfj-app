@@ -655,7 +655,7 @@
             </section>
         @endif
         <!-- blog area start -->
-        <section class="blog__area p-spacing pt-50 pb-80">
+        {{-- <section class="blog__area p-spacing pt-50 pb-80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-6 col-xl-6 col-lg-8 col-md-8 col-sm-10">
@@ -846,11 +846,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- blog area end -->
-
-
-
 
 
 
@@ -1815,7 +1812,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-spacing col-xxl-7 col-xl-7 col-lg-7 col-md-6">
+                    <div class="form-spacing col-xxl-7 px-4 col-xl-7 col-lg-7 col-md-6">
                         <div class="r-padding contact__form-9 pt-20 pl-70">
                             <h4 class="contact__form-9-title">Get In Touch Today</h4>
                             <div class="contact__form-9-inner">
